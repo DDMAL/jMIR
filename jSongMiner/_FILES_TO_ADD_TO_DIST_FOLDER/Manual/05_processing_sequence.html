@@ -1,0 +1,236 @@
+<html>
+<head>
+	<title>Processing Sequence</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Processing Sequence</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>EXPLANATION OF THIS SECTION</strong></p>
+<p>This section provides an overview of each of the major processing steps performed 
+  by jSongMiner during its operation, in the sequence that they occur. Many of 
+  these steps are influenced by <a href="03_command_line_arguments.html">command 
+  line arguments</a> entered at runtime, and by the settings in the jSongMiner 
+  <a href="04_configuration_settings_file.html">configuration file</a>, so readers 
+  should familiarize themselves with these sections of the manual.</p>
+<p>This section only describes the processing associated with jSongMiner's central 
+  mode of operation, which is to say the identification of songs and the extraction 
+  of metadata associated with them. As noted in the <a href="03_command_line_arguments.html">section 
+  of this manual on command line arguments</a>, jSongMiner can also perform several 
+  additional utility functions, which are not described in this section of the 
+  manual.</p>
+<p>More details on all aspects of jSongMiner's operation are available in the 
+  jSongMiner Javadocs and in the code itself. Readers exploring the code may wish 
+  to begin with the Main class, which specifies each of the major tasks performed 
+  by jSongMiner. The methods of the MainMethods class provide more details on 
+  each of the tasks performed by jSongMiner. The remaining classes contain still 
+  more detailed information on jSongMiner's data structures and processing. The 
+  code structure is outlined in more detail in the <a href="08_class_structure.html">section 
+  of the manual on jSongMiner's class structure</a>.</p>
+<p><strong> JSONGMINER'S PROCESSING SEQUENCE</strong></p>
+<ol>
+  <li> Processing variables are initialized. Of particular interest, the song_metadata, 
+    artist_metadata and album_metadata collections are initialized to hold sets 
+    of MusicMetaData objects corresponding to, respectively, metadata about songs, 
+    artists and albums. Each MusicMetaData object holds a single piece of metadata, 
+    including the field identifier, the metadata value and the source from which 
+    the metadata was derived. The song_metadata, artist_metadata and album_metadata 
+    collections thus each hold a list of pieces of metadata relevant to the song 
+    currently being processed, or the artist or album associated with it. Pieces 
+    of metadata are added to these collections as they are extracted.</li>
+  <li> The command line arguments are parsed and validated. Execution is terminated 
+    with an explanatory message if they are invalid. If they are valid, then the 
+    relevant information in them is stored. In particular, if any of the audio 
+    file path, song title, artist name or album title are specified at the command 
+    line, then this information is stored in song_metadata.</li>
+  <li> If the user has elected to perform one of jSongMiner's terminal utility 
+    functions (e.g. ACE XML to text translation), then the utility task is performed 
+    and execution terminates.</li>
+  <li> The jSongMiner configuration file is parsed, and its settings are stored. 
+    If a valid configuration file cannot be found, then one containing default 
+    settings is auto-generated.</li>
+  <li> The configuration settings that were parsed from the configuration file 
+    are modified, if appropriate, based on the command line arguments. These changes 
+    are temporary, and only apply to the processing of the song currently under 
+    consideration. They are not saved in the configuration file itself.</li>
+  <li> Any existing log files indicating artists and/or albums for whom metadata 
+    has already been extracted are deleted if the command line arguments indicate 
+    that they should be. This means that artist and/or album metadata will be 
+    extracted for the song being processed, even if metadata for the given artist 
+    and/or album has already been extracted.</li>
+  <li> A check is performed to see if it will be necessary to access web services 
+    through a proxy server. If this will be necessary, then the system looks for 
+    an encrypted proxysettings.cfg settings file containing the settings needed 
+    to access the web through the proxy server. If this file is found and its 
+    settings are valid, then the JRE is configured to route all web traffic through 
+    the proxy server. If not, the user is presented with a GUI panel allowing 
+    them to specify the necessary information, which may be saved in an encrypted 
+    file so that it will not be necessary to enter this information again. This 
+    process is repeated until settings are entered that enable web access via 
+    the proxy server, or until the user cancels this operation.</li>
+  <li> The log files indicating the artists and albums for whom metadata has already 
+    been extracted are parsed, if they are available. If they are not available, 
+    or if the configuration settings indicate that they should be reconstructed, 
+    then new empty data structures are generated for logging artists and/or for 
+    albums.</li>
+  <li> Embedded metadata (e.g. the contents of the ID3 tags of an MP3 file) are 
+    extracted from the audio file to be processed. This is only done if the configuration 
+    settings permit it and if an audio file path is provided in the command line 
+    arguments. The results are stored in the emb_miner variable, which holds an 
+    EmbeddedTagMiner object containing embedded metadata extracted from an audio 
+    file. Embedded metadata can be extracted only from file types supported by 
+    the third-party Jaudiotagger library, namely MP3, MP4 (MP4, M4a and M4p), 
+    Ogg Vorbis, FLAC and WMA. There is also limited support for WAV and Real Audio.</li>
+  <li> The identifying_title, identifying_artist and identifying_album variables 
+    are set. These key variables indicate, respectively, the most reliable song 
+    title, artist name and album title currently available. These are used as 
+    the common identifying information linking the various sources of information 
+    accessed by jSongMiner, such as the Echo Nest and Last.FM. At this stage, 
+    these fields are set to the values specified at the command line. If values 
+    are not specified at the command line, then they are set to the values of 
+    the associated metadata embedded in the audio file. If neither of these sources 
+    of information are available, then the variables are set to null for now.</li>
+  <li> If Echo Nest usage (either fingerprinting or general metadata extraction) 
+    is enabled in the configuration settings, then the en_miner variable is initialized 
+    with the Echo Nest API key set in the configuration settings. en_miner contains 
+    an EchoNestMiner object configured to perform fingerprinting using the Echo 
+    Nest and to extract metadata using Echo Nest web services. </li>
+  <li> If Echo Nest fingerprinting is enabled in the configuration settings, then 
+    the system attempts to find the Echo Nest song ID of the song under consideration. 
+    If an audio file is available, then the software attempts to extract a fingerprint 
+    by first running a locally installed Echo Nest codegen and then submitting 
+    this fingerprint to the Echo Nest web services in order to obtain the Echo 
+    Nest song ID. If this fails, then the audio itself is submitted to the Echo 
+    Nest for remote fingerprinting, again in an effort to acquire the Echo Nest 
+    song ID. If this fails, then the identifying_title and identifying_artist 
+    data is sent to the Echo Nest in order to attempt to obtain the Echo Nest 
+    song ID using metadata-based identification.</li>
+  <li> If either local or remote Echo Nest fingerprinting succeed, then the contents 
+    of the identifying_title and identifying_artist variables are overwritten 
+    with the title and artist name associated with the extracted Echo Nest song 
+    ID. The identifying_album variable is set to null in this eventuality, in 
+    case the embedded or model metadata was wrong and would thus cause an inconsistency 
+    (the Echo Nest API does not provide album-related information at the time 
+    of this writing).</li>
+  <li> If Last.FM usage (either identification or general metadata extraction) 
+    is enabled in the configuration setting, then the lfm_miner variable is initialized 
+    with the Last.FM API key (as set in the configuration settings), as well as 
+    with the current values of the identifying_title and identifying_artist variables. 
+    Note that if general Last.FM metadata extraction is disabled in the configuration 
+    settings, but Last.FM identification is enabled, then Last.FM identification 
+    is only performed if an Echo Nest song ID was not found in the preceding step 
+    of processing. The fm_miner variable, if used, holds a LastFMMiner object 
+    that is set up to access Last.FM web services. A LastFMMiner object always 
+    holds information associated with one and only one song (unlike EchoNestMiner 
+    objects, where this is not always the case).</li>
+  <li> If the lfm_miner object is successfully initialized, this means that it 
+    now holds information associated with a song. The identifying_title, identifying_artist 
+    and identifying_album variables are then set based on the results, but only 
+    if they are null just prior to Last.FM identification. In other words, identifying 
+    information provided by the Echo Nest, command line arguments and embedded 
+    metadata take precedence, in that order. If the lfm_miner object could not 
+    be successfully initialized, this means that either the Last.FM API key in 
+    the configuration settings is invalid or that a song could not be found that 
+    matches the identifying data provided. If lfm_miner is null at this point, 
+    then no more processing is performed using Last.FM services for this song.</li>
+  <li> If Echo Nest fingerprinting is not permitted, but saving of general Echo 
+    Nest derived metadata is, and identifying information is now available from 
+    some other source (e.g. Last.FM), then a metadata-based Echo Nest query is 
+    attempted in order to find an Echo Nest song ID.</li>
+  <li> If none of the methods that attempted to identify the track succeeded, 
+    then execution is terminated, as it is not possible to extract further metadata 
+    without identifying information.</li>
+  <li> If the configuration settings indicate that only identifying information 
+    is to be extracted, then this information is stored in song_metadata. Execution 
+    then skips to the removal of empty metadata stage described below.</li>
+  <li> If the configuration settings indicate that general Echo Nest metadata 
+    extraction is to be performed, and an Echo Nest song ID was found in the previous 
+    steps, then Echo Nest metadata is extracted and saved for the song being processed 
+    in the song_metadata variable. Metadata acquired during the fingerprinting 
+    process, if any, is also added to song_metadata at this stage. If the logs 
+    of artists for which metadata has previously been extracted do not indicate 
+    that metadata has already been extracted for the artist associated with the 
+    song currently being processed, then metadata is also extracted for the artist 
+    and added to the artist_metadata variable.</li>
+  <li> If the configuration settings indicate that general Last.FM metadata extraction 
+    is to be performed, and the lfm_miner variable was successfully set to a LastFMMiner 
+    object associated with a particular song in the previous steps, then Last.FM 
+    metadata is extracted and saved for the song being processed in the song_metadata 
+    variable. If the logs of artists and albums for which metadata has previously 
+    been extracted do not indicate that metadata has already been extracted for 
+    the artist and album associated with the song currently being processed, then 
+    metadata is also extracted for the artist and album, as appropriate, and added 
+    to the artist_metadata and album_metadata variables, respectively.</li>
+  <li> If the configuration settings indicate that general metadata embedded in 
+    audio files is to be stored, and a path of an audio file containing embedded 
+    metadata that could be extracted was provided in the command line arguments, 
+    then all available embedded metadata is added to the song_metadata variable.</li>
+  <li> Individual metadata fields that could not be successfully extracted from 
+    the various information sources are removed from song_metadata, artist_metadata 
+    and album_metadata, if the configuration settings indicate that this should 
+    be done.</li>
+  <li> If unqualified and/or qualified Dublin Core field labels are enabled in 
+    the configuration settings, then the metadata stored in song_metadata, artist_metadata 
+    and album_metadata is processed in order to extract metadata with unqualified 
+    and/or qualified Dublin Core labeled metadata, which is then added back to 
+    song_metadata, artist_metadata and album_metadata. This is an inherently redundant 
+    process, as all of the metadata given Dublin Core field names is originally 
+    contained in the generally extracted metadata held in the song_metadata, artist_metadata 
+    and album_metadata variables. Note also that unqualified Dublin Core metadata 
+    is always extracted from qualified Dublin Core metadata, even if the qualified 
+    Dublin Core metadata is not itself set to be saved. The meaning of the various 
+    unqualified Dublin Core values may vary, depending on the metadata that is 
+    available for a particular song.</li>
+  <li> All non-Dublin Core-formatted metadata is deleted from song_metadata, artist_metadata 
+    and album_metadata if the configuration settings indicate that this should 
+    be done.</li>
+  <li> If ACE XML files are set to be saved in the configuration settings and 
+    command line arguments, then an ACE XML 1.1 Classifications file is saved 
+    for the song metadata and, if extracted, the artist and/or album metadata. 
+    The metadata for the given resource (i.e. song, artist or album) is saved 
+    such that there is a single ACE XML instance for the resource. This is given 
+    the data_set_id of the best unique identifier available. Each piece of metadata 
+    for the resource is stored in a misc_info tag, with the source and field name 
+    concatenated together and separated with &quot;: &quot; in the tag's misc_info_key 
+    attribute.</li>
+  <li> If text files are set to be saved in the configuration settings and command 
+    line argruments, then a text file is saved for the song metadata and, if extracted, 
+    the artist and/or album metadata. Each odd line is a field identifier and 
+    each even line is the value for the field named on the preceding line.</li>
+  <li> The following notes apply to both ACE XML and text files saved in the two 
+    steps outlined above: The field name and field value for each piece of metadata 
+    may be URL encoded, depending on the configuration settings. Depending on 
+    command line and configuration settings, the song, artist and album metadata 
+    could all be packaged into one file, or the song, artist and album metadata 
+    could each be saved in a separate file. In the former case, metadata duplicates 
+    (i.e. sharing the same source, field identifier and value) are removed. The 
+    location of the saved file(s) depends on the command line arguments and configuration 
+    settings. The default is to save each file in a directory specified in the 
+    configuration file. By default, each file is auto-named based on the extracted 
+    metadata (e.g., for songs, based on Echo Nest Song ID, if available, then 
+    Music Brainz ID, then Last.FM Track URL, then song title, etc.). If a file 
+    with the auto-generated name already exists in the save directory, then an 
+    underscore and number are appended to the file name in order to avoid overwriting 
+    the original file. This behaviour can be overruled by command line flags, 
+    however, such that a new single directory is specified for output of song, 
+    artist and album metadata, or a file path including file name is specified. 
+  </li>
+  <li> The logs of artists and albums already extracted are updated and saved 
+    as Java serialized objects. The identifiers saved are the values of the identifying_artist 
+    and identifying_album in lowercase.</li>
+  <li> All extracted metadata is print to standard out, if appropriate given the 
+    configuration settings.</li>
+  <li> Execution terminates. </li>
+</ol>
+
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+<!DOCTYPE batchFile [
+	<!ELEMENT batchFile (batch+)>
+	<!ELEMENT batch (fileSet,settings,destination+)>
+	<!ATTLIST batch ID CDATA "" >
+	<!ELEMENT fileSet (file+)>
+	<!ELEMENT file (#PCDATA)>
+	<!ELEMENT settings (windowSize,windowOverlap,samplingRate,normalise,perWindowStats,overallStats,outputType,feature+,aggregator+)>
+	<!ELEMENT windowSize (#PCDATA)>
+	<!ELEMENT windowOverlap (#PCDATA)>
+	<!ELEMENT samplingRate (#PCDATA)>
+	<!ELEMENT normalise (#PCDATA)>
+	<!ELEMENT perWindowStats (#PCDATA)>
+	<!ELEMENT overallStats (#PCDATA)>
+	<!ELEMENT outputType (#PCDATA)>
+	<!ELEMENT feature (name,active,attribute*)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT active (#PCDATA)>
+	<!ELEMENT attribute (#PCDATA)>
+	<!ELEMENT destination (#PCDATA)>
+	<!ELEMENT aggregator (aggregatorName, aggregatorFeature*, aggregatorAttribute*)>
+	<!ELEMENT aggregatorName (#PCDATA)>
+	<!ELEMENT aggregatorFeature (#PCDATA)>
+	<!ELEMENT aggregatorAttribute (#PCDATA)>
+]>
+
+<batchFile>
+	<batch ID="SampleJAudioBatch">
+		<fileSet>
+			<file></file>
+		</fileSet>
+		<settings>
+			<windowSize>512</windowSize>
+			<windowOverlap>0.0</windowOverlap>
+			<samplingRate>16000.0</samplingRate>
+			<normalise>false</normalise>
+			<perWindowStats>false</perWindowStats>
+			<overallStats>true</overallStats>
+			<outputType>ACE</outputType>
+			<feature>
+				<name>Derivative of Running Mean of Spectral Rolloff Point</name>
+				<active>false</active>
+				<attribute>0.85</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Strongest Beat</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Spectral Flux</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Spectral Centroid</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Running Mean of Fraction Of Low Energy Windows</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Spectral Rolloff Point</name>
+				<active>false</active>
+				<attribute>0.85</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Strongest Beat</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Strongest Frequency Via FFT Maximum</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Method of Moments</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Zero Crossings</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of LPC</name>
+				<active>false</active>
+				<attribute>0.0</attribute>
+				<attribute>10</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>LPC</name>
+				<active>true</active>
+				<attribute>0.0</attribute>
+				<attribute>10</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Fraction Of Low Energy Windows</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of MFCC</name>
+				<active>false</active>
+				<attribute>13</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Strongest Frequency Via FFT Maximum</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Method of Moments</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Strongest Frequency Via Zero Crossings</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Area Method of Moments</name>
+				<active>false</active>
+				<attribute>10</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Relative Difference Function</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Compactness</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Fraction Of Low Energy Windows</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Spectral Variability</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Spectral Flux</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Compactness</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Method of Moments</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Beat Histogram</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Compactness</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Spectral Flux</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of LPC</name>
+				<active>false</active>
+				<attribute>0.0</attribute>
+				<attribute>10</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Beat Sum</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Zero Crossings</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Root Mean Square</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>MFCC</name>
+				<active>true</active>
+				<attribute>13</attribute>
+			</feature>
+			<feature>
+				<name>Zero Crossings</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Fraction Of Low Energy Windows</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Derivative of Spectral Centroid</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Spectral Flux</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Strength Of Strongest Beat</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Running Mean of Relative Difference Function</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of MFCC</name>
+				<active>false</active>
+				<attribute>13</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Area Method of Moments</name>
+				<active>false</active>
+				<attribute>10</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Strongest Frequency Via Zero Crossings</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Partial Based Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Fraction Of Low Energy Windows</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Root Mean Square</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>FFT Bin Frequency Labels</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Strongest Frequency Via Zero Crossings</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Strength Of Strongest Beat</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Relative Difference Function</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Relative Difference Function</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Strength Of Strongest Beat</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Partial Based Spectral Flux</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Strongest Frequency Via Spectral Centroid</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Area Method of Moments</name>
+				<active>false</active>
+				<attribute>10</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Spectral Variability</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Strongest Frequency Via FFT Maximum</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Strength Of Strongest Beat</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Beat Sum</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Spectral Variability</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Zero Crossings</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Spectral Flux</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Strength Of Strongest Beat</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of LPC</name>
+				<active>false</active>
+				<attribute>0.0</attribute>
+				<attribute>10</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Compactness</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of LPC</name>
+				<active>false</active>
+				<attribute>0.0</attribute>
+				<attribute>10</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Zero Crossings</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Strongest Frequency Via Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Partial Based Spectral Centroid</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Running Mean of Compactness</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Strongest Beat</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Strongest Frequency Via Zero Crossings</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Spectral Rolloff Point</name>
+				<active>false</active>
+				<attribute>0.85</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Spectral Variability</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Peak Based Spectral Smoothness</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Running Mean of Method of Moments</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Strongest Frequency Via Zero Crossings</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Beat Histogram Bin Labels</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Method of Moments</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Fraction Of Low Energy Windows</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Magnitude Spectrum</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Beat Sum</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Area Method of Moments</name>
+				<active>false</active>
+				<attribute>10</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Peak Based Spectral Smoothness</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Relative Difference Function</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Strongest Beat</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Root Mean Square</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Partial Based Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of MFCC</name>
+				<active>false</active>
+				<attribute>13</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Strength Of Strongest Beat</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Peak Based Spectral Smoothness</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Spectral Flux</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Running Mean of Partial Based Spectral Flux</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Peak Based Spectral Smoothness</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Spectral Variability</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Zero Crossings</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Beat Sum</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Relative Difference Function</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Peak Based Spectral Smoothness</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Beat Sum</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Strongest Beat</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Partial Based Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Partial Based Spectral Flux</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Root Mean Square</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Partial Based Spectral Flux</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Strongest Beat</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Spectral Rolloff Point</name>
+				<active>false</active>
+				<attribute>0.85</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Area Method of Moments</name>
+				<active>false</active>
+				<attribute>10</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Strongest Frequency Via FFT Maximum</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Root Mean Square</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Strongest Frequency Via FFT Maximum</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Peak Detection</name>
+				<active>false</active>
+				<attribute>10</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Spectral Variability</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Peak Based Spectral Smoothness</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Strongest Frequency Via Spectral Centroid</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Partial Based Spectral Centroid</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Strongest Frequency Via FFT Maximum</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of MFCC</name>
+				<active>false</active>
+				<attribute>13</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Spectral Rolloff Point</name>
+				<active>false</active>
+				<attribute>0.85</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Method of Moments</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Spectral Rolloff Point</name>
+				<active>true</active>
+				<attribute>0.85</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of MFCC</name>
+				<active>false</active>
+				<attribute>13</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of Compactness</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Partial Based Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Running Mean of Strongest Frequency Via Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Root Mean Square</name>
+				<active>true</active>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Strongest Frequency Via Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Area Method of Moments</name>
+				<active>false</active>
+				<attribute>10</attribute>
+			</feature>
+			<feature>
+				<name>Partial Based Spectral Flux</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Running Mean of Strongest Frequency Via Zero Crossings</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Standard Deviation of Strongest Frequency Via Spectral Centroid</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Running Mean of Partial Based Spectral Flux</name>
+				<active>false</active>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Standard Deviation of LPC</name>
+				<active>false</active>
+				<attribute>0.0</attribute>
+				<attribute>10</attribute>
+				<attribute>100</attribute>
+			</feature>
+			<feature>
+				<name>Derivative of Beat Sum</name>
+				<active>false</active>
+			</feature>
+			<feature>
+				<name>Power Spectrum</name>
+				<active>false</active>
+			</feature>
+			<aggregator>
+				<aggregatorName>Standard Deviation</aggregatorName>
+			</aggregator>
+			<aggregator>
+				<aggregatorName>Mean</aggregatorName>
+			</aggregator>
+		</settings>
+		<destination></destination>
+		<destination></destination>
+	</batch>
+</batchFile>

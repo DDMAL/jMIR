@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Extending the Software</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Extending the Software</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+
+<p>This section is only meaningful for users with some basic background in <a href="http://java.sun.com" target=top>Java</a> 
+  programming and who have downloaded the development version of jWebMiner.</p>
+
+<p>jWebMiner has been designed with an architecture that emphasizes extensibility. In addition to future improvements from the original author, it is also hoped that technically-inclined users will add functionality to the software as suits them and make the results available to the music information retrieval research community as a whole.</p>
+
+<p>In order to facilitate future development, specific guidelines are included here on extending the two areas of the software that appear the most likely to be expanded on in the future.</p>
+
+<p><strong>Adding Web Services</strong></p>
+
+<p>jWebMiner currently includes functionality for accessing web services provided by <a href="http://www.google.co.uk/intl/en/apis/reference.html" target=top>Google</a> and <a href="http://developer.yahoo.com/search/web/V1/webSearch.html" target=top>Yahoo!</a>. It may be beneficial in the future to add services to access providers such as <a href="http://www.audioscrobbler.net/data/webservices/" target=top>Last.FM</a>, <a href="http://www.amazon.com/AWS-home-page-Money/b/ref=sc_iw_l_0_3435361_2/105-0159126-4681218?ie=UTF8&node=3435361&no=3435361&me=A36L942TSJ2AJA" target=top>Amazon</a>, etc.</p>
+
+<p>Each web service is implemented as a separate class in the mckay.utilities.webservices package. Each such class must extend the mckay.utilities.webservices.NetworkSearch class and implement its abstract methods. Examples of such classes are mckay.utilities.webservices.GoogleWebSearch and mckay.utilities.webservices.YahooWebSearch.</p>
+
+<p>Once a new such class has been implemented, it must be added to the getUnconfiguredSearchers method of the jWebMiner.AnalysisProcessor class. Presumably it will also be useful to add a checkbox to the jWebMiner.gui.OptionsPanel JPanel in order to allow users to decide whether or not to use the new service and so that the getUnconfiguredSearchers method mentioned above can check to see if the user has chosen to use it.</p>
+
+<p>Finally, it may be helpful to add a reference to the new web service in the constructor for the mckay.utilities.webservices.NetworkSearchDialog JFrame and the instantiation using this constructor in the actionPerformed method of the jWebMiner.gui.OuterFrame class. It will also be necessary to add a reference to the name of the new web service in the processWebServices method of the mckay.utilities.webservices.NetworkSearchDialog class so that users will be able to select the new service in this dialog box.</p>
+
+<p><strong>Adding Scoring Metrics</strong></p>
+
+<p>jWebMiner's initial implementation includes two co-occurrence and four cross tabulation scoring metric formulas for calculating feature values. It may be useful to add additional formulas in the future so that they can be experimented with and used.</p>
+
+<p>The first step to doing this is to add a radio button to the appropriate Scoring Function section of the jWebMiner.gui.OptionsPanel JPanel in order to allow users to select the new function. An appropriate unique public static final int code should then be added to the jWebMiner.gui.OptionsPanel class so that this code can be used to identify this new formula.</p>
+
+<p>Three methods of the jWebMiner.AnalysisProcessor class then need to be modified to enable the new formula. The first is the findNumberOfTopLevelTasks method, which must return the number of different types of hit counts that must be performed to use the new formula (see the class and method documentation). The second is the findRawNumberOfQueries method, which returns the total number of queries that must be submitted to access web services to fulfill the needs of the new formula. Finally, the performProcessing method must be modified so that it actually implements the new formula.</p>
+
+<p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

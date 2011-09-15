@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE feature_key_file [
+   <!ELEMENT feature_key_file (comments, feature+)>
+   <!ELEMENT comments (#PCDATA)>
+   <!ELEMENT feature (name, description?, is_sequential, parallel_dimensions)>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT description (#PCDATA)>
+   <!ELEMENT is_sequential (#PCDATA)>
+   <!ELEMENT parallel_dimensions (#PCDATA)>
+]>
+
+<feature_key_file>
+
+   <comments>This is an example of an XML file that stores abstract data about
+   features. The name element specifies the unique name of a feature. The
+   optional description element can be used to include arbitrary descriptions or
+   other metadata about features. The is_sequential element specifies whether or
+   not the feature can be extracted from sub-sections of an instance. A value of
+   true means that it can, and a value of false means that the feature can only
+   be extracted from instances as a whole, not from their sub-sections. The
+   parallel_dimensions element specifies the dimensionality of extracted vectors
+   of the feature. This value will be 1 unless the feature is a multi-
+   dimensional feature.</comments>
+
+   <feature>
+      <name>Spectral Centroid</name>
+      <description>The spectral centre of mass of a signal window.</description>
+      <is_sequential>true</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+   <feature>
+      <name>Duration</name>
+      <description>The duration in ms of a recording.</description>
+      <is_sequential>false</is_sequential>
+      <parallel_dimensions>1</parallel_dimensions>
+   </feature>
+
+</feature_key_file>

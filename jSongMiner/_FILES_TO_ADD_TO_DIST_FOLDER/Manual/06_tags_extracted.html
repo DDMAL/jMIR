@@ -1,0 +1,212 @@
+<html>
+<head>
+	<title>Tags Extracted</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Tags Extracted</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>EXPLANATION OF THIS SECTION</strong></p>
+<p>This section lists all of the metadata field labels currently extracted by 
+  jSongMiner. They are divided based on whether each field is output to a Song, 
+  Artist or Album resource file. These may or may not be packaged together into 
+  a single file, based on <a href="04_configuration_settings_file.html">user configuration 
+  settings</a>. The field labels are also divided within each of these three resource 
+  types based on the source from which a given field's value is extracted from. 
+  These sources are listed here exactly as they are named by jSongMiner.</p>
+<p> Note that there is some redundancy between field labels, across both resource 
+  file types and sources. This is intentional, as in the latter case it serves 
+  as insurance against erroneous data returned by a single source, and in the 
+  former case it enables links to be made between the different types of files.</p>
+<p> All or some of these fields may be present for a given extraction, depending 
+  on user settings and on what is available for the given resource. The resource 
+  types, sources and field labels are listed in the order that they are extracted 
+  and reported by jSongMiner. The field labels are specified exactly here as they 
+  are named by jSongMiner, with one exception: the &quot;...&quot; notation that 
+  is used in this document after some field labels indicates that additional text 
+  may be appended to the field label by jSongMiner depending on the particular 
+  resource being processed and/or extraction circumstances.</p>
+<p> The metadata labels stored in the actual text and XML files output by jSongMiner 
+  consist of the source and the field label concatenated together. More precisely, 
+  they consist of the source (as it appears below), followed by &quot;: &quot;, 
+  followed by the field label (as it appears below). So, for example, one metadata 
+  label saved by jSongMiner is: &quot;Echo Nest API: Song Title&quot;. Note that 
+  this will also likely be URL encoded (UTF-8), depending on user settings.</p>
+<p>Note that all of this metadata may also be converted into and saved as qualified 
+  and/or unqualified <a href="http://dublincore.org/" target="top">Dublin Core</a>-labelled 
+  fields by jSongMiner, based on user configuration settings. These Dublin Core-formatted 
+  fields incorporate all of the fields below, and do not incorporate any additional 
+  data values. See the <a href="07_dublin_core_metadata_mappings.html">section 
+  of the manual on the Dublin Core mappings used by jSongMiner</a> for details 
+  of the mappings between the fields labels listed below and the corresponding 
+  Dublin Core field labels, and for general information on how jSongMiner presents 
+  Dublin Core-formatted fields.</p>
+<p> <strong>FIELDS EXTRACTED AND STORED IN SONG DATA FILES:</strong></p>
+<ul>
+  <li><strong>Source: Command Line Argument </strong> 
+    <ul>
+      <li> Audio Source File</li>
+      <li>Song Title</li>
+      <li>Artist NameAlbum Title</li>
+    </ul>
+  </li>
+  <li><strong> Source: Echo Nest API (Local Fingerprinter) </strong> 
+    <ul>
+      <li>ENMF Fingerprint Hash Output by the Echo Nest Fingerprinting Codegen 
+        Binary</li>
+      <li> Full JSON Dictionary Output by the Echo Nest Fingerprinting Codegen 
+        Binary</li>
+      <li>Full Echo Nest Song Identify JSON Dictionary Response</li>
+      <li>Echo Nest Song ID</li>
+    </ul>
+  </li>
+  <li><strong>Source: Echo Nest API (Remote Fingerprinter)</strong></li>
+  <ul>
+    <li>Echo Nest Song ID</li>
+  </ul>
+  <li><strong>Source: Echo Nest API (Embedded Metadata Query)</strong></li>
+  <ul>
+    <li>Echo Nest Song ID</li>
+  </ul>
+  <li><strong>Source: Echo Nest API</strong></li>
+  <ul>
+    <li>Song Title</li>
+    <li>Artist Name</li>
+    <li>Echo Nest Artist ID</li>
+    <li>Duration (seconds)</li>
+    <li>Tempo (BPM)</li>
+    <li>Time Signature</li>
+    <li>Key</li>
+    <li>Mode</li>
+    <li>Loudness (-100 to 100 dB)</li>
+    <li>Echo Nest Song Hottness (0 to 1)</li>
+  </ul>
+  <li><strong>Source: Last.FM API</strong></li>
+  <ul>
+    <li>Song Title</li>
+    <li>Last.FM Track URL</li>
+    <li>Music Brainz Song ID</li>
+    <li>Artist Name</li>
+    <li>Music Brainz Artist ID</li>
+    <li>Album Title</li>
+    <li>Music Brainz Album ID</li>
+    <li>Album Track Number</li>
+    <li>Duration (seconds)</li>
+    <li>Last.FM Track Wiki Summary</li>
+    <li>Last.FM Track Wiki Text</li>
+    <li>Last.FM Track Play Count</li>
+    <li>Song-Related Tag ...</li>
+    <li>Similar Track ...</li>
+  </ul>
+  <li><strong>Source: Data Embedded In File</strong></li>
+  <ul>
+    <li>Song Title</li>
+    <li>Music Brainz Song ID</li>
+    <li>MusicIP Song ID</li>
+    <li>Amazon Song ID</li>
+    <li>Song Barcode</li>
+    <li>Artist Name</li>
+    <li>Music Brainz Artist ID</li>
+    <li>Discogs Artist Site</li>
+    <li>Artist Official URL</li>
+    <li>Artist Wikipedia URL</li>
+    <li>Composer Name</li>
+    <li>Lyricist Name</li>
+    <li>Remixer Name</li>
+    <li>Album Title</li>
+    <li>Music Brainz Album ID</li>
+    <li>Compilation Album</li>
+    <li>Album Disc Number</li>
+    <li>Total Number of Discs</li>
+    <li>Album Track Number</li>
+    <li>Total Number of Album Tracks</li>
+    <li>Record Label</li>
+    <li>Release Country</li>
+    <li>Release Year</li>
+    <li>Language</li>
+    <li>Lyrics</li>
+    <li>Lyrics URL</li>
+    <li>Genre</li>
+    <li>Mood</li>
+    <li>Grouping</li>
+    <li>Comment</li>
+    <li>Tempo (BPM)</li>
+    <li>Key</li>
+    <li>Duration (seconds)</li>
+    <li>Encoder</li>
+    <li>Encoding Type</li>
+    <li>Encoding Format</li>
+    <li>Number of Channels</li>
+    <li>Sample Rate (Hz)</li>
+    <li>Bit Rate (kilobits per second)</li>
+    <li>Variable Bit Rate</li>
+  </ul>
+</ul>
+<p> <strong>FIELDS EXTRACTED AND STORED IN ARTIST DATA FILES:</strong> </p>
+<ul>
+  <li><strong> Source: Echo Nest API </strong> 
+    <ul>
+      <li>Echo Nest Artist ID</li>
+      <li>Music Brainz Artist ID</li>
+      <li>7digital Artist ID</li>
+      <li>Play.me Artist ID</li>
+      <li>Artist Location</li>
+      <li>Echo Nest Artist Familiarity (0 to 1)</li>
+      <li>Echo Nest Artist Hotness (0 to 1)</li>
+      <li>Artist-Related Term ...</li>
+      <li>Similar Artist ...</li>
+      <li>Artist-Related Audio ...</li>
+      <li>Artist-Related Image ...</li>
+      <li>Artist-Related Video ...</li>
+      <li>Artist-Related URL ...</li>
+      <li>Artist Biography ...</li>
+      <li>Artist-Related News ...</li>
+      <li>Artist Review ...</li>
+      <li>Artist-Related Blog ...</li>
+    </ul>
+  </li>
+  <li><strong>Source: Last.FM API </strong> 
+    <ul>
+      <li>Artist Name</li>
+      <li>Last.FM Artist URL</li>
+      <li>Music Brainz Artist ID</li>
+      <li>Last.FM Artist Wiki Summary</li>
+      <li>Last.FM Artist Wiki Text</li>
+      <li>Artist-Related Image ...</li>
+      <li>Last.FM Artist Play Count</li>
+      <li>Top Tracks ...</li>
+      <li>Top Albums ...</li>
+      <li>Artist-Related Tag ...</li>
+      <li>Similar Artist ...</li>
+      <li>Artist Event ...</li>
+    </ul>
+  </li>
+</ul>
+<p><strong>FIELDS EXTRACTED AND STORED IN ALBUM DATA FILES:</strong></p>
+<ul>
+  <li><strong>Source: Last.FM API</strong>
+    <ul>
+      <li> Album Title</li>
+      <li>Last.FM Album URL</li>
+      <li>Music Brainz Album ID</li>
+      <li>Artist Name</li>
+      <li>Music Brainz Artist ID</li>
+      <li>Release Date</li>
+      <li>Last.FM Album Wiki Summary</li>
+      <li>Last.FM Album Wiki Text</li>
+      <li>Last.FM Album Play Count</li>
+      <li>Album-Related Tag</li>
+    </ul>
+  </li>
+</ul>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

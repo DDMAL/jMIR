@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE jsongminer_config_file [
+	<!ELEMENT jsongminer_config_file (identify_only, package_song_artist_album, reextract_known_artist_metadata, reextract_known_album_metadata, include_unqualified_dublin_core, include_qualified_dublin_core, include_other_metadata_with_dublin_core, enable_echo_nest_fingerprinting, save_echo_nest_metadata, enable_last_fm_fingerprinting, save_last_fm_metadata, enable_embedded_metadata_track_identification, save_embedded_metadata, store_fails, url_encode_output, save_output_as_ace_xml, save_output_as_txt, print_extracted_metadata_to_terminal, print_current_status_to_terminal, print_errors_to_terminal, songs_save_directory, artists_save_directory, albums_save_directory, echo_nest_api_key, echo_nest_fingerprinting_codegen_run_path, echo_nest_codegen_directory, last_fm_api_key, artists_already_accessed_file_path, albums_already_accessed_file_path)>
+	<!ELEMENT identify_only (#PCDATA)>
+	<!ELEMENT package_song_artist_album (#PCDATA)>
+	<!ELEMENT reextract_known_artist_metadata (#PCDATA)>
+	<!ELEMENT reextract_known_album_metadata (#PCDATA)>
+	<!ELEMENT include_unqualified_dublin_core (#PCDATA)>
+	<!ELEMENT include_qualified_dublin_core (#PCDATA)>
+	<!ELEMENT include_other_metadata_with_dublin_core (#PCDATA)>
+	<!ELEMENT enable_echo_nest_fingerprinting (#PCDATA)>
+	<!ELEMENT enable_last_fm_fingerprinting (#PCDATA)>
+	<!ELEMENT save_echo_nest_metadata (#PCDATA)>
+	<!ELEMENT enable_embedded_metadata_track_identification (#PCDATA)>
+	<!ELEMENT save_last_fm_metadata (#PCDATA)>
+	<!ELEMENT save_embedded_metadata (#PCDATA)>
+	<!ELEMENT store_fails (#PCDATA)>
+	<!ELEMENT url_encode_output (#PCDATA)>
+	<!ELEMENT save_output_as_ace_xml (#PCDATA)>
+	<!ELEMENT save_output_as_txt (#PCDATA)>
+	<!ELEMENT print_extracted_metadata_to_terminal (#PCDATA)>
+	<!ELEMENT print_current_status_to_terminal (#PCDATA)>
+	<!ELEMENT print_errors_to_terminal (#PCDATA)>
+	<!ELEMENT songs_save_directory (#PCDATA)>
+	<!ELEMENT artists_save_directory (#PCDATA)>
+	<!ELEMENT albums_save_directory (#PCDATA)>
+	<!ELEMENT echo_nest_api_key (#PCDATA)>
+	<!ELEMENT echo_nest_fingerprinting_codegen_run_path (#PCDATA)>
+	<!ELEMENT echo_nest_codegen_directory (#PCDATA)>
+	<!ELEMENT last_fm_api_key (#PCDATA)>
+	<!ELEMENT artists_already_accessed_file_path (#PCDATA)>
+	<!ELEMENT albums_already_accessed_file_path (#PCDATA)>
+]>
+
+<jsongminer_config_file>
+	<identify_only>false</identify_only>
+	<package_song_artist_album>true</package_song_artist_album>
+	<reextract_known_artist_metadata>true</reextract_known_artist_metadata>
+	<reextract_known_album_metadata>true</reextract_known_album_metadata>
+	<include_unqualified_dublin_core>true</include_unqualified_dublin_core>
+	<include_qualified_dublin_core>true</include_qualified_dublin_core>
+	<include_other_metadata_with_dublin_core>true</include_other_metadata_with_dublin_core>
+	<enable_echo_nest_fingerprinting>true</enable_echo_nest_fingerprinting>
+	<save_echo_nest_metadata>true</save_echo_nest_metadata>
+	<enable_last_fm_fingerprinting>true</enable_last_fm_fingerprinting>
+	<save_last_fm_metadata>true</save_last_fm_metadata>
+	<enable_embedded_metadata_track_identification>true</enable_embedded_metadata_track_identification>
+	<save_embedded_metadata>true</save_embedded_metadata>
+	<store_fails>false</store_fails>
+	<url_encode_output>true</url_encode_output>
+	<save_output_as_ace_xml>true</save_output_as_ace_xml>
+	<save_output_as_txt>false</save_output_as_txt>
+	<print_extracted_metadata_to_terminal>true</print_extracted_metadata_to_terminal>
+	<print_current_status_to_terminal>true</print_current_status_to_terminal>
+	<print_errors_to_terminal>true</print_errors_to_terminal>
+	<songs_save_directory>./</songs_save_directory>
+	<artists_save_directory>./</artists_save_directory>
+	<albums_save_directory>./</albums_save_directory>
+	<echo_nest_api_key></echo_nest_api_key>
+	<echo_nest_fingerprinting_codegen_run_path></echo_nest_fingerprinting_codegen_run_path>
+	<echo_nest_codegen_directory></echo_nest_codegen_directory>
+	<last_fm_api_key></last_fm_api_key>
+	<artists_already_accessed_file_path>./artists_so_far.ser</artists_already_accessed_file_path>
+	<albums_already_accessed_file_path>./albums_so_far.ser</albums_already_accessed_file_path>
+</jsongminer_config_file>

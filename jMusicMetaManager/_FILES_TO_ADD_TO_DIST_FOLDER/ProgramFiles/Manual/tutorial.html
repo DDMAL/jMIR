@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Introduction</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Tutorial</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+
+<p>This section of the manual provides a brief applied introduction on using the 
+  jMusicMetaManager software.</p>
+<ol>
+  <li>After installing the jMusicMetaManager software (see the <a href="installation.html">Installation</a> 
+    section of the manual), run it by double clicking on the jMusicMetaManager.jar 
+    file or by running it from a command prompt (see the <a href="running.html">Using 
+    the Software</a> section).</li>
+  <li>The software will start with the <a href="options_panel.html">Options Panel</a> 
+    displayed. This is where the user may choose the source of the metadata to 
+    analyze, the location to save the generated reports, the parameters to use 
+    in error detection analysis and which reports to generate. This tutorial will 
+    assume the use of the default settings, although the user may wish to deviate 
+    from these settings when actually applying the jMusicMetaManager to real situations 
+    (see the <a href="hints.html">Hints and Suggestions</a> section).</li>
+  <li>Note the default paths at the top of the <a href="options_panel.html">Options 
+    Panel</a>. A sample <a href="http://www.apple.com/itunes/" target=top>Apple 
+    iTunes</a> file that is provided with jMusicMetaManager is the default source 
+    of metadata to analyze, and the generated report root will be saved as <em>WorkingDirectory/anaylysis_output_01.html</em> 
+    by default. This iTunes file can be imported into the iTunes software itself 
+    if the user wishes to examine its contents. Note that no MP3 files will be 
+    directly analyzed under the default settings, as no such files are provided 
+    with the jMusicMetaManager installation, and all needed metadata is provided 
+    by the default iTunes file.</li>
+  <li>Analysis of the iTunes file can be initiated by pressing the <em>BEGIN METADATA 
+    ANALYSIS</em> button at the bottom of the <a href="options_panel.html">Options 
+    Panel</a>. A progress bar will be briefly displayed while the file is analyzed 
+    using the default settings.</li>
+  <li>The focus of jMusicMetaManager's GUI will automatically switch to the <a href="report_panel.html">Report 
+    Panel</a>, which will display the results of the processing of the default 
+    iTunes file. The results will also be saved as a set of HTML files to the 
+    location specified in the <a href="options_panel.html">Options Panel</a>, 
+    the root of which is WorkingDirectory\anaylysis_output_01.html by default. 
+    These results can either be viewed directly in the <a href="report_panel.html">Report 
+    Panel</a> or viewed using any web browser.</li>
+  <li>The names of the generated reports are listed on the left of the <a href="report_panel.html">Report 
+    Panel</a>, and the currently selected report is on the right. Clicking on 
+    the name of a report on the left will cause it to be displayed on the right. 
+    These reports each either provide various profiles of the music collection 
+    or highlight probable metadata errors contained within it.</li>
+  <li>The user should review these reports to get a feel for them and the kind 
+    of information that they provide. To give just a very few examples of the 
+    information provided in the reports: 
+    <ul>
+      <li>The software correctly notes that Charles Mingus is present as both 
+        &quot;Mingus, Charles&quot; and &quot;Charles Mingus&quot;.</li>
+      <li>The software correctly notes that the Borodin String Quartet is present 
+        as both &quot;The Borodin String Quartet&quot; and &quot;Borodin String 
+        Quartet&quot;.</li>
+      <li>The software correctly notes that the track &quot;Les Bourgeois&quot; 
+        by Jacques Brel is present twice, and its title is mispelled as &quot;Les 
+        Borgeois&quot; once.</li>
+      <li> Note that &quot;I Am A Man Of Constant Sorrow&quot; occurs twice, &quot;I 
+        Am A Man Of Constant Sorrow (Instrumental)&quot; occurs twice and &quot;String 
+        Quartet No. 8 In C minor Op. 110&quot; appears thrice, but jMusicMetaManager 
+        correctly avoids detecting them as a redundant copies, since they are 
+        different versions of the pieces.</li>
+      <li>Note that several possible errors are listed in the &quot;Probable errors 
+        in title field report&quot; that are not in fact errors. This is an example 
+        of how false positives can sometimes be reported. They are written here 
+        to show that these titles are similar, and to give the user the opportunity 
+        to verify for him or herself whether the titles should in fact be the 
+        same.</li>
+      <li>etc.</li>
+    </ul>
+  </li>
+</ol>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

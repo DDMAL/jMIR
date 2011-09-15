@@ -1,0 +1,199 @@
+API Terms of Service
+
+If you're not sure which license to apply for, or have any questions about the license terms, drop us a line at partners [at] last [dot] fm.
+
+Please carefully read this agreement (the "agreement") before using Last.fm's webservices, as it affects your legal rights and obligations. This Agreement governs the way that You are permitted to access Last.fm Data (as defined below) via the API. By accessing the API, You agree to accept and abide by the terms set out in this Agreement in respect of Your access to and use of the Last.fm Data.
+
+The terms of this Agreement may be updated by Last.fm from time to time by providing you with written notice containing the updated terms. Any such updated terms shall supersede and replace the terms of this Agreement. By continuing to use any Last.fm Data, you will be deemed to have accepted the updated terms. If you do not agree to be bound by this agreement, do not use Last.fm's webservices.
+The terms in a nutshell
+
+    * Last.fm grants You a limited terminable licence to copy and use the Last.fm Data, subject to certain restrictions set out in this Agreement and any additional restrictions arising from changes to Last.fm's Privacy Policy from time to time.
+    * Although You are granted this licence without charge, Last.fm reserves the right to share in revenue generated from your use of Last.fm Data in future on terms to be negotiated in good faith between Last.fm and You.
+    * This Agreement covers only Your use of Last.fm Data. You must not sub-license the Last.fm Data to others.
+    * This Agreement does not entitle you to stream music or other content available on the Last.fm Site.
+    * You must not transmit, export, transfer, divert, or send any Last.fm Data to any country without obtaining any consents or authorisations required by law or regulation in such country.
+    * You must credit Last.fm and include links to the Last.fm site when You use the Last.fm Data.
+    * You must comply with the Last.fm Brand Guidelines that can be downloaded from http://www.last.fm/resources/
+
+1. Definitions
+
+    * "API" means the application programming interface that supports requests for web services made of it by computer programs
+    * "Data storage" means any database, spreadsheet, chart, physical document, server, network, or other means of storing information, whether created or distributed by You or otherwise.
+    * "Last.fm Data" means any data, images, text, content or other information or materials made available to You by Last.fm through the API.
+    * "Last.fm Site" means Last.fm's website and all related properties, the url of which is located at www.last.fm.
+    * "Term" shall mean the duration of this Agreement which shall start on the date that Last.fm provides you with an API key pursuant to Clause 2.6 (evidenced by Last.fm's server logs) and shall continue unless and until terminated in accordance with Clause 9.
+    * "User(s)" means a user of the Last.fm Site.
+
+2. Conditions of Use
+2.1
+
+Your access to and use of the API and the Last.fm Data is subject to the terms of this Agreement, the Last.fm Site Terms of Use as posted on the Last.fm Site at http://www.last.fm/popups/terms and updated from time to time and the Last.fm Privacy Policy as posted on the Last.fm Site at http://www.last.fm/popups/terms and updated from time to time, each of which is incorporated into this Agreement by reference. If Last.fm has granted you permission to use the API and Last.fm Data for commercial purposes in accordance with the Commercial Use Terms, such Commercial Use Terms shall also form part of this Agreement. For more information about how to apply to use the API and Last.fm Data for commercial purposes, please contact us via email at partners [at] last [dot] fm.
+2.2
+
+You must be a registered User to have access to, retrieve and use the Last.fm Data.
+2.3
+
+You may access, retrieve, store and use any Last.fm Data in accordance with the laws relating to the storage and processing of data in the country in which You live, provided that if You live in a country outside the European Economic Area, You may only use and access and use Last.fm data in that country if Users have expressly given their permission for You to do so when they registered as a User.
+2.4
+
+You must at all times in Your use of the Last.fm Data: (i) comply with all local and international laws and regulations, including, all applicable intellectual property and data protection laws; and (ii) obtain all necessary licences and permissions.
+2.5
+
+You must not transmit, export, transfer, divert or send any Last.fm Data to any country without obtaining any consents or authorisations required under law or regulation in such country.
+2.6
+
+You agree to only use Last.fm's web services as documented on the following pages: http://www.audioscrobbler.net/data/webservices/; http://www.last.fm/tools/; http://www.last.fm/api/. Last.fm will provide You with an API key from time to time to access and use the API. You may only use APIs in conjunction with the most recent user authentication key provided to You by Last.fm. You must not gather any other data from Last.fm in any other way.
+2.7
+
+You agree to use one of the buttons saying "powered by AudioScrobbler" from the page located at http://www.last.fm/resources, such button linking back to Last.fm. All links to Last.fm from pages with profile information for a Last.fm User account should link to the appropriate Last.fm User page (example: http://www.last.fm/user/<username>). All links to Last.fm from pages displaying information on an artist, album or track should link to the appropriate catalogue page on Last.fm. For example: http://www.last.fm/music/<artistname>, http://www.last.fm/music/<artistname>/<albumname>, http://www.last.fm/music/<artistname>/_/<trackname>.
+
+All button/link placements are subject to approval by Last.fm and Last.fm can suggest the use of a button/link of its choice for You to use if Last.fm deems necessary. You agree to only give public access to pages using Last.fm's web services that have been previously approved by Last.fm in writing.
+2.8
+
+You agree to implement and comply with standards of privacy and confidentiality for the use and sharing of any Last.fm Data or any product thereof that are, as a minimum, as stringent as the standards set out in the Last.fm Privacy Policy as amended and updated by Last.fm from time to time.
+2.9
+
+Last.fm may use technical measures to track Your use of the Last.fm Data for the purpose of ensuring compliance with this Agreement.
+3. Use of the API and Last.fm Data
+3.1
+
+You are permitted to use the Last.fm Data solely for non-commercial purposes and for no other purpose and subject always to any limitations or conditions as advised to You by Last.fm at any time. If you are unsure whether your use of the Last.fm Data constitutes non-commercial or commercial use, you should contact us.
+3.2
+
+The permission granted to You at Clause 3.1 is strictly conditional upon Your using the Last.fm Data for non-commercial purposes, as set out above. If at any time you wish to use the Last.fm Data for commercial purposes, you must apply for a commercial use agreement. Any use by You of the Last.fm Data for commercial purposes without obtaining a commercial use agreement constitutes a material breach of this Agreement which shall entitle Last.fm to terminate your use of the Last.fm Data immediately. Any such termination shall be without prejudice to any rights and remedies of Last.fm, including the right to claim for damages against You.
+4. License to use the Last.fm Data
+
+Subject to the restrictions set out at Clauses 4.2 and 4.3 below and in consideration of the licence granted to You below, Last.fm grants to You a worldwide, royalty-free, non-exclusive licence for the duration of copyright and any other rights in the Last.fm Data to: (i) copy the Last.fm Data; (ii) edit, modify, adapt or translate the Last.fm Data in any media to create a derivative work (a "Derivative Work"); (iii) incorporate the Last.fm Data in its entirety in unmodified form along with a number of other separate and independent works, assembled into a collective whole (a "Collective Work"); and (iv) publish, distribute or otherwise communicate the Last.fm Data or the Last.fm Data as incorporated in any Derivative Work or Collective Work to the public in any material form in any media now known.
+4.1
+
+Subject to the restrictions set out at Clauses 4.2 and 4.3 below and in consideration of the licence granted to You below, Last.fm grants to You a worldwide, royalty-free, non-exclusive licence for the duration of copyright and any other rights in the Last.fm Data to: (i) copy the Last.fm Data; (ii) edit, modify, adapt or translate the Last.fm Data in any media to create a derivative work (a "Derivative Work"); (iii) incorporate the Last.fm Data in its entirety in unmodified form along with a number of other separate and independent works, assembled into a collective whole (a "Collective Work"); and (iv) publish, distribute or otherwise communicate the Last.fm Data or the Last.fm Data as incorporated in any Derivative Work or Collective Work to the public in any material form in any media now known.
+4.2
+
+The licence granted at Clause 4.1 above is conditional upon You:
+4.2.1
+
+Making reference to the licence granted by Last.fm (appropriate to the media used) on all copies of the Last.fm Data, Derivative Works and/or Collective Works published, distributed or otherwise communicated or made available to the public by You;
+4.2.2
+Crediting Last.fm in the form set out in Clause 2.7 where You have used Last.fm Data or created a Derivative Work and/or Collective Work that You publish, distribute or otherwise communicate to the public;
+4.2.3
+complying with any and all restrictions notified to You by Last.fm in relation to the treatment of any personal data (and for the purposes of this Clause 4.2.3, any changes to Last.fm's Privacy Policy shall automatically constitute notice); and
+4.2.4
+to the extent reasonably practicable, keeping intact all notices that refer to the licence granted to You, if any, that Last.fm specifies to be associated with the Last.fm Data, Derivative Works and/or Collective Works.
+4.3
+The licence granted to You at Clause 4.1 is subject to the following restrictions:
+4.3.1
+You must not impose any terms on the use to be made of the Last.fm Data, a Derivative Work or a Collective Work that alters or restricts the terms of the licence granted to You under this Agreement or which has the effect or intent of restricting the ability to exercise those rights;
+4.3.2
+You must not impose or apply any digital rights management technology to or on the Last.fm Data or the Last.fm Data as incorporated in a Derivative Work or Collective Work that alters or restricts the terms of the licence or any rights granted under it, or has the effect or intent of restricting the ability to exercise those rights;
+4.3.3
+You must not sub-license the Last.fm Data to a third party; and
+4.3.4
+You must not subject the Last.fm Data to any derogatory treatment, including (but not limited to) distortion or mutilation of the Last.fm Data or treatment that is prejudicial (in Last.fm's opinion) to the reputation of Last.fm.
+4.4
+
+You will implement suitable caching in accordance with the HTTP headers sent with web service responses. You will not make more than 5 requests per originating IP address per second, averaged over a 5 minute period, without prior written consent. You agree to cache similar artist and any chart data (top tracks, top artists, top albums) for a minimum of one week.
+4.5
+
+Notwithstanding the licence at clause 4.1, all rights in and to the Last.fm Data (including all copyright and database rights) remain vested in Last.fm.
+4.6
+
+Last.fm may, from time to time, prevent certain Last.fm Data from being available via the API.
+4.7
+
+Last.fm respects copyright. You shall not under any circumstances use the Last.fm Data for the purpose of, or in conjunction with, the unauthorised exploitation of intellectual property or for any other purpose which encourages, supports or is in any way associated with unauthorised exploitation.
+5. Warranties and Indemnity
+5.1
+
+You warrant and represent to Last.fm that:
+5.1.1
+You have the authority to enter into this Agreement on Your own behalf or on behalf of any company or other legal entity by which You are employed and that wishes to use the Last.fm Data;
+5.1.2
+You will comply with all local and international laws and regulations, including, all applicable intellectual property and data protection laws in connection with Your use and storage of the Last.fm Data;
+5.1.3
+You will obtain and maintain any and all necessary licences and permissions in connection with Your use of the Last.fm Data;
+5.1.4
+Your use of the Last.fm Data will not violate or infringe the rights of any third party, including intellectual property rights or rights of privacy;
+5.1.5
+You will not use the Last.fm Data for any purpose that is fraudulent, misleading or illegal or otherwise than is permitted by this Agreement;
+5.1.6
+You will not use the Last.fm Data for any purpose to enable You to personally identify or contact any User;
+5.1.7
+You will not use the Last.fm Data in any way that is libellous or defamatory of third parties, or is obscene, malicious or discriminatory in any way, including but not limited to race, disability, sex, sexual orientation or religion;
+5.1.8
+You will not use the Last.fm Data in any way or on any website that is associated or promotes, encourages, facilitates or condones the illegal or unauthorised use or sharing of audio and/or audiovisual content;
+5.1.9
+You will not interfere or attempt to interfere with the operation or running of the Last.fm Site with any virus, worm, Trojan horse, adware, spyware or any other form of malicious code or software; and
+5.1.10
+You will at all times comply with the terms of this Agreement and any other terms or policies referenced in this Agreement or on the Last.fm Site.
+5.2
+
+You will not bring any claim against Last.fm, or any of its licensees, assigns or successors, for damages, liabilities, causes of action, judgments, or claims in respect of Your access, retrieval and/or use of the Last.fm Data or any intellectual property You develop that is based on may otherwise arise out of Your use of, reliance on, or reference to the Last.fm Site or Last.fm Data.
+5.3
+
+You will indemnify, and keep Last.fm, its affiliates, licensees, assigns, successors, customers, Users, all third-party advertisers, technology providers and service providers, and each of their respective employees, directors and representatives (each an "Indemnified Party"), fully and effectively indemnified from and against any and all liabilities, costs, expenses, damages and losses (including any direct, indirect or consequential losses, loss of profit, loss of reputation and all reasonable professional costs and expenses), suffered or incurred by an Indemnified Party arising out of or in connection with any claims, actions or proceedings ("Claims") which arise out of or are related to: (i) Your access, retrieval and use of the Last.fm Data; (ii) any breach of the warranties contained in Clause 5; and (iii) Your violation of any term or condition of this Agreement (including the Last.fm Site Terms of Use and Last.fm Privacy Policy attached). At Last.fm's option, You will assume control of the defence of any Claim and all related settlement negotiations, except that Last.fm shall be entitled to take any action which Last.fm (acting reasonably) deems necessary where You have failed to take action or materially delay taking action in defending or settling a Claim and such failure or delay may, in the opinion of Last.fm, prejudice the interests of Last.fm. In any event, You may not settle any Claim without Last.fm's prior written consent.
+6. Limitation of Liability
+6.1
+
+Nothing in this agreement shall limit Last.fm's liability for death or personal injury caused by the negligence of Last.fm or its officers, employees or agents or for fraudulent misrepresentations or fraud, or any other liability that cannot be limited or excluded by applicable law.
+6.2
+
+Last.fm gives no warranties of any kind, whether express, implied, statutory or otherwise, to the fullest extent permitted by law, including warranties of satisfactory quality, fitness for purpose and non infringement in relation to the last.fm site or the last.fm data.
+6.3
+
+To the extent permitted by applicable law, you acknowledge and agree that you use the last.fm site and the last.fm data at your own risk. the last.fm data and the last.fm site is made available on an "as is" basis and last.fm shall not be liable for the unavailability of the last.fm data or the last.fm site or any fault, defect or error in the last.fm data.
+6.3.1
+To the extent permitted by applicable law, last.fm shall not be liable to you for any losses of any kind arising under or in relation to your use of the last.fm site or last.fm data, including but not limited to (i) any loss of profits, business, contracts, anticipated savings, goodwill, or revenue; or (ii) any loss or corruption of data; or (iii) consequential loss or damage whatsoever, whether or not such losses or damages arise directly or indirectly and even if either party was aware of the possibility of such loss or damage.
+7. Licence to use Last.fm trade marks
+7.1
+
+Subject to the prior written approval of Last.fm in each case, Last.fm may make available to You certain trade marks, logos or graphics ("Marks") for use in conjunction with Your use of the Last.fm Data. You must comply with the Last.fm Brand Guidelines that can be downloaded from http://www.last.fm/resources/. Your use of the Marks in accordance with in accordance with this Agreement is conditional upon You not using any of the Marks: (i) to represent that Last.fm endorses, sponsors or is connected to Your use of the Last.fm Data, other than to inform third parties that the Last.fm Data originated from Last.fm; or (ii) in any way that is derogatory to or critical of Last.fm or any officer, director, agent, employee, affiliate, parent or subsidiary of Last.fm.
+7.2
+
+Last.fm is the worldwide owner of the Marks (whether registered or unregistered) and retains all right, title and interest in and to the Marks. Any and all goodwill arising from Your use of the Marks shall accrue to Last.fm. You will not copy or use the Marks in any way not authorised by Last.fm in writing or this Agreement. You will abide by any and all conditions set out by Last.fm in connection with Your use of the Marks and must not challenge the validity of the Marks or attempt to register similar or trade marks, service marks or logos.
+7.3
+
+Last.fm reserves the right to withdraw its consent for You to use the Marks at any time. Upon withdrawal of consent, You shall immediately discontinue Your use of the Marks.
+8. Publicity
+8.1
+
+Last.fm may, at any time in its sole discretion, prepare and issue press releases, statements, and promotional and other materials mentioning and/or describing Your use of the Last.fm Data and identifying You as the developer and otherwise describing the relationship between You and Last.fm.
+8.2
+
+You are not permitted to issue any publicity in connection with Your use of the Last.fm Data without the prior written consent of Last.fm.
+9. Term and Termination
+9.1
+
+This Agreement shall continue on an ongoing basis during the Term, subject to any earlier termination pursuant to clause 9.2.
+9.2
+
+You may terminate this Agreement at any time by sending an email to partners@Last.fm which shall be deemed to have been given on the date that the email is read by Last.fm (evidenced by a read receipt automatically sent to You). You acknowledge and agree that Last.fm may at any time in its sole discretion, without liability and with or without cause terminate this Agreement and/or terminate, restrict, block, disable or suspend Your access to the Last.fm Site or the Last.fm Data or any portion or feature of any of them.
+9.3
+
+Upon any termination of this Agreement, You must immediately discontinue Your use of the Last.fm API and as soon as reasonably possible delete all Last.fm Data in Your possession or control. Clauses 2.3, 2.4, 2.5, 2.6, 4.2.2, 5, 6, 7, 8 and 10 and any definitions that are necessary to give effect to such Clauses will survive any termination of Your use of the Last.fm Site or Last.fm Data and will continue to bind You and Last.fm in accordance with this Agreement.
+10. General
+10.1
+
+Last.fm reserves its right to amend this Agreement or any other document referenced in this Agreement at any time in its sole discretion by sending a new or amended version of this Agreement to You by email and by posting new or updated Last.fm Site Terms of Use and/or the Privacy Policy on the Last.fm Site.
+10.2
+
+Nothing in this Agreement shall be construed as constituting a partnership, joint venture or relationship of employer and employee between the parties.
+10.3
+
+This Agreement (and any other document incorporated into this Agreement by reference) sets out the entire agreement and understanding between You and Last.fm and supersedes all previous agreements, representations and arrangements between You and Last.fm (either oral or written). Nothing in this Clause shall limit or exclude any liability for fraudulent misrepresentation.
+10.4
+
+This Agreement will be binding upon and inure to the benefit of the parties and their respective successors and assigns.
+10.5
+
+Each of Last.fm's affiliates are express and intended third party beneficiaries of this Agreement and may enforce any of its terms and exercise any of the rights to the same extent as Last.fm.
+10.6
+
+Third party advertisers, technology providers and service providers are express and intended third-party beneficiaries of Clause 4.3 and are entitled to directly enforce their rights hereunder.
+10.7
+
+This Agreement shall be governed by the laws of England and the parties agree to submit to the exclusive jurisdiction of the Courts of England.
+10.8
+
+Except as set out at Clauses 10.6 and 10.7 above, nothing in this Agreement is intended to confer on any third party (whether referred to in this Agreement by name, class, description or otherwise) any benefit or any right under any legislation in any country to enforce any provision of this Agreement.
+
+THIS AGREEMENT SETS OUT THE CONDITIONS OF LAST.FM GIVING YOU ACCESS TO LAST.FM DATA ONLY. IF YOU ARE UNSURE ABOUT ANY PART OF THIS AGREEMENT, LAST.FM RECOMMENDS THAT YOU OBTAIN INDEPENDENT LEGAL ADVICE. 

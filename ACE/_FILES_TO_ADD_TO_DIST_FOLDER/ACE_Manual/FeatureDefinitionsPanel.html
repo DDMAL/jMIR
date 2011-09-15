@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+<head>
+	<title>Feature Definitions Panel</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Feature Definitions Panel</FONT></TH>
+
+    </TR></TBODY>
+</TABLE>
+
+<p><strong>Overview</strong>
+<blockquote>
+<p>The Feature Definitions Panel represents the contents of an ACE XML feature definitions file. 
+This panel allows users to view, edit, load and save feature definitions. This information relates
+to features themselves, not to actual feature values extracted from features. The <i>Instances 
+Panel</i> should be consulted if one wishes to view
+extracted feature values.</p>
+<p>The features are displayed in table form. This table may be sorted based
+ on the contents of a given column by clicking on the appropriate column
+ heading. The contents of any row may be changed by double clicking on any
+ entry on the table (or clicking once, in the case of check boxes). Columns
+ may also be reordered by dragging their headings. All features must have
+ unique names and must have at least 1 dimension. Any attempt to enter invalid
+ entries will be rejected by the system.</p>
+</blockquote>
+
+<p><strong>Screen Shot</strong></p>
+<blockquote>
+<p><img src="images/FeaturesPanel.png" ></p>
+</blockquote>
+
+<p><strong>Panel Contents</strong></p>
+<blockquote>
+<p>The <i>Name</i> column specifies the name of a feature. The
+ <i>Dimensions</i> column indicates the number of separate values that are
+ stored each time the given feature is extracted. The <i>Sequential</i> column
+ specifies whether a feature can be applied to sub-section of a data set (e.g.
+ a window of audio). A value of true means that it can, and a value of false
+ means that the feature may only be extracted once per data set. The
+ <i>Description</i> column provides a brief description of each feature.
+ 
+ <p>The status bar displays the total number of loaded feature definitions,
+ including information on how many of them are multi-dimensional and how many
+ of them are sequential.
+ 
+ <p>The <i>View Descriptions</i> button causes the descriptions of each
+ feature selected on the table to be displayed in a separate dialog box.
+ 
+ <p>The <i>Add Feature</i> button causes a new feature to be added to the end
+ of the table. It is given a unique name.
+ 
+ <p>The <i>Delete Features</i> button causes all selected features to be
+ deleted from the table.
+ 
+ <p>The <i>Load Features</i> button loads a feature_key_file ACE XML file into
+ memory and displays it. This overwrites any existing feature definitions.
+ 
+ <p>The <i>Save Features</i> button saves the currently loaded feature
+ definitions into the path referred to in the <i>File Path Settings</i> dialog
+ box as a feature_key_file ACE XML file. The <i>Save As</i> button allows the
+ user to choose the path to  which the file is to be saved and updates the
+ path in the <i>File Path Settings</i> dialog box.
+</blockquote>
+
+<p><strong>Questions and Comments</strong></p>
+<blockquote> 
+  <p><a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a></p>
+</blockquote>
+<TABLE width="100%" height=5 border=0 bgColor=#0033C4>
+  <TBODY>
+    <TR>
+      <TH></TH>
+    </TR>
+  </TBODY>
+
+</TABLE>
+<p><a href="http://sourceforge.net/projects/jmir/files/" target="top">DOWNLOAD 
+  FROM SOURCEFORGE</a></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

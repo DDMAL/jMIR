@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+<head>
+	<title>ACE Zip File</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>ACE Zip File</FONT></TH>
+
+    </TR></TBODY>
+</TABLE>
+
+<p><strong>Overview</strong></p>
+
+<blockquote> 
+  <p>The ACE zip file contains all component files of an ACE project. As opposed to the
+	<a href = "ProjectFile.html">ACE XML project file</a>, which only stores reference to the component files of an ACE 
+	project, the ACE zip file contains the actual 
+	<a href = "ACE_XML.html">ACE XML files</a> themselves. Similarly 
+	to the ACE project file, the ACE zip file allows the user to load an ACE project with 
+	with only one file. The ACE zip file is also convenient for sharing and storing an ACE
+	project. For a detailed explanation of how to load an ACE project from an ACE zip file,
+	using either the zip command line or GUI, see the <a href = "ACEManual.html">ACE manual</a>. </p>
+</blockquote>
+<p><strong>Details of ACE Zip File</strong></p>
+<blockquote> 
+  <p>The compression of an ACE zip file is performed using the java.utils.zip package. When
+	ACE saves an a zip file, the specified component ACE XML files will be 
+	compressed, as well as two extra files: an 
+	<a href = "ProjectFile.html">ACE XML project file</a> and a special file 
+	with the extension ".sp" that are automatically written by ACE. The project file 
+	will specify the paths to the files being compressed in the zip file. The .sp file will 
+	have the same base file name as the project file and will contain only one line of text
+	specifying the name of the project file for this ACE zip file. The purpose of this .sp
+	file is to give ACE a way of identifying the ACE XML project file when unzipping an 
+	ACE zip file. Once ACE can parse the ACE XML project file, it is able to associate 
+	each ACE XML file in the ACE zip file with the appropriate ACE datatype (Taxonomy, 
+	FeatureDefinition, DataSet, and SegmentedClassification) and hereby load the project.</p>
+	
+	<p>For more information about how to create and use ACE Zip files, please refer to the 
+	<a href="ACEManual.html#ZIP">Zip Utilities</a> section of the ACE Manual. 
+</blockquote>
+<p><strong>Related Publications</strong></p>
+<blockquote> 
+  <p>McKay, C., R. Fiebrink, D. McEnnis, B. Li, and I. Fujinaga. 2005. <a href="publications/ISMIR_2005_ACE.pdf">ACE: 
+    A framework for optimizing music classification</a>. <em>Proceedings of the 
+    International Conference on Music Information Retrieval</em>. 42&#8211;9.</p>
+
+</blockquote>
+
+<p><strong>Questions and Comments</strong></p>
+<blockquote> 
+  <p><a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a></p>
+</blockquote>
+<TABLE width="100%" height=5 border=0 bgColor=#0033C4>
+  <TBODY>
+    <TR>
+      <TH></TH>
+    </TR>
+  </TBODY>
+
+</TABLE>
+<p><a href="http://sourceforge.net/projects/jmir/files/" target="top">DOWNLOAD 
+  FROM SOURCEFORGE</a></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

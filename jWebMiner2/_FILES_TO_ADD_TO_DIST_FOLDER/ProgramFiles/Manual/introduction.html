@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>Introduction</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Introduction</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p>jWebMiner is an open source software system for automatically extracting cultural 
+  features from the web for use in classifying and/or measuring similarity between 
+  text terms. It is designed with the particular needs of music research in mind, 
+  but may easily be used in many other areas of research.</p>
+<p>At its most basic level, the software operates by using web services to extract 
+  hit counts from search engines. Functionality is available for calculating a 
+  variety of statistical features based on these counts, for variably weighting 
+  web sites or limiting searches only to particular sites, for excluding hits 
+  that do or do not contain particular filter terms, for defining synonym relationships 
+  between search strings, and for applying a number of additional search configurations. 
+  A particular emphasis has also been placed on extensibility so that new functionality 
+  can be easily added.</p>
+<p>jWebMiner can parse terms from newline delimited text files, from class names 
+  found in <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target=top>Weka 
+  ARFF</a> or <a href="http://jmir.sourceforge.net/index_ACE_XML.html" target="top">ACE 
+  XML</a> files, or from a variety of different fields of <a href="http://www.apple.com/itunes/" target=top>Apple 
+  iTunes</a> XML files. They can also be entered manually by the user into the 
+  jWebMiner GUI.</p>
+<p>Detailed results and configuration records can be saved in HTML reports. Final 
+  feature values can also be exported to <a href="http://jmir.sourceforge.net/index_ACE_XML.html" target="top">ACE 
+  XML</a>, <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target=top>Weka 
+  ARFF</a> or newline delimited text files.</p>
+<p>jWebMiner was developed as part of the <a href="http://jmir.sourceforge.net/" target="top">jMIR</a> 
+  music classification and similarity analysis software suite, and may be used 
+  either as part of this suite or independently.</p>
+<p>An academic summary of jWebMiner is available in this paper from the <a href="McKay2007jWebMiner.pdf">2007 International Conference on Music Information Retrieval</a>. Note that this publication may be viewed using any web browser, but not directly from jWebMiner's on-line help.</p>
+<p>Please contact Cory McKay at <a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a> 
+  with any bug reports or questions relating to either jWebMiner or jMIR in general.</p>
+<p><strong>Summary of the Software's Functionality</strong></p>
+<p>The following list highlights some of the key functionality of the jWebMiner software:</p>
+<ul>
+  <li>Ability to automatically formulate and perform large numbers of queries.</li>
+  <li>Ability to automatically process hit counts into feature values using one of six different scoring functions and four different types of normalization.</li>
+  <li>Ability to save feature values as <a href="http://jmir.sourceforge.net/index_ACE_XML.html" target="top">ACE 
+  XML</a>, <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target=top>Weka ARFF</a> or newline delimited text files to facilitate post-processing.
+  <ul><li>Feature values and other reports can also be saved as HTML files to facilitate human readability.</ul></li>
+  <li>Ability to perform both co-occurrence oriented queries (formulating queries using all possible pairs of search strings from one set of search strings) and cross tabulation oriented queries (formulating queries using each search string from one set of search strings paired with each possible search string from another set of search strings).</li>
+  <li>Ability to use multiple web services to perform queries and combine the results across web services.</li>
+  <li>Ability to define synonyms between different search strings so that they will be considered equivalent and their results will be combined.</li>
+  <li>Ability to specify required filter words that must be present in a web page in order for it to be counted as a hit.</li>
+  <ul><li>Pattern-based required filter words may also be used. These are formulated using the primary and/or secondary search string specific to each particular query.</li></ul>
+  <li>Ability to specify excluded filter words that may not be be present in a web page in order for it to be counted as a hit.</li>
+  <li>Ability to limit searches to specific sites as well as or instead of the whole available network.</li>
+  <ul><li>Relative weightings taken into account during feature calculation may also be assigned to specific sites and/or the whole available network.</li></ul>
+  <li>Ability to set a variety of additional parameters that influence search results.</li>
+  <ul><li>These include whether queries are treated as literal, whether pairs of strings are searched using a boolean OR or a boolean AND, whether non-matching similar hits are counted, whether similar hits are suppressed, whether adult content is suppressed, language filters, country filters, file type filters and the ability to specify which web service(s) are used and which regional servers they use.</li></ul>
+  <li>Both feature values and a variety of intermediate reports can be automatically generated in HTML format.</li>
+  <ul><li>Intermediate reports can include tabulated hit counts for all queries submitted to all web services (including separate values for different web services and/or web sites), these hit counts after each stage of processing, the actual queries submitted to each web service and the details of the search parameters used.</li></ul>
+  <li>A search dialog box that allows users to perform probe searches using various search configurations in order to view the actual pages returned as well as the hit counts. Results for different web services are shown side by side.</li>
+  <ul><li>This, along with the intermediate reports, can be useful in debugging when experimenting with the best search parameterization for a particular task or when extending the software's functionality.</li></ul>
+  <li>Ability to load and save settings for search strings, synonyms, filter words, site limitations and site weightings.</li>
+  <li>Easy-to-use GUI-based interface that makes it easy to set search parameters.</li>
+  <li>Complete user manual.</li>
+  <li>Extensible software architecture and well-documented code.</li>
+</ul>
+<p><strong>Overview of the Manual</strong></p>
+<p>This manual may be viewed either with jWebMiner's online help or via any web 
+  browsing application (e.g. <a href="http://www.mozilla.com/en-US/" target="top">Mozilla 
+  Firefox</a>). The latter option is preferable, as the jWebMiner online help 
+  display is not a fully equipped browser, and may not display external sites 
+  linked to by this manual as well as a full-fledged browser.</p>
+<p>This manual is divided into a number of sections, as can be seen on the contents 
+  bar on the left. The <a href="installation.html">Installation</a> section gives 
+  instructions on installing jWebMiner and the <a href="running.html">Using the 
+  Software</a> section gives instructions on how to run it. The <a href="tutorial.html">Tutorial</a> 
+  section provides a brief tour of the software that users can follow in jWebMiner 
+  using provided sample files, and provides an illustration of how the different 
+  parts of the interface are used together.</p>
+<p>The jWebMiner interface is divided into several panels that may be accessed 
+  via tabs below the <a href="menus.html">menu bar</a>. Each of these panels is 
+  described in a separate section in this manual, as described below. The <a href="menus.html">menu 
+  bar</a> itself allows access to help functionality as well as to the <a href="network_search_dialog.html">Network 
+  Search Dialog</a>, which allows users to perform side by side searches using 
+  multiple web services and see the details of the returned hits. The EXTRACT 
+  FEATURES button appears below all of the panels, and it initiates feature extraction 
+  using the setting in each of the panels.</p>
+<p>The <a href="search_words_panel.html">Search Words Panel</a> allows the user 
+  to choose the the text phrases (strings) that feature extraction is to be based 
+  on, to define synonyms amongst these strings and to decide whether the extraction 
+  is to involve co-occurrence or cross-tabulation analysis. The <a href="required_filter_words_panel.html">Required 
+  Filter Words Panel</a> allows users to specify strings that must be present 
+  on a page in order for it to be counted as a hit and the <a href="excluded_filter_words_panel.html">Excluded 
+  Filter Words Panel</a> allows them to specify words that may not be present 
+  if it is to be counted as a hit. The <a href="site_weightings_panel.html">Site 
+  Weightings Panel</a> allows users to specify specific sites that will be searched 
+  (including the possibility of the entire available network) and to set variable 
+  weighting schemes that will give particular sites greater influence than others 
+  on the final feature values. The <a href="options_panel.html">Options Panel</a> 
+  allows users to select amongst a variety of preferences. Finally, the <a href="results_panel.html">Results 
+  Panel</a> shows the results of feature extractions, which may include a wide 
+  variety of information, depending on the settings in the <a href="options_panel.html">Options 
+  Panel</a>. The <a href="results_panel.html">Results Panel</a> may also be used 
+  to save the results in a variety of file formats.</p>
+<p>A section providing <a href="hints.html">hints and suggestions</a> is also 
+  available to give ideas on how to use jWebMiner in such a way that results will 
+  be optimized, and an additional section provides a description of <a href="known_issues.html">known 
+  problems and solutions</a>.</p>
+<p>Finally, this manual includes a section describing the <a href="licenses.html">licenses</a> 
+  under which this software can be used and distributed, a section describing 
+  <a href="version_updates.html">version updates</a> and a section providing <a href="contact.html">contact 
+  information</a> for help requests and bug reports. There is also a section providing 
+  guidelines on <a href="extending.html">extending the software</a> for those 
+  interested in expanding and/or customizing jWebMiner.</p>
+<p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

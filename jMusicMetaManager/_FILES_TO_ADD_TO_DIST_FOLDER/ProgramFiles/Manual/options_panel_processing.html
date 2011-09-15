@@ -1,0 +1,285 @@
+<html>
+<head>
+	<title>Introduction</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Options Panel Processing 
+        Options </FONT></TH>
+    </TR></TBODY>
+</TABLE>
+
+<p>This section of the <a href="options_panel.html">Options Panel</a> allows the 
+  user to control the parameters of the processing that will be used to detect 
+  metadata errors in a music collection. These options are found on the left side 
+  of the <a href="options_panel.html">Options Panel</a>. This section is itself 
+  divided into four sub-sections:</p>
+<p><strong>1) Find/Replace Settings</strong></p>
+<p>This set of preferences allows the user to decide which find/replace operations 
+  are to be performed as part of the process of detecting probable metadata errors. 
+  All of the options in the Find/Replace section will be bypassed if the <em>Perform 
+  find/replace operations</em> option is deselected.</p>
+<p>One of the primary functions of jMusicMetaManager is to detect different field 
+  values that should in fact be the same. As an example of how find/replace operations 
+  can be useful, artist field values of &#8220;REM&#8221; and &#8220;R.E.M.&#8221; 
+  should likely be identical. Having the <em>Remove all period</em>s option enabled 
+  would cause all relevant metadata fields to have all periods removed, thus making 
+  it possible to detect this probable error.</p>
+<p>All operations in this section are performed in the order that they are listed 
+  and are cumulative. For example, the <em>Convert &#8220; and &#8221; to &#8220; 
+  &amp; &#8221;</em> option will convert &#8220; And &#8221; to &#8220; &amp; 
+  &#8221; if (and only if) the <em>Treat upper/lower case as identical </em>option 
+  is selected as well. This is because this latter option occurs before the <em>Convert 
+  &#8220; and &#8221; to &#8220; &amp; &#8221;</em> option (&#8220;A&#8221; must 
+  first get converted to &#8220;a&#8221;).</p>
+<p>The operations in this <em>Find/Replace Settings</em> section are performed 
+  before any reordered word subset operations (with one exception described below) 
+  or edit distance operations selected in the <em>Reordered Word Subset Settings</em> 
+  and <em>Edit Distance Settings</em> sections respectively. Find/replace operations 
+  are also carried through to these two groups of processing tasks. So, for example, 
+  if spaces are removed because the <em>Remove all spaces</em> option is selected, 
+  then edit distances will all be calculated on field entries that have had spaces 
+  removed.</p>
+<p>Also, note that any field values (other than titles) found to be identical 
+  during find/replace processing will be merged before proceeding to reordered 
+  word subset or edit distance processing.</p>
+<p>The options in this section are only relevant to the reports in the <em>Reports 
+  Describing Detailed Processing Results</em> and <em>Summaries of Probable Errors 
+  in Metadata</em> sections of the <a href="report_panel.html">Report Panel</a>. 
+  All other reports are generated before any find/replace operations are performed.</p>
+<p>These find/replace operations are performed on the Title, Artist, Composer, 
+  Album and Genre fields. However, each of these fields will be excluded if a 
+  <a href="options_panel_reports.html">report option</a> corresponding to a given 
+  field is not selected in the <em>Summaries of Probable Errors in Metadata</em> 
+  section.</p>
+<p>Details on the results of find/replace processing can be viewed in the <em>Fields 
+  differing only in case</em>, <em>Detailed replacements made</em> and <em>Newly 
+  identical fields after find and replace</em> reports of the <a href="report_panel.html">Report 
+  Panel</a>.</p>
+<p>The specific options in this section are as follows:</p>
+<ul>
+  <li><strong>Perform find/replace operations:</strong> Whether or not the operations 
+    in this section are to be performed. If this option is deselected, then none 
+    of the operations in this find/replace section will be performed, regardless 
+    of their individual settings.</li>
+  <li><strong> Treat upper/lower case as identical: </strong>Whether or not two 
+    otherwise identical letters of a different case are considered to be the same. 
+    This is implemented by converting all upper case letters to lower case.</li>
+  <li><strong>Remove numbers and spaces at beginning of titles:</strong> Whether 
+    or not all spaces and/or numbers before the first non-space and non-number 
+    character are removed.</li>
+  <li><strong> Convert &#8220;in&#8217;&#8221; to &#8220;ing&#8221;: </strong>Whether 
+    or not all occurrences of &#8220;in&#8217;&#8221; are converted to &#8220;ing&#8221;.</li>
+  <li><strong> Convert personal titles to abbreviations: </strong>Whether or not 
+    the following conversions are made: &#8220;Mister &#8221; to &#8220;Mr. &#8221;, 
+    &#8220;Doctor &#8221; to &#8220;Dr. &#8221; and &#8220;Professor &#8221; to 
+    &#8220;Prof. &#8221;.</li>
+  <li><strong> Remove all periods:</strong> Whether or not all periods are removed.</li>
+  <li><strong>Remove all commas: </strong>Whether or not all commas are removed.</li>
+  <li><strong>Remove all hyphens: </strong>Whether or not all hyphens are removed.</li>
+  <li><strong>Remove all colons: </strong>Whether or not all colons are removed.</li>
+  <li><strong>Remove all semicolons: </strong>Whether or not all semicolons are 
+    removed.</li>
+  <li><strong>Remove all quotation marks:</strong> Whether or not all quotation 
+    marks are removed.</li>
+  <li><strong>Remove all single quotes and apostrophes:</strong> Whether or not 
+    all apostrophes and single quotes are removed.</li>
+  <li><strong>Remove all brackets:</strong> Whether or not all parentheses, square 
+    brackets and curly braces are removed.</li>
+  <li><strong>Convert &#8220; and &#8221; to &#8220; &amp; &#8221;</strong>: Whether 
+    or not all occurrences of &#8220; and &#8221; are converted to &#8220; &amp; 
+    &#8221;.</li>
+  <li><strong>Remove all occurrences of &#8220;the &#8221;:</strong> Whether or 
+    not all occurrences of &#8220;the &#8221; are removed.</li>
+  <li><strong>Remove all spaces:</strong> Whether or not all spaces are removed.</li>
+</ul>
+<p><strong>2) Reordered Word Subset Settings</strong></p>
+<p>This set of preferences allows the user to decide which reordered word subset 
+  operations are to be performed as part of the process of detecting probable 
+  metadata errors, as well as what parameters are to be used.</p>
+<p>One of the primary functions of jMusicMetaManager is to detect different field 
+  values that should in fact be the same. As an example of how reordered word 
+  subset operations can be useful, artist field values of &#8220;Ella Fitzgerald&#8221; 
+  and &#8220;Fitzgerald Ella&#8221; should likely be identical, as should &#8220;Duke 
+  Ellington&#8221; and &#8220;Duke Ellington &amp; His Orchestra&#8221;. Reordered 
+  word subset operations are useful in detecting cases where one field value should 
+  likely be identical to another, but where the words in one value are a subset 
+  of the words in the other and/or the words are out of order.</p>
+<p>Reordered word subset operations operate by first tokenizing fields into words 
+  and then performing appropriate comparisons. These operations treat each word 
+  as a single unit, and cannot be used to detect errors within words. The edit 
+  distance operations in the <em>Edit Distance Settings</em> section are useful 
+  for this latter type of error. Having processing that treats words as fixed 
+  units as well as processing that treats each character separately makes jMusicMetaManager 
+  more flexible, and has been found experimentally to provide better results in 
+  terms of false positives when searching for probable metadata errors.</p>
+<p>The operations in this section are performed in the order that they are listed 
+  and are cumulative. They are performed after all find/replace operations described 
+  in the <em>Find/Replace Settings</em> section have been performed, with the 
+  notable exception of the <em>Remove all spaces</em> operation, which is performed 
+  immediately after the operations in this section if it is selected. Reordered 
+  word subset operations are performed before any selected edit distance operations 
+  in the <em>Edit Distance Settings</em> section, so any field values found to 
+  be identical at this stage of processing (other than titles) will be merged 
+  before proceeding to edit distance calculations. Similarly, the field values 
+  processed during reordered word subset operations reflect the results of all 
+  find/replace operations, and all fields found to be identical during find/replace 
+  operations (other than titles) will already have been merged before they undergo 
+  reordered word subset processing.</p>
+<p>The options in this section are only relevant to the reports referred to in 
+  the <em>Reports Describing Detailed Processing Results</em> and <em>Summaries 
+  of Probable Errors in Metadata</em> sections found on the <a href="options_panel_reports.html">right 
+  side of the Options Panel</a>. All other reports are generated before reordered 
+  word subset operations are performed.</p>
+<p>Reordered word subset operations operations are performed on the Title, Artist, 
+  Composer, Album and Genre fields. However, each of these fields will be excluded 
+  if a report option corresponding to a given field is not selected in the <em>Summaries 
+  of Probable Errors in Metadata</em> section on the <a href="options_panel_reports.html">right 
+  side of the Options Panel</a>.</p>
+<p>Details on the results of reordered word subset operations processing can be 
+  viewed in the <em>Fields with scrambled word orderings</em> and <em>Fields whose 
+  words are subsets of another</em> reports found in the <a href="report_panel.html">Report 
+  Panel</a>.</p>
+<p>The specific options in this section are as follows:</p>
+<ul>
+  <li><strong>Check word ordering: </strong>Whether or not a check is performed 
+    to see if two fields should in fact be identical, but are not because the 
+    words are out of order. The <em>Min % Matches (1-100)</em> text box allows 
+    the user to set the minimum percentage of words that must match between two 
+    field values, regardless of order, in order for the values to be considered 
+    intended to be identical. The denominator used in the calculation of this 
+    percentage, unlike the denominator in the <em>Check word subsets </em>option, 
+    is the number of words in the field with the largest number of words. An integer 
+    between 1 and 100 must be entered in this text box.</li>
+  <li><strong>Check word subsets:</strong> Whether or not a check is performed 
+    to see if two fields should in fact be identical, but are not because the 
+    words in one are a subset of the words in the other, and are also potentially 
+    out of order. The <em>Min % Matches (1-100) </em>text box allows the user 
+    to set the minimum percentage of words that must match between two field values, 
+    regardless of order, in order for the values to be considered intended to 
+    be identical. The denominator used in the calculation of this percentage, 
+    unlike the denominator in the <em>Check word ordering</em> option, is the 
+    number of words in the field with the fewer number of words. An integer between 
+    1 and 100 must be entered in this text box.</li>
+</ul>
+<p><strong>3) Edit Distance Settings</strong></p>
+<p>This set of preferences allows the user to decide which edit distance settings 
+  are to be used as part of the process of detecting probable metadata errors.</p>
+<p>Edit distance, also known as Levenshtein distance, is a measure of the difference 
+  between two strings that is often used in information theory and computer science. 
+  It is defined as the minimum number of operations needed to transform one given 
+  string into another given string. A single operation can consist of inserting, 
+  deleting or substituting a single character.</p>
+<p>One of the primary functions of jMusicMetaManager is to detect different field 
+  values that should in fact be the same. Edit distance is a particularly useful 
+  way of detecting differences in spelling, due either to misspellings, as in 
+  the case of &#8220;Lynyrd Skynyrd&#8221; and &#8220;Leonard Skinard&#8221;, 
+  for example, or due to multiple valid spellings of names uch as &quot;Stravinski&quot;.</p>
+<p>The operations in this section are performed in the order that they are listed 
+  and are cumulative. They are also performed after all find/replace and reordered 
+  word subset operations described in the <em>Find/Replace Settings</em> and <em>Reordered 
+  Word Subset Settings</em> sections have been performed. The field values for 
+  which edit distances are found therefore reflect the results of all find/replace 
+  operations, and all field values (except titles) found to be identical during 
+  find/replace or reordered word subset operations will already have been merged 
+  before they undergo edit distance processing.</p>
+<p>The options in this section are only relevant to the reports in the <em>Reports 
+  Describing Detailed Processing Results</em> and <em>Summaries of Probable Errors 
+  in Metadata</em> sections of the <a href="options_panel_reports.html">right 
+  side of the Options Panel</a>. All other reports are generated before edit distance 
+  operations are performed.</p>
+<p>Edit distance operations are performed on the Title, Artist, Composer, Album 
+  and Genre fields. However, each of these fields will be excluded if a report 
+  option corresponding to a given field is not selected in the <em>Summaries of 
+  Probable Errors in Metadata</em> section of the <a href="options_panel_reports.html">right 
+  side of the Options Panel</a>.</p>
+<p>Details on the results of edit distance calculations can be viewed in the <em>Edit 
+  distances report</em> of the <a href="report_panel.html">Report Panel</a>, although 
+  it is not recommended that this report be generated for large music collections, 
+  as the creation of this report can require significant time and memory. Edit 
+  distance calculations themselved can certainly still be performed even when 
+  this report is not generated.</p>
+<p>The specific options in this section are as follows:</p>
+<ul>
+  <li><strong>Use absolute threshold: </strong>Whether or not pairs of field values 
+    that have an edit distance equal to or below a fixed edit distance are considered 
+    to be identical. This fixed threshold of operations is determined by the entry 
+    in the <em>Max (1-75)</em> text box, which must contain an integer between 
+    1 and 75.</li>
+  <li><strong> Use proportional threshold:</strong> Whether or not pairs of field 
+    values that have an edit distance equal to or below a proportional edit distance 
+    are considered to be identical. This proportional threshold is determined 
+    by the entry in the <em>Max % (1-99)</em> text box, which must contain an 
+    integer between 1 and 99. The proportional threshold is calculated by dividing 
+    the edit distance by the length of the longer field.</li>
+  <li><strong> Use subset threshold: </strong>Whether or not pairs of field values 
+    that have an edit distance equal to or below a subset edit distance are considered 
+    to be identical. This subset threshold is determined by the entry in the <em>Max 
+    % (1-99)</em> text box, which must contain an integer between 1 and 99. The 
+    subset threshold is calculated by subtracting the difference in length of 
+    the field values from the edit distance, and then dividing the difference 
+    by the length of the shorter field.</li>
+</ul>
+<p><strong>4) Duplicate Recording Detection Settings</strong></p>
+<p>One of the primary functions of jMusicMetaManager is to detect redundant multiples 
+  of the same recording. The preferences in this section make it possible for 
+  the user to control the paramters of the processing used to prevent false redundancies 
+  from being reported.</p>
+<p>It is expected that metadata fields such as Artist, Composer, Genre and Album 
+  will include multiples of the same field value. For example, all tracks in a 
+  given album should have the same value for the Album field. jMusicMetaManager 
+  therefore puts an emphasis on finding values of such fields that should be the 
+  same but are not.</p>
+<p>The situation is somewhat different for the Title field, however. Although 
+  it is also important to find titles that should be the same but are not, it 
+  is also important to give special attention to titles that do in fact have the 
+  same name. Such duplicates could be due to different versions of the same song, 
+  which might be desirable, or they could be due to identical copies of the same 
+  recording, which might not be desirable.</p>
+<p>It is therefore useful to further consider titles that have the same or similar 
+  names rather than just merging them, as is done for the Artist, Composer, Genre 
+  and album fields. jMusicManager constructs a list of all clusters of recordings 
+  with the same or similar titles, and then filters them based on the settings 
+  of this section. The goal of this is to report only those similar titles that 
+  are close enough in specified ways to likely be redundant multiples of the same 
+  recording.</p>
+<p>The filters in this section are applied in the order that they are listed and 
+  are cumulative. They are applied after all selected operations in the in the 
+  <em>Find/Replace Settings, Reordered Word Subset Settings</em> and <em>Edit 
+  Distance Setting</em>s sections have been performed. The clusters of titles 
+  that are the same or likely to be the same are constructed as find/replaced, 
+  reordered word subset and edit distance operations are performed. </p>
+<p>The options in this section are only relevant to the <em>Probable duplicates 
+  of the same recording</em> report in the <a href="report_panel.html">Report 
+  Panel</a>.</p>
+<p>The specific options in this section are as follows:</p>
+<ul>
+  <li><strong>Filter by duration:</strong> Whether or not two recordings with 
+    sufficiently similar Title field values are eliminated from consideration 
+    as redundant duplicates if they have durations whose difference is less than 
+    the percentage of their lengths specified in the <em>Max % Difference (0-100)</em> 
+    text box. The entry in this text box must be an integer between 0 and 100.</li>
+  <li><strong> Filter by artist: </strong>Whether or not two recordings with sufficiently 
+    similar Title field values are eliminated from consideration as redundant 
+    duplicates if they have different Artist field values.</li>
+  <li><strong> Filter by composer:</strong> Whether or not two recordings with 
+    sufficiently similar Title field values are eliminated from consideration 
+    as redundant duplicates if they have different Composer field values.</li>
+  <li><strong> Filter by genre (at least one common):</strong> Whether or not 
+    two recordings with sufficiently similar Title field values are eliminated 
+    from consideration as redundant duplicates if they do not have at least one 
+    Genre field value in common.</li>
+  <li><strong>Filter by album:</strong> Whether or not two recordings with sufficiently 
+    similar Title field values are eliminated from consideration as redundant 
+    duplicates if they have the <em>the same</em> Album field values. </li>
+</ul>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<html>
+<head>
+	<title>Installation</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Installation</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>EXPLANATION OF THIS SECTION</strong></p>
+<p>This section describes how to access and install jSongMiner onto one's computer, 
+  and includes an outline of some of the files and resources included with the 
+  jSongMiner distribution package. This section also provides details on how to 
+  set up access to certain third-party resources whose licensing requires that 
+  additional steps be performed upon installation in order for jSongMiner to access 
+  their functionality. </p>
+<p> <strong>COMPATIBILITY</strong></p>
+<p>The jSongMiner software is written in <a href="http://www.java.com" target="top">Java</a>, 
+  which means that it can theoretically be run on any system that has the Java 
+  Runtime Environment (JRE) installed on it. It is particularly recommended that 
+  this software be used with Windows XP or CentOS Linux, however, as it was developed 
+  and tested under these operating systems. Although the software should likely 
+  run perfectly well on other versions of Windows, OS X, other Linux distributions, 
+  Solaris or any other operating system with the JRE installed on it, users should 
+  be advised that the software has not yet been fully tested on other platforms, 
+  so difficulties may be encountered.</p>
+<p>This software was developed with version 1.6.0 of the JDK (Java Development 
+  Kit), so it is suggested that the corresponding version or higher of the JRE 
+  be installed on the user's computer.</p>
+<p> <strong>INSTALLING THE JAVA RUNTIME ENVIRONMENT</strong></p>
+<p>If your system already has the JRE installed, as will most typically be the 
+  case, you may skip this section. If not, you will need to install the JRE in 
+  order to run jSongMiner. The JRE can be downloaded for free from the <a href="http://www.java.com" target="top">Java</a> 
+  web site. The JDK includes the JRE.</p>
+<p>When the JRE download is complete, follow the installation instructions that 
+  come with it in order to install it. </p>
+<p> <strong>INSTALLING JSONGMINER</strong></p>
+<p>The jSongMiner software is available at <a href="http://jmir.sourceforge.net" target="top">http://jmir.sourceforge.net</a>. 
+  It is delivered in a zipped file, from which jSongMiner can be extracted using 
+  any of a variety of dearchiving utilities (e.g. ZipGenius).</p>
+<p>There are two versions of jSongMiner, namely the development version and the 
+  user version. The user version contains everything needed to run jSongMiner, 
+  but does not include any source code. The developer version does include source 
+  code.</p>
+<p>The user version unzips into a single directory. Installation simply involves 
+  extracting this directory to any desired disk location. See the section of the 
+  manual on the command line for information on running the program. A file entitled 
+  Manual.html is among the files extracted, and it provides useful information 
+  about the software.</p>
+<p>The developer version presents jSongMiner in the form of a NetBeans project. 
+  Five directories are contained in the zipped distribution file:</p>
+<ul>
+  <li><strong> jSongMiner:</strong> Contains the jSongMiner source and bytecode 
+    files, as well as other NetBeans project documents and general documentation.</li>
+  <li> <strong>ThirdPartyJars: </strong>Contains the distributable third party 
+    software used by jSongMiner. Further information is available in the licenses 
+    section of the manual.</li>
+  <li><strong> UtilityClasses: </strong>General jMIR classes used by jSongMiner, 
+    including source code.</li>
+  <li><strong> ACE:</strong> The jMIR ACE NetBeans project, including source code. 
+    jSongMiner uses some classes from this software.</li>
+</ul>
+<p>Both the user and developer versions of jSongMiner make use of several configuration 
+  and log files, some of which are generated at runtime, and some of which are 
+  provided with the distribution. These are described below.</p>
+<p>Also, regardless of whether the user or developer version of jSongMiner is 
+  used, the licensing agreements of some of the third-party resources accessed 
+  by jSongMiner require that additional free components be downloaded or that 
+  free personal usage keys be acquired from them before they may be used with 
+  jSongMiner. The following sections describe how all such software and usage 
+  keys can be acquired, and how jSongMiner can be configured to use them once 
+  they are obtained. Although it is certainly possible to use jSongMiner without 
+  these components, it is recommended that the effort be made to acquire them, 
+  as they do substantially increase the information made available by jSongMiner.</p>
+<p> <strong>CONFIGURATION AND LOG FILES ASSOCIATED WITH JSONGMINER</strong></p>
+<p>jSongMiner uses several configuration and log files, some of which are distributed 
+  with it, and some of which can be generated at runtime. This section describes 
+  each of these files:</p>
+<ul>
+  <li><strong>jSongMinerConfigs.xml:</strong> This is a configurations file used 
+    to store user settings and keys needed to access web services. It must be 
+    in the same directory as the jSongMiner.jar file. A model file is provided 
+    with the jSongMiner distribution, but the user will very likely want to modify 
+    it before running jSongMiner, as described below. More details are about this 
+    file in general are provided in the <a href="04_configuration_settings_file.html">section 
+    of the manual on the configuration settings file</a>. Note that jSongMiner 
+    auto-generates a default configuration file if a valid one cannot be found, 
+    but this should generally be avoided, as third-party licensing constraints 
+    prevent some important information from being present if when the file is 
+    auto-generated (see below).</li>
+  <li><strong>ENFP_Codegen.sh: </strong>This is a sample script that can be useful 
+    for running the Echo Nest codegen binary under Linux with <a href="http://www.greenstone.org/" target="top">Greenstone</a>, 
+    as it sets up necessary environment variables before running the codegen. 
+    It is run by jSongMiner when jSongMiner wishes to run the codegen binary. 
+    This script is distributed with jSongMiner, but is not needed if the codegen 
+    binary can be run directly (e.g. under Windows). Users are free to write their 
+    own alternative scripts, if desired, but a reference must be placed to it 
+    in the echo_nest_fingerprinting_codegen_run_path setting of the jSongMinerConfigs.xml 
+    file (see below). Note that jSongMiner will run the script referred to here 
+    such that the first command line arguments is the directory holding the codegen 
+    binary, and the remaining command line arguments are the command line arguments 
+    with which the codegen is to be run. </li>
+  <li><strong>proxysettings.cfg:</strong> This is an encrypted file that jSongMiner 
+    will auto-generate to save information needed to access the web through a 
+    proxy server, if necessary. It will be saved in the same directory as jSongMiner.jar 
+    if it is needed. This file is not included in the jSongMiner distribution.</li>
+  <li><strong>artists_so_far.ser:</strong> This is a Java serialized object that 
+    is auto-generated by jSongMiner to store identifiers for artists for which 
+    metadata has already been extracted. The default is to have this file stored 
+    in the same directory as the jSongMiner.jar file, but the artists_already_accessed_file_path 
+    setting in the jSongMinerConfigs.xml file can be changed to select a different 
+    directory (and file name). Note that the user will not need to interact directly 
+    with this file, as it may be reset using various jSongMiner command line or 
+    configuration file settings. This file is not included in the jSongMiner distribution.</li>
+  <li><strong>albums_so_far.ser:</strong> This is a Java serialized object that 
+    is auto-generated by jSongMiner to store identifiers for albums for which 
+    metadata has already been extracted. The default is to have this file stored 
+    in the same directory as the jSongMiner.jar file, but the albums_already_accessed_file_path 
+    setting in the jSongMinerConfigs.xml file can be changed to select a different 
+    directory (and file name). Note that the user will not need to interact directly 
+    with this file, as it may be reset using various command line or configuration 
+    file settings. This file is not included in the jSongMiner distribution.</li>
+</ul>
+<p> <strong>DOWNLOADING AND INSTALLING THE ECHO NEST FINGERPRINTING CODEGEN</strong></p>
+<p>With one exception, all of the third-party libraries used by jSongMiner (see 
+  the <a href="09_licensing.html">section of the manual on licensing</a> for more 
+  details) are distributed with jSongMiner and set up to be automatically accessed 
+  when jSongMiner is run, without any intervention on the part of the user during 
+  jSongMiner installation or at runtime. This one exception is the <a href="http://groups.google.com/group/enmfp" target="top">Echo 
+  Nest codegen binary</a>, which generates fingerprints from audio files that 
+  can then be submitted to the Echo Nest's web services by jSongMiner in order 
+  to identify the audio file. jSongMiner can still perform remote Echo Nest song 
+  identification even without this binary, but this can be a bandwidth intensive 
+  process, so it is better to use the locally installed codegen. Unfortunately, 
+  licensing constraints prohibit the distribution of this codegen with jSongMiner, 
+  so users must download it themselves from the Echo Nest.</p>
+<p>The codegen may be downloaded from <a href="http://groups.google.com/group/enmfp" target="top">http://groups.google.com/group/enmfp</a>, 
+  although users must first request permission from the <a href="http://the.echonest.com/" target="top">Echo 
+  Nest</a>, which is usually freely given (note that version 3.1.2 of the binary 
+  was used during development of jSongMiner 1.0). Once this is done, the ENFP 
+  codegen zip may be downloaded. This will contain separate executables for Windows, 
+  OS X and Linux, as well as C libraries for those who wish to use them.</p>
+<p>Users must follow the installation instructions packaged with the ENFP codegen 
+  in order to ensure that it is properly installed. In particular, note that the 
+  codegen requires that the <a href="http://www.ffmpeg.org" target="top">FFMPEG</a> 
+  executable also be installed (and be made accessible on the system path) in 
+  order to work. For example, under Windows, FFMPEG could be downloaded (e.g. 
+  from <a href="http://www.arachneweb.co.uk/software/windows/avchdview/ffmpeg.html" target="top">http://www.arachneweb.co.uk/software/windows/avchdview/ffmpeg.html</a>) 
+  and then the executable could be added to the path (e.g. C:\Program Files\FFmpeg\win32-static\bin\). 
+  Linked libraries must also be placed such that they are accessible by the codegen. 
+  For example, in Windows, the codegen.dll file could be placed in the same directory 
+  as the codegen.windows.exe executable.</p>
+<p>In practice, it may be easiest under Linux to have jSongMiner run a script 
+  that sets up environmental variables and then itself runs jSongMiner, as is 
+  done by the ENFP_Codegen.sh sample script described above. Whether to do this 
+  or have jSongMiner run the binary directly is left to the discretion of the 
+  user. Either way, information specifying the location of the codegen binary 
+  (and, potentially, the corresponding script) must be entered into the jSongMiner 
+  configuration file, as described below, after the binary is installed.</p>
+<p> <strong>ACQUIRING ECHO NEST AND LAST.FM USAGE KEYS</strong></p>
+<p>An Echo Nest API Key is needed to access any of the Echo Nest services, including 
+  fingerprinting. Licensing constraints prohibit such a key from being packaged 
+  with jSongMiner, however, as each user must obtain their own key. A free key 
+  may be acquired from <a href="http://developer.echonest.com/account/register" target="top">http://developer.echonest.com/account/register</a>.</p>
+<p>A Last.FM API Key is needed to access any of the Last.FM services. Licensing 
+  constraints prohibit such a key from being packaged with jSongMiner, however, 
+  as each user must obtain their own key. A free key must be acquired by first 
+  creating a <a href="https://www.last.fm/join" target="top">Last.FM account</a> 
+  and then applying for an API key. </p>
+<p>Both of these API keys must be entered into the jSongMiner configuration file 
+  when they have been acquired, as described below.</p>
+<p> <strong>UPDATING THE JSONGMINER CONFIGURATION FILE</strong></p>
+<p>Once the user has downloaded and installed all necessary software and acquired 
+  all necessary usage keys, the next step is to set up the jSongMinerConfigs.xml 
+  configuration file to take advantage of them (more information on this file 
+  is available in the <a href="04_configuration_settings_file.html">section of 
+  the manual on the configuration file</a>). This file can be edited with any 
+  text editor. The following changes to the configuration file should be made 
+  at this stage:</p>
+<ul>
+  <li><strong>Echo Nest API Key: </strong>Enter the Echo Nest API key that you 
+    have obtained by following the instructions above in between the &lt;echo_nest_api_key&gt;&lt;/echo_nest_api_key&gt; 
+    XML element tags. For example, if your key is &quot;abc123&quot;, you should 
+    enter &lt;echo_nest_api_key&gt;abc123&lt;/echo_nest_api_key&gt; for this line 
+    in the configuration file.</li>
+  <li><strong>Echo Nest Codegen Run Path: </strong>Enter the path to the Echo 
+    Nest codegen binary (or script used to run it) in between the &lt;echo_nest_fingerprinting_codegen_run_path&gt;&lt;/echo_nest_fingerprinting_codegen_run_path&gt; 
+    XML element tags. For example, if your path is &quot;C:\EchoNest\codegen.windows.exe&quot;, 
+    you should enter &lt;echo_nest_fingerprinting_codegen_run_path&gt;C:\EchoNest\codegen.windows.exe&lt;/echo_nest_fingerprinting_codegen_run_path&gt; 
+    for this line in the configuration file.</li>
+  <li><strong>Echo Nest Codegen Directory:</strong> Enter the path of the directory 
+    holding the Echo Nest codegen directory in between the &lt;echo_nest_codegen_directory&gt;&lt;/echo_nest_codegen_directory&gt; 
+    XML element tags. This is only necessary if a script is being used to run 
+    the binary, and this setting is ignored by jSongMiner if the binary itself 
+    is specified in the echo_nest_fingerprinting_codegen_run_path setting above. 
+    For example, if the binary is run by a script and the binary is in the directory 
+    &quot;/home/myaccount/ENMFP/&quot;, you should enter &lt;echo_nest_codegen_directory&gt;/home/myaccount/ENMFP/&lt;/echo_nest_codegen_directory&gt; 
+    for this line in the configuration file.</li>
+  <li><strong>Last.FM API Key:</strong> Enter the Last.FM API key that you have 
+    obtained by following the instructions above in between the &lt;last_fm_api_key&gt;&lt;/last_fm_api_key&gt; 
+    XML element tags. For example, if your key is &quot;abc123&quot;, you should 
+    enter &lt;last_fm_api_key&gt;abc123&lt;/last_fm_api_key&gt; for this line 
+    in the configuration file.</li>
+</ul>
+<p>If it was not possible to obtain the codegen and/or the the API keys, then 
+  it will be best to disable the corresponding services in the jSongMiner configurations 
+  file. For example, if a Last.FM API key could not be acquired for some reason, 
+  then the enable_last_fm_fingerprinting and save_last_fm_metadata settings should 
+  both be set to &quot;false&quot; in the configuration file. jSongMiner will 
+  still run properly even if this is not done, but this will avoid error messages 
+  indicating that the services could not be accessed.</p>
+<p>The user will observe that there are many other settings that can be changed 
+  in the configuration file. The user may wish to change these now, or may wish 
+  to experiment with them later. Explanations of each of the settings are provided 
+  in the section of the manual on the configuration file.</p>
+<p><strong> RUNNING JSONGMINER</strong></p>
+<p>Once the installation instructions provided above have been completed, the 
+  user may then run jSongMiner. Instructions on how to run jSongMiner are included 
+  in the <a href="03_command_line_arguments.html">section of the manual on the 
+  jSongMiner command line arguments</a>.</p>
+<p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

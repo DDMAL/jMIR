@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE type=text/css></STYLE>
+
+<META content="MSHTML 6.00.6000.16481" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#0033c4 aLink=#0033c4 link=#0033c4 bgColor=#e4e4e4><A 
+name=Top></A>
+<TABLE 
+ 
+cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033c4 border=0 
+>
+  <TBODY>
+  <TR 
+   
+  border="0" >
+    <TH align=left><FONT face=Arial color=#ffffff size=+3>Required Filter 
+      Words Panel</FONT></TH></TR></TBODY></TABLE>
+<P>The <EM>Required Filter Words Panel </EM>is a GUI panel allowing users to enter 
+  strings that must be found on a site in order for it to be counted as a hit 
+  during feature extraction. These strings are in addition to search strings entered 
+  in the <A href="search_words_panel.html">Search Words Panel</A>&nbsp;themselves, 
+  and these required filter strings apply to all searches. Both basic and pattern-based 
+  filter phrases may also used (see the Pattern-Based Filter Strings section below). 
+  A screenshot of this panel is shown in Figure 1 with one filter string entered.</P>
+<P> Required filter strings are useful in eliminating hits that are not relevant 
+  to the particular topic for which cultural features are being extracted. For 
+  example, it may be useful to require that all hits contain the word "music" 
+  in order to ensure relevance to a musical feature extraction. Filter words entered 
+  in this panel play the opposite role of filter words entered in the <A 
+href="excluded_filter_words_panel.html">Excluded Filters Words Panel</A>.</P>
+<P>Note that required filter strings are treated literally in queries regardless 
+  of the setting of the&nbsp;<EM>Treat search strings literally</EM> option in 
+  the <A href="options_panel.html">Options Panel</A>. This means that all of the 
+  words in a filter string must appear on a site in the same order as they appear 
+  in the filter string for the site to be counted as a hit. For this reason it 
+  is unwise to use long filter strings that may disqualify many relevant sites.</P>
+<P>Choosing required filter strings involves carefully striking a balance between 
+  eliminating as many irrelevant hits as possible and including as many relevant 
+  hits as possible. Too many filter words or filter words that are too limiting 
+  will have a negative impact on feature values.</P>
+<P>.<IMG src="Screenshot_Required_Filter_Words.gif"></P>
+<P><I><STRONG>Figure 1:</STRONG></I> A screenshot of the <EM>Required Filter 
+Words Panel </EM>with one basic filter string entered.</P>
+<P><STRONG>Pattern-Based Filter Strings</STRONG></P>
+<P>Filter strings may be either "<STRONG>basic filter strings</STRONG>" or "<STRONG>pattern-based 
+  filter strings</STRONG>". In the case of basic filter strings, such as in "musician" 
+  in Figure 1, the filter strings are included in queries exactly as they are, 
+  without modifications. The line "&lt;PRIMARY_SEARCH_STRING&gt; played &lt;SECONDARY_SEARCH_STRING&gt; 
+  music" in Figure 2 is an example of pattern-based filter string. Pattern-based 
+  filter strings are useful when filter phrases are desired that should include 
+  the particular search strings being used in each individual query.</P>
+<P>Pattern-based filter strings are those strings that include one of more occurences 
+  of either of the following two tags: "&lt;PRIMARY_SEARCH_STRING&gt;" or "&lt;SECONDARY_SEARCH_STRING&gt;". 
+  When&nbsp;such a tag is&nbsp;present, the tag is&nbsp;replaced in each query&nbsp;by 
+  the search string from the <A 
+href="search_words_panel.html">Search Words Panel</A>&nbsp;that is relevant to 
+  the query currently taking place.</P>
+<P>Recall that each query submitted by jWebMiner involves two search strings 
+from the <A href="search_words_panel.html">Search Words Panel</A>. In the case 
+of co-occurrence analysis these will both be from the <EM>PRIMARY SEARCH 
+STRINGS</EM> section of the <A href="search_words_panel.html">Search Words 
+Panel</A>&nbsp;and in the case of a cross tabulation analysis the first will be 
+from the <EM>PRIMARY SEARCH STRINGS</EM> section of the <A 
+href="search_words_panel.html">Search Words Panel</A>&nbsp;and the sedond will 
+be from the <EM>SECONDARY SEARCH STRINGS</EM> section of the <A 
+href="search_words_panel.html">Search Words Panel</A>.</P>
+<P>The "&lt;PRIMARY_SEARCH_STRING&gt;" and "&lt;SECONDARY_SEARCH_STRING&gt;" 
+tags are therefore replaced by the corresponding search string from the <A 
+href="search_words_panel.html">Search Words Panel</A>&nbsp;for each query. For 
+example, consider the case where the"&lt;PRIMARY_SEARCH_STRING&gt; played 
+&lt;SECONDARY_SEARCH_STRING&gt; music" filter string is used and the search 
+queries are the same as in Figure 2 of the <A 
+href="search_words_panel.html">Search Words Panel</A>&nbsp;section of this 
+manual. Then, for the query involving "Beethoven" and "Jazz", for 
+example,&nbsp;the specific filter string submitted to web services&nbsp;would be 
+"Beethoven played&nbsp;Jazz music", for the query involving "Beethoven" and 
+"Classical" the&nbsp;filter string submitted to web services&nbsp;would be 
+"Beethoven played&nbsp;Classical music", and so on.</P>
+<P>In the case of co-occurrence analyses, the "&lt;SECONDARY_SEARCH_STRING&gt;" 
+tag is actually replaced by the second primary search string from the 
+<EM>PRIMARY SEARCH STRINGS</EM> section of the <A 
+href="search_words_panel.html">Search Words Panel</A>&nbsp;for each query. For 
+example, consider the case where the&nbsp;"&lt;PRIMARY_SEARCH_STRING&gt; played 
+&lt;SECONDARY_SEARCH_STRING&gt; music" filter string is used and the search 
+queries are the same as in Figure 1 of the <A 
+href="search_words_panel.html">Search Words Panel</A>&nbsp;section of this 
+manual. Then, for the query involving "Beethoven" and "Mozart" the filter string 
+submitted to web services&nbsp;would be "Beethoven played&nbsp;Mozart music", 
+and so on (which also&nbsp;demonstrates that this particular filter string is 
+less appropriate for artist similarity analysis than for musical genre 
+classification).</P>
+<P>Note that if synonyms are present in the <A 
+href="search_words_panel.html">Search Words Panel</A>&nbsp;then only the first 
+synonym is used to&nbsp; replace the &lt;PRIMARY_SEARCH_STRING&gt; or 
+&lt;SECONDARY_SEARCH_STRING&gt; tags.</P>
+<P><IMG src="Screenshot_Required_Filter_Words_with_Pattern.gif"></P>
+<P><I><STRONG>Figure 2:</STRONG></I> A screenshot of the <EM>Required Filter 
+Words Panel </EM>with one pattern-based filter string and one basic filter 
+string entered.</P>
+<P><STRONG>The Text Area</STRONG></P>
+<P>The text area dominating this panel allows users to enter the filter terms 
+that they wish to use. These may be entered by directly typing in or editing the 
+text area or by copying and pasting existing text into it.&nbsp;Text may also be 
+added using the <EM>Load</EM> button, which parses strings from an existing text 
+file and appends them to the text area.</P>
+<P>Note that each filter string may contain multiple words and that each line 
+corresponds to a separate filter string.</P>
+<P>Note that when a feature extraction is executed with the <EM>EXTRACT 
+FEATURES</EM> button that the contents of the text field&nbsp;are pre-processed 
+before being used in queries such that blank lines are removed, duplicate lines 
+are removed and the contents are sorted alphabetically by line.</P>
+<P><STRONG>Buttons Above the Text Area</STRONG></P>
+<P>The <EM>Load</EM> button allows users to parse the contents of a text file 
+and append them to the existing content of the text area (existing contents are 
+<EM>not</EM> replaced). Each line in the text file is treated as a separate 
+filter string.</P>
+<P>The <EM>Save</EM> button will bring up a file chooser allowing users to enter 
+  a file path. The contents of the text area will be saved as a text file to the 
+  chosen location.</P>
+<P> The <EM>Clear</EM> button erases all of the contents of the text area.</P>
+<P> The <EM>Organize</EM> buttons causes the contents of the text area to be sorted 
+  alphabetically by line, with empty lines and duplicate lines removed. </P>
+<P></P>
+<TABLE 
+ 
+height=5 width="100%" bgColor=#0033c4 border=0 >
+  <TBODY>
+  <TR 
+   
+  border="0" >
+    <TH></TH></TR></TBODY></TABLE>
+<P><TT><A href="#Top">-top of page-</A></TT></P></BODY></HTML>

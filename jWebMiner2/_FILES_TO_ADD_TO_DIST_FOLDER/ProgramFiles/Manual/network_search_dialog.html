@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Network Search Dialog Box</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Network Search Dialog Box</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+
+<p>The <i>Network Search</i> non-modal dialog box can be opened by choosing the 
+  <i>Perform Test Search</i> command from the <i>Search Menu</i>. This dialog 
+  box is intended primarily for testing and debugging, and is not a central part 
+  of jWebMiner's functionality.</p>
+
+<p>This dialog box allows users to perform probe searches using various search configurations in order to view the actual pages returned by queries submitted to web services as well as the corresponding hit counts. Two different web services can be searched simultaneously, with the results displayed side by side, as shown below in Figure 1. </p>
+
+<p>This dialog box can be useful in understanding the hit counts that result from particular queries when experimenting with the best search parameterization for a particular task or when debugging while extending the software's functionality. </p>
+
+<p><img src="Screenshot_Network_Search_Dialog.gif"></p>
+
+<p><i><strong>Figure 1:</strong></i> A screenshot of the Network Search Dialog Box showing the results of a sample search using both Google and Yahoo!.</p>
+
+<p>This dialog box is automatically set to contain the same settings that have been chosen in the jWebMiner GUI when it is opened from the <i>Search Menu</i>. However, these settings can be changed from within the dialog box without affecting the jWebMiner settings themselves. </p>
+
+<p>The Network Search dialog box contains all of the search parameterizations as jWebMiner except for required filter strings. Also, it only allows up to one excluded filter strings, unlike jWebMiner, which allows an unlimited number.</p>
+
+<p>The top section of this dialog box allows the user to choose the parameters of the search to be performed. This provides an interface that is independent of the particular search service being used for any given search. The parameters are as follows:
+ 
+<ul>
+
+<li>The <i>Search string 1</i> and <i>Search string 2</i> fields allow the user to specify the strings to search for. These fields may each contain multiple words separated by spaces if desired. No special query formatting specific to a particular search service should be applied to these strings, as this interface is intended to be service-independent, and this dialog auto-formats each request in a way that is specific to each service. </li>
+
+<li>The <i>Treat strings literally</i> checkbox controls whether all search queries should be literal searches (e.g. for the query "heavy metal", hits must have the two words adjacent if the search is literal). This is also sometimes known as an exact search or a phrase search. </li>
+
+<li>The <i>Perform search as OR instead of AND</i> checkbox controls whether search queries in <i>Search string 1</i> and <i>Search string 2</i> fields need only contain one of the specified query words in order to result in a hit. This OR applies to both the individual words in each of the fields as
+well as the combination of the fields. If this is true, then only one of the query words must be present. If this is false, then all of them must be present (although not necessarily in the specified order, unless the <i>Treat strings literally</i> checkbox is selected). </li>
+
+<li>The <i>Include non-matching similar hits</i> checkbox controls whether results returned by search queries may include hits that do not contain one or more of the specified search string(s) but do contain terms very similar to them (e.g. alternative spellings). </li>
+
+<li>The <i>Excluded string 1</i> and <i>Excluded string 2</i> text fields set strings to exclude in all search queries. Hits may not contain these filter strings. These excluded strings are treated as literal (i.e. must appear in the same order). </li>
+
+<li>The <i>Limit to site</i> text field sets a network site that will be exclusively searched in search queries. Leaving this blank means that all available network sites will be searched. </li>
+
+<li>The <i>Limit to language</i> combo box sets the name of a language that hits must be in in order to be included in search results. </li>
+
+<li>The <i>Limit to country</i> combo box sets the name of a country that sites must be in in order to be included in search results. </li>
+
+<li>The <i>Search from region</i> combo box sets the name of a country where the search will be performed (i.e. where the search service is located). Results are not limited to this country, however. </li>
+
+<li>The <i>Limit to file type</i> combo box sets the name of a file extension that a document must have in order to be returned as a hit in search results. </li>
+
+<li>The <i>Suppress similar hits</i> checkbox controls whether to suppress similar hits when reporting results. Similar in this context means either sites with identical titles and/or descriptions, or multiple hits from the same host. </li>
+
+<li>The <i>Suppress adult content</i> checkbox controls whether to suppress hits that are classified as containing adult content by the search service in question. </li>
+
+<li>The <i>Maximum results returned</i> combo box sets the maximum number of result details returned by each search query. </li>
+
+</ul>
+
+<p>The middle section of this dialog box displays search results. Each search can be performed using up to two search services, and the results are listed side by side. Above each results field is a combo box allowing the user to choose which search service to utilize (if any) for the appropriate results area, as well as <i>Prev</i> and <i>Next</i> buttons for navigating large sets of results. The number of results moved when a Prev or Next button is pressed is set by the <i>Maximum results returned</i> combo box. Results also include the total number of hits found, any relevant limitations of the particular search service used and information on the actual query sent to the web service that generated the result.</p>
+
+<p>Searches can be initiated by pressing the <i>PERFORM SEARCH</i> button or by pressing Enter while the cursor is in one of the text fields. A progress bar will note progress as the search is performed.</p>
+
+<p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

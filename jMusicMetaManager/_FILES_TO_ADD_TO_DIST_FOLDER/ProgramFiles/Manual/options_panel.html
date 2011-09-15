@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Introduction</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Options Panel Overview</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+
+<p>The <em>Options Panel</em> allows the user to set the preferences and parameters 
+  controlling metadata error detection processing and report generation.</p>
+<p>The <em>Options Panel</em> will originally be set to default settings. These 
+  can be restored at anytime by selecting the <em>Restore Default Options</em> 
+  item from the <em>Analysis Menu</em>.</p>
+<p>Certain settings will have an impact on other settings. As a result, any change 
+  made to the <em>Options Panel</em> may cause jMusicMetaManager to automatically 
+  grey out or activate certain options as appropriate. Any greyed out options 
+  are not relevant under the currently selected options, and their settings will 
+  be ignored unless other options are changed to activate them again. </p>
+<p>This panel is divided into three sections. The top section allows the user 
+  to specify the source(s) of the metadata that isto be analyzed, as well as where 
+  to save the reports that are to be generated. The middle section allows the 
+  user to set specific processing parameters. The bottom section consists of the 
+  <em>Begin Metadata Analysis</em> button, which initiates analysis and report 
+  generation based on the chosen settings in the top two sections.</p>
+<p><img src="Options_Panel_screenshot.jpg" width="400" height="300"></p>
+<p><strong>Figure 1:</strong> Screenshot of the Options Panel.</p>
+<p><strong>Top Section of the Options Panel - Metadata Sources</strong></p>
+
+<p>The top section of the <em>Options Panel</em> is itself divided into three 
+  rows. Each row consists of a button allowing the user to browse to an appropriate 
+  disk path, an editable text field showing the current disk path and, in the 
+  case of the top two rows, check boxes that allow the user to disable the matching 
+  row.</p>
+<p>jMusicMetaManager can acquire metadata from two possible sources, namely <a href="http://www.apple.com/itunes/" target="top">Apple 
+  iTunes</a> XML files or the <a href="http://www.id3.org/" target="top">ID3 tags</a> 
+  of MP3 files. The first row (<em>Browse iTunes XML File</em>) allows the specification 
+  of the path of an iTunes XML file. The second row (<em>Browse MP3 Director</em>y) 
+  allows the user to specify a directory that will be searched, along with all 
+  of its subdirectories, for MP3 files, from which metadata will be extracted. 
+  The <em>Use iTunes</em> and <em>Use MP3s</em> check boxes allow the user to 
+  specify which (or both) of these sources of metadata will be examined. In general, 
+  iTunes files tend to be more reliable, partly because of their nature and partly 
+  because the third-party ID3 parser used by jMusicMetaManager can be buggy for 
+  some ID3 versions.</p>
+<p>Although iTunes does not make it possible to specify multiple genres per recording, 
+  jMusicMetaManager does make it possible to have multiple genres per recording 
+  by interpreting occurrences of &#8220; + &#8221; in the Genre field as a delimiter. 
+  So, for example, a Genre of &#8220;Jazz + Blues&#8221; in an iTunes file would 
+  be interpreted as two different genres by jMusicMetaManager, namely &#8220;Jazz&#8221; 
+  and &#8220;Blues&#8221;.</p>
+<p>It should be noted that, if both iTunes and ID3 sources are used, and if the 
+  metadata for an MP3 file corresponds to an entry with the same path in the iTunes 
+  file, then the two sets of metadata will be combined together into metadata 
+  for a single recording, with the metadata from the iTunes source being used 
+  in the case of any fields that are both present but non-identical. The final 
+  set of recordings that are analyzed will therefore consist of all recordings 
+  referred to in the iTunes file but not in the given directory or its subdirectories, 
+  all MP3 files found in the given directory or its subdirectories but not referred 
+  to in the iTunes file, and one entry for each pair of recordings found in both 
+  sources.</p>
+<p>The third row of the top section of the <em>Options Panel</em> (<em>Browse 
+  Report Save Path</em>) allows the user to specify where the root file of the 
+  HTML report to be generated is to be saved. A directory containing further report 
+  files will also be created in the same directory. The reports generated are 
+  frames-based, and the root file contains the information needed to load the 
+  frames. The file specified by the path in this field must have a .html extension.</p>
+<p><strong>Middle Section of the Options Panel - Processing Settings</strong></p>
+<p>The central section of the <em>Options Panel</em> allows the user to set analysis 
+  parameters and report preferences. Note that the input to all text boxes in 
+  this section must be integers and must be in the specified range, or an error 
+  message will be generated. The left side of the central section contains processing 
+  preferences and the right side contains preferences regarding the reports to 
+  be generated. This central section of the <em>Options Panel</em> is further 
+  described in the <a href="options_panel_processing.html">Option Panel Processing 
+  Settings</a> and the <a href="options_panel_reports.html">Options Panel Report 
+  Settings</a> sections of this manual.</p>
+<p><strong>Bottom Section of the Options Panel - Begin Metadata Analysis Button</strong></p>
+<p>The <em>Begin Metadata Analysis</em> button initiates processing using the 
+  metadata specified in the top two rows of the <em>Options Panel</em> and the 
+  preferences specified in its central section. A report is saved to the path 
+  given in the third row of the <em>Options Panel</em>, and may also be viewed 
+  directly in the <a href="report_panel.html">Report Panel</a> once processing 
+  is complete. The user will automatically be notified of any invalid settings 
+  when analysis is initiated, and will have the opportunity to correct them at 
+  that point before proceeding with analysis and report generation.</p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

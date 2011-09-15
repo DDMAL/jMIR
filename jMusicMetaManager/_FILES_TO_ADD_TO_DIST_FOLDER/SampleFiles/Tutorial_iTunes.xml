@@ -1,0 +1,3033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Application Version</key><string>6.0.5</string>
+	<key>Features</key><integer>1</integer>
+	<key>Music Folder</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/</string>
+	<key>Library Persistent ID</key><string>EE451DF39B69A085</string>
+	<key>Tracks</key>
+	<dict>
+		<key>109</key>
+		<dict>
+			<key>Track ID</key><integer>109</integer>
+			<key>Name</key><string>Better Git It In Yo' Soul</string>
+			<key>Artist</key><string>Charles Mingus</string>
+			<key>Composer</key><string>Charles Mingus</string>
+			<key>Album</key><string>Better Git It In Your Soul</string>
+			<key>Genre</key><string>Jazz - Avant-Garde Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>16876901</integer>
+			<key>Total Time</key><integer>703111</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>4</integer>
+			<key>Year</key><integer>1960</integer>
+			<key>Date Modified</key><date>2006-10-03T22:24:18Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A095</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Charles%20Mingus/Better%20Git%20It%20In%20Your%20Soul/Better%20Git%20It%20In%20Yo'%20Soul.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>111</key>
+		<dict>
+			<key>Track ID</key><integer>111</integer>
+			<key>Name</key><string>Folk Forms No. 2</string>
+			<key>Artist</key><string>Mingus, Charles</string>
+			<key>Composer</key><string>Charles Mingus</string>
+			<key>Album</key><string>Better Git It In Your Soul</string>
+			<key>Genre</key><string>Jazz - Avant-Garde Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>16876891</integer>
+			<key>Total Time</key><integer>703111</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>4</integer>
+			<key>Year</key><integer>1960</integer>
+			<key>Date Modified</key><date>2006-10-06T20:17:49Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A096</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Mingus,%20Charles/Better%20Git%20It%20In%20Your%20Soul/Folk%20Forms%20No.%202.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>113</key>
+		<dict>
+			<key>Track ID</key><integer>113</integer>
+			<key>Name</key><string>Wednesday Night Prayer Meeting Pt. 1</string>
+			<key>Artist</key><string>Charles Mingus</string>
+			<key>Composer</key><string>Charles Mingus</string>
+			<key>Album</key><string>Better Git It In Your Soul</string>
+			<key>Genre</key><string>Jazz - Avant-Garde Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7509818</integer>
+			<key>Total Time</key><integer>312816</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>4</integer>
+			<key>Year</key><integer>1960</integer>
+			<key>Date Modified</key><date>2006-09-30T23:31:40Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A097</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Charles%20Mingus/Better%20Git%20It%20In%20Your%20Soul/Wednesday%20Night%20Prayer%20Meeting%20Pt.%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>115</key>
+		<dict>
+			<key>Track ID</key><integer>115</integer>
+			<key>Name</key><string>Wednesday Night Prayer Meeting Pt. 2</string>
+			<key>Artist</key><string>Charles Mingus</string>
+			<key>Composer</key><string>Charles Mingus</string>
+			<key>Album</key><string>Better Git It In Your Soul</string>
+			<key>Genre</key><string>Jazz - Avant-Garde Jazz</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>10023216</integer>
+			<key>Total Time</key><integer>417541</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>4</integer>
+			<key>Year</key><integer>1960</integer>
+			<key>Date Modified</key><date>2006-09-30T23:31:40Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A098</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Charles%20Mingus/Better%20Git%20It%20In%20Your%20Soul/Wednesday%20Night%20Prayer%20Meeting%20Pt.%202.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>117</key>
+		<dict>
+			<key>Track ID</key><integer>117</integer>
+			<key>Name</key><string>Bruxelles</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel, Gérard Jouannest</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3635344</integer>
+			<key>Total Time</key><integer>181655</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A099</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Bruxelles.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>119</key>
+		<dict>
+			<key>Track ID</key><integer>119</integer>
+			<key>Name</key><string>Chanson Sans Paroles</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>François Rauber</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3443602</integer>
+			<key>Total Time</key><integer>172068</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A09A</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Chanson%20Sans%20Paroles.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>121</key>
+		<dict>
+			<key>Track ID</key><integer>121</integer>
+			<key>Name</key><string>J'aimais</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Gérard Jouannest, François Rauber</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4906466</integer>
+			<key>Total Time</key><integer>245211</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>19</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A09B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/J'aimais.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>123</key>
+		<dict>
+			<key>Track ID</key><integer>123</integer>
+			<key>Name</key><string>La Fanette</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4943540</integer>
+			<key>Total Time</key><integer>247066</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>18</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A09C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/La%20Fanette.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>125</key>
+		<dict>
+			<key>Track ID</key><integer>125</integer>
+			<key>Name</key><string>La Parlote</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel, Gérard Jouannest</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4174513</integer>
+			<key>Total Time</key><integer>208613</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>16</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A09D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/La%20Parlote.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>127</key>
+		<dict>
+			<key>Track ID</key><integer>127</integer>
+			<key>Name</key><string>La Statue</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel, François Rauber</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3992698</integer>
+			<key>Total Time</key><integer>199523</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A09E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/La%20Statue.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>129</key>
+		<dict>
+			<key>Track ID</key><integer>129</integer>
+			<key>Name</key><string>Le Caporal Casse-Pompon</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3207454</integer>
+			<key>Total Time</key><integer>160261</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A09F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Le%20Caporal%20Casse-Pompon.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>131</key>
+		<dict>
+			<key>Track ID</key><integer>131</integer>
+			<key>Name</key><string>Le Plat Pays</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3284243</integer>
+			<key>Total Time</key><integer>164101</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A0</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Le%20Plat%20Pays.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>133</key>
+		<dict>
+			<key>Track ID</key><integer>133</integer>
+			<key>Name</key><string>Les Bergers</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3346415</integer>
+			<key>Total Time</key><integer>167209</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>20</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Bergers.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>135</key>
+		<dict>
+			<key>Track ID</key><integer>135</integer>
+			<key>Name</key><string>Les Bigotes</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3267525</integer>
+			<key>Total Time</key><integer>163265</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Bigotes.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>137</key>
+		<dict>
+			<key>Track ID</key><integer>137</integer>
+			<key>Name</key><string>Les Bonbons</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4206366</integer>
+			<key>Total Time</key><integer>210207</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>21</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Bonbons.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>139</key>
+		<dict>
+			<key>Track ID</key><integer>139</integer>
+			<key>Name</key><string>Les Borgeois</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jean Corti</string>
+			<key>Album</key><string>Brel</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3510985</integer>
+			<key>Total Time</key><integer>175438</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-10-06T20:13:38Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Brel/Les%20Borgeois.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>141</key>
+		<dict>
+			<key>Track ID</key><integer>141</integer>
+			<key>Name</key><string>Les Fenêtres</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel, Gérard Jouannest</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3397111</integer>
+			<key>Total Time</key><integer>169743</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Fen%C3%AAtres.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>143</key>
+		<dict>
+			<key>Track ID</key><integer>143</integer>
+			<key>Name</key><string>Les Filles Et Les Chiens</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Gérard Jouannest</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3593550</integer>
+			<key>Total Time</key><integer>179565</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>17</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:36Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Filles%20Et%20Les%20Chiens.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>145</key>
+		<dict>
+			<key>Track ID</key><integer>145</integer>
+			<key>Name</key><string>Les Paumés Du Petit Matin</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>François Rauber</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5189108</integer>
+			<key>Total Time</key><integer>259343</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Paum%C3%A9s%20Du%20Petit%20Matin.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>147</key>
+		<dict>
+			<key>Track ID</key><integer>147</integer>
+			<key>Name</key><string>Les Toros</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel, Gérard Jouannest, Jean Corti</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2833920</integer>
+			<key>Total Time</key><integer>141583</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>15</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Toros.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>149</key>
+		<dict>
+			<key>Track ID</key><integer>149</integer>
+			<key>Name</key><string>Les Vieux</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel, Gérard Jouannest, Jean Corti</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4942524</integer>
+			<key>Total Time</key><integer>247013</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0A9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Vieux.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>151</key>
+		<dict>
+			<key>Track ID</key><integer>151</integer>
+			<key>Name</key><string>Madeleine</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel, Gérard Jouannest, Jean Corti</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3242997</integer>
+			<key>Total Time</key><integer>162037</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0AA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Madeleine.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>153</key>
+		<dict>
+			<key>Track ID</key><integer>153</integer>
+			<key>Name</key><string>Rosa</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3277966</integer>
+			<key>Total Time</key><integer>163787</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0AB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Rosa.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>155</key>
+		<dict>
+			<key>Track ID</key><integer>155</integer>
+			<key>Name</key><string>Une Île</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4488484</integer>
+			<key>Total Time</key><integer>224313</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0AC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Une%20%C3%8Ele.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>157</key>
+		<dict>
+			<key>Track ID</key><integer>157</integer>
+			<key>Name</key><string>Zangra</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jacques Brel</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4025070</integer>
+			<key>Total Time</key><integer>201142</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0AD</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Zangra.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>159</key>
+		<dict>
+			<key>Track ID</key><integer>159</integer>
+			<key>Name</key><string>A Better Place</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6387578</integer>
+			<key>Total Time</key><integer>266057</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0AE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/A%20Better%20Place.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>161</key>
+		<dict>
+			<key>Track ID</key><integer>161</integer>
+			<key>Name</key><string>Breath And Start</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6228965</integer>
+			<key>Total Time</key><integer>259448</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0AF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Breath%20And%20Start.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>163</key>
+		<dict>
+			<key>Track ID</key><integer>163</integer>
+			<key>Name</key><string>Bullfight In Ireland</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6889763</integer>
+			<key>Total Time</key><integer>286981</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B0</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Bullfight%20In%20Ireland.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>165</key>
+		<dict>
+			<key>Track ID</key><integer>165</integer>
+			<key>Name</key><string>Carnivores Unite</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6850888</integer>
+			<key>Total Time</key><integer>285361</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Carnivores%20Unite.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>167</key>
+		<dict>
+			<key>Track ID</key><integer>167</integer>
+			<key>Name</key><string>Cavelight</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6041504</integer>
+			<key>Total Time</key><integer>251637</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Cavelight.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>169</key>
+		<dict>
+			<key>Track ID</key><integer>169</integer>
+			<key>Name</key><string>Insomniac Olympics</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7328618</integer>
+			<key>Total Time</key><integer>305266</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Insomniac%20Olympics.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>171</key>
+		<dict>
+			<key>Track ID</key><integer>171</integer>
+			<key>Name</key><string>Intro: Hello Popartz</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3462898</integer>
+			<key>Total Time</key><integer>144195</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Intro_%20Hello%20Popartz.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>173</key>
+		<dict>
+			<key>Track ID</key><integer>173</integer>
+			<key>Name</key><string>Jet Son</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5433998</integer>
+			<key>Total Time</key><integer>226324</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Jet%20Son.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>175</key>
+		<dict>
+			<key>Track ID</key><integer>175</integer>
+			<key>Name</key><string>Road Rage Breakdown</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6117999</integer>
+			<key>Total Time</key><integer>254824</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Road%20Rage%20Breakdown.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>177</key>
+		<dict>
+			<key>Track ID</key><integer>177</integer>
+			<key>Name</key><string>Sunday Seance</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7848971</integer>
+			<key>Total Time</key><integer>326948</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Sunday%20Seance.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>179</key>
+		<dict>
+			<key>Track ID</key><integer>179</integer>
+			<key>Name</key><string>Triptych Pt. 1</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5859068</integer>
+			<key>Total Time</key><integer>244035</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Triptych%20Pt.%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>181</key>
+		<dict>
+			<key>Track ID</key><integer>181</integer>
+			<key>Name</key><string>Triptych Pt. 2</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4432156</integer>
+			<key>Total Time</key><integer>184581</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0B9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Triptych%20Pt.%202.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>183</key>
+		<dict>
+			<key>Track ID</key><integer>183</integer>
+			<key>Name</key><string>Triptych Pt. 3</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4173230</integer>
+			<key>Total Time</key><integer>173792</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0BA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/Triptych%20Pt.%203.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>185</key>
+		<dict>
+			<key>Track ID</key><integer>185</integer>
+			<key>Name</key><string>You've Got Maelstrom</string>
+			<key>Artist</key><string>Blockhead</string>
+			<key>Composer</key><string>T. Simon</string>
+			<key>Album</key><string>Music By Cavelight</string>
+			<key>Genre</key><string>Electronica</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6911705</integer>
+			<key>Total Time</key><integer>287895</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2006-09-30T22:19:52Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0BB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Blockhead/Music%20By%20Cavelight/You've%20Got%20Maelstrom.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>187</key>
+		<dict>
+			<key>Track ID</key><integer>187</integer>
+			<key>Name</key><string>String Quartet No. 12 in D flat major Op. 133, Allegretto</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>29047084</integer>
+			<key>Total Time</key><integer>1210200</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>6</integer>
+			<key>Year</key><integer>1993</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0BC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%2012%20in%20D%20flat%20majo.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>189</key>
+		<dict>
+			<key>Track ID</key><integer>189</integer>
+			<key>Name</key><string>String Quartet No. 12 in D flat major Op. 133, Moderato</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>9864009</integer>
+			<key>Total Time</key><integer>410906</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>6</integer>
+			<key>Year</key><integer>1993</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0BD</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%2012%20in%20D%20flat%20majo%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>191</key>
+		<dict>
+			<key>Track ID</key><integer>191</integer>
+			<key>Name</key><string>String Quartet No. 2 in A minor Op. 68, Recitative and Romance</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>17004223</integer>
+			<key>Total Time</key><integer>708414</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>6</integer>
+			<key>Year</key><integer>1993</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0BE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%202%20in%20A%20minor%20Op..mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>193</key>
+		<dict>
+			<key>Track ID</key><integer>193</integer>
+			<key>Name</key><string>String Quartet No. 2 in A minor Op. 68, Waltz</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7952464</integer>
+			<key>Total Time</key><integer>331258</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>6</integer>
+			<key>Year</key><integer>1993</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0BF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%202%20in%20A%20minor%20Op.%202.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>195</key>
+		<dict>
+			<key>Track ID</key><integer>195</integer>
+			<key>Name</key><string>String Quartet No. 2 in A minor Op. 68, Theme and Variations</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>15497687</integer>
+			<key>Total Time</key><integer>645642</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>6</integer>
+			<key>Year</key><integer>1993</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C0</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%202%20in%20A%20minor%20Op.%203.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>197</key>
+		<dict>
+			<key>Track ID</key><integer>197</integer>
+			<key>Name</key><string>String Quartet No. 2 in A minor Op. 68, Overture</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11555484</integer>
+			<key>Total Time</key><integer>481384</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>6</integer>
+			<key>Year</key><integer>1993</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%202%20in%20A%20minor%20Op.%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>199</key>
+		<dict>
+			<key>Track ID</key><integer>199</integer>
+			<key>Name</key><string>String Quartet No. 3 In F Major Op. 73, Moderato con moto</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7731801</integer>
+			<key>Total Time</key><integer>322063</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:34Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%203%20In%20F%20Major%20Op..mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>201</key>
+		<dict>
+			<key>Track ID</key><integer>201</integer>
+			<key>Name</key><string>String Quartet No. 3 In F Major Op. 73, Allegro non troppo</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6180128</integer>
+			<key>Total Time</key><integer>257410</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:34Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%203%20In%20F%20Major%20Op.%202.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>203</key>
+		<dict>
+			<key>Track ID</key><integer>203</integer>
+			<key>Name</key><string>String Quartet No. 3 In F Major Op. 73, Adagio</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8380671</integer>
+			<key>Total Time</key><integer>349100</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:34Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%203%20In%20F%20Major%20Op.%203.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>205</key>
+		<dict>
+			<key>Track ID</key><integer>205</integer>
+			<key>Name</key><string>String Quartet No. 3 In F Major Op. 73, Moderato</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>15140954</integer>
+			<key>Total Time</key><integer>630778</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:34Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%203%20In%20F%20Major%20Op.%204.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>207</key>
+		<dict>
+			<key>Track ID</key><integer>207</integer>
+			<key>Name</key><string>String Quartet No. 3 In F Major Op. 73, Allegretto</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>9531734</integer>
+			<key>Total Time</key><integer>397061</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:34Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%203%20In%20F%20Major%20Op.%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>209</key>
+		<dict>
+			<key>Track ID</key><integer>209</integer>
+			<key>Name</key><string>String Quartet No. 7 In F sharp minor Op. 108, Lento</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5047870</integer>
+			<key>Total Time</key><integer>210233</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%207%20In%20F%20sharp%20mino.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>211</key>
+		<dict>
+			<key>Track ID</key><integer>211</integer>
+			<key>Name</key><string>String Quartet No. 7 In F sharp minor Op. 108, Allegro</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8716090</integer>
+			<key>Total Time</key><integer>363075</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:34Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%207%20In%20F%20sharp%20mino%202.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>213</key>
+		<dict>
+			<key>Track ID</key><integer>213</integer>
+			<key>Name</key><string>String Quartet No. 7 In F sharp minor Op. 108, Allegretto</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4795845</integer>
+			<key>Total Time</key><integer>199732</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0C9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%207%20In%20F%20sharp%20mino%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>215</key>
+		<dict>
+			<key>Track ID</key><integer>215</integer>
+			<key>Name</key><string>String Quartet No. 8 In C minor Op. 110, Allegro molto</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4118748</integer>
+			<key>Total Time</key><integer>171520</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0CA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%208%20In%20C%20minor%20Op..mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>217</key>
+		<dict>
+			<key>Track ID</key><integer>217</integer>
+			<key>Name</key><string>String Quartet No. 8 In C minor Op. 110, Allegretto</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6074167</integer>
+			<key>Total Time</key><integer>252995</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0CB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%208%20In%20C%20minor%20Op.%202.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>219</key>
+		<dict>
+			<key>Track ID</key><integer>219</integer>
+			<key>Name</key><string>String Quartet No. 8 In C minor Op. 110, Largo</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8286002</integer>
+			<key>Total Time</key><integer>345155</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0CC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%208%20In%20C%20minor%20Op.%203.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>221</key>
+		<dict>
+			<key>Track ID</key><integer>221</integer>
+			<key>Name</key><string>String Quartet No. 8 In C minor Op. 110, Largo</string>
+			<key>Artist</key><string>The Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5682953</integer>
+			<key>Total Time</key><integer>236695</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-10-06T20:19:01Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0CD</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/The%20Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%208%20In%20C%20minor%20Op..mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>223</key>
+		<dict>
+			<key>Track ID</key><integer>223</integer>
+			<key>Name</key><string>String Quartet No. 8 In C minor Op. 110, Largo</string>
+			<key>Artist</key><string>Borodin String Quartet</string>
+			<key>Composer</key><string>Dmitri Shostakovich</string>
+			<key>Album</key><string>String Quartets</string>
+			<key>Genre</key><string>Classical - 20th Century Classical</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7194502</integer>
+			<key>Total Time</key><integer>299676</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2006-09-30T23:57:32Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0CE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Borodin%20String%20Quartet/String%20Quartets/String%20Quartet%20No.%208%20In%20C%20minor%20Op.%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>225</key>
+		<dict>
+			<key>Track ID</key><integer>225</integer>
+			<key>Name</key><string>Baby, Please Don't Go</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4885735</integer>
+			<key>Total Time</key><integer>305345</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-10-01T19:25:58Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0CF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/Baby,%20Please%20Don't%20Go.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>227</key>
+		<dict>
+			<key>Track ID</key><integer>227</integer>
+			<key>Name</key><string>Crossroads</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6026754</integer>
+			<key>Total Time</key><integer>376659</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0D0</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/Crossroads.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>229</key>
+		<dict>
+			<key>Track ID</key><integer>229</integer>
+			<key>Name</key><string>Decoration Day</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3803633</integer>
+			<key>Total Time</key><integer>237714</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0D1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/Decoration%20Day.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>231</key>
+		<dict>
+			<key>Track ID</key><integer>231</integer>
+			<key>Name</key><string>Forgive Me</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5266068</integer>
+			<key>Total Time</key><integer>329116</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0D2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/Forgive%20Me.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>233</key>
+		<dict>
+			<key>Track ID</key><integer>233</integer>
+			<key>Name</key><string>I'll Never Get Out of These Blues Alive</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6261676</integer>
+			<key>Total Time</key><integer>391340</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0D3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/I'll%20Never%20Get%20Out%20of%20These%20Blues%20Al.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>235</key>
+		<dict>
+			<key>Track ID</key><integer>235</integer>
+			<key>Name</key><string>Me and the Devil Blues</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4259217</integer>
+			<key>Total Time</key><integer>266187</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0D4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/Me%20and%20the%20Devil%20Blues.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>237</key>
+		<dict>
+			<key>Track ID</key><integer>237</integer>
+			<key>Name</key><string>Shining Room</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3950335</integer>
+			<key>Total Time</key><integer>246883</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0D5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/Shining%20Room.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>239</key>
+		<dict>
+			<key>Track ID</key><integer>239</integer>
+			<key>Name</key><string>State Trooper</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4352830</integer>
+			<key>Total Time</key><integer>272039</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0D6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/State%20Trooper.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>241</key>
+		<dict>
+			<key>Track ID</key><integer>241</integer>
+			<key>Name</key><string>Take Me</string>
+			<key>Artist</key><string>Cowboy Junkies</string>
+			<key>Composer</key><string>Michael Timmins</string>
+			<key>Album</key><string>Whites Off Earth Now!</string>
+			<key>Genre</key><string>Rock - Roots Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2377131</integer>
+			<key>Total Time</key><integer>148558</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1986</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T19:47:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From tape</string>
+			<key>Persistent ID</key><string>EE451DF39B69A0D7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Cowboy%20Junkies/Whites%20Off%20Earth%20Now!/Take%20Me.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>404</key>
+		<dict>
+			<key>Track ID</key><integer>404</integer>
+			<key>Name</key><string>Angel Band</string>
+			<key>Artist</key><string>The Stanley Brothers</string>
+			<key>Composer</key><string>Traditional, arr. by Ralph Stanley</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3261089</integer>
+			<key>Total Time</key><integer>135784</integer>
+			<key>Track Number</key><integer>19</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>1955</integer>
+			<key>Date Modified</key><date>2006-09-30T22:55:00Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Angel%20Band.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>406</key>
+		<dict>
+			<key>Track ID</key><integer>406</integer>
+			<key>Name</key><string>Big Rock Candy Mountain</string>
+			<key>Artist</key><string>Harry McClintock</string>
+			<key>Composer</key><string>Harry McClintock</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3308100</integer>
+			<key>Total Time</key><integer>137743</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>1928</integer>
+			<key>Date Modified</key><date>2006-09-30T22:30:18Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Big%20Rock%20Candy%20Mountain.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>408</key>
+		<dict>
+			<key>Track ID</key><integer>408</integer>
+			<key>Name</key><string>Didn't Leave Nobody But The Baby</string>
+			<key>Artist</key><string>Emmylou Harris, Alison Krauss &#38; Gillian Welch</string>
+			<key>Composer</key><string>Traditional, arr. by Alan Lomax, Mrs. Sidney Carter, Gillian Welch, and T Bone Burnett</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2830481</integer>
+			<key>Total Time</key><integer>117838</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:27:36Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Didn't%20Leave%20Nobody%20But%20The%20Baby.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>410</key>
+		<dict>
+			<key>Track ID</key><integer>410</integer>
+			<key>Name</key><string>Down To The River To Pray</string>
+			<key>Artist</key><string>Alison Krauss</string>
+			<key>Composer</key><string>Traditional, arr. by Allison Krauss</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4225956</integer>
+			<key>Total Time</key><integer>175986</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:16:46Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Down%20To%20The%20River%20To%20Pray.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>412</key>
+		<dict>
+			<key>Track ID</key><integer>412</integer>
+			<key>Name</key><string>Hard Time Killing Floor Blues</string>
+			<key>Artist</key><string>Chris Thomas King</string>
+			<key>Composer</key><string>Nehemiah "Skip" James</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3901196</integer>
+			<key>Total Time</key><integer>162455</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:24:40Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Hard%20Time%20Killing%20Floor%20Blues.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>414</key>
+		<dict>
+			<key>Track ID</key><integer>414</integer>
+			<key>Name</key><string>I Am A Man Of Constant Sorrow (Instrumental)</string>
+			<key>Artist</key><string>John Hartford</string>
+			<key>Composer</key><string>Traditional, arr. by Ed Haley</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3703103</integer>
+			<key>Total Time</key><integer>154200</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:32:58Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/I%20Am%20A%20Man%20Of%20Constant%20Sorrow%20(Instr.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>416</key>
+		<dict>
+			<key>Track ID</key><integer>416</integer>
+			<key>Name</key><string>I Am A Man Of Constant Sorrow (Instrumental)</string>
+			<key>Artist</key><string>John Hartford</string>
+			<key>Composer</key><string>Traditional, arr. by Norman Blake</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6469160</integer>
+			<key>Total Time</key><integer>269453</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:32:58Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/I%20Am%20A%20Man%20Of%20Constant%20Sorrow%20(Instr%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>418</key>
+		<dict>
+			<key>Track ID</key><integer>418</integer>
+			<key>Name</key><string>I Am A Man Of Constant Sorrow</string>
+			<key>Artist</key><string>The Soggy Bottom Boys</string>
+			<key>Composer</key><string>Traditional, arr. by Carter Stanley</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6170733</integer>
+			<key>Total Time</key><integer>257018</integer>
+			<key>Track Number</key><integer>16</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:54:42Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/I%20Am%20A%20Man%20Of%20Constant%20Sorrow.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>420</key>
+		<dict>
+			<key>Track ID</key><integer>420</integer>
+			<key>Name</key><string>I Am A Man Of Constant Sorrow</string>
+			<key>Artist</key><string>The Soggy Bottom Boys</string>
+			<key>Composer</key><string>Traditional, arr. by Carter Stanley</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4563888</integer>
+			<key>Total Time</key><integer>190066</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:54:42Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0F9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/I%20Am%20A%20Man%20Of%20Constant%20Sorrow%201.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>422</key>
+		<dict>
+			<key>Track ID</key><integer>422</integer>
+			<key>Name</key><string>I Am Weary (Let Me Rest)</string>
+			<key>Artist</key><string>The Cox Family</string>
+			<key>Composer</key><string>Pete Roberts</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4666045</integer>
+			<key>Total Time</key><integer>194324</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:25:24Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0FA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/I%20Am%20Weary%20(Let%20Me%20Rest).mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>424</key>
+		<dict>
+			<key>Track ID</key><integer>424</integer>
+			<key>Name</key><string>I'll Fly Away</string>
+			<key>Artist</key><string>Alison Krauss &#38; Gillian Welch</string>
+			<key>Composer</key><string>Albert E. Brumley</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5712414</integer>
+			<key>Total Time</key><integer>237923</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:16:46Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0FB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/I'll%20Fly%20Away.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>426</key>
+		<dict>
+			<key>Track ID</key><integer>426</integer>
+			<key>Name</key><string>In the Highways</string>
+			<key>Artist</key><string>The Peasall Sisters</string>
+			<key>Composer</key><string>Maybelle Carter</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2311262</integer>
+			<key>Total Time</key><integer>96208</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:49:26Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1051970945</integer>
+			<key>Play Date UTC</key><date>2006-10-06T20:19:11Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0FC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/In%20the%20Highways.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>428</key>
+		<dict>
+			<key>Track ID</key><integer>428</integer>
+			<key>Name</key><string>In The Jailhouse Now</string>
+			<key>Artist</key><string>The Soggy Bottom Boys</string>
+			<key>Composer</key><string>Jimmie Rodgers</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5190798</integer>
+			<key>Total Time</key><integer>216189</integer>
+			<key>Track Number</key><integer>15</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:54:42Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0FD</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/In%20The%20Jailhouse%20Now.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>430</key>
+		<dict>
+			<key>Track ID</key><integer>430</integer>
+			<key>Name</key><string>Indian War Whoop</string>
+			<key>Artist</key><string>John Hartford</string>
+			<key>Composer</key><string>Hoyt Ming</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>2173324</integer>
+			<key>Total Time</key><integer>90462</integer>
+			<key>Track Number</key><integer>17</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:32:58Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0FE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Indian%20War%20Whoop.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>432</key>
+		<dict>
+			<key>Track ID</key><integer>432</integer>
+			<key>Name</key><string>Keep On The Sunny Side</string>
+			<key>Artist</key><string>The Whites</string>
+			<key>Composer</key><string>A.P. Carter</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5147526</integer>
+			<key>Total Time</key><integer>214386</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T23:00:24Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A0FF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Keep%20On%20The%20Sunny%20Side.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>434</key>
+		<dict>
+			<key>Track ID</key><integer>434</integer>
+			<key>Name</key><string>Lonesome Valley</string>
+			<key>Artist</key><string>The Fairfield Four</string>
+			<key>Composer</key><string>Traditional, arr. by the Fairfield Four</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5936245</integer>
+			<key>Total Time</key><integer>247248</integer>
+			<key>Track Number</key><integer>18</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:28:36Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A100</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Lonesome%20Valley.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>436</key>
+		<dict>
+			<key>Track ID</key><integer>436</integer>
+			<key>Name</key><string>O Death</string>
+			<key>Artist</key><string>Ralph Stanley</string>
+			<key>Composer</key><string>Traditional, arr. by Ralph Stanley</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4793945</integer>
+			<key>Total Time</key><integer>199653</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:51:38Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A101</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/O%20Death.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>438</key>
+		<dict>
+			<key>Track ID</key><integer>438</integer>
+			<key>Name</key><string>Po' Lazarus</string>
+			<key>Artist</key><string>James Carter &#38; The Prisoners</string>
+			<key>Composer</key><string>Traditional, arr. by Alan Lomax</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6519922</integer>
+			<key>Total Time</key><integer>271568</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>1959</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:28Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A102</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/Po'%20Lazarus.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>440</key>
+		<dict>
+			<key>Track ID</key><integer>440</integer>
+			<key>Name</key><string>You Are My Sunshine</string>
+			<key>Artist</key><string>Norman Blake</string>
+			<key>Composer</key><string>Jimmie Davis, Charles Mitchell</string>
+			<key>Album</key><string>O Brother, Where Art Thou?</string>
+			<key>Genre</key><string>World - U.S. Traditional</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6427753</integer>
+			<key>Total Time</key><integer>267728</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>19</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2006-09-30T22:46:54Z</date>
+			<key>Date Added</key><date>2006-10-06T20:08:53Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EE451DF39B69A103</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Compilations/O%20Brother,%20Where%20Art%20Thou_/You%20Are%20My%20Sunshine.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>462</key>
+		<dict>
+			<key>Track ID</key><integer>462</integer>
+			<key>Name</key><string>Les Bourgeois</string>
+			<key>Artist</key><string>Jacques Brel</string>
+			<key>Composer</key><string>Jean Corti</string>
+			<key>Album</key><string>Le Plat Pays</string>
+			<key>Genre</key><string>World - Chanson</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3510985</integer>
+			<key>Total Time</key><integer>175438</integer>
+			<key>Disc Number</key><integer>4</integer>
+			<key>Disc Count</key><integer>10</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>1963</integer>
+			<key>Date Modified</key><date>2006-09-30T22:31:10Z</date>
+			<key>Date Added</key><date>2006-10-06T20:13:45Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>From CD</string>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>-1051971078</integer>
+			<key>Play Date UTC</key><date>2006-10-06T20:16:58Z</date>
+			<key>Persistent ID</key><string>EE451DF39B69A105</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/C:/Cory/In%20Progress/My%20Music/iTunes/iTunes%20Music/Jacques%20Brel/Le%20Plat%20Pays/Les%20Bourgeois.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Library</string>
+			<key>Master</key><true/>
+			<key>Playlist ID</key><integer>37</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A086</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>109</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>113</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>115</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>111</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>139</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>131</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>157</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>129</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>127</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>153</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>462</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>151</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>145</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>117</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>119</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>155</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>135</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>149</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>141</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>147</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>125</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>143</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>123</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>121</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>133</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>137</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>171</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>185</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>165</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>177</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>159</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>175</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>179</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>181</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>183</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>173</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>167</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>161</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>163</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>169</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>438</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>406</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>440</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>410</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>420</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>412</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>416</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>432</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>424</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>408</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>426</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>422</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>414</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>436</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>428</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>418</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>430</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>434</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>404</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>197</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>191</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>193</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>195</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>189</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>187</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>223</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>215</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>217</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>219</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>221</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>213</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>209</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>211</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>207</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>199</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>201</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>203</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>205</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>237</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>239</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>235</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>229</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>225</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>233</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>241</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>231</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>227</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>90’s Music</string>
+			<key>Playlist ID</key><integer>40</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A087</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAEAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAB8YAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAB88AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>197</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>191</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>193</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>195</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>189</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>187</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>223</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>215</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>217</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>219</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>221</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>213</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>209</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>211</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>207</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>199</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>201</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>203</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>205</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>My Top Rated</string>
+			<key>Playlist ID</key><integer>43</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A088</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAADwAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>Party Shuffle</string>
+			<key>Playlist ID</key><integer>57</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A08C</string>
+			<key>Party Shuffle</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>Podcasts</string>
+			<key>Playlist ID</key><integer>60</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A08D</string>
+			<key>Podcasts</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>Recently Added</string>
+			<key>Playlist ID</key><integer>52</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A08B</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABELa4tri2uLa7//////////gAAAAAACTqA
+			La4tri2uLa4AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>462</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>404</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>434</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>430</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>418</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>428</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>436</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>414</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>422</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>426</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>408</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>424</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>432</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>416</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>412</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>420</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>410</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>440</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>406</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>438</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>137</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>133</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>121</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>123</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>143</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>125</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>147</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>141</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>149</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>135</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>155</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>119</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>117</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>145</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>151</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>139</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>153</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>127</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>129</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>157</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>131</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>227</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>231</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>241</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>233</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>225</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>229</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>235</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>239</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>237</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>111</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>115</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>113</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>109</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>205</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>203</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>201</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>199</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>207</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>211</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>209</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>213</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>221</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>219</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>217</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>215</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>223</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>187</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>189</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>195</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>193</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>191</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>197</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>169</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>163</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>161</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>167</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>173</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>183</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>181</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>179</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>175</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>159</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>177</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>165</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>185</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>171</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Recently Played</string>
+			<key>Playlist ID</key><integer>49</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A08A</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAIAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABELa4tri2uLa7//////////gAAAAAACTqA
+			La4tri2uLa4AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>426</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>462</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Top 25 Most Played</string>
+			<key>Playlist ID</key><integer>46</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A089</string>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQABAwAAABkAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBAAACAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>426</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>462</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Videos</string>
+			<key>Playlist ID</key><integer>63</integer>
+			<key>Playlist Persistent ID</key><string>EE451DF39B69A08E</string>
+			<key>All Items</key><true/>
+			<key>Videos</key><true/>
+		</dict>
+	</array>
+</dict>
+</plist>

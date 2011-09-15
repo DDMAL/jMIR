@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.6000.16481" name=GENERATOR>
+<STYLE type=text/css></STYLE>
+</HEAD>
+<BODY text=#000000 vLink=#0033c4 aLink=#0033c4 link=#0033c4 bgColor=#e4e4e4><A 
+name=Top></A>
+<TABLE 
+ 
+cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033c4 border=0 
+>
+  <TBODY>
+  <TR 
+   
+  border="0" >
+    <TH align=left><FONT face=Arial color=#ffffff size=+3>Excluded Filter 
+      Words Panel</FONT></TH></TR></TBODY></TABLE>
+<P>The <EM>Excluded Filter Words Panel </EM>is a GUI panel allowing users to enter 
+  strings that must <EM>not</EM> be found on a site in order for it to be counted 
+  as a hit during feature extraction. These&nbsp;excluded filter strings apply 
+  to all searches. A screenshot of this panel is shown in Figure 1 with one filter 
+  string entered.</P>
+<P>Excluded filter strings are useful in eliminating hits that are not relevant 
+  to the particular topic for which cultural features are being extracted. For 
+  example, it may be desirable to exclude the string "construction" in order to 
+  avoid hits from queries involving search strings such as "The Doors" and "heavy 
+  metal" that are not relevant to music.</P>
+<P>Filter words entered in this panel play the opposite role of filter words entered 
+  in the <A href="required_filter_words_panel.html">Required Filters Words Panel</A>. 
+  Note that only basic filter strings are permitted in the <EM>Excluded Filter 
+  Words Panel</EM>, however, unlike the <A 
+href="required_filter_words_panel.html">Required Filters Words Panel</A>, where 
+  pattern-based filter strings are also permitted.</P>
+<P>Note that excluded filter strings are treated literally in queries regardless 
+  of the setting of the&nbsp;<EM>Treat search strings literally</EM> option in 
+  the <A href="options_panel.html">Options Panel</A>. This means that all of the 
+  words in a filter string must appear on a site in the same order as they appear 
+  in the filter string for the site to be excluded&nbsp;from being&nbsp;a hit 
+  because of the filter string. For this reason it is unwise to use long filter 
+  strings that may disqualify many relevant sites.</P>
+<P>Choosing excluded filter strings involves carefully striking a balance between 
+  eliminating as many irrelevant hits as possible and including as many relevant 
+  hits as possible. For example,&nbsp;it may be useful to use "paradise" as an 
+  excluded filter string, as in Figure 1, if a band such as "Nirvana" is a search 
+  string, as in the examples in the <A 
+href="search_words_panel.html">Search Words Panel</A>. However, this would be 
+  an unwise excluded filter string if the band "The Sabres of Paradise" is also 
+  one of the search strings. In general, too many filter words or filter words 
+  that are too limiting will have a negative impact on feature values.</P>
+<P>.<IMG src="Screenshot_Excluded_Filter_Words.gif"></P>
+<P><I><STRONG>Figure 1:</STRONG></I> A screenshot of the <EM>Excluded Filter 
+Words Panel </EM>with one filter string entered.</P>
+<P><STRONG>The Text Area</STRONG></P>
+<P>The text area dominating this panel allows users to enter the filter terms 
+that they wish to use. These may be entered by directly typing in or editing the 
+text area or by copying and pasting existing text into it.&nbsp;Text may also be 
+added using the <EM>Load</EM> button, which parses strings from an existing text 
+file and appends them to the text area.</P>
+<P>Note that each filter string may contain multiple words and that each line 
+corresponds to a separate filter string.</P>
+<P>Note that when a feature extraction is executed with the <EM>EXTRACT 
+FEATURES</EM> button that the contents of the text field&nbsp;are pre-processed 
+before being used in queries such that blank lines are removed, duplicate lines 
+are removed and the contents are sorted alphabetically by line.</P>
+<P><STRONG>Buttons Above the Text Area</STRONG></P>
+<P>The <EM>Load</EM> button allows users to parse the contents of a text file 
+and append them to the existing content of the text area (existing contents are 
+<EM>not</EM> replaced). Each line in the text file is treated as a separate 
+filter string.</P>
+<P>The <EM>Save</EM> button will bring up a file chooser allowing users to enter 
+  a file path. The contents of the text area will be saved as a text file to the 
+  chosen location.</P>
+<P> The <EM>Clear</EM> button erases all of the contents of the text area.</P>
+<P> The <EM>Organize</EM> buttons causes the contents of the text area to be sorted 
+  alphabetically by line, with empty lines and duplicate lines removed. </P>
+<P></P>
+<TABLE 
+ 
+height=5 width="100%" bgColor=#0033c4 border=0 >
+  <TBODY>
+  <TR 
+   
+  border="0" >
+    <TH></TH></TR></TBODY></TABLE>
+<P><TT><A href="#Top">-top of page-</A></TT></P></BODY></HTML>

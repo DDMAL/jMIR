@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.6000.16481" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#0033c4 aLink=#0033c4 link=#0033c4 bgColor=#e4e4e4><A 
+name=Top></A>
+<TABLE 
+ 
+cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033c4 border=0 
+>
+  <TBODY>
+  <TR 
+   
+   border="0">
+    <TH align=left><FONT face=Arial color=#ffffff size=+3>Search Words 
+      Panel</FONT></TH></TR></TBODY></TABLE>
+<P>The <EM>Search Words Panel </EM>is a GUI panel allowing users to select the 
+  search strings for which cultural features are to be extracted from the web.</P>
+<P><STRONG>Co-occurrence vs. Cross Tabulation Analysis</STRONG></P>
+<P>There are two basic types of automated web searches that can be performed. 
+  The first, a "<STRONG>co-occurrence extraction</STRONG>" (see Figure 1), means 
+  that the relative co-occurrence of each line in the <EM>PRIMARY SEARCH STRINGS</EM> 
+  text area on the internet is measured pairwise when combined with every other 
+  line in the same text area. The <EM>SECONDARY SEARCH STRINGS</EM> text area 
+  is ignored in co-occurrence analyses. This is useful for measuring the relative 
+  similarity between each of the primary search strings. For example, in the case 
+  of Figure 1 hit counts would be found for all occurrences of both Pearl Jam 
+  and Nirvana on the same web page, for both Pearl Jam and Beethoven, for both 
+  Pearl Jam and Mozart, and so on until hit counts for all possible pairs of primary 
+  search strings had been extracted. </P>
+<P><IMG src="Screenshot_Search_Words_with_Primary_and_Synonym.gif"></P>
+<P><I><STRONG>Figure 1:</STRONG></I> A screenshot of the <EM>Search Words Panel 
+</EM>showing search strings for a potential co-occurrence extraction that will 
+compare the relative pairwise similarity between the names of six different 
+musical artists.</P>
+<P>The second type of search, &quot;<STRONG>cross tabulation extraction</STRONG>" 
+  (see Figure 2), involves calculating the relative pairwise internet co-occurrence 
+  of each line in the <EM>PRIMARY SEARCH STRINGS</EM> text area with every line 
+  in the <EM>SECONDARY SEARCH STRINGS</EM> text area. This is useful in categorizing 
+  terms. For example, in the case of Figure 2 hit counts would be found for all 
+  occurrences of both Pearl Jam and Jazz on the same web page, for both Pearl 
+  Jam and Classical, for both Pearl Jam and Grunge, and so on until all possible 
+  pairs of one primary search string and one secondary search string been searched. 
+</P>
+<P><IMG src="Screenshot_Search_Words_with_Secondary.gif"></P>
+<P><I><STRONG>Figure 2:</STRONG></I> A screenshot of the <EM>Search Words Panel 
+</EM>showing search strings for a potential cross tabulation extraction that 
+will compare the relative associations between each name of six different 
+musical artists and each of three different genres of music.</P>
+<P>The two radio buttons at the top of the <EM>Search Words Panel</EM> allow 
+users to select which one of these two types of analyses they wish to perform. 
+Selecting the <EM>Co-occurrence Extraction</EM> radio button will temporarily 
+disable the <EM>SECONDARY SEARCH STRINGS</EM> text area, as it is irrelevant for 
+this type of analysis.</P>
+<P><STRONG>Synonyms</STRONG></P>
+<P>It is possible to define "synonyms" between different search strings so that 
+they will be considered equivalent and their results will be combined during 
+feature value calculations. This can be done for both primary search strings and 
+secondary search strings.</P>
+<P>Synonyms can be useful when dealing with search strings that are effectively 
+equivalent to other terms, and it is desirable to avoid missing web pages that 
+might contain one synonym but not the other. For example, the class names "R and 
+B" and "RnB" can be usefully combined. </P>
+<P>Synonyms can be defined by entering a " &lt;SYNONYM&gt; " tag between words 
+or sets of words in one of the text areas. It is possible to define more than 
+two synonyms in a set if desired.</P>
+<P>Figure 1 provides an example of how synonyms can be entered. Both "Charlie 
+Mingus" and "Charles Mingus" refer to the same artist, so the hits for both will 
+be combined during feature extraction.</P>
+<P><STRONG>The Text Areas</STRONG></P>
+<P>The <EM>PRIMARY SEARCH STRINGS</EM> text area on the left and the 
+<EM>SECONDARY SEARCH STRINGS</EM> text area on the right allow users to enter 
+the search terms that they wish to use. These may be entered by directly typing 
+in or editing the text areas or by copying and pasting existing text into them. 
+Search terms may also be added using the <EM>Load</EM> button corresponding to 
+the appropriate text area, which parses strings from an existing text file and 
+appends them to the appropriate text area. </P>
+<P>Note that each search string may contain multiple words and that each line in 
+a text area corresponds to a separate search string.</P>
+<P>Note that when a feature extraction is executed with the <EM>EXTRACT 
+FEATURES</EM> button that the contents of the text fields are pre-processed 
+before being used in searches such that blank lines are removed, duplicate lines 
+are removed and the contents are sorted alphabetically by line.</P>
+<P><STRONG>Buttons Above the Text Areas</STRONG></P>
+<P>The <EM>Load</EM> button for each text area allows users to parse the contents 
+  of a file and append them to the existing content of the text area (existing 
+  contents are <EM>not</EM> replaced). Information can be parsed from newline 
+  delimited text files, from class names found in <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target=top>Weka 
+  ARFF</a> or <a href="http://jmir.sourceforge.net/index_ACE_XML.html" target="top">ACE 
+  XML</a> files, or from a variety of different fields of <a href="http://www.apple.com/itunes/" target=top>Apple 
+  iTunes</a> XML files. In the case of <a href="http://www.apple.com/itunes/" target=top>Apple 
+  iTunes</a> XML files, users are asked to choose which field they want to parse 
+  search strings from.</P>
+<P>The <EM>Save</EM> button for each text area will bring up a file chooser allowing 
+  users to enter a file path. The contents of the text area will be saved as a 
+  text file to the chosen location.</P>
+<P> The <EM>Clear</EM> buttons for each text area erase all of the contents of 
+  the corresponding text area.</P>
+<P> The <EM>Organize</EM> buttons for each text area cause the contents of the 
+  corresponding text area to be sorted alphabetically by line, with empty lines 
+  and duplicate lines removed. </P>
+<P></P>
+<TABLE 
+ 
+height=5 width="100%" bgColor=#0033c4 border=0 >
+  <TBODY>
+  <TR 
+   
+   border="0">
+    <TH></TH></TR></TBODY></TABLE>
+<P><TT><A href="#Top">-top of page-</A></TT></P></BODY></HTML>

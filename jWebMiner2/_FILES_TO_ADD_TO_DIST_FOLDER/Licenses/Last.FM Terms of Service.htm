@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head profile="http://purl.org/uF/2008/03/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+            <title>Last.fm - Listen to internet radio and the largest music catalogue online</title>        
+    <link rel="search" type="application/opensearchdescription+xml" href="http://cdn.last.fm/opensearch.xml" title="Last.fm" />
+            <meta name="description" content="The world’s largest online music catalogue, with free music streaming, videos, photos, charts, artist biographies, concerts and internet radio."/>
+    <meta http-equiv="content-language" content="en" />
+                    <meta name="robots" content="NOODP" />
+        
+    <link rel="shortcut icon" href="http://cdn.last.fm/flatness/favicon.2.ico" />
+    <link rel="apple-touch-icon" href="http://cdn.last.fm/flatness/apple-touch-icon.png" />
+    
+        
+        
+                    <link type="text/html" rel="alternate" hreflang="de" href="http://www.lastfm.de/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="es" href="http://www.lastfm.es/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="fr" href="http://www.lastfm.fr/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="it" href="http://www.lastfm.it/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="ja" href="http://www.lastfm.jp/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="pl" href="http://www.lastfm.pl/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="pt" href="http://www.lastfm.com.br/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="ru" href="http://www.lastfm.ru/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="sv" href="http://www.lastfm.se/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="tr" href="http://www.lastfm.com.tr/api/tos" />
+                <link type="text/html" rel="alternate" hreflang="cn" href="http://cn.last.fm/api/tos" />
+            
+        
+            <!--[if LT IE 7]>
+            <link rel="stylesheet" href="http://cdn.last.fm/css/release-lastfm/152815/ie/ie6.css" type="text/css" />
+        <![endif]-->
+                                    <link rel="stylesheet" href="http://cdn.last.fm/css/release-lastfm/152815/master.css" type="text/css" />
+                                    
+                            <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/lib/prototype.js"></script>
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/lib/scriptaculous.js"></script>
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/lib/ufo.js"></script>
+        
+                <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/LFM.js"></script>
+        
+        <script type="text/javascript">
+                                                    LFM.Adserver.showAds = true;
+                        LFM.set("Session", {"cookieHost":".last.fm","host":"www.last.fm","staticHost":"http:\/\/cdn.last.fm","wsHost":"ws.audioscrobbler.com","userserveHost":"http:\/\/userserve-ak.last.fm","wsKey":"ceec2bb03d4c5929f0d6667fc266dc75","formtoken":"dbf8f8ba5eab8f7a93d5848ecbbef5206952085c","location":"ca","language":"en","loggedIn":true,"subscriber":false,"userURL":"\/user\/Codaich","libraryURL":"\/user\/Codaich\/library","userName":"Codaich","prefersClient":false});
+            LFM.set("resTypes", {
+                EVENT: 29,
+                ARTIST: 6,
+                ALBUM: 8,
+                TRACK: 9,
+                GROUP: 20,
+                TAG: 32,
+                USER: 4,
+                LABEL: 10
+            });
+            LFM.set("resTypeLookup", {
+                29: "Event",
+                6: "Artist",
+                8: "Album",
+                9: "Track",
+                20: "Group",
+                32: "Tag",
+                4: "User",
+                10: "Label"
+            });
+            LFM.set("String", {toRedStr: "Simply Red",toBlackStr: "Paint it Black",okText: "OK",cancelText: "Cancel",clickToEditText: "Click to edit",savingText: "Saving…",loadingText: "Loading…",deletingText: "Deleting…",thereWasAnError: "There was an error.",dialogLoadError: "There was an error loading this dialog.",fileTooBig: "Sorry, the file is too big.",noFile: "Please choose a file.",uploadCancelled: "Upload Cancelled.",deleteMessageTitle: "Delete Message",deleteMessagePrompt: "Are you sure you want to delete this message?",deleteFriendPrompt: "Are you sure you want to delete this friend?",deleteImage: "Are you sure you want to delete this image?",deleteButtonText: "Delete",done: "Done",backText: "Back",yesText: "Yes",noText: "No",saveText: "Save",saveTitle: "Add to profile",sendText: "Send",sendTitle: "Share with friends",addTitle: "Add to library",tagTitle: "Add tags",playlistTitle: "Add to playlist",obsessionTitle: "Personalise your obsession",befriendTitle: "Add a friend",joinTitle: "Join this group",loved: "Loved",RemoveFromLibraryTitle: "Remove from library",uploadImageTitle: "Upload Image",uploadVideoTitle: "Upload Video",usernoteTitle: "Add a note",flageventTitle: "Flag for review",setLocationTitle: "Set your Location",newWindowTooltip: "This link will open in a new window",unloadWarningMessage: "This will stop Radio Playback",trackLoved: "You loved this track",playbackStopped: "Playback stopped",loadingTrackInfo: "Loading track information",errorLoadingTrackInfo: "Error loading track information",uploadMessages: {mayTakeLonger: "Sorry, this may take slightly longer than usual. Hold on a couple of seconds.",uploading: "Uploading…",endUploading: "Done",progressDisplay: "PERCENTUPLOADED% complete (TRANSFERRATE kb/s) – TIMEREMAINING seconds remaining",progressComplete: "100% complete",failedRetrying: "Failed retrying upload, bailed.",processingMedia: "Processing media…",unsupportedFormat: "Sorry, the file you uploaded isn’t encoded in a supported format. Please try again.",uploadError: "There was an error uploading your video, please verify that the file you are uploading is not too large or of an incorrect format and try again."},shortMonths: {'1': "Jan",'2': "Feb",'3': "Mar",'4': "Apr",'5': "May",'6': "Jun",'7': "Jul",'8': "Aug",'9': "Sep",'10': "Oct",'11': "Nov",'12': "Dec"},resTypePlural: {29: "Events",6: "Artists",8: "Albums",9: "Tracks",20: "Groups",32: "Tags",4: "Users","friends":   "Friends",10: "Labels"}});LFM.set("Element", {icon_loved_indicator: "<img class=\"icon loved_indicator_icon\" width=\"11\" height=\"9\" src=\"http:\/\/cdn.last.fm\/flatness\/clear.gif\" \/>",icon_tag: "<img class=\"icon tag_icon\" width=\"14\" height=\"14\" src=\"http:\/\/cdn.last.fm\/flatness\/clear.gif\" \/>",icon_dismiss: "<img class=\"icon dismiss_icon\" width=\"13\" height=\"13\" src=\"http:\/\/cdn.last.fm\/flatness\/clear.gif\" \/>",icon_play: "<img class=\"icon play_icon\" width=\"17\" height=\"17\" alt=\"Play\" src=\"http:\/\/cdn.last.fm\/flatness\/clear.gif\" \/>"});        </script>
+        <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/console.js"></script>
+        
+                            <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/components.js"></script>
+                    <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/flash.js"></script>
+                    <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/dialog.js"></script>
+                    <script type="text/javascript" src="http://cdn.last.fm/javascript/release-lastfm/152816/form/typeahead.js"></script>
+                
+        <script type="text/javascript">
+            document.observe("dom:loaded", function () {if (typeof ieHover !== 'undefined') {ieHover.setUp();}});
+        </script>
+        
+    </head>
+
+
+<body class="a-tos">
+            
+<script src="http://cdn.last.fm/javascript/release-lastfm/152816/lib/omniture.js"></script>
+<script>
+document.fire("omniture:load");
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+if (s) {
+s.pageName="Api/Tos/";
+s.server="";
+s.channel="";
+s.pageType="other";
+
+s.prop1="api";       // namespace
+s.prop2="tos";       // controller
+s.prop3="";       // action
+
+
+
+s.prop10="lfm";       // logged in/out
+
+s.prop12="last.fm";        // url extension
+
+s.prop13="";        // Member user id
+
+s.prop14="";        // Ad source
+s.prop15="";        // Ad id
+s.prop16="";        // Ad size
+s.prop18=s.getTimeParting('h',0,2010);     // Set hour
+s.prop19=s.getTimeParting('d',0,2010);     // Set day
+
+
+
+
+        
+s.prop32 = ""; // TODO: 1st day of visit
+s.prop33 = "en"; // User language
+
+
+
+
+
+/* Success Events */
+s.events="";
+
+/* E-commerce Variables */
+// s.campaign="";
+s.state="";
+s.zip="";
+s.products="";
+s.purchaseID="";
+s.eVar1="ca"; // Country
+s.eVar2 = s.pageName; // Page name
+s.eVar3=""; // channel
+
+
+s.eVar10="lfm";       // logged in/out
+
+
+
+
+
+s.eVar26=""; // OnClick Location
+s.eVar27=""; // Download Platform
+s.eVar28=""; // Buy/Download Location
+
+s.eVar29=""; // TODO: 1st day of visit
+s.eVar30=s.prop12;        // url extension
+
+s.eVar31=s.getNewRepeat();          // new/repeat visitor
+s.eVar32=s.getDaysSinceLastVisit(); // Days since last visit
+
+s.eVar33="";        // Ad source
+s.eVar34="";        // Ad id
+s.eVar35="";        // Ad size
+
+s.eVar36=""; // Member user id
+
+s.eVar37=s.prop33; // User language
+
+                s.eVar38="< 10"; // User scrobbles < 10
+    
+
+s.events = s.events ? s.events + ',event12' : 'event12'; // Page view event
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code = s.t(); if (s_code) document.write(s_code);
+}
+
+</script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.11. -->
+        
+                <div id="fauxHeaderContainer" class="clearit">
+            <div id="fauxHeader"></div>
+        </div>
+        <div id="page" class="            ">
+        <div class="fixed full">
+            
+
+    <script type="text/javascript">
+        var dartORD = LFM.generateOrd();
+        if(!LFM.Adserver) LFM.Adserver = {};
+        LFM.Adserver.keyvalResource = '';
+        LFM.Adserver.keyvalZone = '';
+        function writeTop(){};function writeTopRight(){};function writeSkyscraperRight(){ document.write('<scri' + 'pt language="JavaScript" src="http://ad.doubleclick.net/adj/cbsi.last.ru/api/api/tos;dcopt=ist;sz=160x600;ar=;tandem=1;tile=2;source=;established=;fdl=0;ontour=0;ontourinusercountry=0;type=ros;lang=en;geo=ca;mmuser=0;ord=' + dartORD + '?" type="text/javascript"' + '><' + '\/script>');};function writeTopTopRight(){};function writeTopTopTopRight(){};function writeMid(){ 
+
+document.observe('dom:loaded', function() {
+
+    var adURL = 'http://bwp.lastfm.com.com/search';
+    
+    // check for lower mpu Google
+    if(!$('ad-google-lowermpu') || $('ad-google-lowermpu').readAttribute('src') != adURL) {
+    
+        // nothing found, show this Google ad
+        $('ad-google-mid').writeAttribute('src', adURL).setStyle({ 'display': 'block' });
+    }
+    else {
+    
+        // hide whole mid ad area
+        $('LastAd_Mid').setStyle({ 'display': 'none' });   
+    }
+    
+});
+
+document.write('<iframe id="ad-google-mid" src="" style="display: none" scrolling="no" width="728" height="90" marginheight="0" marginwidth="0" frameborder="0" target="_top"></iframe>');
+
+
+};function writeTopLeaderboard(){};function writeFooter1(){};function writeFooter2(){ document.write('<a href="http://www.last.fm/delivery.php?id=3713&zoneId=129" target="_blank"><img src="http://cdn.last.fm/adserver/campaign/3429/Mini-Footer.gif" width="192" title="Advertise on Last.fm" height="64" border="0" \/><\/a>');};function writeFooter3(){ document.write('<a href="http://www.last.fm/delivery.php?id=3702&zoneId=130" target="_blank"><img src="http://cdn.last.fm/adserver/campaign/3419/Mini-Footer.gif" width="192" title="Advertise on Last.fm" height="64" border="0" \/><\/a>');};function writeFooter4(){ document.write('<a href="http://www.last.fm/delivery.php?id=3703&zoneId=131" target="_blank"><img src="http://cdn.last.fm/adserver/campaign/3421/Mini-Footer.gif" width="192" title="Advertise on Last.fm" height="64" border="0" \/><\/a>');};function writeSkin(){ document.write('<scri' + 'pt language="JavaScript" src="http://ad.doubleclick.net/adj/cbsi.last.ru/api/api/tos;dcopt=ist;sz=1x1;tandem=1;tile=3;ar=;skin=1;source=;established=;fdl=0;ontour=0;ontourinusercountry=0;type=ros;lang=en;geo=ca;mmuser=0;ord=' + dartORD + '?" type="text/javascript"' + '><' + '\/script>');};function writePreRoll(){};function writeBottomRight(){ document.write('<iframe id="ad-google-lowermpu" src="http://bwp.lastfm.com.com/search" scrolling="no" width="300" height="250" marginheight="0" marginwidth="0" frameborder="0" target="_top"></iframe>');
+
+};;var aZoneCreativeTypeAssoc={"176":"468x60","134":"120x600","129":"192x64","130":"192x64","131":"192x64","160":"1024x768","211":"300x250"};
+    </script>
+
+
+<div id="header" class="clearit">
+    <div id="headerWrapper">
+        
+        <a href="/home" id="lastfmLogo">Last.fm</a>
+        
+        <ul id="primaryNav">
+            <li id="musicNav" class="navItem">
+                <a href="/music" class="nav-link">Music</a>
+            </li>
+            <li id="listenNav" class="navItem">
+                <a href="/listen" class="nav-link">Radio</a>
+            </li>
+            <li id="eventsNav" class="navItem">
+                <a href="/events" class="nav-link">Events</a>
+            </li>
+            <li id="videosNav" class="navItem">
+                <a href="/videos" class="nav-link">Videos</a>
+            </li>
+            <li id="chartsNav" class="navItem">
+                <a href="/charts" class="nav-link">Charts</a>
+            </li>
+            <li id="communityNav" class="navItem">
+                <a href="/community" class="nav-link">Community</a>
+            </li>
+        </ul>
+        
+        
+        <div id="profileLinks">
+            <ul>
+                            <li class="profileItem">
+                    <div id="idBadger">
+                        <a href="/user/Codaich" id="idBadgerUser" title=""><img src="http://cdn.last.fm/flatness/catalogue/noimage/2/default_user_small.png" width="16" height="16" />Codaich</a><a href="/user/Codaich" id="idBadgerDropper" title=""><span>▼</span></a>
+                        <ul id="idBadgerDropDown">
+                            <li class="home"><a href="/home">Home</a></li>
+                            <li class="profile"><a href="/user/Codaich" title="">Profile</a></li>
+                            <li class="recs"><a href="/home/recs">Recommended</a></li>
+                            <li class="library"><a href="/user/Codaich/library" title="">Library</a></li>
+                            <li class="events"><a href="/user/Codaich/events" title="">Events</a></li>
+                            <li class="settings"><a href="/settings">Settings</a></li>
+                                                    </ul>
+                    </div>
+                </li>
+                <li id="logoutLink" class="profileItem">
+                    <a href="/login/logout?shake-it-all-about" class="profile-link">Logout</a>
+                </li>
+                <li id="inboxLink" class="profileItem divider">
+                    <a href="/inbox" class="profile-link">Inbox</a>
+                </li>
+                        </ul>
+        </div>
+        
+        <div id="headerLinks">
+                                                <a href="/api/tos?change=language" title="Click here to change your language" rel="nofollow" id="headerLangToggle" class="icon">
+                <img class="transparent_png globe_icon icon" alt="Change language" width="11" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>English</span>
+            </a> | 
+                            <a href="" title="Switch Colour Style" id="colourToggle" onclick="LFM.Display.colourToggle(this, LFM.String.toRedStr, LFM.String.toBlackStr); return false;">Paint it Black</a> | 
+                        <a href="/help">Help</a>
+        </div>
+        
+        <form id="siteSearch" method="get" action="/search" class="autocomplete">
+            <img src="http://cdn.last.fm/flatness/clear.gif" width="16" height="16" id="siteSearchProgress" style="display: none;" />
+            <input id="siteSearchBox" type="text" name="q" autocomplete="off" placeholder="Music search" size="26" />
+            <input type="hidden" name="from" value="ac" />
+            <button id="siteSearchSubmit" type="submit" class="submit" title="Search"></button>
+        </form>
+        
+        <div id="headerPromo">
+                                            																
+    
+
+					                                    </div>
+        
+    </div><!-- #headerWrapper -->
+</div><!-- #header -->
+
+<script>
+    LFM.set('String', {
+        'siteSearchViewAll': "Search for ‘QUERY’",
+        'siteSearchSuggestions': "Popular suggestions",
+        'siteSearchNoSuggestions': "No suggestions…",
+        'autocompletePersonalDataDown': "Friends, groups and labels search is currently unavailable."
+    });
+    LFM.Display.setupHeader();
+    new LFM.Activityfeed.DeleteListener();
+</script>
+
+            <!-- Adserving start -->
+                    <div id="LastAd_Skin" class="LastAd">
+    <div align="center">
+    <script type="text/javascript">
+                if(typeof writeSkin == 'function') writeSkin();
+            </script>
+    </div>
+    </div>
+    <!-- Adserving end -->    
+    
+
+<ul id="langSelector"  style="display: none; visibility: hidden;" class="nojs">
+                
+        
+                <li class="de">
+            <a href="http://www.lastfm.de/api/tos?setlang=de" class="icon">
+                                <img class="icon flag_de_icon" alt="Deutsch" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Deutsch</span>
+            </a>
+        </li>
+                    <li class="es">
+            <a href="http://www.lastfm.es/api/tos?setlang=es" class="icon">
+                                <img class="icon flag_es_icon" alt="Español" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Español</span>
+            </a>
+        </li>
+                    <li class="fr">
+            <a href="http://www.lastfm.fr/api/tos?setlang=fr" class="icon">
+                                <img class="icon flag_fr_icon" alt="Français" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Français</span>
+            </a>
+        </li>
+                    <li class="it">
+            <a href="http://www.lastfm.it/api/tos?setlang=it" class="icon">
+                                <img class="icon flag_it_icon" alt="Italiano" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Italiano</span>
+            </a>
+        </li>
+                    <li class="ja">
+            <a href="http://www.lastfm.jp/api/tos?setlang=jp" class="icon">
+                                <img class="icon flag_jp_icon" alt="日本語" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>日本語</span>
+            </a>
+        </li>
+                    <li class="pl">
+            <a href="http://www.lastfm.pl/api/tos?setlang=pl" class="icon">
+                                <img class="icon flag_pl_icon" alt="Polski" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Polski</span>
+            </a>
+        </li>
+                    <li class="pt">
+            <a href="http://www.lastfm.com.br/api/tos?setlang=pt" class="icon">
+                                <img class="icon flag_pt_icon" alt="Português" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Português</span>
+            </a>
+        </li>
+                    <li class="ru">
+            <a href="http://www.lastfm.ru/api/tos?setlang=ru" class="icon">
+                                <img class="icon flag_ru_icon" alt="Руccкий" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Руccкий</span>
+            </a>
+        </li>
+                    <li class="sv">
+            <a href="http://www.lastfm.se/api/tos?setlang=sv" class="icon">
+                                <img class="icon flag_se_icon" alt="Svenska" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Svenska</span>
+            </a>
+        </li>
+                    <li class="tr">
+            <a href="http://www.lastfm.com.tr/api/tos?setlang=tr" class="icon">
+                                <img class="icon flag_tr_icon" alt="Türkçe" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>Türkçe</span>
+            </a>
+        </li>
+                    <li class="cn">
+            <a href="http://cn.last.fm/api/tos?setlang=zh" class="icon">
+                                <img class="icon flag_zh_icon" alt="简体中文" width="16" height="11" src="http://cdn.last.fm/flatness/clear.gif" />                <span>简体中文</span>
+            </a>
+        </li>
+        
+</ul>
+<script>
+
+    $("langSelector").className = "js";
+    LFM.set("Page", {
+        navDropDown: new LFM.Display.DropDown(
+            "headerLangToggle",
+            "headerLangToggle",
+            "langSelector",
+            {
+                align: "right",
+                onShow: function (dropdown) {
+                    dropdown.ddbody.setStyle({
+                        top: (dropdown.ddbody.getStyle("top").toPixels() + 3) + "px"
+                    });
+                },
+                trackToggle: true,
+                trackItemClick: true
+            }
+        )
+    });
+
+</script><div id='content'>
+<div class="fullWidth">
+
+
+<style type="text/css">
+
+
+#content a, #content a:link, #content a:visited {
+    text-decoration:none;
+    color:#D01F3C;
+}
+
+#content a:hover {
+    background-color:#D01F3C;
+    color:#FFF;
+}
+
+p.sampleurl a {
+    word-wrap:break-word;
+    text-wrap:unrestricted;   
+}
+
+a.auth:hover {
+    background-color:#FFF;
+    color:#000;
+}
+
+a.auth {
+    color:#000;
+}
+
+a.cancel,a.cancel:link,a.cancel:active,a.cancel:visited,a.cancel:hover {
+    text-decoration:underline;
+    text-underline:solid #D01F3C;
+    text-underline-style:solid;
+}
+
+#content ul {
+    list-style-type:none;
+    padding:0px 0px 0px 10px;
+    margin:2px 0px 2px 0px;
+}
+
+#main p {
+    line-height:1.3em;
+}
+
+#content li {
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+
+h1,h2,h3 {
+    font-family:Helvetica,"Helvetica Neue",Arial,sans-serif;
+        font-size:14px;
+    color:#000;
+    clear:none;
+    margin-top:10px;
+}
+
+dd {
+    margin:5px 0px 5px 20px;   
+}
+
+ol {
+    margin:5px 0px 5px 20px;   
+list-style-type:decimal;    
+}
+
+h1 {
+    padding-bottom:2px;
+    margin:8px 0 10px 0px;
+}
+
+h4 {
+    color:#000;
+    margin-top:5px;
+}
+
+.wstesttitle {
+    border-bottom:1px solid #CCC;
+    font-weight:Bold;
+}
+
+.wstestpass {
+background:#C1FFC1;
+    padding:10px;
+    border:1px dotted #CCC;
+}
+
+#grant {
+    clear: both;
+    float:left;
+    padding-left:0;
+    padding-right:10px;
+    margin-left:0px;
+}
+
+#apigroup ul {
+    padding-left:0px;
+    padding-top:4px;
+}
+
+h2 {
+    color:#D01F3C;
+    margin-bottom:10px;
+    margin-top:12px;
+    font-size:16px;
+}
+
+#leftcol h2{
+    color:#000;
+}
+
+#leftcol {
+        float:left;
+        padding:15px;
+        background-color:#F0F0F0;
+        margin-bottom:20px;
+}
+
+    #content ul.wspanel {
+    padding:0px;
+    }
+    
+    #content .wspanel li.package {
+        margin-top:5px;
+    }
+    
+    .param {
+        font-style:italic;
+        font-weight:bold;
+    }
+    
+#main {
+    padding:0px 0 0 20px;
+    margin:0px 0 0 220px;
+}   
+
+#wsdescriptor {
+    padding-top:0px;
+}
+ 
+textarea {
+    width:auto;
+    margin-bottom:10px;
+}
+
+p {
+    padding:8px 2px 2px 0px;
+    margin:2px;
+}
+
+.wsdescription {
+    padding:10px 10px 10px 10px;
+    margin-top:5px;
+    background:#ffd;
+    border:1px dotted #CCC;
+}
+
+#wstitle { 
+    padding-bottom:4px;
+    padding-left:55px;
+    background-image:url(http://cdn.last.fm/webclient/lastfmlogo.jpg);
+	background-repeat:no-repeat;
+	background-position: 0 0;    
+}
+
+.feeds td.feed {
+    color:#666;
+    width:100%;
+}
+
+#blurb {
+    background-color:#F0F0F0;    
+    width:500px;
+    padding:10px;
+    padding-bottom:20px;
+    font-size:16px;
+    line-height:1.4em;
+}
+
+#apigroup {
+    float:right;
+    width:260px;
+    padding:0px 30px;
+}
+
+#build {
+    clear:right;
+    margin-top:15px;
+}
+
+.title {
+ border-bottom:1px solid #CCC;
+}
+
+#methods {
+    clear:left;
+}
+
+#apigroup h2 {
+    margin-top:6px;
+    margin-bottom:6px;
+}
+
+ul#apps {
+    padding-left:0px;
+}
+
+ul#apps li.item {
+cursor:pointer;
+float:left;
+line-height:14px;
+overflow:hidden;
+padding:0px;
+width:260px;
+}
+
+ul#apps li.item p.basic {
+width:250px;
+color:#000;
+font-weight:bold;
+}
+
+ul#apps li.item a:hover {
+    background-color:#F0F0F0;
+}
+
+h2.package {
+    color:#000;
+}
+
+#methods .col {
+    float:left;
+    width:260px;
+}   
+
+div.appsimage {
+    overflow:hidden;
+    width:240px; 
+    height:100px;
+}
+
+ul#apps a.itemlink {
+color:#333;
+display:block;
+height:190px;
+padding:10px;
+padding-top:0px;
+margin-bottom:10px;
+position:relative;
+text-decoration:none;
+width:250px;
+}
+
+h1.header a,h1.header a:hover,h1.header a:visited{
+    color:#000;
+    text-decoration:none;
+    background-color:#FFFFFF;
+}
+
+ul#apps p.itemdesc {
+width:250px;
+}
+
+ul#apps li.item a {
+width:260px;
+}
+
+#intro {
+    margin-top:5px;
+}
+
+
+td.feed .title {
+    color:#000;
+    border-bottom:none;
+}
+
+.feeds td {
+    width:100px;
+    border-bottom: 1px solid #F0F0F0;
+    margin:0px;
+}
+
+h3.feed {
+    color:#D01F3C;
+    border-bottom: 1px solid #CCC;
+    padding-bottom:5px;
+}
+
+.feeds {
+}
+
+.feeds .last td{
+    border-bottom:none;
+}
+#wstitle h1 {
+font-size:24px;
+    line-height:1.0 em;
+    font-family:Helvetica,"Helvetica Neue",Arial,sans-serif;
+    margin-bottom:2px;
+}
+
+h1 {
+    padding-top:6px;
+    font-size:24px;
+}
+
+#wsurl {
+    padding:4px 0 0 10px;
+}
+
+#sample {
+    overflow:hidden;
+} 
+
+ul.stations {
+    margin-left:20px;
+}
+
+ul.stations li {
+    list-style-type:disc;
+    margin-left:8px;
+    padding:2px 0 0 5px;
+}
+
+ul.stationpanel li {
+    padding:4px 0 4px 0;
+}
+
+pre {
+    background-color:#F0F0F0;
+    padding:10px;
+    line-height:1.2em;
+    margin:5px 0 5px 0;
+}   
+
+textarea:hover {
+}
+
+button {
+    font-size:12px;
+}
+
+td {
+    padding:5px 0 5px 5px;
+}
+
+table.ws {
+    text-align:left;
+}
+
+table.ws td,table.ws th,table.ws tr {
+    padding:3px;
+}
+
+.highlight {
+}
+
+#footer {
+padding:10px 0 0 0px;
+    margin:20px 0 40px 240px;
+    width:700px;
+    color:#666;
+    border-top:1px solid #CCC;
+}
+
+</style>
+    <div id="leftcol">
+<h2>API Doc</h2>
+
+<ul class="wspanel">
+    <li><a href="/api/intro">Overview</a></li>
+    <li><a href="/api/authentication">User Authentication</a></li>
+    <li><a href="/api/submissions">Submissions (Scrobbling)</a></li>
+    <li><a href="/api/radio">Radio API</a></li>
+    <li><a href="/api/playlists">Playlists</a></li>
+    <li><a href="/api/downloads">Downloads</a></li>
+    <li><a href="/api/rest">REST requests</a></li>
+    <li><a href="/api/xmlrpc">XML-RPC requests</a></li>
+</ul>
+
+<h2>API Methods</h2>
+<ul class="wspanel">
+    <li class="package"><b>Album</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=302">album.addTags</a></li>
+                    <li><a href="/api/show/?service=429">album.getBuylinks</a></li>
+                    <li><a href="/api/show/?service=290">album.getInfo</a></li>
+                    <li><a href="/api/show/?service=317">album.getTags</a></li>
+                    <li><a href="/api/show/?service=314">album.removeTag</a></li>
+                    <li><a href="/api/show/?service=357">album.search</a></li>
+                </ul>
+    <li class="package"><b>Artist</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=303">artist.addTags</a></li>
+                    <li><a href="/api/show/?service=117">artist.getEvents</a></li>
+                    <li><a href="/api/show/?service=407">artist.getImages</a></li>
+                    <li><a href="/api/show/?service=267">artist.getInfo</a></li>
+                    <li><a href="/api/show/?service=428">artist.getPastEvents</a></li>
+                    <li><a href="/api/show/?service=118">artist.getPodcast</a></li>
+                    <li><a href="/api/show/?service=397">artist.getShouts</a></li>
+                    <li><a href="/api/show/?service=119">artist.getSimilar</a></li>
+                    <li><a href="/api/show/?service=318">artist.getTags</a></li>
+                    <li><a href="/api/show/?service=287">artist.getTopAlbums</a></li>
+                    <li><a href="/api/show/?service=310">artist.getTopFans</a></li>
+                    <li><a href="/api/show/?service=288">artist.getTopTags</a></li>
+                    <li><a href="/api/show/?service=277">artist.getTopTracks</a></li>
+                    <li><a href="/api/show/?service=315">artist.removeTag</a></li>
+                    <li><a href="/api/show/?service=272">artist.search</a></li>
+                    <li><a href="/api/show/?service=306">artist.share</a></li>
+                    <li><a href="/api/show/?service=408">artist.shout</a></li>
+                </ul>
+    <li class="package"><b>Auth</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=266">auth.getMobileSession</a></li>
+                    <li><a href="/api/show/?service=125">auth.getSession</a></li>
+                    <li><a href="/api/show/?service=265">auth.getToken</a></li>
+                </ul>
+    <li class="package"><b>Event</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=307">event.attend</a></li>
+                    <li><a href="/api/show/?service=391">event.getAttendees</a></li>
+                    <li><a href="/api/show/?service=292">event.getInfo</a></li>
+                    <li><a href="/api/show/?service=399">event.getShouts</a></li>
+                    <li><a href="/api/show/?service=350">event.share</a></li>
+                    <li><a href="/api/show/?service=409">event.shout</a></li>
+                </ul>
+    <li class="package"><b>Geo</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=270">geo.getEvents</a></li>
+                    <li><a href="/api/show/?service=421">geo.getMetroArtistChart</a></li>
+                    <li><a href="/api/show/?service=420">geo.getMetroHypeArtistChart</a></li>
+                    <li><a href="/api/show/?service=422">geo.getMetroHypeTrackChart</a></li>
+                    <li><a href="/api/show/?service=423">geo.getMetroTrackChart</a></li>
+                    <li><a href="/api/show/?service=424">geo.getMetroUniqueArtistChart</a></li>
+                    <li><a href="/api/show/?service=425">geo.getMetroUniqueTrackChart</a></li>
+                    <li><a href="/api/show/?service=426">geo.getMetroWeeklyChartlist</a></li>
+                    <li><a href="/api/show/?service=297">geo.getTopArtists</a></li>
+                    <li><a href="/api/show/?service=298">geo.getTopTracks</a></li>
+                </ul>
+    <li class="package"><b>Group</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=379">group.getMembers</a></li>
+                    <li><a href="/api/show/?service=293">group.getWeeklyAlbumChart</a></li>
+                    <li><a href="/api/show/?service=294">group.getWeeklyArtistChart</a></li>
+                    <li><a href="/api/show/?service=295">group.getWeeklyChartList</a></li>
+                    <li><a href="/api/show/?service=296">group.getWeeklyTrackChart</a></li>
+                </ul>
+    <li class="package"><b>Library</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=370">library.addAlbum</a></li>
+                    <li><a href="/api/show/?service=371">library.addArtist</a></li>
+                    <li><a href="/api/show/?service=372">library.addTrack</a></li>
+                    <li><a href="/api/show/?service=321">library.getAlbums</a></li>
+                    <li><a href="/api/show/?service=322">library.getArtists</a></li>
+                    <li><a href="/api/show/?service=323">library.getTracks</a></li>
+                </ul>
+    <li class="package"><b>Playlist</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=337">playlist.addTrack</a></li>
+                    <li><a href="/api/show/?service=365">playlist.create</a></li>
+                    <li><a href="/api/show/?service=271">playlist.fetch</a></li>
+                </ul>
+    <li class="package"><b>Radio</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=256">radio.getPlaylist</a></li>
+                    <li><a href="/api/show/?service=160">radio.tune</a></li>
+                </ul>
+    <li class="package"><b>Tag</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=311">tag.getSimilar</a></li>
+                    <li><a href="/api/show/?service=283">tag.getTopAlbums</a></li>
+                    <li><a href="/api/show/?service=284">tag.getTopArtists</a></li>
+                    <li><a href="/api/show/?service=276">tag.getTopTags</a></li>
+                    <li><a href="/api/show/?service=285">tag.getTopTracks</a></li>
+                    <li><a href="/api/show/?service=358">tag.getWeeklyArtistChart</a></li>
+                    <li><a href="/api/show/?service=359">tag.getWeeklyChartList</a></li>
+                    <li><a href="/api/show/?service=273">tag.search</a></li>
+                </ul>
+    <li class="package"><b>Tasteometer</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=258">tasteometer.compare</a></li>
+                </ul>
+    <li class="package"><b>Track</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=304">track.addTags</a></li>
+                    <li><a href="/api/show/?service=261">track.ban</a></li>
+                    <li><a href="/api/show/?service=431">track.getBuylinks</a></li>
+                    <li><a href="/api/show/?service=356">track.getInfo</a></li>
+                    <li><a href="/api/show/?service=319">track.getSimilar</a></li>
+                    <li><a href="/api/show/?service=320">track.getTags</a></li>
+                    <li><a href="/api/show/?service=312">track.getTopFans</a></li>
+                    <li><a href="/api/show/?service=289">track.getTopTags</a></li>
+                    <li><a href="/api/show/?service=260">track.love</a></li>
+                    <li><a href="/api/show/?service=316">track.removeTag</a></li>
+                    <li><a href="/api/show/?service=286">track.search</a></li>
+                    <li><a href="/api/show/?service=305">track.share</a></li>
+                </ul>
+    <li class="package"><b>User</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=432">user.getArtistTracks</a></li>
+                    <li><a href="/api/show/?service=291">user.getEvents</a></li>
+                    <li><a href="/api/show/?service=263">user.getFriends</a></li>
+                    <li><a href="/api/show/?service=344">user.getInfo</a></li>
+                    <li><a href="/api/show/?service=329">user.getLovedTracks</a></li>
+                    <li><a href="/api/show/?service=264">user.getNeighbours</a></li>
+                    <li><a href="/api/show/?service=343">user.getPastEvents</a></li>
+                    <li><a href="/api/show/?service=313">user.getPlaylists</a></li>
+                    <li><a href="/api/show/?service=414">user.getRecentStations</a></li>
+                    <li><a href="/api/show/?service=278">user.getRecentTracks</a></li>
+                    <li><a href="/api/show/?service=388">user.getRecommendedArtists</a></li>
+                    <li><a href="/api/show/?service=375">user.getRecommendedEvents</a></li>
+                    <li><a href="/api/show/?service=401">user.getShouts</a></li>
+                    <li><a href="/api/show/?service=299">user.getTopAlbums</a></li>
+                    <li><a href="/api/show/?service=300">user.getTopArtists</a></li>
+                    <li><a href="/api/show/?service=123">user.getTopTags</a></li>
+                    <li><a href="/api/show/?service=301">user.getTopTracks</a></li>
+                    <li><a href="/api/show/?service=279">user.getWeeklyAlbumChart</a></li>
+                    <li><a href="/api/show/?service=281">user.getWeeklyArtistChart</a></li>
+                    <li><a href="/api/show/?service=280">user.getWeeklyChartList</a></li>
+                    <li><a href="/api/show/?service=282">user.getWeeklyTrackChart</a></li>
+                    <li><a href="/api/show/?service=411">user.shout</a></li>
+                </ul>
+    <li class="package"><b>Venue</b></li>
+        <ul>
+                    <li><a href="/api/show/?service=394">venue.getEvents</a></li>
+                    <li><a href="/api/show/?service=395">venue.getPastEvents</a></li>
+                    <li><a href="/api/show/?service=396">venue.search</a></li>
+                </ul>
+</ul>
+</div>    <div id="main">
+    <div id="wstitle">
+    <h1 class="header"><a href="/api">Last.fm Web Services</a></h1>
+    <a href="/api/intro">API</a> | <a href="/api/feeds">Feeds</a> | <a href="/api/account">Your API Account</a>
+    </div>     <h1>API Terms of Service</h1>
+           <div class="wsdescription">If you're not sure which license to apply for, or have any questions about the license terms, drop us a line at partners [at] last [dot] fm.</div>
+           <p>Please carefully read this agreement (the "agreement") before using Last.fm's webservices, as it affects your legal rights and obligations. This Agreement governs the way that You are permitted to access Last.fm Data (as defined below) via the API. By accessing the API, You agree to accept and abide by the terms set out in this Agreement in respect of Your access to and use of the Last.fm Data. </p>
+           <p>The terms of this Agreement may be updated by Last.fm from time to time by providing you with written notice containing the updated terms. Any such updated terms shall supersede and replace the terms of this Agreement. By continuing to use any Last.fm Data, you will be deemed to have accepted the updated terms. If you do not agree to be bound by this agreement, do not use Last.fm's webservices.
+           </p>
+           <h3>The terms in a nutshell</h3>
+           <ul class="stations">
+            <li>Last.fm grants You a limited terminable licence to copy and use the Last.fm Data, subject to certain restrictions set out in this Agreement and any additional restrictions arising from changes to Last.fm's Privacy Policy from time to time.  </li>
+            <li>Although You are granted this licence without charge, Last.fm reserves the right to share in revenue generated from your use of Last.fm Data in future on terms to be negotiated in good faith between Last.fm and You.</li>
+            <li>This Agreement covers only Your use of Last.fm Data. You must not sub-license the Last.fm Data to others.</li>
+            <li>This Agreement does not entitle you to stream music or other content available on the Last.fm Site.</li>
+            <li>You must not transmit, export, transfer, divert, or send any Last.fm Data to any country without obtaining any consents or authorisations required by law or regulation in such country.</li>
+            <li>You must credit Last.fm and include links to the Last.fm site when You use the Last.fm Data.</li>
+            <li>You must comply with the Last.fm Brand Guidelines that can be downloaded from http://www.last.fm/resources/</li>
+           </ul>
+           
+           <h3>1. Definitions</h3>
+           <ul class="stations">
+                <li><strong>"API"</strong> means the application programming interface that supports requests for web services made of it by computer programs</li>
+                <li><strong>"Data storage"</strong> means any database, spreadsheet, chart, physical document, server, network, or other means of storing information, whether created or distributed by You or otherwise.</li>
+                <li><strong>"Last.fm Data"</strong> means any data, images, text, content or other information or materials made available to You by Last.fm through the API.</li>
+                <li><strong>"Last.fm Site"</strong> means Last.fm's website and all related properties, the url of which is located at www.last.fm.</li>
+                <li><strong>"Term"</strong> shall mean the duration of this Agreement which shall start on the date that Last.fm provides you with an API key pursuant to Clause 2.6 (evidenced by Last.fm's server logs) and shall continue unless and until terminated in accordance with Clause 9.</li>
+                <li><strong>"User(s)"</strong> means a user of the Last.fm Site.</li>
+           </ul>
+           <h3>2. Conditions of Use</h3>
+           <h3>2.1</h3>
+           <p>
+           Your access to and use of the API and the Last.fm Data is subject to the terms of this Agreement, the Last.fm Site Terms of Use as posted on the Last.fm Site at http://www.last.fm/popups/terms and updated from time to time and the <a href="/popups/terms">Last.fm Privacy Policy</a> as posted on the Last.fm Site at http://www.last.fm/popups/terms and updated from time to time, each of which is incorporated into this Agreement by reference. If Last.fm has granted you permission to use the API and Last.fm Data for commercial purposes in accordance with the Commercial Use Terms, such Commercial Use Terms shall also form part of this Agreement. For more information about how to apply to use the API and Last.fm Data for commercial purposes, please contact us via email at partners [at] last [dot] fm.
+           </p>
+           <h3>2.2</h3>
+           <p>
+            You must be a registered User to have access to, retrieve and use the Last.fm Data.
+           </p>
+           <h3>2.3</h3>
+           <p>You may access, retrieve, store and use any Last.fm Data in accordance with the laws relating to the storage and processing of data in the country in which You live, provided that if You live in a country outside the European Economic Area, You may only use and access and use Last.fm data in that country if Users have expressly given their permission for You to do so when they registered as a User.
+           </p>
+           <h3>2.4</h3>
+           <p>
+           You must at all times in Your use of the Last.fm Data: (i) comply with all local and international laws and regulations, including, all applicable intellectual property and data protection laws; and (ii) obtain all necessary licences and permissions.
+           </p>
+           <h3>2.5</h3>
+           <p>
+                You must not transmit, export, transfer, divert or send any Last.fm Data to any country without obtaining any consents or authorisations required under law or regulation in such country.
+           </p>
+           <h3>2.6</h3>
+           <p>
+                You agree to only use Last.fm's web services as documented on the following pages: 
+	<a href="http://www.audioscrobbler.net/data/webservices/">http://www.audioscrobbler.net/data/webservices/</a>; <a href="http://www.last.fm/tools/">http://www.last.fm/tools/</a>; <a href="http://www.last.fm/api/">http://www.last.fm/api/</a>. Last.fm will provide You with an API key from time to time to access and use the API. You may only use APIs in conjunction with the most recent user authentication key provided to You by Last.fm. You must not gather any other data from Last.fm in any other way.
+           </p>
+           <h3>2.7</h3>
+           <p>
+           You agree to use one of the buttons saying "powered by AudioScrobbler" from the page located at http://www.last.fm/resources, such button linking back to Last.fm. All links to Last.fm from pages with profile information for a Last.fm User account should link to the appropriate Last.fm User page (example: http://www.last.fm/user/&lt;username&gt;). All links to Last.fm from pages displaying information on an artist, album or track should link to the appropriate catalogue page on Last.fm. For example: http://www.last.fm/music/&lt;artistname&gt;, http://www.last.fm/music/&lt;artistname&gt;/&lt;albumname&gt;, http://www.last.fm/music/&lt;artistname&gt;/_/&lt;trackname&gt;.
+           </p>
+           <p>All button/link placements are subject to approval by Last.fm and Last.fm can suggest the use of a button/link of its choice for You to use if Last.fm deems necessary. You agree to only give public access to pages using Last.fm's web services that have been previously approved by Last.fm in writing.
+           </p>
+           <h3>2.8</h3>
+           <p>You agree to implement and comply with standards of privacy and confidentiality for the use and sharing of any Last.fm Data or any product thereof that are, as a minimum, as stringent as the standards set out in the Last.fm Privacy Policy as amended and updated by Last.fm from time to time.
+           </p>
+           <h3>2.9</h3>
+           <p>Last.fm may use technical measures to track Your use of the Last.fm Data for the purpose of ensuring compliance with this Agreement.
+           </p>
+           <h3>3. Use of the API and Last.fm Data</h3>
+           <h3>3.1</h3>
+           <p>You are permitted to use the Last.fm Data solely for non-commercial purposes and for no other purpose and subject always to any limitations or conditions as advised to You by Last.fm at any time. If you are unsure whether your use of the Last.fm Data constitutes non-commercial or commercial use, you should contact us.</p>
+           <h3>3.2</h3>
+           <p>The permission granted to You at Clause 3.1 is strictly conditional upon Your using the Last.fm Data for non-commercial purposes, as set out above. If at any time you wish to use the Last.fm Data for commercial purposes, you must apply for a commercial use agreement. Any use by You of the Last.fm Data for commercial purposes without obtaining a commercial use agreement constitutes a material breach of this Agreement which shall entitle Last.fm to terminate your use of the Last.fm Data immediately.  Any such termination shall be without prejudice to any rights and remedies of Last.fm, including the right to claim for damages against You.</p>
+           <h3>4. License to use the Last.fm Data</h3>
+           <p>
+           Subject to the restrictions set out at Clauses 4.2 and 4.3 below and in consideration of the licence granted to You below, Last.fm grants to You a worldwide, royalty-free, non-exclusive licence for the duration of copyright and any other rights in the Last.fm Data to: (i) copy the Last.fm Data; (ii) edit, modify, adapt or translate the Last.fm Data in any media to create a derivative work (a <strong>"Derivative Work"</strong>); (iii) incorporate the Last.fm Data in its entirety in unmodified form along with a number of other separate and independent works, assembled into a collective whole (a <strong>"Collective Work"</strong>); and (iv) publish, distribute or otherwise communicate the Last.fm Data or the Last.fm Data as incorporated in any Derivative Work or Collective Work to the public in any material form in any media now known.
+           </p>
+           <h3>4.1</h3>
+           <p>
+           Subject to the restrictions set out at Clauses 4.2 and 4.3 below and in consideration of the licence granted to You below, Last.fm grants to You a worldwide, royalty-free, non-exclusive licence for the duration of copyright and any other rights in the Last.fm Data to: (i) copy the Last.fm Data; (ii) edit, modify, adapt or translate the Last.fm Data in any media to create a derivative work (a "Derivative Work"); (iii) incorporate the Last.fm Data in its entirety in unmodified form along with a number of other separate and independent works, assembled into a collective whole (a "Collective Work"); and (iv) publish, distribute or otherwise communicate the Last.fm Data or the Last.fm Data as incorporated in any Derivative Work or Collective Work to the public in any material form in any media now known.
+           </p>
+           <h3>4.2</h3>
+           <p>The licence granted at Clause 4.1 above is conditional upon You:
+           </p>
+            <div style="margin-left:30px;"> 
+           <h4>4.2.1</h4>
+           <p>Making reference to the licence granted by Last.fm (appropriate to the media used) on all copies of the Last.fm Data, Derivative Works and/or Collective Works published, distributed or otherwise communicated or made available to the public by You; 
+           </p>
+           <h4>4.2.2</h4>
+            Crediting Last.fm in the form set out in Clause 2.7 where You have used Last.fm Data or created a Derivative Work and/or Collective Work that You publish, distribute or otherwise communicate to the public; 
+           <h4>4.2.3</h4>
+           complying with any and all restrictions notified to You by Last.fm in relation to the treatment of any personal data (and for the purposes of this Clause 4.2.3, any changes to Last.fm's Privacy Policy shall automatically constitute notice); and
+           <h4>4.2.4</h4>
+           to the extent reasonably practicable, keeping intact all notices that refer to the licence granted to You, if any, that Last.fm specifies to be associated with the Last.fm Data, Derivative Works and/or Collective Works.
+           <h3>4.3</h3>
+           The licence granted to You at Clause 4.1 is subject to the following restrictions:
+           <h4>4.3.1</h4>
+           You must not impose any terms on the use to be made of the Last.fm Data, a Derivative Work or a Collective Work that alters or restricts the terms of the licence granted to You under this Agreement or which has the effect or intent of restricting the ability to exercise those rights; 
+           <h4>4.3.2</h4>
+           You must not impose or apply any digital rights management technology to or on the Last.fm Data or the Last.fm Data as incorporated in a Derivative Work or Collective Work that alters or restricts the terms of the licence or any rights granted under it, or has the effect or intent of restricting the ability to exercise those rights; 
+           <h4>4.3.3</h4>
+            You must not sub-license the Last.fm Data to a third party; and
+           <h4>4.3.4</h4>
+           You must not subject the Last.fm Data to any derogatory treatment, including (but not limited to) distortion or mutilation of the Last.fm Data or treatment that is prejudicial (in Last.fm's opinion) to the reputation of Last.fm.
+           </div>
+           <h3>4.4</h3>
+           <p>You will implement suitable caching in accordance with the HTTP headers sent with web service responses. You will not make more than 5 requests per originating IP address per second, averaged over a 5 minute period, without prior written consent. You agree to cache similar artist and any chart data (top tracks, top artists, top albums) for a minimum of one week.</p>
+           <h3>4.5</h3>
+           <p>Notwithstanding the licence at clause 4.1, all rights in and to the Last.fm Data (including all copyright and database rights) remain vested in Last.fm.
+           </p>
+           <h3>4.6</h3>
+           <p>Last.fm may, from time to time, prevent certain Last.fm Data from being available via the API.
+           </p>
+           <h3>4.7</h3>
+           <p>Last.fm respects copyright. You shall not under any circumstances use the Last.fm Data for the purpose of, or in conjunction with, the unauthorised exploitation of intellectual property or for any other purpose which encourages, supports or is in any way associated with unauthorised exploitation.
+           </p>
+           <h3>5. Warranties and Indemnity</h3>
+           <h3>5.1</h3>
+           <p>You warrant and represent to Last.fm that:
+           </p>
+           <div style="margin-left:30px;"> 
+           <h4>5.1.1</h4>
+           You have the authority to enter into this Agreement on Your own behalf or on behalf of any company or other legal entity by which You are employed and that wishes to use the Last.fm Data;
+           <h4>5.1.2</h4>
+            You will comply with all local and international laws and regulations, including, all applicable intellectual property and data protection laws in connection with Your use and storage of the Last.fm Data;
+           <h4>5.1.3</h4>
+            You will obtain and maintain any and all necessary licences and permissions in connection with Your use of the Last.fm Data;
+           <h4>5.1.4</h4>
+            Your use of the Last.fm Data will not violate or infringe the rights of any third party, including intellectual property rights or rights of privacy;
+           <h4>5.1.5</h4>
+            You will not use the Last.fm Data for any purpose that is fraudulent, misleading or illegal or otherwise than is permitted by this Agreement;
+           <h4>5.1.6</h4>
+           You will not use the Last.fm Data for any purpose to enable You to personally identify or contact any User;
+           <h4>5.1.7</h4>
+           You will not use the Last.fm Data in any way that is libellous or defamatory of third parties, or is obscene, malicious or discriminatory in any way, including but not limited to race, disability, sex, sexual orientation or religion;
+           <h4>5.1.8</h4>
+           You will not use the Last.fm Data in any way or on any website that is associated or promotes, encourages, facilitates or condones the illegal or unauthorised use or sharing of audio and/or audiovisual content;
+           <h4>5.1.9</h4>
+           You will not interfere or attempt to interfere with the operation or running of the Last.fm Site with any virus, worm, Trojan horse, adware, spyware or any other form of malicious code or software; and
+           <h4>5.1.10</h4>
+           You will at all times comply with the terms of this Agreement and any other terms or policies referenced in this Agreement or on the Last.fm Site. 
+           </div>
+           <h3>5.2</h3>
+           <p>You will not bring any claim against Last.fm, or any of its licensees, assigns or successors, for damages, liabilities, causes of action, judgments, or claims in respect of Your access, retrieval and/or use of the Last.fm Data or any intellectual property You develop that is based on may otherwise arise out of Your use of, reliance on, or reference to the Last.fm Site or Last.fm Data.
+           </p>
+           <h3>5.3</h3>
+           <p>You will indemnify, and keep Last.fm, its affiliates, licensees, assigns, successors, customers, Users, all third-party advertisers, technology providers and service providers, and each of their respective employees, directors and representatives (each an "Indemnified Party"), fully and effectively indemnified from and against any and all liabilities, costs, expenses, damages and losses (including any direct, indirect or consequential losses, loss of profit, loss of reputation and all reasonable professional costs and expenses), suffered or incurred by an Indemnified Party arising out of or in connection with any claims, actions or proceedings ("Claims") which arise out of or are related to: (i) Your access, retrieval and use of the Last.fm Data; (ii) any breach of the warranties contained in Clause 5; and (iii) Your violation of any term or condition of this Agreement (including the Last.fm Site Terms of Use and Last.fm Privacy Policy attached). At Last.fm's option, You will assume control of the defence of any Claim and all related settlement negotiations, except that Last.fm shall be entitled to take any action which Last.fm (acting reasonably) deems necessary where You have failed to take action or materially delay taking action in defending or settling a Claim and such failure or delay may, in the opinion of Last.fm, prejudice the interests of Last.fm. In any event, You may not settle any Claim without Last.fm's prior written consent. 
+           </p>
+           <h3>6. Limitation of Liability</h3>
+           <h3>6.1</h3>
+           <p>Nothing in this agreement shall limit Last.fm's liability for death or personal injury caused by the negligence of Last.fm or its officers, employees or agents or for fraudulent misrepresentations or fraud, or any other liability that cannot be limited or excluded by applicable law.
+           </p>
+           <h3>6.2</h3>
+           <p>Last.fm gives no warranties of any kind, whether express, implied, statutory or otherwise, to the fullest extent permitted by law, including warranties of satisfactory quality, fitness for purpose and non infringement in relation to the last.fm site or the last.fm data. 
+           </p>
+           <h3>6.3</h3>
+           <p>To the extent permitted by applicable law, you acknowledge and agree that you use the last.fm site and the last.fm data at your own risk. the last.fm data and the last.fm site is made available on an "as is" basis and last.fm shall not be liable for the unavailability of the last.fm data or the last.fm site or any fault, defect or error in the last.fm data. 
+           </p>
+           <div style="margin-left:30px;">
+           <h4>6.3.1</h4>
+           To the extent permitted by applicable law, last.fm shall not be liable to you for any losses of any kind arising under or in relation to your use of the last.fm site or last.fm data, including but not limited to (i) any loss of profits, business, contracts, anticipated savings, goodwill, or revenue; or (ii) any  loss or corruption of data; or (iii) consequential loss or damage whatsoever, whether or not such losses or damages arise directly or indirectly and even if either party was aware of the possibility of such loss or damage.
+           </div>
+           <h3>7. Licence to use Last.fm trade marks</h3>
+           <h3>7.1</h3>
+           <p>Subject to the prior written approval of Last.fm in each case, Last.fm may make available to You certain trade marks, logos or graphics ("Marks") for use in conjunction with Your use of the Last.fm Data. You must comply with the Last.fm Brand Guidelines that can be downloaded from http://www.last.fm/resources/.  Your use of the Marks in accordance with in accordance with this Agreement is conditional upon You not using any of the Marks: (i) to represent that Last.fm endorses, sponsors or is connected to Your use of the Last.fm Data, other than to inform third parties that the Last.fm Data originated from Last.fm; or (ii) in any way that is derogatory to or critical of Last.fm or any officer, director, agent, employee, affiliate, parent or subsidiary of Last.fm. </p>
+           <h3>7.2</h3>
+           <p>Last.fm is the worldwide owner of the Marks (whether registered or unregistered) and retains all right, title and interest in and to the Marks. Any and all goodwill arising from Your use of the Marks shall accrue to Last.fm. You will not copy or use the Marks in any way not authorised by Last.fm in writing or this Agreement. You will abide by any and all conditions set out by Last.fm in connection with Your use of the Marks and must not challenge the validity of the Marks or attempt to register similar or trade marks, service marks or logos.
+           </p>
+           <h3>7.3</h3>
+           <p>Last.fm reserves the right to withdraw its consent for You to use the Marks at any time. Upon withdrawal of consent, You shall immediately discontinue Your use of the Marks. 
+           </p>
+           <h3>8. Publicity</h3>
+           <h3>8.1</h3>
+           <p>Last.fm may, at any time in its sole discretion, prepare and issue press releases, statements, and promotional and other materials mentioning and/or describing Your use of the Last.fm Data and identifying You as the developer and otherwise describing the relationship between You and Last.fm.
+           </p>
+           <h3>8.2</h3>
+           <p>You are not permitted to issue any publicity in connection with Your use of the Last.fm Data without the prior written consent of Last.fm.
+           </p>
+           <h3>9. Term and Termination</h3>
+           <h3>9.1</h3>
+           <p>This Agreement shall continue on an ongoing basis during the Term, subject to any earlier termination pursuant to clause 9.2. </p>
+           <h3>9.2</h3>
+           <p>You may terminate this Agreement at any time by sending an email to partners@Last.fm which shall be deemed to have been given on the date that the email is read by Last.fm (evidenced by a read receipt automatically sent to You). You acknowledge and agree that Last.fm may at any time in its sole discretion, without liability and with or without cause terminate this Agreement and/or terminate, restrict, block, disable or suspend Your access to the Last.fm Site or the Last.fm Data or any portion or feature of any of them. 
+           </p>
+           <h3>9.3</h3>
+           <p>Upon any termination of this Agreement, You must immediately discontinue Your use of the Last.fm API and as soon as reasonably possible delete all Last.fm Data in Your possession or control.  Clauses 2.3, 2.4, 2.5, 2.6, 4.2.2, 5, 6, 7, 8 and 10 and any definitions that are necessary to give effect to such Clauses will survive any termination of Your use of the Last.fm Site or Last.fm Data and will continue to bind You and Last.fm in accordance with this Agreement.
+           </p>
+           <h3>10. General</h3>           
+           <h3>10.1</h3>
+           <p>Last.fm reserves its right to amend this Agreement or any other document referenced in this Agreement at any time in its sole discretion by sending a new or amended version of this Agreement to You by email and by posting new or updated Last.fm Site Terms of Use and/or the Privacy Policy on the Last.fm Site.  
+           </p>
+           <h3>10.2</h3>
+           <p>Nothing in this Agreement shall be construed as constituting a partnership, joint venture or relationship of employer and employee between the parties. 
+           </p>
+           <h3>10.3</h3>
+           <p>This Agreement (and any other document incorporated into this Agreement by reference) sets out the entire agreement and understanding between You and Last.fm and supersedes all previous agreements, representations and arrangements between You and Last.fm (either oral or written). Nothing in this Clause shall limit or exclude any liability for fraudulent misrepresentation. 
+           </p>
+           <h3>10.4</h3>
+           <p>This Agreement will be binding upon and inure to the benefit of the parties and their respective successors and assigns.
+           </p>
+           <h3>10.5</h3>
+           <p>Each of Last.fm's affiliates are express and intended third party beneficiaries of this Agreement and may enforce any of its terms and exercise any of the rights to the same extent as Last.fm.
+           </p>
+           <h3>10.6</h3>
+           <p>Third party advertisers, technology providers and service providers are express and intended third-party beneficiaries of Clause 4.3 and are entitled to directly enforce their rights hereunder.
+           </p>
+           <h3>10.7</h3>
+           <p>This Agreement shall be governed by the laws of England and the parties agree to submit to the exclusive jurisdiction of the Courts of England. 
+           </p>
+           <h3>10.8</h3>
+           <p>Except as set out at Clauses 10.6 and 10.7 above, nothing in this Agreement is intended to confer on any third party (whether referred to in this Agreement by name, class, description or otherwise) any benefit or any right under any legislation in any country to enforce any provision of this Agreement.
+           </p>
+           <p>
+           THIS AGREEMENT SETS OUT THE CONDITIONS OF LAST.FM GIVING YOU ACCESS TO LAST.FM DATA ONLY. IF YOU ARE UNSURE ABOUT ANY PART OF THIS AGREEMENT, LAST.FM RECOMMENDS THAT YOU OBTAIN INDEPENDENT LEGAL ADVICE.
+           </p>
+    </div>
+</div>
+</div>
+
+<div id="LastFooter">
+     
+    <div id="footer_ads" style="display: none;" class="clearit">
+        <div class="footer_ad_wrapper">
+            
+            <!-- Adserving start -->
+                    <div id="LastAd_Footer1" class="LastAd">
+    <div align="center">
+    <script type="text/javascript">
+                    if ($("footer_ads")) $("footer_ads").show();
+                if(typeof writeFooter1 == 'function') writeFooter1();
+            </script>
+    </div>
+    </div>
+            <script>
+            $("LastAd_Footer1").hide();
+        </script>
+    <!-- Adserving end -->            <!-- Adserving start -->
+                    <div id="LastAd_Footer2" class="LastAd">
+    <div align="center">
+    <script type="text/javascript">
+                    if ($("footer_ads")) $("footer_ads").show();
+                if(typeof writeFooter2 == 'function') writeFooter2();
+            </script>
+    </div>
+    </div>
+    <!-- Adserving end -->            <!-- Adserving start -->
+                    <div id="LastAd_Footer3" class="LastAd">
+    <div align="center">
+    <script type="text/javascript">
+                    if ($("footer_ads")) $("footer_ads").show();
+                if(typeof writeFooter3 == 'function') writeFooter3();
+            </script>
+    </div>
+    </div>
+    <!-- Adserving end -->            <!-- Adserving start -->
+                    <div id="LastAd_Footer4" class="LastAd last">
+    <div align="center">
+    <script type="text/javascript">
+                    if ($("footer_ads")) $("footer_ads").show();
+                if(typeof writeFooter4 == 'function') writeFooter4();
+            </script>
+    </div>
+    </div>
+    <!-- Adserving end -->            
+        </div><!-- .footer_ad_wrapper -->
+    </div><!-- #footer_ads --> 
+        
+    <ul id="footerStuff" class="clearit">
+        <li></li>
+
+        <li><p id="uploadYourMusic">
+            <strong>Do you make music? Upload it!</strong><br /><a href="/uploadmusic?accountType=artist">Artists</a> or <a href="/uploadmusic?accountType=label">Labels</a>
+        </p></li>
+    </ul><!-- #footerStuff -->
+
+    <div id="footer_content">
+        <ul id="footerLinks" class="clearit">
+            <li class="first">
+                <dl>
+                    <dt>Learn About Us</dt>
+                    <dd><a href="/about/contact">Contact</a></dd>
+                    <dd><a href="/about">About Us</a></dd>
+                    <dd><a href="/about/team">Team</a></dd>
+                    <dd><a href="/about/jobs">Jobs</a></dd>
+                    <dd><a href="/resources">Media Kit</a></dd>
+                    <dd><a href="/advertise">Advertise</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>Get Help</dt>
+                    <dd><a href="/help/faq">FAQ</a></dd>
+                    <dd><a href="/forum/21713">Website Support</a></dd>
+                    <dd><a href="/forum/34905">Scrobbler Support</a></dd>
+                    <dd><a href="/group/Last.fm+for+iPhone+and+iPod+Touch/forum/103852">iPhone Support</a></dd>
+                    <dd><a href="http://www.last.fm/group/Last.fm+on+Xbox+LIVE/forum/137848">Xbox LIVE Support</a></dd>
+                </dl>
+            </li>
+        
+            <li>
+                <dl>
+                    <dt>Join In</dt>
+                                        <dd><a href="/community/users">Find People</a></dd>
+                    <dd><a href="/community/groups">Find Groups</a></dd>
+                    <dd><a href="/forum">Forums</a></dd>
+                    <dd><a href="/help/guidelines">Community Guidelines</a></dd>
+                    <dd><a href="/about/moderators">Moderators</a></dd>
+                    <dd><a href="/promotions">Contests &amp; Promotions</a></dd>
+                </dl>
+            </li>
+            <li class="last">
+                <dl>
+                    <dt>Do More</dt>
+                    <dd><a href="/download">Download Last.fm Scrobbler</a></dd>
+                    <dd><a href="/download#content_ipod">Download iPod Scrobbler</a></dd>
+                    <dd><a href="/hardware/apple">iPhone App</a></dd>
+                    <dd><a href="http://build.last.fm">More Apps</a></dd>
+                    <dd><a href="/music/+free-music-downloads">Free Music Downloads</a></dd>
+                    <dd><a href="/hardware">Hardware</a></dd>
+                    <dd><a href="/tools/charts">Chart Images</a></dd>
+                    <dd><a href="/subscribe">Subscribe</a></dd>
+                    <dd><a href="/api">API</a></dd>
+                </dl>
+            </li>
+        </ul><!-- #footerLinks -->
+        
+        <div id="justCantGetEnough" class="clearit">
+            <blockquote>“Men Can't Help Acting On Last.fm.”</blockquote>
+            <p>
+                <strong>More Last.fm Sites:</strong>
+                <a href="http://blog.last.fm/">Blog</a>
+                | <a href="http://musicmanager.last.fm">Music Manager</a>
+                | <a href="http://build.last.fm">Build</a>
+                | <a href="http://playground.last.fm">Playground (Subscriber VIP zone)</a>
+                                    | <a href="http://www.last.fm/bestof/2009">Best of 2009</a>
+                            </p>
+        </div>
+        
+        <div id="legalities">
+                            <div id="cbsi_f">
+<form>
+<script language="javascript">
+document.write("<div><label class=\"rb_visit_txt\" for=\"cbsi_footer_menu\">Visit other Sites</label><select name=\"cbsi_footer_menu\" id=\"cbsi_footer_menu\" class=\"rb_visit_sel\"><option value=\"\">Select Site</option><option value=\"http://www.bnet.com\">BNET</option><option value=\"http://www.cbscares.com\">CBS Cares</option><option value=\"http://www.cbssports.com/cbscollegesports/\">CBS College Sports</option><option value=\"http://www.cbsfilms.com\">CBS Films</option><option value=\"http://www.cbsradio.com/streaming/index.html\">CBS Radio</option><option value=\"http://www.cbs.com\">CBS.com</option><option value=\"http://www.cbsinteractive.com\">CBSInteractive</option><option value=\"http://www.cbsnews.com\">CBSNews.com</option><option value=\"http://www.cbssports.com\">CBSSports.com</option><option value=\"http://www.chow.com\">CHOW</option><option value=\"http://www.cnet.com\">CNET</option><option value=\"http://findarticles.com\">Find Articles</option><option value=\"http://www.gamespot.com\">GameSpot</option><option value=\"http://www.help.com\">Help.com</option><option value=\"http://www.last.fm\">Last.fm</option><option value=\"http://www.maxpreps.com\">MaxPreps</option><option value=\"http://www.metacritic.com\">Metacritic.com</option><option value=\"http://moneywatch.bnet.com\">Moneywatch</option><option value=\"http://www.movietome.com\">MovieTome</option><option value=\"http://www.mp3.com\">MP3.com</option><option value=\"http://www.mysimon.com\">mySimon</option><option value=\"http://www.ncaa.com\">NCAA</option><option value=\"http://www.radio.com\">Radio.com</option><option value=\"http://www.search.com\">Search.com</option><option value=\"http://www.shopper.com\">Shopper.com</option><option value=\"http://www.sho.com\">Showtime</option><option value=\"http://www.smartplanet.com\">SmartPlanet</option><option value=\"http://www.techrepublic.com\">TechRepublic</option><option value=\"http://www.theinsider.com\">The Insider</option><option value=\"http://www.tv.com\">TV.com</option><option value=\"http://www.urbanbaby.com\">UrbanBaby.com</option><option value=\"http://www.zdnet.com\">ZDNet</option></select><input type=\"button\" class=\"rb_visit_go\" value=\"Go\" onClick=\"window.location=document.getElementById('cbsi_footer_menu').options[document.getElementById('cbsi_footer_menu').selectedIndex].value;\" /></div>");
+</script>
+</form>
+  <noscript>
+	<a href="http://www.bnet.com">BNET</a>  | <a href="http://www.cbscares.com">CBS Cares</a>  | <a href="http://www.cbssports.com/cbscollegesports/">CBS College Sports</a>  | <a href="http://www.cbsfilms.com">CBS Films</a>  | <a href="http://www.cbsradio.com/streaming/index.html">CBS Radio</a>  | <a href="http://www.cbs.com">CBS.com</a>  | <a href="http://www.cbsinteractive.com">CBSInteractive</a>  | <a href="http://www.cbsnews.com">CBSNews.com</a>  | <a href="http://www.cbssports.com">CBSSports.com</a>  | <a href="http://www.chow.com">CHOW</a>  | <a href="http://www.cnet.com">CNET</a>  | <a href="http://findarticles.com">Find Articles</a>  | <a href="http://www.gamespot.com">GameSpot</a>  | <a href="http://www.help.com">Help.com</a>  | <a href="http://www.last.fm">Last.fm</a>  | <a href="http://www.maxpreps.com">MaxPreps</a>  | <a href="http://www.metacritic.com">Metacritic.com</a>  | <a href="http://moneywatch.bnet.com">Moneywatch</a>  | <a href="http://www.movietome.com">MovieTome</a>  | <a href="http://www.mp3.com">MP3.com</a>  | <a href="http://www.mysimon.com">mySimon</a>  | <a href="http://www.ncaa.com">NCAA</a>  | <a href="http://www.radio.com">Radio.com</a>  | <a href="http://www.search.com">Search.com</a>  | <a href="http://www.shopper.com">Shopper.com</a>  | <a href="http://www.sho.com">Showtime</a>  | <a href="http://www.smartplanet.com">SmartPlanet</a>  | <a href="http://www.techrepublic.com">TechRepublic</a>  | <a href="http://www.theinsider.com">The Insider</a>  | <a href="http://www.tv.com">TV.com</a>  | <a href="http://www.urbanbaby.com">UrbanBaby.com</a>  | <a href="http://www.zdnet.com">ZDNet</a> 
+  </noscript>
+<p id="cbsi_f_pop">
+Popular on CBS sites: <a href='http://www.maxpreps.com/signingday?tag=itarch.popval.1'>College Signing Day</a> | <a href='http://mmod.ncaa.com/?tag=itarch.popval.2'>March Madness</a> | <a href='http://www.tv.com/?tag=itarch.popval.3'>TV</a> | <a href='http://www.cnet.com/apple-iphone.html?tag=itarch.popval.4'>iPhone</a> | <a href='http://reviews.cnet.com/cell-phones?tag=itarch.popval.5'>Cell Phones</a> | <a href='http://www.metacritic.com/games/?tag=itarch.popval.6'>Video Game Reviews</a> | <a href='http://www.last.fm/?tag=itarch.popval.7'>Free Music</a><!-- cbth:100 -->
+</p>
+</div>                <p id="copy">
+                    &copy; 2010 Last.fm Ltd. All rights reserved. | 
+                    <a href="/legal/terms" target="_blank">Terms of Use</a> 
+                    and <a href="/legal/privacy" target="_blank">Privacy Policy</a> | <span class="date">Updated November 21, 2008</span><br />
+                        
+                                    </p>
+        </div><!-- #legalities -->
+        
+                    </div>
+</div><!-- #LastFooter -->
+
+<div id="multiButtonMenu" style="display: none;">
+    <div>
+        <ul class="lfmDropDownBody">
+            <li class="mAddToLibrary"><a href="#">Add to my Library</a></li>
+            <li class="mAddToFriends"><a href="#">Add to Friends</a></li>
+            
+            <!-- <li class="save"><a href="#">Bookmark</a></li> -->
+            <li class="mSend"><a href="#">Share</a></li>
+            
+            <li class="mLove"><a href="#">Love track</a></li>
+            <li class="mUnlove"><a href="#">Unlove track</a></li>
+            <li class="mBan"><a href="#">Ban track from radio</a></li>
+            <li class="mUnban"><a href="#">Unban track from radio</a></li>
+
+                                    
+            <li class="mAddTags"><a href="#">Add tags</a></li>
+            <li class="mAddToPlaylist"><a href="#">Add to playlist</a></li>
+            
+            <li class="mRemoveFromLibrary"><a href="#">Remove from your Library</a></li>
+            
+            <li class="mBuy"><a href="#">Buy Track</a></li>
+                        <li class="mMessage"><a href="#">Send a message</a></li>
+                        <li class="mEditDetails"><a href="#">Edit Details</a></li>
+            <li class="mMessageAll"><a href="#">Message All Users</a></li>
+            <li class="mEditPermissions"><a href="#">Edit Permissions</a></li>
+            <li class="mAbdicate"><a href="#">Abdicate</a></li>
+            <li class="mLeave"><a href="#">Leave Group</a></li>
+            
+            <li class="mLoading"><a href="#">&nbsp;</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="http://dw.com.com/js/dw.js"></script>
+<script type="text/javascript">
+    DW.pageParams = {
+        siteid: '190',
+        ptid: '',
+        onid: ''
+    };
+    DW.clear();
+</script>
+<noscript>
+    <img src="http://dw.com.com/clear/c.gif?ts=1270842927&amp;sid=" width="1" height="1" class="pixelTracker" />
+</noscript>
+
+
+<div id="siteSearchAutocomplete" class="autocomplete" style="display: none;"></div>
+
+<script>
+// Search autocomplete
+new LFM.Ajax.SideGroupedMulticompleter('siteSearchBox', 'siteSearchAutocomplete', '/search/autocomplete', {
+    frequency: 0.2,
+    indicator: 'siteSearchProgress',
+    enabled: true
+});
+LFM.Button.MultiButton.setup();
+LFM.Display.setMinHeight();
+
+</script>
+
+</div>
+        </div>
+    </div>
+    </body>
+</html>

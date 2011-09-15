@@ -1,0 +1,312 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Options Panel</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.6000.16481" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#0033c4 aLink=#0033c4 link=#0033c4 bgColor=#e4e4e4><A 
+name=Top></A>
+<TABLE 
+ 
+cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033c4 border=0 
+>
+  <TBODY>
+  <TR 
+   
+   border="0">
+    <TH align=left><FONT face=Arial color=#ffffff size=+3>Options 
+    Panel</FONT></TH></TR></TBODY></TABLE>
+	
+<P>The <EM>Options Panel</EM> is a GUI panel allowing users to select options 
+  affecting the details of feature extraction. This panel is divided into two 
+  sections. The left section allows users to select the web service(s) to submit 
+  queries to and to set query preferences that affect the types and numbers of 
+  hits returned by queries. The right section allows users to set the details 
+  of how final&nbsp;feature values will be calculated&nbsp;from raw hit counts&nbsp;and 
+  which reports will be displayed in the <A 
+href="results_panel.html">Results Panel</A>&nbsp;after feature extraction is complete. 
+  A screenshot of the <EM>Options Panel</EM> is shown in Figure 1.</P>
+<P> <IMG src="Screenshot_Options.gif"></P>
+<P><STRONG><EM>Figure 1:</EM></STRONG> A screenshot of the <EM>Options Panel </EM>showing 
+  default settings.</P>
+<P> This section of the manual is divided into seven sections, one for each of 
+  the seven sections of the <EM>Options Panel</EM> interface:</P>
+<P><STRONG>1) WEB SERVICES TO SEARCH</STRONG></P>
+<P> The options in this section allow the user to control which web services to 
+  submit queries to. Passwords to use the services may also be entered here, if 
+  appropriate.</P>
+<P> Although multiple web services may be selected, this will increase the duration&nbsp;of 
+  feature extraction compared to only using one web service.&nbsp;The hit counts 
+  for each selected web service are combined during final feature calculation. 
+  The limitations of each web service are described in the <A href="hints.html">Hints 
+  and Suggestions</A>&nbsp;section of this manual.</P>
+<P> It may be useful for those with software development backgrounds to implement 
+  additional web services, as described in the <a href="extending.html">Extending 
+  the Software</a> section of this manual.</P>
+<P> The specific options in this section are as follows:</P>
+<UL>
+  <LI><STRONG>Yahoo!:</STRONG> Whether queries are to be submitted to the <A 
+  href="http://developer.yahoo.com/search/web/V1/webSearch.html" 
+  target=top>Yahoo! REST-like Web Search web services</A>. The Yahoo! Application 
+    Key is hard coded into jWebMiner because Yahoo!'s quota is 5000 queries per 
+    day<EM> per source&nbsp;IP address</EM>, so multiple users will not reduce 
+    the quota available to each user. 
+  <LI><STRONG>Google:</STRONG> Whether queries are to be submitted to the&nbsp;<A href="http://www.google.co.uk/intl/en/apis/reference.html" 
+  target=top>Google SOAP web services</A>. A Google distributed License Key must 
+    be entered in the <STRONG>License key </STRONG>field for Google to be accessed. 
+    This key is not hard coded into&nbsp;jWebMiner because Google imposes a limit 
+    of 1000 queries per day with a particular key, regardless of source IP address,&nbsp;so 
+    each user needs their own key to avoid reducing the quota available to other 
+    users.</LI>
+</UL>
+<P><STRONG>2) GENERAL SEARCH SETTINGS</STRONG></P>
+<P> The options in this section allow the user to control miscellaneous settings 
+  influencing how searches are performed and what types of results are returned.</P>
+<P> It is in general best for users to leave these preferences as they are unless 
+  they are expert users. This is because these controls can have significant effect 
+  on returned hit counts and because not all of these options are&nbsp;supported 
+  by&nbsp;all web services.</P>
+<P> The specific options in this section are as follows:</P>
+<UL>
+  <LI><STRONG>Treat strings literally:</STRONG> Whether all search queries 
+  should be literal searches (e.g. for the query "heavy metal"&nbsp;sites must 
+  have the two words adjacent if they are to be considered a hit if 
+  the&nbsp;search is literal). This is also sometimes known as an exact search 
+  or a phrase search. 
+  <LI><STRONG>Perform search as OR instead of AND:</STRONG> Whether search queries 
+    need only contain one of the specified query words in order to result in a 
+    hit. If this is set to true, then only one of the query words must be present. 
+    If this is set to false, then all of them must be present (although not necessarily 
+    in the specified order, unless the <EM>Treat strings literally</EM> checkbox 
+    is selected). It is recommended that the user leave this box unchecked. 
+  <LI><STRONG>Include non-matching similar hits:</STRONG> Whether results 
+  returned by search queries may include hits that do not contain one or more of 
+  the specified query words but do contain terms very similar to them (e.g. 
+  alternative spellings). 
+  <LI><STRONG>Suppress similar hits:</STRONG> Whether to suppress similar hits 
+    when reporting results. Similar in this context means either sites with identical 
+    titles and/or descriptions, or multiple hits from the same host. 
+  <LI><STRONG>Suppress adult content: </STRONG>Whether to suppress hits that are 
+    classified as containing adult content by the search service in question.</LI>
+</UL>
+<P><STRONG>3) LANGUAGE, REGIONAL AND FILE TYPE FILTERS</STRONG></P>
+<P> The options in this section allow the user to control filters (of a different 
+  type than those in the <A href="required_filter_words_panel.html">Required Filter 
+  Words Panel</A>&nbsp;and <A href="excluded_filter_words_panel.html">Excluded 
+  Filter Terms Panel</A>) that limit the types of hits that can be returned. The 
+  geographical region that searches&nbsp;are performed in can also be specified. 
+  These options must be chosen from the available options in the provided combo 
+  boxes. A choice of "No Limitations" means that the corresponding filter is not 
+  applied.</P>
+<P> The specific options in this section are as follows:</P>
+<UL>
+  <LI><STRONG>Limit to language:</STRONG> Sets the name of a language that pages 
+    must be in in order to be counted as hits. 
+  <LI><STRONG>Limit to country:</STRONG> Sets the country that pages must be found 
+    in in order to be counted as hits. 
+  <LI><STRONG>Search from region:</STRONG> Sets the name of a country where searches 
+    will be performed (i.e. where the search service is located). Results are 
+    not necessarily limited to this country, however. 
+  <LI><STRONG>Limit to file type:</STRONG> Sets the&nbsp;file type&nbsp;that&nbsp;documents 
+    must be in in order to be counted as hits.</LI>
+</UL>
+<p><strong>4) FEATURE SCORE CALCULATION SETTINGS</strong></p>
+<P>The options in this section control whether various types of normalization 
+  are applied during final feature calculation. None, some or all of these normalizations 
+  can be applied. The specific options in this section are as follows:</P>
+<ul>
+  <LI><STRONG>Normalize hits across web services:</STRONG> Whether hit counts 
+    from different web services should be normalized before final feature scores 
+    are calculated. This ensures that services that produce fewer hits overall 
+    are not underweighted in the final scores. The overall hit counts for each 
+    web service are scaled to the overall number of hits of the service with the 
+    lowest number of hits. This checkbox has no effect if only one web service 
+    is selected in the <em>WEB SERVICES TO SEARCH</em> section of the <em>Options 
+    Panel</em>.
+  <LI><STRONG>Normalize hits across web sites:</STRONG> Whether hits from different 
+    sources (individual web sites and/or the network as a whole, as set in the 
+    <a href="site_weightings_panel.html">Site Weightings Panel</a>) should be 
+    normalized before final feature scores are calculated. This ensures that sources 
+    that produce fewer hits overall are not underweighted in the final scores. 
+    This is separate and in addition to the manual weights that can be imposed 
+    on the <a href="site_weightings_panel.html">Site Weightings Panel</a>, which 
+    are not affected by whether or not normalization is applied. The overall hit 
+    counts for each source are normalized to the overall number of hits of the 
+    source with the lowest number of hits overall. This checkbox has no effect 
+    if only one source is specified with the <a href="site_weightings_panel.html">Site 
+    Weightings Panel</a>. 
+  <LI><STRONG>Normalize feature settings:</STRONG> Whether final feature values 
+    should be normalized after all other feature calculation steps have been completed. 
+    If the <strong>By row rather than overall</strong> checkbox is selected then 
+    this normalization is performed on a row by row basis (so that the sum of 
+    feature values in each row of the table of feature scores is 1.0), otherwise 
+    it is an overall normalization for the table of scores (so that the sum of 
+    all feature values is 1.0).
+</ul>
+<P><strong>5) CO-OCCURRENCE SCORING FUNCTION</strong></P>
+<P>The section controls which formula is used to calculate final feature values 
+  from hit counts when the <em>Co-Occurrence Extraction </em>option is selected 
+  in the <a href="search_words_panel.html">Search Words Panel</a>. These formulas 
+  are applied to hit counts after hit counts have been combined across sources 
+  (as set in the <a href="site_weightings_panel.html">Site Weightings Panel</a>) 
+  and across web services (as set in the <em>WEB SERVICES TO SEARCH</em> section 
+  of the <em>Options Panel</em>). These formulas are also applied after source 
+  weightings (as set in the <a href="site_weightings_panel.html">Site Weightings 
+  Panel</a>) and normalizations (as set in the<em> FEATURE SCORE CALCULATION SETTINGS</em> 
+  section of the <em>Options Panel</em>) have been used to process hit counts. 
+  The exception to this is the <em>Normalize feature settings </em>normalization, 
+  which is applied after the chosen formula has been applied.</P>
+<P>Which formula is best to use depends on the kind of search that is being performed, 
+  and it can be useful to experiment with different formulas. It may also be useful 
+  for those with software development backgrounds to implement additional formulas, 
+  as described in the <a href="extending.html">Extending the Software</a> section 
+  of this manual.</P>
+<P>The specific options in this section are given below as well as references 
+  to publications that detail their previous use.</P>
+<ul>
+  <LI>S(a1,a2) = C(a1,a2) / (1 + (SUMcfromAcnota1(C(a1,c)) x SUMdfromAdnota2(C(d,a2)))) 
+    <ul>
+      <li>Geleijnse, G., and J. Korst. 2006. Web-based artist categorization. 
+        <em>Proceedings of the International Conference on Music Information Retrieval.</em> 
+        266–71.</li>
+    </ul>
+  <li>S(a1,a2, c) = (C(a1,a2) / C(a2)) * (1 - (|C(a1) - C(a2)| / C(c))) 
+    <ul>
+      <li>Ellis, D. P. W., B. Whitman, A. Berenzweig, and S. Lawrence. 2002. The 
+        quest for ground truth in musical artist similarity.<em> Proceedings of 
+        the International Conference on Music Information Retrieval.</em> 170–7.</li>
+      <li>In this formula c refers to the the element from A with the largest 
+        C(A).</li>
+    </ul>
+  </li>
+</ul>
+<p>The notation used in the above formulas is defined as follows:</p>
+<ul>
+  <li>S() refers to the scoring function that outputs feature scores (before <em>Normalize 
+    feature settings </em>normalization, if selected).</li>
+  <li>C() refers to the processed hit counts for the input query combined across 
+    web services and weighted network sites and after web service and web site 
+    normalization, if selected. If only one web service is used and only one source 
+    (including the possibility of the whole network) is used then this is just 
+    the raw hit count for the input query.</li>
+  <li>A is the set of lines in the<em> PRIMARY SEARCH STRINGS</em> field of the 
+    <a href="search_words_panel.html">Search Words Panel</a>.</li>
+  <li>a1 and a2 each refer to individual elements from the set A.</li>
+</ul>
+<p><strong>6) CROSS TABULATION SCORING FUNCTION</strong></p>
+<P>The section controls which formula is used to calculate final feature values 
+  from hit counts when the <em>Cross Tabulation Extraction </em>option is selected 
+  in the <a href="search_words_panel.html">Search Words Panel</a>. These formulas 
+  are applied to hit counts after hit counts have been combined across sources 
+  (as set in the <a href="site_weightings_panel.html">Site Weightings Panel</a>) 
+  and across web services (as set in the<em> WEB SERVICES TO SEARCH</em> section 
+  of the <em>Options Panel</em>). These formulas are also applied after source 
+  weightings (as set in the <a href="site_weightings_panel.html">Site Weightings 
+  Panel</a>) and normalizations (as set in the<em> FEATURE SCORE CALCULATION SETTINGS</em> 
+  section of the <em>Options Panel</em>) have been used to process hit counts. 
+  The exception to this is the the <em>Normalize feature settings </em>normalization, 
+  which is applied after the chosen formula has been applied.</P>
+<P>Which formula is best to use depends on the kind of search that is being performed, 
+  and it can be useful to experiment with different formulas. It may also be useful 
+  for those with software development backgrounds to implement additional formulas, 
+  as described in the <a href="extending.html">Extending the Software</a> section 
+  of this manual.</P>
+<P>The specific options in this section are given below as well as references 
+  to publications that detail their previous use.</P>
+<ul>
+  <LI>S(a,b) = C(a,b) / C(a) 
+    <ul>
+      <li>Schedl, M., T. Pohle, P. Knees, and G. Widmer. 2006. Assigning and visualizing 
+        music genres by web-based co-occurrence analysis. <em>Proceedings of the 
+        International Conference on Music Information Retrieval</em>. 260–5.</li>
+    </ul>
+  <li>S(a,b) = C(a,b) / C(b) 
+    <ul>
+      <li>Schedl, M., T. Pohle, P. Knees, and G. Widmer. 2006. Assigning and visualizing 
+        music genres by web-based co-occurrence analysis. <em>Proceedings of the 
+        International Conference on Music Information Retrieval</em>. 260–5.</li>
+    </ul>
+  </li>
+  <li>S(a,b) = C(a,b) / (1 + SUMcfromA(C(c,b))) 
+    <ul>
+      <li>Geleijnse, G., and J. Korst. 2006. Web-based artist categorization. 
+        <em>Proceedings of the International Conference on Music Information Retrieval.</em> 
+        266–71.</li>
+    </ul>
+  </li>
+  <li>S(a,b) = C(a,b) / (1 + SUMcfromB(C(a,c))) </li>
+</ul>
+<p>The notation used in the above formulas is defined as follows:</p>
+<ul>
+  <li>S() refers to the scoring function that outputs feature scores (before <em>Normalize 
+    feature settings </em>normalization, if selected).</li>
+  <li>C() refers to the processed hit counts for the input query combined across 
+    web services and weighted network sites and after web service and web site 
+    normalization, if selected. If only one web service is used and only one source 
+    (including the possibility of the whole network) is used then this is just 
+    the raw hit count for the input query.</li>
+  <li>A is the set of lines in the<em> PRIMARY SEARCH STRINGS</em> field of the 
+    <a href="search_words_panel.html">Search Words Panel</a>.</li>
+  <li>B is the set of lines in the<em> SECONDARY SEARCH STRINGS</em> field of 
+    the <a href="search_words_panel.html">Search Words Panel</a>.</li>
+  <li>a refers to an individual element from the set A.</li>
+  <li>b refers to an individual element from the set B.</li>
+</ul>
+<p><strong>7) INFORMATION TO REPORT</strong></p>
+<P>The options in this section control which types of reports are generated and 
+  displayed in the <a href="results_panel.html">Results Panel</a> after feature 
+  extraction is complete. These reports are each presented in tables labeled by 
+  search strings (except for the <em>Search settings used</em> report). </P>
+<P> All, some or none of these reports may be selected, but regardless of the 
+  reports selected here feature values are also stored after extraction so that 
+  they can be saved in the <a href="results_panel.html">Results Panel</a> as <a href="http://jmir.sourceforge.net/index_ACE_XML.html" target="top">ACE 
+  XML</a>, <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target=top>Weka 
+  ARFF</a> or newline delimited text files. Reports are displayed in the <a href="results_panel.html">Results 
+  Panel</a> in the same order that they appear here in the <em>Options Panel</em>. 
+  These reports can be useful in debugging and/or understanding why feature scores 
+  are as they are, as they can be used to view processing at various intermediate 
+  stages. </P>
+<P>Note that in the case where the <em>Co-Occurrence Extraction </em>option is 
+  selected in the <a href="search_words_panel.html">Search Words Panel</a> that 
+  entries on the diagonal of each report table are left empty in each of the reports 
+  and are set to 0 if saved, as they are not significant.</P>
+<P>The specific options in this section are as follows:</P>
+<ul>
+  <LI><STRONG>Feature scores:</STRONG> Whether or not to display the final feature 
+    scores that may be saved as features after feature extraction is complete. 
+    This report is displayed in a table with the highest value in each row italicized 
+    and bolded. 
+  <LI><STRONG>Combined processed hit counts:</STRONG> Whether or not to display 
+    the combined (added) processed hit counts for all web services and sites after 
+    pre-processing is complete. This does take into account site weighting and/or 
+    source and web service normalization, if they have been selected by the user. 
+    It does not include the application of scoring functions or feature score 
+    normalization, however. 
+  <LI><STRONG>Combined raw hit counts:</STRONG> Whether or not to display the 
+    combined hit counts added together across all web services and sites after 
+    queries are all completed. This does not take into account site weighting, 
+    any normalizations or application of scoring functions. 
+  <LI><STRONG>Individual raw hit counts:</STRONG> Whether or not to individually 
+    display the raw hit counts for each web service and each network source after 
+    queries are all completed but before hit counts have been combined or otherwise 
+    processed. 
+  <LI><STRONG>Search queries used:</STRONG> Whether or not to display the queries 
+    that are actually sent to each of the web services. Note that these queries 
+    will not include information that was stored in the actual web service objects 
+    themselves, so the queries may appear incomplete in the case of some web services. 
+    This report is combined into the same table with the <em>Individual raw hit 
+    counts</em> report if it is selected to be generated, and is generated separately 
+    if it is not. 
+  <LI><STRONG>Search settings used:</STRONG> Whether or not to display the details 
+    of all of the settings used to perform feature extractions. This is useful 
+    for maintaining a record of the settings used each time that features are 
+    extracted. 
+</ul>
+<p></p>
+<TABLE 
+ 
+height=5 width="100%" bgColor=#0033c4 border=0 >
+  <TBODY>
+  <TR 
+   
+   border="0">
+    <TH></TH></TR></TBODY></TABLE>
+<P><TT><A href="#Top">-top of page-</A></TT></P></BODY></HTML>

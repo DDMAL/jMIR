@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Class Structure</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Class Structure</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>EXPLANATION OF THIS SECTION</strong></p>
+<p>This section provides an overview of the jSongMiner Java class structure. More 
+  details are available in the jSongMiner Javadocs and in the source code itself. 
+  The reader may also wish to review the <a href="05_processing_sequence.html">section 
+  of this manual on jSongMiner's processing sequence</a> in order to obtain an 
+  overview of how the system operates.</p>
+<p> <strong>JSONGMINER'S CLASS STRUCTURE</strong></p>
+<p> Each of the following classes are in the jsongminer Java package:</p>
+<ul>
+  <li><strong>Main: </strong>This class contains jSongMiner's executable Main 
+    method, which outlines the overall chain of processing performed by jSongMiner 
+    from a high-level perspective. This method primarily calls methods from the 
+    MainMethods class.</li>
+  <li><strong>MainMethods: </strong>This class holds static methods that are called 
+    by the Main method of the Main class. These outline each of the primary processing 
+    tasks performed by jSongMiner from an intermediate-level perspective. This 
+    class will likely be the primary interface for those who wish to use jSongMiner 
+    as a library in their own code.</li>
+  <li><strong>ConfigDataAndParser: </strong>Objects of this class hold basic jSongMiner 
+    configuration settings that are accessible via their public fields. Objects 
+    of this class also include methods for parsing or saving these settings from 
+    or to a jSongMiner XML configuration file.</li>
+  <li><strong>MusicMetaData: </strong>Each object of this class holds a piece 
+    of metadata, including the field identifier for the metadata, the value of 
+    the metadata and the source from which the metadata value was derived. Static 
+    methods are provided for processing collections of MusicMetaData objects in 
+    various ways.</li>
+  <li><strong>EmbeddedTagMiner: </strong>An object of this class is used to extract 
+    and store metadata embedded in an audio file. Upon instantiation, an object 
+    of this class is given a file path, which it stores. It then extracts and 
+    stores embedded metadata from this file. Individual pieces of extracted metadata 
+    can then be accessed using method calls.</li>
+  <li><strong>EchoNestMiner: </strong>Objects of this class are used to identify 
+    songs and extract information about songs and artists from the <a href="http://developer.echonest.com/docs/v4/" target="top">Echo 
+    Nest API</a>. This class includes methods for identifying unknown audio files 
+    using the Echo Nest's fingerprinting codegen binary and/or the Echo Nest's 
+    remote fingerprinting service. There is also a method for identifying audio 
+    files using known identifying metadata (e.g. song title and artist name extracted 
+    from ID3 fields). Methods are also provided for extracting additional kinds 
+    of information from the Echo Nest API. Each object of this class maintains 
+    a private music_meta_data field that holds a vector of MusicMetaData objects. 
+    Each method call to an EchoNestMiner object gives the user the option of having 
+    the data extracted by the given method be stored in this vector. If this is 
+    done, then all of the extracted data to date can be accessed from this vector 
+    at a later time. Information for multiple songs could be stored in this way, 
+    but in practice it is best to store only information for a single song in 
+    each EchoNestMiner object. Echo Nest song IDs are used as unique identifiers 
+    in objects of this class.</li>
+  <li><strong>LastFMMiner: </strong>Objects of this class are used to extract 
+    information from the <a href="http://www.last.fm/api" target="top">Last.FM 
+    API</a> with respect to a given song and its associated artist and album. 
+    Upon instantiation, an object of this class is given identifying information 
+    about a song, and a corresponding Last.FM Track object is downloaded and stored 
+    from the Last.FM API. Further method calls to an object of this LastFMMiner 
+    class can be used to extract and access further information related to the 
+    song associated with this Track object. Each LastFMMiner object is associated 
+    with one and only one song, so the stored Last.FM Track object itself serves 
+    as a unique identifier for a given song.</li>
+  <li><strong>DublinCoreInterpreter: </strong>This is s utility class containing 
+    static methods for processing collections of MusicMetaData objects into <a href="http://dublincore.org/" target="top">Dublin 
+    Core</a>-formatted collections of MusicMetaData objects.</li>
+</ul>
+<p> <strong>OTHER JMIR PACKAGES USED BY JSONGMINER</strong></p>
+<ul>
+  <li><strong> ACE: </strong>A machine learning framework that uses metalearning 
+    to perform supervised learning and classification. jSongMiner uses it only 
+    to generate and interpret ACE XML 1.1 Classification files.</li>
+  <li><strong>UtilityClasses:</strong> A set of utility classes providing a variety 
+    of general-purpose functionality. jSongMiner uses it to perform miscellaneous 
+    tasks, such as accessing the web via a proxy server.</li>
+</ul>
+<p> <strong>THIRD-PARTY LIBRARIES, EXECUTABLES AND WEB SERVICES USED BY JSONGMINER</strong></p>
+<p> jSongMiner also makes use of several .jar libraries, binary executables and 
+  web services. These are described in the <a href="09_licensing.html">section 
+  of this manual on licensing</a>.</p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

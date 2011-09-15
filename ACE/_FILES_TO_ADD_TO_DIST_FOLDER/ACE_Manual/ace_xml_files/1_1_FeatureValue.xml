@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<!DOCTYPE feature_vector_file [
+   <!ELEMENT feature_vector_file (comments, data_set+)>
+   <!ELEMENT comments (#PCDATA)>
+   <!ELEMENT data_set (data_set_id, section*, feature*)>
+   <!ELEMENT data_set_id (#PCDATA)>
+   <!ELEMENT section (feature+)>
+   <!ATTLIST section start CDATA "" stop CDATA "">
+   <!ELEMENT feature (name, v+)>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT v (#PCDATA)>
+]>
+
+<feature_vector_file>
+
+   <comments>This is an example of an XML file that stores extracted features
+   that are to be used for training, testing or classification. The data_set_id
+   element identifies the unique identifier of an instance that a particular set
+   of features correspond to, in this case a file path. The section element
+   delineates different sections of a given data set that are to be classified
+   independently or semi-independently, such as analysis windows. The start and
+   stop tags indicate when a section begins and ends, typically in terms of time
+   stamps. The feature element delineates the different (potentially multi-
+   dimensional) features extracted from an instance or section of an instance.
+   The name element identifies the unique name of a particular feature. The v 
+   element indicates the value for a particular dimension of a
+   feature.</comments>
+
+   <data_set>
+      <data_set_id>C:\Recordings\Handel_4.wav</data_set_id>
+      <section start="0" stop="99">
+         <feature>
+            <name>Spectral Centroid</name>
+            <v>0.0</v>
+         </feature>
+      </section>
+      <section start="100" stop="199">
+         <feature>
+            <name>Spectral Centroid</name>
+            <v>440.0</v>
+         </feature>
+      </section>
+      <section start="200" stop="283">
+         <feature>
+            <name>Spectral Centroid</name>
+            <v>526.0</v>
+         </feature>
+      </section>
+      <feature>
+         <name>Duration</name>
+         <v>250.0</v>
+      </feature>
+   </data_set>
+
+   <data_set>
+      <data_set_id>C:\Recordings\Handel_5.wav</data_set_id>
+      <section start="0" stop="99">
+         <feature>
+            <name>Spectral Centroid</name>
+            <v>0.0</v>
+         </feature>
+      </section>
+      <section start="100" stop="199">
+         <feature>
+            <name>Spectral Centroid</name>
+            <v>220.0</v>
+         </feature>
+      </section>
+      <section start="200" stop="299">
+         <feature>
+            <name>Spectral Centroid</name>
+            <v>115.0</v>
+         </feature>
+      </section>
+      <section start="300" stop="342">
+         <feature>
+            <name>Spectral Centroid</name>
+            <v>115.0</v>
+         </feature>
+      </section>
+      <feature>
+         <name>Duration</name>
+         <v>372.5</v>
+      </feature>
+   </data_set>
+
+   <data_set>
+      <data_set_id>C:\Recordings\UnknownFile.wav</data_set_id>
+      <section start="50" stop="99">
+         <feature>
+            <name>Spectral Centroid</name>
+            <v>854.6</v>
+         </feature>
+      </section>
+      <feature>
+         <name>Duration</name>
+         <v>960.3</v>
+      </feature>
+   </data_set>
+
+</feature_vector_file>

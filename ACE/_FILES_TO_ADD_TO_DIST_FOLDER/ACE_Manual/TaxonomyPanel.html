@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+<head>
+	<title>Taxonomy Panel</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Taxonomy Panel</FONT></TH>
+
+    </TR></TBODY>
+</TABLE>
+<p><strong>Overview</strong>
+<blockquote>
+This panel displays the class ontology for an ACE project. Ontologies are stored in an ACE XML Taxonomy file. Users are able 
+to view, edit, load, and save class ontologies on which classifications can be based.
+</blockquote>
+
+<p><strong>Display Options</strong></p>
+<blockquote>
+<p>The currently loaded taxonomy can be seen in one of two 
+views. The default view, called the Hierarchical View, allows users to see a hierarchical tree
+reflecting the relationships of broad categories going down to narrower
+categories. The names of these categories may be edited by clicking on them
+(the return button must be pressed to register changes) or by using the
+buttons described below. In this view, the status bar displays the total
+number of top level categories.</p>
+ <p>The second view, called the Ancestry View, allows users to see the
+taxonomy in the form of a list of leaf categories. Children of leaf
+categories represent a list of all ancestors of the given category. Leaf
+categories that appear more than once in the taxonomy are combined into one
+under this view (the stored taxonomy itself is not changed) so that all of
+the combined ancestors are listed together. The taxonomy is not editable in
+this view. In this view, the status bar displays the total number of leaf categories.
+</p>
+<strong>Screen Shot - Hierarchical View</strong>
+<p><img src="images/TaxonomyPanelHier.png"></p>
+
+<p><strong>Screen Shot - Ancestry View</strong></p>
+<p><img src="images/TaxonomyPanelAncest.png"></p>
+
+<p>Both of the trees in the above two views are sorted alphabetically. The
+ <i>Display Hierarchy</i> and <i>Display Ancestry</i> buttons allow users to
+ switch between the two views. In both views, a beige bullet next to a
+ category means that it has children that can be viewed or hidden by pressing
+ on the handle to the left of the bullet, and a blue bullet next to a category
+ means that it is a leaf category with no children.
+</blockquote>
+
+<p><strong>Panel Contents</strong></p>
+<blockquote>
+ <p>The <i>New Taxonomy</i> button deletes the current taxonomy and creates a
+ new empty taxonomy.
+ <p>The <i>Load Taxonomy</i> button loads a taxonomy_file ACE XML file into
+ memory and displays it. This overwrites any existing taxonomy. The root node,
+ which has no internal significance to ACE, is given the name of the file.
+ <p>The <i>Save Taxonomy</i> button saves the currently loaded taxonomy into
+ the path referred to in the <i>File Path Settings</i> dialog box as a
+ taxonomy_file ACE XML file. The <i>Save As</i> button allows the user to
+ choose the path to which the file is to be saved and updates the path in the
+ <i>File Path Settings</i> dialog box. The name of the root node, which has no
+ internal significance to ACE, is not saved.
+ <p>The <i>Add New Sibling Category</i> and the <i>Add New Child</i> buttons
+ add a new sibling or a new child category to the taxonomy respectively, with
+ a location based on the category that is currently selected by the user. The
+ <i>Delete Branch</i> button removes the selected category and its descendants.
+</blockquote>
+<p><strong>Questions and Comments</strong></p>
+<blockquote> 
+  <p><a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a></p>
+</blockquote>
+<TABLE width="100%" height=5 border=0 bgColor=#0033C4>
+  <TBODY>
+    <TR>
+      <TH></TH>
+    </TR>
+  </TBODY>
+
+</TABLE>
+<p><a href="http://sourceforge.net/projects/jmir/files/" target="top">DOWNLOAD 
+  FROM SOURCEFORGE</a></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

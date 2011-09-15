@@ -1,0 +1,186 @@
+<html>
+<head>
+	<title>Introduction</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Introduction</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>EXPLANATION OF THIS SECTION</strong></p>
+<p>This section provides an introduction to and overview of jSongMiner. It also 
+  highlights the particular advantages of jSongMiner, and outlines the contents 
+  of each chapter of the jSongMiner manual. </p>
+<p> <strong>INTRODUCTION TO JSONGMINER</strong></p>
+<p>jSongMiner is a software package for auto-identifying songs and extracting 
+  metadata about them from various sources on the web and elsewhere. This software 
+  was originally designed for use in the context of digital libraries, but it 
+  can certainly be adopted for other purposes as well. For example, it could be 
+  used as a means of obtaining cultural features for automatic music classification, 
+  or even for annotating personal music collections. For those users who do wish 
+  to use jSongMiner in the context of a digital library, it has been designed 
+  specifically to be integrated with the <a href="http://www.greenstone.org/" target="top">Greenstone 
+  digital library software</a>, and Greenstone modules have been implemented for 
+  using jSongMiner to build Greenstone collections.</p>
+<p>jSongMiner begins by identifying unknown audio files using fingerprinting. 
+  Alternatively, it can also identify songs using metadata queries, either using 
+  metadata that is embedded in an audio file or using known metadata about a song. 
+  Once jSongMiner has identified a song, it can then extract metadata about the 
+  song from various sources, such as from <a href="http://developer.echonest.com/docs/v4/" target="top">The 
+  Echo Nest</a> and <a href="http://www.last.fm/api" target="top">Last.FM</a> 
+  web services, or from miscellaneous metadata embedded in the audio file. In 
+  addition to extracting metadata about songs, jSongMiner can also extract metadata 
+  about artists and albums associated with songs as distinct resources.</p>
+<p>Once metadata has been extracted relating to a song, artist or album, this 
+  metadata can be saved as an <a href="http://jmir.sourceforge.net/index_ACE_XML.html" target="top">ACE 
+  XML</a> 1.1 Classifications file or as a return-delimited text file, or it can 
+  simply be printed to standard out. Each piece of metadata extracted by jSongMiner 
+  includes the metadata field label, the metadata value and the source from which 
+  the metadata was derived. Users can also opt to have the extracted metadata 
+  presented using unqualified or qualified Dublin Core tags, if desired.</p>
+<p>In all, jSongMiner can extract over 100 song, artist and album fields. Many 
+  of these fields can have multiple values (e.g. there may be multiple songs similar 
+  to a given song).</p>
+<p>jSongMiner is part of the <a href="http://jmir.sourceforge.net" target="top">jMIR</a> 
+  project, and as such can be easily integrated with other jMIR applications. 
+  However, it is also designed to be used entirely independently if desired.</p>
+<p>Like the rest of jMIR, jSongMiner is open-source and available for free. It 
+  is implemented in Java in order to maximize cross-platform utilization. The 
+  one exception to this is its use of the Echo Nest fingerprinting codegen binary, 
+  but the Echo Nest provides versions of this binary for use with Windows, OS 
+  X and Linux. In any case, jSongMiner can certainly be used without the local 
+  fingerprinting functionality offered by the Echo Nest codegen if necessary. 
+</p>
+<p>Since jSongMiner is designed primarily for use with digital libraries and automatic 
+  music classification software, its primary users are expected to have a certain 
+  basic level of computer proficiency. The majority of the interface design effort 
+  has been put into providing a powerful and flexible command line and configuration 
+  file interface, and a GUI has not been implemented yet. Also, some basic setting 
+  of configurations must be done upon installation, due to lisencing constraints 
+  imposed by some of the technologies used by jSongMiner. Having noted this, every 
+  effort has been made to make jSongMiner as easy to use as possible, with ample 
+  documentation in the manual, so even users with only moderate computer backgrounds 
+  should still have little difficulty using the software. In addition to including 
+  a command line interface that makes the jSongMiner easy to run from other software, 
+  jSongMiner also has a well-documented API in order to facilitate the use of 
+  jSongMiner as a library incorporated into other software.</p>
+<p><strong>ADVANTAGES OF JSONGMINER</strong> </p>
+<ul>
+  <li> jSongMiner provides an integrated and unified framework for acquiring many 
+    types of metadata from diverse sources of information about music. It keeps 
+    a record of resource identifiers in as many namespaces as possible while doing 
+    this, thus facilitating the integration of information from different sources.</li>
+  <li> jSongMiner provides several different mechanisms for identifying audio 
+    files, so that if one approach fails another may work. jSongMiner also extracts 
+    some of the same metadata fields from different sources redundantly, so that 
+    if a given piece of information is missing or incorrect on one source, it 
+    may still be correctly found on another source.</li>
+  <li> jSongMiner permits metadata extraction for both unidentified audio files 
+    and abstract pieces of music for which identifying information (e.g. title, 
+    artist and album) is known.</li>
+  <li> jSongMiner keeps track of where each piece of metadata was extracted from.</li>
+  <li> jSongMiner provides a command line and configurations file interface that 
+    provides users with a great deal of flexibility as to what they want extracted, 
+    from where it is to be extracted and how the extracted results are to be presented.</li>
+  <li> jSongMiner is entirely open-source and free, and is as platform-independent 
+    as possible.</li>
+  <li> jSongMiner has a highly extensible modular architecture that will facilitate 
+    the addition of additional sources of information to the jSongMiner framework 
+    in the future, as well as the incorporation of future improvements to existing 
+    sources.</li>
+  <li> jSongMiner is designed to be easily integrated into other software, either 
+    through its very well-documented and accessible API, or through the use of 
+    its command line and configuration file interface. jSongMiner also allows 
+    known metadata about a song to be entered at the command line, so that information 
+    known to be true by users or other software can be easily incorporated into 
+    jSongMiner extraction queries.</li>
+  <li> jSongMiner is designed specifically to be easily and usefully integrated 
+    into digital library frameworks, and has already been incorporated into the 
+    <a href="http://www.greenstone.org/" target="top">Greenstone digital library 
+    framework</a>.</li>
+  <li> jSongMiner provides the option of presenting extracted metadata in the 
+    form of unqualified and/or qualified <a href="http://dublincore.org/" target="top">Dublin 
+    Core</a> fields. It includes an original Dublin Core schema carefully designed 
+    to suit the kinds of information that can be mined from the web and embedded 
+    metadata tags.</li>
+  <li> jSongMiner is also designed specifically to be used in automatic music 
+    classification research. The integration of jSongMiner into the <a href="http://jmir.sourceforge.net" target="top">jMIR</a> 
+    framework and its production of ACE XML files facilitate this. For example, 
+    one might use the song identifiers found by jSongMiner to extract classification 
+    features through the web, using software such as <a href="http://jmir.sourceforge.net/index_jWebMiner.html" target="top">jWebMiner</a>, 
+    or one might use the metadata extracted by jSongMiner itself directly as features.</li>
+  <li> jSongMiner provides users with the option of saving extracted metadata 
+    as <a href="http://jmir.sourceforge.net/index_ACE_XML.html" target="top">ACE 
+    XML</a> or return-delimited test, and/or have it printed to standard out. 
+    These choices allow the user to choose the output format that is best suited 
+    to their needs (e.g. ACE XML for use in automatic classification, text for 
+    easy parsing at a later date or standard out for immediate access or post-processing 
+    by other software). jSongMiner also includes utility functions for use in 
+    translating and quickly interpreting previously saved metadata.</li>
+  <li> jSongMiner allows the storage of metadata containing diverse character 
+    sets by providing the option of URL-encoding saved metadata.</li>
+  <li> jSongMiner allows users to choose whether they want saved files about resources 
+    for which metadata has been extracted to be auto-named with content-derived 
+    unique identifiers, or whether command line-specified file names should be 
+    used.</li>
+  <li> jSongMiner allows users to treat songs, artists and albums as separate 
+    resource types, and allows information to be extracted and saved independently 
+    for each of them, whilst at the same time maintaining information outlining 
+    the links between resources of the same and different types. Users also have 
+    the option of instead packaging artist and album metadata with song metadata, 
+    if they prefer.</li>
+  <li> jSongMiner keeps logs of artists and albums for which metadata has already 
+    been extracted, thus allowing users to avoid repetitively reextracting the 
+    same metadata for artists and albums when a song is being processed that is 
+    associated with an artist or album for which metadata has already been extracted. 
+  </li>
+  <li> jSongMiner allows simple access to sources of information on the web even 
+    if they must be accessed through a proxy server.</li>
+</ul>
+<p> <strong>OVERVIEW OF THIS MANUAL </strong></p>
+<ul>
+  <li><strong>01 Introduction: </strong>This section provides an introduction 
+    to and overview of jSongMiner. It also highlights the particular advantages 
+    of jSongMiner and outlines the contents of each chapter of the jSongMiner 
+    manual.</li>
+  <li><strong>02 Installation:</strong> This section describes how to access and 
+    install jSongMiner onto one's computer, and includes an outline of some of 
+    the files and resources included with the jSongMiner distribution package. 
+    This section also provides details on how to set up access to certain third-party 
+    resources whose licensing requires that additional steps be performed upon 
+    installation in order for jSongMiner to access their functionality.</li>
+  <li><strong>03 Command Line Arguments: </strong>This section explains all of 
+    the command line arguments that may be used with jSongMiner, and provides 
+    usage examples.</li>
+  <li><strong>04 Configuration Settings File:</strong> This section describes 
+    the jSongMiner configuration file, which specifies various processing settings. 
+    Explanations of each of the configuration settings are included.</li>
+  <li><strong>05 Processing Sequence: </strong>This section provides an overview 
+    of each of the major processing steps performed by jSongMiner during its operation, 
+    in the sequence that they occur.</li>
+  <li><strong>06 Tags Extracted: </strong>This section lists all of the metadata 
+    field labels currently extracted by jSongMiner. They are divided based on 
+    whether each field is output to a Song, Artist or Album resource file.</li>
+  <li><strong>07 Dublin Core Metadata Mappings:</strong> This section specifies 
+    all of the Dublin Core fields that may be extracted and saved by jSongMiner, 
+    as well as the mappings between them and the general metadata field labels 
+    produced by jSongMiner.</li>
+  <li><strong>08 Class Structure: </strong>This section provides an overview of 
+    the jSongMiner Java class structure.</li>
+  <li><strong>09 Licensing:</strong> This section describes the licensing under 
+    which jSongMiner is distributed, and highlights the associated liability waiver. 
+    It also briefly describes each of the Java .jar libraries, executables and 
+    web services used and accessed by jSongMiner. Finally, thanks are provided 
+    to the agencies that helped make jSongMiner possible.</li>
+</ul>
+<p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

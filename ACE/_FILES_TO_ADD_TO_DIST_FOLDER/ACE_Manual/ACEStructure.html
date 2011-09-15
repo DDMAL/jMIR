@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+<head>
+		<title>Structure of ACE</title>
+</head>
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+	
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Structure of ACE</FONT></TH>
+
+    </TR></TBODY>
+</TABLE>
+<p><strong>Overview</strong></p>
+<blockquote>
+The structure of ACE is designed such that all possible sources can access ACE in the
+same way; ACE's functionality is independent of the source that calls it. Code is divided 
+based on the processing that it performs (code that trains is in a class called Trainer, code 
+that classifies is in a class called InstanceClassifier, etc). Classes found in the ace.datatypes
+package are storage objects used for communication between the main processing classes. The main processing classes 
+and datatypes that can be used by the graphic user interface, the command 
+line interface, or external APIs are described below. </blockquote>
+<p><strong>Main Processing Classes</strong></p>
+<blockquote>
+<ul>
+	<li>Coordinator - The class through which all sources can access ACE's training, classification, 
+    cross validation, and experimentation functionality. 
+	The following classes are intended to only be called by Coordinator. All other sources 
+	need only call the appropriate methods in Coordinator. Loading and preparation of 
+	instances as well as dimensionality reduction is performed in this class prior to 
+	passing instances to processing classes.	
+	<li>Trainer - Trains the specified type of Weka Classifier based on the given training
+	instances. The trained Classifier is stored and saved in a TrainedModel object. 
+	<li>InstanceClassifier - Classifies a set of instances using a trained Weka Classifier. 
+	This class reads the TrainedModel object from the specified file and uses it to classify
+	the given instances. The classifications are stored and returned in an array of 
+	SegmentedClassification objects. In the context of cross validation, a classified
+	Instances object is returned. Classifications can be written to a Weka ARFF file or an ACE XML
+	classifications file (depending on which format was used to load the initial instances).
+	<li>CrossValidator - Cross validates the given instances with the specified type of
+	Weka Classifier and the specified number of folds. Instances are partitioned randomly
+	into training and testing data for each fold (note that the original order of instances 
+	remains the same, the random assignment affect only whether an instance is used for training
+	or testing in any one fold). CrossValidator makes calls to the Trainer
+	and InstanceClassifier classes to evaluate the performance of a specific classification
+	approach. The specified type of Weka Classifier is trained on the training data and tested 
+	on the testing data for each fold. Statistics are stored for each fold and used to calculate 
+	average statistics to represent the overall success of the classification approach being tested.
+	<li>Experimenter - Finds the best classification approach by making repeated calls to
+	the CrossValidator class. Different types of Classifiers are tested with multiple types
+	of dimensionality reduction. Dimensionality reduction is performed first. Experimenter 
+	calls DimensionalityReducer to get an array of Instances objects, each cell containing 
+	a different dimensionality reduced version of the original instances. Each type of Classifier
+	is cross validated with each set of dimensionality reduced instances. Results are saved
+	in multiple files. One file will be created for each set of dimensionality reduced instances.
+	A summary of the results for each cross validation for each dimensionality reduction 
+	will be written in the file for the corresponding set of instances. The results for the
+	best found Classifier for each dimensionality reduction are printed at the beginning of 
+	printed at the beginning of each file. The best classification overall is chosen by comparing
+	the best results for each dimensionality reduction. A copy of the results summary for the
+	best found classification approach will be written in a separate "best results overall" 
+	file. After the best classification has been chosen, validation is performed using a 
+	publication set that was set aside at the beginning of the experiment. A new Classifier
+	of the chosen type is created and trained on the chosen type of dimensionality reduced
+	instances (all instances are included except for the publication set). The newly trained
+	Classifier is tested on the publication set and results are saved to the "best results
+	overall" file.
+	<li>DimensionalityReducer - Reduces the dimensionality of a set of instances. This class
+	is called by the Coordinator class to reduce the dimensionality of the training data
+	prior to training and cross validating. This class is also called by the Experimenter 
+	class to create an array of multiple dimensionality reduced versions of an original set
+	of instances. 
+</ul>
+</blockquote>
+<p><strong>ACE Datatypes</strong></p>
+<blockquote>
+<ul>
+	<li>DataSet - Stores the feature values for a set of instances. This datatype is similar
+	to the Weka Instances object. This object corresponds to the ACE XML feature vectors file.
+	<li>FeatureDefinition - Stores the possible features for which the instances of this ACE
+	project could have values. This object corresponds to the ACE XML feature definitions file.
+	
+	<li>SegmentedClassification - Stores the classifications for a set of instances. This
+	object corresponds to the ACE XML model classifications file.
+	<li>Taxonomy - Stores the hierarchy of the classes into which an instance of this project
+	may be classified.
+	<li>DataBoard - Holds reference to the main ACE datatypes (Taxonomy, DataSet, Feature
+	Definition, SegmentedClassifiation). Constructors of this class enable the creation of these
+	main ACE datatypes from either ACE XML files or Weka ARFF files.
+	<li>Project - Holds reference to the paths to each of the component ACE XML files of an
+	ACE project. This object is associated with the ACE XML project file. This class contains
+	methods for loading, parsing, and saving an ACE project file.
+	<li>TrainedModel - Serializable object that stores the Weka Objects associated with a 
+	Classification. Trainer will train the Weka Classifier, set the fields of this class, and 
+	save it to a file. InstanceClassifier will read this object from a file and access its 
+	fields to be used for classification. This object contains reference to a Weka Classifier,
+	a Weka AttributeSelection, and a Weka Attribute object describing the possible classes 
+	to which an Instance may belong.
+	<li>CrossValidationResults - Holds the results of a cross validation. Statistics like error
+	rate, standard deviation of error rates, and confusion matrix can be accessed through the
+	public fields of this class. In experimentation, a 2D array of these objects is used to
+	store the results for each classifier and each dimensionality reduction.
+</ul>
+</blockquote>
+For a detailed description of how to use ACE from the command line, please see the 
+<a href="ACEManual.html">ACE Command Line Manual</a>.
+<p><strong>Questions and Comments</strong></p>
+<blockquote> 
+  <p><a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a></p>
+</blockquote>
+<TABLE width="100%" height=5 border=0 bgColor=#0033C4>
+  <TBODY>
+    <TR>
+      <TH></TH>
+    </TR>
+  </TBODY>
+
+</TABLE>
+<p><a href="http://sourceforge.net/projects/jmir/files/" target="top">DOWNLOAD 
+  FROM SOURCEFORGE</a></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

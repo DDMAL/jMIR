@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+<head>
+	<title>ACE Manual</title>
+</head>
+<!text = "#000000" bgcolor="#e4e4e4">
+<body text=#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>ACE Manual</FONT></TH>
+
+    </TR></TBODY>
+</TABLE>
+<p><strong>In this manual:</strong>
+<blockquote>
+<ul>
+	<li><a href="#ACE">What is ACE?</a><br>
+	<li><a href="#CLI">How to use ACE from the command line user interface</a><br>
+	<ul>
+		<li><a href="#commands">List of ACE commands</a>
+	</ul>
+	<li><a href="#GUI">How to use ACE from the graphic user interface</a><br>
+</ul>
+</blockquote>
+<p></p>
+<a name="ACE"></a>
+<p><strong>What is ACE?</strong></p>
+<blockquote> 
+  <p>ACE (Autonomous Classification Engine) is a meta-learning software package 
+    for selecting, optimizing and applying machine learning algorithms to music 
+    research. Given a set of feature vectors, ACE experiments with a variety of 
+    classifiers, classifier parameters, classifier ensemble architectures and 
+    dimensionality reduction techniques in order to arrive at a good configuration 
+    for the problem at hand. This can be important, as different algorithms can 
+    be appropriate for different problems and types of data. ACE is designed to 
+    increase classification success rates, facilitate the application of powerful 
+    machine learning technology for users of all technical levels and provide 
+    a framework for experimenting with new algorithms.</p>
+  <p> ACE evaluates different configurations in terms of success rates, stability 
+    across trials, training times and classification times. Each of these factors 
+    may vary in relevance, depending on the goals of the particular task under 
+    consideration. Functionality is also being incorporated into ACE allowing 
+    users to specify constraints on the amount of time that ACE has to arrive 
+    at an appropriate algorithm selection. </p>
+  <p> ACE may also be used directly as a classifier. Once users have selected 
+    the classifier(s) that they wish to use, whether through meta-learning or 
+    using pre-existing knowledge, they need only provide ACE with feature vectors 
+    and model classifications. ACE then trains itself and presents users with 
+    trained models.</p>
+
+  <p> ACE is specifically designed to facilitate classification for those new 
+    to pattern recognition, both through its use of meta-learning to help inexperienced 
+    users avoid inappropriate algorithm selections and through its intuitive <a href="ACEGUI.html">GUI</a> 
+    (currently under development). ACE is also designed to facilitate the research 
+    of those well-versed in machine learning, and includes a command-line interface 
+    and well-documented API for those interested in more advanced batch use or 
+    in development.</p>
+  <p> ACE is built on the standardized <a href="http://www.cs.waikato.ac.nz/ml/weka/" target="top">Weka</a> 
+    machine learning infrastructure, and makes direct use of a variety of algorithms 
+    distributed with Weka. This means that not only can new algorithms produced 
+    by the very active Weka community be immediately incorporated into ACE, but 
+    new algorithms specifically designed for MIR research can be developed using 
+    the Weka framework. ACE can read features stored in either <a href="ACE_XML.html">ACE 
+    XML</a> or <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target="top">Weka 
+    ARFF</a> files.</p>
+  <p> For a detailed description of the organization of ACE's main processing classes, please
+	see the <a href="ACEStructure.html">Ace Structure</a> page.
+
+</blockquote>
+<a name="CLI"></a> <tt></tt>
+<p></p>
+<p><strong>How to use ACE from the Command Line</strong></p>
+<blockquote>
+  <p>ACE has four main utilities: ACE can be used to train a Weka Classifier object, 
+	to classify a data set with a previously trained Weka Classifier, to cross validate
+	a data set with a specific type of Weka Classifier, or to experiment on a data set 
+	(to experiment is to test a variety of Classifiers in order to find the optimal 
+	classification approach). In addition to this main functionality, ACE also has the 
+	ability to specify many other options. All of this functionality is accessible 
+	through the command line. A complete list of all command line flags appears at 
+	the end of this document. Note that ACE will run from the GUI if no processing 
+	commands are specified; -train -classify -cv or -exp must be present in the command 
+	line arguments for ACE to run from the command line.
+	
+	<p><strong><u>Loading</u></strong></p>
+	<p>For any processing to occur, data must be loaded. Data can be in 
+	<a href="ACE_XML.html">ACE XML</a> format or <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target="top">
+	Weka ARFF</a> format. Individual ACE XML files can be loaded using the -ltax (load
+	taxonomy), -lfkey (load feature key), -lfvec (load feature vectors), and -lmclas 
+	(load model classifications) flags at the command line. Weka ARFF files are loaded
+	using the -arff flag. ACE is able to load a previously saved ACE project from an 
+	<a href="ProjectFile.html">ACE Project File</a> or an <a href="Zip.html">ACE 
+	Zip File</a> using the -proj and -lzip flags respectively. Instances may only be 
+	loaded using one method at a time; Instances must be from either individual ACE 
+	XML files, an ARFF file, an ACE project file, or an ACE zip file. No combination of 
+	these methods is permitted.
+	<br><br>Examples:<br><i>Note: These examples don't have any processing commands and 
+	would therefore open the GUI instead of running from the command line.</i>
+	<ul>
+		<li>java -jar ACE.jar -arff iris.arff 
+		<li>java -jar ACE.jar -ltax tax.xml -lfkey fdefs.xml -lfvec fvecs.xml -lmclas classes.xml
+		<li>java -jar ACE.jar -lzip myACE.zip
+	</ul><p></p>
+	<p><strong><u>Training</u></strong></p>
+	<p>Training is specified with the -train flag. The -train flag itself takes no option.
+	The user must specify the type of Weka Classifier to be trained with the -learner 
+	flag and the name of the file to which to save the trained Classifier should be saved
+	with the -sres flag. Both of these additional flags and their associated options must
+	be present in order for training to occur. The type of Classifier is indicated using
+	the following codes:
+	<ul>
+		<li>Unweighted k-nn (k = 1): IBk
+		<li>Naive Bayesian (Gaussian): NaiveBayes
+        <li>Support Vector Machine: SMO
+        <li>C4.5 Decision Tree: J48
+        <li>Backprop Neural Network: MultilayerPerceptron
+        <li>AdaBoost seeded with C4.5 Decision Trees: AdaBoostM1
+        <li>Bagging seeded with C4.5 Decision Trees: Bagging
+	</ul>
+	Feature vectors, a feature key, and model classifications (but not necessarily a 
+	taxonomy) must be loaded in order to train.
+	<br><br>Examples:<br>
+	<ul>
+		<li>java -jar ACE.jar -arff iris.arff -train -learner ibk -sres test.model
+		<dd><i>A k-nn Classifier will be trained and saved in a file called test.model.</i>
+		<li>java -jar ACE.jar -lfkey fdefs.xml -lfvec fvecs.xml -lmclas classes.xml -train
+		-sres machine.model -learner smo
+		<dd><i>A support vector machine Classifier will be trained and saved in a file 
+		called machine.model.</i>
+	</ul>	
+	<p></p>
+	<p><strong><u>Classifying</u></strong></p>
+	<p>Classifying is specified with the -classify flag. A previously trained and saved 
+	Classifier must be specified as an option to this command. Feature definitions, feature vectors, and a taxonomy 
+	must be loaded. Success rates can only be printed if model classifications are 
+	loaded. Classifications can be written to a Weka ARFF file or an ACE XML
+	classifications file (depending on which format was used to load the initial instances).
+	<br><br>Examples:<br><i>The Classifiers from the previous set of examples are now
+	being tested on the same data sets with which they were trained.</i>
+	<ul>
+		<li>java -jar ACE.jar -arff iris.arff -classify test.model
+		<li>java -jar ACE.jar -lfkey fdefs.xml -lfvec fvecs.xml -lmclas classes.xml 
+		-classify machine.model 
+	</ul><p></p>
+	
+	<p><strong><u>Cross Validating</u></strong></p>
+	<p>Cross validation is specified with the -cv flag. The user must specify the number 
+	of folds to be used during cross validation (at least 2). During cross validation, 
+	instances are randomly partitioned into training and testing sets for each fold. 
+	Each instance is a testing instance for only one fold and is a member of the training 
+	set otherwise. For each fold, the training set is used to train the specified type of
+	Classifier which is then tested on the testing set. Statistics are calculated per fold
+	and used to prepare a report outlining the success of this classification approach 
+	overall. Types of Classifiers may be specified with the following codes (note that Classifier 
+	parameters are preset, plans exist to expand ACE to accept parameter values at the 
+	command line, however, at this time, only default values are available).  
+	<ul>
+		<li>Unweighted k-nn (k = 1): IBk
+		<li>Naive Bayesian (Gaussian): NaiveBayes
+        <li>Support Vector Machine: SMO
+        <li>C4.5 Decision Tree: J48
+        <li>Backprop Neural Network: MultilayerPerceptron
+        <li>AdaBoost seeded with C4.5 Decision Trees: AdaBoostM1
+        <li>Bagging seeded with C4.5 Decision Trees: Bagging
+	</ul>	
+	Examples:<br>
+	<ul>
+		<li>java -jar ACE.jar -lzip ziptest.zip -cv 3 -learner smo
+		<dd><i>A three fold cross validation is performed with support vector machine 
+		Classifiers</i>
+		<li>java -jar ACE.jar -lfkey fdefs.xml -lfvec fvecs.xml -lmclas classes.xml 
+		-cv 4 -learner j48 
+		<dd><i>A four fold cross validation is performed with C4.5 decision tree
+		Classifiers</i>
+	</ul><p></p>
+	
+	<p><strong><u>Experimenting</u></strong></p>
+	<p>Experimentation is specified with the -exp flag. Only number of cross validation
+	folds need to be specified. Experimentation tests a variety of different 
+	classification techniques in order to find the optimal approach. The given instances
+	will be tested with four different types of feature selection: Principal 
+	Components, Exhaustive search using naive Bayesian Classifier, Genetic search 
+	using naive Bayesian Classifier, and no feature selection. For each of the four 
+	sets of dimensionality reduced Instances, thirty-seven different types of Classifiers will 
+	be tested using cross validation. Best classification approaches will be determined 
+	for each set of dimensionality reduced Instances and overall by comparing error rates.
+	Once the best classification approach has been selected, a validation test is performed.
+	A new Classifier of the chosen type is created and trained on the chosen type of 
+	dimensionality reduced instances. This validation Classifier is tested on a publication
+	set of instances that was set aside at the beginning of the experiment. Validation 
+	results are printed along side a copy of the cross validation results for the best
+	classification.
+	<br><br>Examples:
+	<ul>
+		<li>java -jar ACE.jar -proj myproject.xml -exp 3
+		<li>java -jar ACE.jar -lfkey fdefs.xml -lfvec fvecs.xml -lmclas classes.xml 
+		-exp 5 
+	</ul>
+	
+	<p><strong><u><a name="ZIP">Zip Utilities</a></u></strong></p>
+	The <a href = "Zip.html">ACE zip file</a> allows for an entire ACE project, including all 
+	component ACE XML files, to be stored in a single file. The ACE command line provides 
+	utilities for creating new ACE zip files, extracting files from a previously saved zip 
+	file, and for adding and extracting individual files.
+	<p>When performing zip file operations from the command line, the -zipfile flag must 
+	always be present with a single option specifying the name of the zip file to be accessed or
+	created. If the specified file already exists, ACE will overwrite it without warning. To 
+	create a new zip file, use the -dozip flag. All command line arguments 
+	that aren't associated with any other flags will be assumed to be files or directories that
+	the user wishes to compress into a zip file. To add any number of files or directories to 
+	an existing zip file, use the -zip_add flag. If any of the files to be added are ACE XML files, 
+	they will be added to the ACE XML project file for that zip file. (<i>**Please note that this 
+	process does not occur efficiently; all files previously contained in the zip file will be 
+	extracted and re-compressed with the newly added files.)</i>  To extract the contents of a zip file, use 
+	the -unzip flag. By default, the files will be extracted into a directory with the same 
+	name as the zip file (without the extension). The user may choose to extract a single file
+	or a single filetype from an existing zip file. Using the -zip_extract flag, the user can
+	specify a single file to be extracted. If the -filetype flag is present, ACE will extract
+	all files of the specified filetype from the given ACE zip file. Recognized filetypes 
+	include: "project_file", "taxonomy_file", "feature_key_file", "feature_vector_file", or
+	"classifications_file". To specify a specific directory into which the contents of the zip 
+	file should be extracted, use the -zip_dir flag.  Please note that only one of 
+	-unzip, -dozip, -zip_add, or -zip_extract may be specified at one time.
+	<br><br>Examples:
+	<ul>
+		<li>java -jar ACE.jar -zipfile myproject.zip -dozip myproject
+		<dd><i>The contents of the directory "myproject" are being compressed into an ACE zip
+		file called "myproject.zip"</i>
+		<li>java -jar ACE.jar -zipfile myproject.zip -zip_add fvec 
+	</ul>
+	<p></p>
+	Please visit the <a href = "Zip.html">ACE zip file</a>
+	page for a more detailed description of the structure of ACE zip files. 
+	<p><strong><u>Other Options</u></strong></p>
+	<p>
+	<ul>
+		<li>Max Class Membership Spread - This can be specified with the -max_spread flag
+		and can be used whenever training is occurring. The given value will be the maximum 
+		ratio of instances that are permitted to belong to different classes. For example, 
+		a value of 2 means that only up to twice the number of instances belonging to the 
+		class with the smallest number of training instances may be used for training. If 
+		a class has more training instances than this number, then a randomly selected set 
+		of instances up to the maximum are selected for use in training and all others are 
+		eliminated. A value of 0 means that no maximum spread is enforced and a value of 1 
+		enforces a uniform distribution. Instances may be reordered. Value defaults to 0 if not
+		specified at the command line.
+		<li>Max Class Membership Count - This can be specified using the -max_memb flag and
+		can be used whenever training is occurring. The given value will set the maximum number 
+		of instances that may belong to any one class. If a class has more training instances 
+		than this number, then a randomly selected set of instances up to the maximum are selected for use in 
+		training, and all others are eliminated. A value of 0 means that no maximum is 
+		enforced. Value defaults to 0 if not specified at the command line.
+		<li>Order Randomly - Whether or not to randomly order the training instances. 
+		<li>Verbose - If -verbose is included in the command line arguments, extra detail
+		about the processing being performed will be included in the results. If dimensionality
+		reduction is being performed, detailed information about the attribute selection will be included.
+		If cross validation is being performed, the partitioning, model classification, and predicted
+		classification (if applicable) of each instance will be included. An asterisk will 
+		also appear next to instances that were incorrectly classified.  
+	</ul><p></p>
+	
+	<a name="commands"></a>
+	<p><strong><u>Command Line Flags</u></strong></p>
+	
+	<p>GENERAL OPTIONS:
+	<li>-help: Display a guide to this utility. No option is needed. All possible
+	flags will be listed in a format similar to this one.
+	
+	<br><br>LOADING OPTIONS:<br><br>
+	<li>-proj: Automatically load the ACE project file specified by the single option.                
+	<li>-lzip: Load an ACE project from the specified ACE zip file. The ACE zip file will
+	be extracted into a default temporary directory unless another directory is specified
+	with the -zip_dir flag. If running the ACE GUI, it will be loaded with a blank project
+	if no initial project is specified with the -proj or -zip flag.
+	<li>-ltax: Load the specified taxonomy_file XML file.
+	<li>-lfkey: Load the specified feature_key_file XML file.
+	<li>lfvec: Load the specified feature_vector_file XML file(s).
+	<li>-lmclas: Load the specified classifications_file XML file(s).
+	<li>-arff: Load training or testing data from an ARFF file instead of XML files(s).
+	Note that it is assumed that the class attribute is the last attribute.
+	
+	<br><br>TRAINING OPTIONS:<br><br>
+	<li>-train: Train the given type of classifier and save it in the given file.
+	The -train flag itself takes no options.
+	<li>-learner: Mandatory flag that specifies the type of Classifier to be trained.
+	Types of classifiers can be specified in accordance to the following codes:
+	<ul>
+		<li>Unweighted k-nn (k = 1): IBk
+		<li>Naive Bayesian (Gaussian): NaiveBayes
+        <li>Support Vector Machine: SMO
+        <li>C4.5 Decision Tree: J48
+        <li>Backprop Neural Network: MultilayerPerceptron
+        <li>AdaBoost seeded with C4.5 Decision Trees: AdaBoostM1
+        <li>Bagging seeded with C4.5 Decision Trees: Bagging
+	</ul>
+	<li>-sres: Mandatory flag that specifies the path name of the file to which to save the 
+	trained Classifier.
+    <li>-dr: Takes single option specifying the type of dimensionality reduction to be performed.                
+		If null, no dimensionality reduction will be performed. Codes for feature selectors 
+		are as follows:<br>
+        <ul>
+			<li>Principal Components: PCA
+			<li>Exhaustive search using naive Bayesian classifier: EXB
+            <li>Genetic search using naive Bayesian classifier: GNB
+		</ul>
+    <li>-sarff: Saves training data to an ARFF file after parsing, after thinning and 
+	again after feature selection, if any. Useful for testing.
+    <li>-max_spread: The maximum ratio between the number of training instances 
+	belonging to any class compared to the least populous class. This will be set to 
+	0.0 if not specified otherwise.
+    <li>-max_memb: The maximum number of training instances that may belong to each 
+	class. This will also be set 0.0 if not specified otherwise.
+    <li>-rand_ord: The presence of this flag causes training instances to be randomly 
+	reordered.
+	<li>-verbose: Detailed information about the dimensionality reduction that was 
+	performed will be printed.
+    <br><br>CLASSIFYING OPTIONS:<br><br>
+    <li>-classify: Perform classifications using a trained classifier. Takes the path name of  
+	a saved classifier as its option.
+    <li>-sres: Save the test results in an ACE XML classifications file or an ARFF file,
+	depending on the filetype of the input data.
+    <li>-sarff: Saves testing data to an ARFF file after parsing and again after 
+	feature selection, if any. Useful for testing.
+	
+    <br><br>CROSS-VALIDATING OPTIONS:<br><br>
+    <li>-cv: Perform a cross validation. Must specify number of folds as option.
+	<li>-learner: Mandatory flag that specifies what type of Classifier to use for cross 
+	validation. Classifier types are specified according to the following codes:
+	<ul>
+		<li>Unweighted k-nn (k = 1): IBk
+		<li>Naive Bayesian (Gaussian): NaiveBayes
+        <li>Support Vector Machine: SMO
+        <li>C4.5 Decision Tree: J48
+        <li>Backprop Neural Network: MultilayerPerceptron
+        <li>AdaBoost seeded with C4.5 Decision Trees: AdaBoostM1
+        <li>Bagging seeded with C4.5 Decision Trees: Bagging
+	</ul>
+	<li>-fs: Takes single option specifying the type of dimensionality to be performed.                
+	If null, no feature selection will be performed. Codes for feature selectors 
+	are as follows:<br>
+    <ul>
+		<li>Principal Components: PCA
+		<li>Exhaustive search using naive Bayesian classifier: EXB
+        <li>Genetic search using naive Bayesian classifier: GNB
+	</ul>
+	<li>-sres: Saves results in a text file with the given name. If not present, results
+	are only printed to standard out.
+	<li>-sarff: Saves testing data to an ARFF file after parsing and again after 
+	feature selection, if any. Useful for testing.
+	<li>-max_spread: The maximum ratio between the number of training instances 
+	belonging to any class compared to the least populous class. This will be set to 
+	0.0 if not specified otherwise.
+    <li>-max_memb: The maximum number of training instances that may belong to each 
+	class. This will also be set 0.0 if not specified otherwise.
+    <li>-rand_ord: The presence of this flag causes training instances to be randomly 
+	reordered.
+	<li>-verbose: The results for the partitioning and classification of each individual
+	instance is printed and saved as well as detailed information about the dimensionality
+	reduction that was performed. Incorrect classifications are marked with an asterisk.
+	
+    <br><br>EXPERIMENTATION OPTIONS:<br><br>
+    <li>-exp: Perform a cross-validation and output the results to standard out. 
+	Specifies the number of cross-validation folds.
+    <li>-sres: Saves results in files with the given base file name. If not present, 
+	results are saved with default base file name
+	<li>-max_spread: The maximum ratio between the number of training instances 
+	belonging to any class compared to the least populous class. This will be set to 
+	0.0 if not specified otherwise.
+    <li>-max_memb: The maximum number of training instances that may belong to each 
+	class. This will also be set to 0.0 if not specified otherwise.
+    <li>-rand_ord: The presence of this flag causes training instances to be randomly 
+	reordered.
+	<li>-verbose: Detailed information about the dimensionality reduction that was performed.
+	<br><br>ZIP UTILITIES:<br><br>
+    <li>-zipfile: Specifies the path to the ACE zip file that is to be created or accessed.
+	When decompressing (-unzip or -zip_extract), this will be the name of the ACE zip file
+	from which to extract. When compressing (-dozip or -zip_add), this will be the name of 
+	the new zip file to be created or the previously existing zip file to which to add. This
+	flag is required for all zip file processing operations. 
+    <li>-dozip: Compresses the given files into an ACE zip file. The -zipfile flag is 
+	required. The rest of the arguments given after this and all other ACE command line 
+	flags will be assumed to be files or directories to be included in the new ACE zipfile.
+	<li>-unzip: No option is required for this flag. The contents of the zip file specified
+	with the -zipfile flag will be extracted into a default directory unless the -zip_dir flag
+	is present.
+    <li>-zip_add: Specifies a list of 1 or more files and/or directories to be added to a previously existing zip file. 
+	<li>-zip_extract: Specifies a single file to be extracted from a previously existing zip 
+	file. If the -filetype flag is present, the option of -zip-extract will be ignored.
+	<li>-filetype: Specifies the type of ACE XML file to be extracted from a previously
+	existing zip file. This flag may only be used in conjunction with the -zip_extract flag.
+	<li>-zip_dir: Optional flag to specify the directory into which the contents of a zip file
+	should be extracted. This flag can be used when either the -unzip or -zip_extract flags 
+	are present.
+	<p></p>
+</blockquote>
+<a name="GUI"></a> 
+<p></p>
+<p><strong>How to use ACE from the Graphic User Interface</strong>
+<blockquote> The <a href="ACEGUI.html">ACE GUI</a> is currently under construction. 
+  Currently is serves as a tool for viewing and editing ACE XML files. Eventually, 
+  the GUI will be able to be used to perform experiments on data sets. It is divided 
+  into six panes: Taxonomy, Features, Instances, Preferences, Classification Settings, 
+  and Experimenter. The panes Taxonomy, Features, and Instances allow the user 
+  to view ACE XML files. Currently the panes Preferences, Classifications Settings, 
+  and Experimenter are empty. In the near future, the Experimenter pane will provide 
+  the ability to perform experiments. 
+  <p><strong><u>Loading</u></strong></p>
+<p>By default, when the ACE GUI starts it will load an empty project. There are multiple ways
+to load data into ACE.
+<ul>
+	<li>From the command line: Using the -lzip or -prof flags at the command line, the user 
+	can specify either an ACE project file or an ACE zip file from which he/she would like to
+	load data. For example: one might type "java -jar dist/ACE.jar -lzip myzip.zip" at a 
+	command line prompt to load the ACE GUI with the data contained in the ACE zip file "myzip.zip".	
+	The user may also specify specific ACE XML files to load using the same flags that are used when running 
+	ACE from the command line (-ltax, -lfvec -lfkey, -lmclas).
+	<li>Load Zip File menu item: In the File menu, there is an option to "Load Zip". This will
+	allow the user to specify an ACE zip file (or ACE project file) from which to load data.
+	<li>Load Configuration Files dialog box: Also in the File menu, is the option to "Load
+	Configuration Files". This will open the project files dialog box which allows the user 
+	to specify many data files in a number of ways. The user may specify an ACE project file 
+	or an ACE zip file, he/she may specify specific ACE XML files, or the user can even specify
+	an ARFF file from which to load data. 
+	<li>Within the individual datatype panels: Within the panels for each type of ACE datatype,
+	there are tools for loading, creating, and editing ACE XML files.
+</ul>
+<p></p>
+<p><strong><u>Viewing and Editing</u></strong></p>
+Currently, the main functionality of the <a href="ACEGUI.html">ACE GUI</a> is 
+  to view and edit ACE XML files. The GUI is divided into Panels that are designed 
+  to represent the same information that is stored in ACE XML files. Within these 
+  panels one can easily load, modify, and save data.
+<p>A valuable functionality of the ACE GUI is its ability to easily convert Weka ARFF files
+into ACE XML files. Once an ARFF file is loaded into the GUI from the Load Configuration Files
+dialog box, the data is stored internally as ACE datatypes. This data can then easily be saved
+in ACE XML files. 
+</p>
+<p><strong><u>Experimentation</u></strong></p>
+<p>Currently no Experimentation is possible with the ACE GUI. In the near future, the 
+Experimenter Panel will contain tools for running and viewing the results of experiments.
+</blockquote>
+<p><strong>Related Publications</strong></p>
+<blockquote> 
+  <p>McKay, C., and I. Fujinaga. 2007. <a href="publications/JIMS_2007_Style_Independent.pdf">Style-independent 
+    computer-assisted exploratory analysis of large music collections</a>. <em>Journal 
+    of Interdisciplinary Music Studies</em> 1 (1): 63&#8211;85.</p>
+
+  <p>McKay, C., R. Fiebrink, D. McEnnis, B. Li, and I. Fujinaga. 2005. <a href="publications/ISMIR_2005_ACE.pdf">ACE: 
+    A framework for optimizing music classification</a>. <em>Proceedings of the 
+    International Conference on Music Information Retrieval</em>. 42&#8211;9.</p>
+  <p>McKay, C., D. McEnnis, R. Fiebrink, and I. Fujinaga. 2005. <a href="publications/ICMC_2005_ACE.pdf">ACE: 
+    A general-purpose classification ensemble optimization framework</a>. <em>Proceedings 
+    of the International Computer Music Conference</em>. 161&#8211;4.</p>
+  <p>Sinyor, E., C. McKay, R. Fiebrink, D. McEnnis, and I. Fujinaga. 2005. <a href="publications/ISMIR_2005_Beatbox.pdf">Beatbox 
+    classification using ACE</a>. <em>Proceedings of the International Conference 
+    on Music Information Retrieva</em>l. 672&#8211;5.</p>
+
+</blockquote>
+<p><strong>Questions and Comments</strong></p>
+<blockquote> 
+  <p><a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a></p>
+</blockquote>
+<TABLE width="100%" height=5 border=0 bgColor=#0033C4>
+  <TBODY>
+    <TR>
+      <TH></TH>
+    </TR>
+  </TBODY>
+
+</TABLE>
+<p><a href="http://sourceforge.net/projects/jmir/files/" target="top">DOWNLOAD 
+  FROM SOURCEFORGE</a> </p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<html>
+<head>
+	<title>Configuration Settings File</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Configuration Settings 
+        File </FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>EXPLANATION OF THIS SECTION</strong></p>
+<p>This section describes the jSongMiner configuration file, which specifies various 
+  processing settings. Explanations of each of the configuration settings are 
+  included.</p>
+<p> <strong>OVERVIEW OF THE CONFIGURATION SETTINGS FILE</strong></p>
+<p>jSongMiner stores a number of processing settings in a configuration file named 
+  &quot;jSongMinerConfigs.xml&quot; that is stored in the same directory as the 
+  jSongMiner.jar file. The configuration file must have this name, and it must 
+  be in this directory, otherwise it will not be detected by jSongMiner. If jSongMiner 
+  cannot detect such a configuration file when it is run, it will auto-generate 
+  one with default settings. If jSongMiner in not operating as expected, it is 
+  generally a good idea to check the configuration file in order to verify that 
+  the settings are appropriate for the type of operation desired. </p>
+<p>The configuration file follows a simple XML schema (specified in the file's 
+  DTD) where each setting has a single corresponding XML element, and the text 
+  contained in each element indicates the setting for that element. There are 
+  no nested settings and no attributes used.</p>
+<p>Users are encouraged to edit the text contained in the XML elements using a 
+  text editor or other appropriate application in order to change the settings. 
+  Users who wish to use all of the fingerprinting and web services accessible 
+  by jSongMiner will need to enter associated data into the appropriate configuration 
+  fields as part of the installation process.</p>
+<p>The first set of configuration settings may only be set to values of &quot;true&quot; 
+  or &quot;false&quot;. The remaining configuration settings contain varying types 
+  of information, such as file paths or application keys. </p>
+<p>In practice, it can be useful to keep several different configuration files, 
+  and swap them in as needed (by placing them in the jSongMiner run directory 
+  and naming them &quot;jSongMinerConfigs.xml&quot;).</p>
+<p>It is possible to temporarily override some of the configuration settings using 
+  certain command line flags. For example, using the -saveacexmlfile flag will 
+  override the package_song_artist_album, save_output_as_ace_xml, songs_save_directory, 
+  artists_save_directory and albums_save_directory configuration settings. However, 
+  such command line overrides only affect the processing for the single task for 
+  which they are run, and do not permanently change any of the settings in the 
+  configuration file. More details are provided in the descriptions of the individual 
+  configuration settings below, as well as in the <a href="03_command_line_arguments.html">section 
+  of the manual on command line arguments</a>.</p>
+<p> <strong>THE TRUE/FALSE CONFIGURATION SETTINGS</strong></p>
+<p>The following is an explanation of the first set of configuration settings, 
+  each of which may only have a value of &quot;true&quot; or &quot;false&quot;. 
+  Any value other than &quot;true&quot;, ignoring case, will be interpreted as 
+  meaning &quot;false&quot;:</p>
+<ul>
+  <li><strong>identify_only:</strong> If this is set to true, then the only metadata 
+    that is saved for each song is the song title, artist name, album title, unique 
+    identifier (e.g. from the Echo Nest or from Last.FM) and, if it is a file 
+    being identified, the path of the file. This overrides other configuration 
+    settings. If this setting is set to false, then all metadata that can be accessed 
+    (in this case under the constraints of the other configuration settings) is 
+    saved.</li>
+  <li><strong>package_song_artist_album: </strong>Whether or not to package extracted 
+    song, artist and album metadata into a single file. If this is true, then 
+    a single ACE XML and/or text file will be output for each song, and it will 
+    contain all extracted metadata associated with the song, the artist and the 
+    album. If this is set to false, then a separate ACE XML and/or text file will 
+    be output each for the song, artist and album metadata corresponding to the 
+    song under consideration. Note, however, that artist and album metadata may 
+    not be extracted for any given song, depending on the reextract_known_artist_metadata 
+    and reextract_known_album_metadata configuration settings and on the extraction 
+    history. If artist and/or album metadata is not extracted for a song, then 
+    a corresponding file will not be generated if this package_song_artist_album 
+    setting is false, and the single generated file will not contain the corresponding 
+    metadata if this package_song_artist_album setting is true. Note that this 
+    setting may be overridden by certain command line settings.</li>
+  <li><strong>reextract_known_artist_metadata: </strong>Whether or not to reextract 
+    metadata for the artist associated with the song being processed even if metadata 
+    has already been extracted for this artist during the processing of a previous 
+    song. If this configuration setting is set to false, then the artists already 
+    accessed log file is checked before extracting artist metadata for the song 
+    currently being processed, and metadata for the artist is only extracted if 
+    it has not already been extracted during the processing of a previous song. 
+    If this configuration setting is set to true, then any existing artist log 
+    file is deleted and metadata for the artist associated with the given song 
+    is extracted, regardless of whether it has already been extracted previously.</li>
+  <li><strong>reextract_known_album_metadata: </strong>Whether or not to reextract 
+    metadata for the album associated with the song being processed even if metadata 
+    has already been extracted for this album during the processing of a previous 
+    song. If this configuration setting is set to false, then the albums already 
+    accessed log file is checked before extracting album metadata for the song 
+    currently being processed, and metadata for the album is only extracted if 
+    it has not already been extracted during the processing of a previous song. 
+    If this configuration setting is set to true, then any existing album log 
+    file is deleted and metadata for the album associated with the given song 
+    is extracted, regardless of whether it has already been extracted previously.</li>
+  <li><strong>include_unqualified_dublin_core:</strong> Whether or not to produce 
+    metadata labeled with unqualified Dublin Core tags by interpreting extracted 
+    metadata. Note that this will cause metadata to be stored redundantly if qualified 
+    Dublin Core or other metadata are saved as well. If the package_song_artist_album 
+    configuration setting is set to true, then unqualified Dublin Core tags will 
+    only be generated for the song metadata, and not for the artist or album metadata. 
+    If the package_song_artist_album configuration setting is set to false, then 
+    unqualified Dublin Core fields will be added to each of the song, artist and 
+    album files, as appropriate. Note that, as is often the case when dealing 
+    with the unqualified Dublin Core standard, the precise meaning of each unqualified 
+    Dublin Core tag will vary based on the metadata that is available for each 
+    given resource.</li>
+  <li><strong>include_qualified_dublin_core:</strong> Whether or not to produce 
+    metadata labeled with qualified Dublin Core tags by interpreting extracted 
+    metadata. Note that this will cause metadata to be stored redundantly if unqualified 
+    Dublin Core or other metadata are saved as well.</li>
+  <li><strong>include_other_metadata_with_dublin_core: </strong>Whether or not 
+    to include all extracted metadata in the saved metadata when Dublin Core tags 
+    are being saved. If either the include_unqualified_dublin_core or include_qualified_dublin_core 
+    configuration settings are set to true, then all metadata that is not stored 
+    in a Dublin Core tag is not saved unless this include_other_metadata_with_dublin_core 
+    setting is set to true. If it is set to true, then all of the available metadata 
+    will be saved in its original form, in addition to in the Dublin Core tagged 
+    data, which will result in some redundancy. This setting has no effect if 
+    both the include_unqualified_dublin_core and include_qualified_dublin_core 
+    settings are set to false.</li>
+  <li><strong>enable_echo_nest_fingerprinting:</strong> Whether or not Echo Nest 
+    fingerprinting is to be performed in order to derive the Echo Nest identifier 
+    for an unknown song. Note that, based on the save_echo_nest_metadata configuration 
+    setting, other Echo Nest web services may still be used even if fingerprinting 
+    is deactivated here.</li>
+  <li><strong>save_echo_nest_metadata: </strong>Whether or not to extract and 
+    save metadata from Echo Nest web services. Note that this setting does not 
+    affect whether or not Echo Nest web services are used for the purpose of identifying 
+    a track, it only affects whether or not other metadata is extracted from the 
+    Echo Nest once a track has been identified.</li>
+  <li><strong>enable_last_fm_fingerprinting: </strong>Whether or not Last.FM fingerprinting 
+    is to be performed in order to derive the Last.FM identifier for an unknown 
+    song. Note that, based on the save_last_fm_metadata configuration setting, 
+    other Last.FM web services may still be used even if fingerprinting is deactivated 
+    here. IMPORTANT: Note that Last.FM fingerprinting is not included in this 
+    software yet, so this setting is only a placeholder for the moment.</li>
+  <li><strong>save_last_fm_metadata: </strong>Whether or not to extract and save 
+    metadata from Last.FM web services. Note that this setting does not affect 
+    whether or not Last.FM web services are used for the purpose of identifying 
+    a track, it only affects whether or not other metadata is extracted from Last.FM 
+    once a track has been identified.</li>
+  <li><strong>enable_embedded_metadata_track_identification: </strong>Whether 
+    or not metadata embedded in an audio file is extracted in order to help identify 
+    it. Note that embedded metadata will not be used if better sources of identifying 
+    information are available, such as fingerprinting results or model metadata 
+    specified by the user at the command line. Note also that this setting does 
+    not affect whether or not embedded metadata in general is saved and/or output 
+    to standard out.</li>
+  <li><strong>save_embedded_metadata: </strong>Whether or not to extract and save 
+    metadata embedded in audio files. Note that this does not affect whether or 
+    not embedded metadata is extracted for the purpose of identifying a song, 
+    it only affects whether metadata extracted from audio files is saved and/or 
+    output to standard out.</li>
+  <li><strong>store_fails:</strong> Whether or not to keep a record in the extracted 
+    metadata of those metadata fields for which values could not be successfully 
+    extracted. If this setting is set to true, then the output metadata will include 
+    a record for each field that could not be extracted indicating that it could 
+    not be extracted. If this setting is set to false, then fields that could 
+    not be extracted for each song are simply omitted from the the metadata that 
+    is output for that song.</li>
+  <li><strong>url_encode_output: </strong>Whether or not to URL-encode all saved 
+    metadata using UTF-8. It is strongly suggested that this be set to true, as 
+    this avoids problems due to non-ASCII characters returned by the APIs accessed, 
+    as well as potentially invalid XML output. This setting applies to both the 
+    text files and ACE XML files saved by jSongMiner, but does not apply to output 
+    sent to standard out or standard error, which are never URL encoded by the 
+    software.</li>
+  <li><strong>save_output_as_ace_xml:</strong> Whether or not to save extracted 
+    metadata in the form of ACE XML 1.1 Classification files. This has no effect 
+    on whether text output files are also generated. This setting may be overridden 
+    by certain command line flags.</li>
+  <li><strong>save_output_as_txt: </strong>Whether or not to save extracted metadata 
+    as new line delimitted text files. Lines with odd line numbers will contain 
+    metadata field labels, and lines with even line numbers will contain the metadata 
+    values for the fields on the preceding lines. This setting has no effect on 
+    whether ACE XML output files are also generated. This setting may be overridden 
+    by certain command line flags.</li>
+  <li><strong>print_extracted_metadata_to_terminal:</strong> Whether or not to 
+    print extracted metadata to standard out after extraction has completed. This 
+    setting has no effect on the output files generated.</li>
+  <li><strong>print_current_status_to_terminal: </strong>Whether or not to print 
+    status updates indicating the principal processing operations of jSongMiner 
+    as they are performed. These updates are printed to standard out.</li>
+  <li><strong>print_errors_to_terminal:</strong> Whether or not to print status 
+    updates indicating non-terminal errors or failures that occur during jSongMiner 
+    processing. Such updates are printed to standard error. Note that terminal 
+    errors are printed to standard error regardless of this setting.</li>
+</ul>
+<p> <strong>THE REMAINING CONFIGURATION SETTINGS</strong></p>
+<p>The following is an explanation of the remaining configuration settings, each 
+  of which are to set to values other than just &quot;true&quot; or &quot;false&quot;:</p>
+<ul>
+  <li><strong>songs_save_directory: </strong>The directory to save files holding 
+    extracted song metadata to, if this is not explicitly specified at runtime. 
+    This applies to output files in both ACE XML and text formats. If the package_song_artist_album 
+    setting is set to true, then all of the metadata for each song will be saved 
+    in a single ACE XML and/or text file in this directory, including artist and/or 
+    album metadata, if available. This setting may be overridden by certain command 
+    line settings.</li>
+  <li><strong>artists_save_directory: </strong>The directory to save files holding 
+    extracted artist metadata to, if this information is not explicitly specified 
+    at runtime. This applies to output files in both ACE XML and text formats. 
+    This directory is not used if the package_song_artist_album setting is set 
+    to true. This setting may be overridden by certain command line settings.</li>
+  <li><strong>albums_save_directory:</strong> The directory to save files holding 
+    extracted album metadata to, if this information is not explicitly specified 
+    at runtime. This applies to output files in both ACE XML and text formats. 
+    This directory is not used if the package_song_artist_album setting is set 
+    to true. This setting may be overridden by certain command line settings.</li>
+  <li><strong>echo_nest_api_key: </strong>The key needed by jSongMiner in order 
+    to access the Echo Nest web services. An application for an API key may be 
+    made to the Echo Nest at <a href="http://developer.echonest.com/account/register" target="top">http://developer.echonest.com/account/register</a>. 
+    This setting must be set to a valid value if any of the Echo Nest web services 
+    are to be used.</li>
+  <li><strong>echo_nest_fingerprinting_codegen_run_path: </strong>The local path 
+    of the Echo Nest fingerprinting codegen binary (or shell that runs it). This 
+    must be set to a valid path if local Echo Nest fingerprinting is to be used.</li>
+  <li><strong>echo_nest_codegen_directory:</strong> The directory holding the 
+    Echo Nest fingerprinting codegen binary. This may be needed if the codegen 
+    is being run via a script, but otherwise it is ignored.</li>
+  <li><strong>last_fm_api_key: </strong>The key needed by jSongMiner in order 
+    to access the Last.FM web services. An application for a key may be made to 
+    Last.FM at <a href="http://www.last.fm/api/account" target="top">http://www.last.fm/api/account</a>. 
+    In theory this must be set to a valid value if any of the Last.FM web services 
+    are to be used, although in practice service is still sometimes provided even 
+    if a valid Last.FM API key is lacking.</li>
+  <li><strong>artists_already_accessed_file_path: </strong>The save path of the 
+    log file that is used to keep track of artists for whom metadata has already 
+    been extracted. This can be helpful in avoiding the wasteful process of repetetively 
+    reextracting the same artist metadata for different songs by the same artist. 
+    This setting may be overridden by certain command line settings.</li>
+  <li><strong>albums_already_accessed_file_path: </strong>The save path of the 
+    log file that is used to keep track of albums for which metadata has already 
+    been extracted. This is helpful in avoiding the wasteful process of repetetively 
+    reextracting the same album metadata for different songs on the same album. 
+    This setting may be overridden by certain command line settings.</li>
+</ul>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

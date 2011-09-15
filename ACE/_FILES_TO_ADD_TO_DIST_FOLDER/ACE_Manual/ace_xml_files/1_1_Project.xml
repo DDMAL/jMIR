@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE ace_project_file [
+   <!ELEMENT ace_project_file (comments, taxonomy_path,
+                               feature_definitions_path, feature_vectors_path,
+                               model_classifications_path, gui_preferences_path,
+                               classifier_settings_path,
+                               trained_classifiers_path, weka_arff_path)>
+   <!ELEMENT comments (#PCDATA)>
+   <!ELEMENT taxonomy_path (#PCDATA)>
+   <!ELEMENT feature_definitions_path (path*)>
+   <!ELEMENT feature_vectors_path (path*)>
+   <!ELEMENT model_classifications_path (path*)>
+   <!ELEMENT gui_preferences_path (#PCDATA)>
+   <!ELEMENT classifier_settings_path (#PCDATA)>
+   <!ELEMENT trained_classifiers_path (#PCDATA)>
+   <!ELEMENT weka_arff_path (#PCDATA)>
+   <!ELEMENT path (#PCDATA)>
+]>
+
+<ace_project_file>
+
+   <comments>This is an example of an XML file that stores a list of ACE XML
+   files that have been associated with each other for some form of processing
+   together. The taxonomy_path element stores a reference (e.g. a file path or
+   URI) to an ACE XML Class Ontology file. The feature_definitions_path element
+   stores references to potentially multiple ACE XML Feature Description files.
+   The feature_vectors_path element stores references to potentially multiple
+   ACE XML Feature Value files. The model_classifications_path element stores
+   references to potentially multiple ACE XML Instance Label files. The
+   gui_preferences_path and classifier_settings_path elements store references
+   to, respectively, ACE GUI preference and ACE machine learning settings in as
+   of yet unspecified formats. The trained_classifiers_path element refers to a
+   trained model stored as a Weka serialized object. Finally, the weka_arff_path
+   element refers to a file in Weka ARFF format that may be combined with or
+   used instead of ACE XML files.</comments>
+
+   <taxonomy_path>/jMIR/TestFiles/ClassOntology.xml</taxonomy_path>
+   <feature_definitions_path>
+      <path>/jMIR/TestFiles/FeatureDescription.xml</path>
+   </feature_definitions_path>
+   <feature_vectors_path>
+      <path>/jMIR/TestFiles/FeatureVector.xml</path>
+   </feature_vectors_path>
+   <model_classifications_path>
+      <path>/jMIR/TestFiles/ModelInstanceLabels.xml</path>
+      <path>/jMIR/TestFiles/PredictedInstanceLabels.xml</path>
+   </model_classifications_path>
+   <gui_preferences_path></gui_preferences_path>
+   <classifier_settings_path></classifier_settings_path>
+   <trained_classifiers_path></trained_classifiers_path>
+   <weka_arff_path></weka_arff_path>
+
+</ace_project_file>

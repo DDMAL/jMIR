@@ -1,0 +1,238 @@
+<html>
+<head>
+	<title>Command Line Arguments</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Command Line Arguments</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>EXPLANATION OF THIS SECTION</strong></p>
+<p>This section explains all of the command line arguments that may be used with 
+  jSongMiner, and provides usage examples.</p>
+<p> <strong>OVERVIEW OF JSONGMINER'S COMMAND LINE ARGUMENTS</strong></p>
+<p>A file named &quot;jSongMiner.jar&quot; is produced upon installation. jSongMiner 
+  is used by running this file using command line arguments specifying what kind 
+  of processing is to be performed.</p>
+<p>All of the command line arguments accepted by jSongMiner consist of flag/value 
+  pairs, where the flag comes first and is preceded with a &quot;-&quot;. The 
+  one exception to this is that a lone flag of &quot;-help&quot; will print a 
+  list of valid flags with explanations of what they are. Invalid command line 
+  arguments will also result in the printing out of a list of valid flags with 
+  explanations of what they are.</p>
+<p>Most of the jSongMiner command line flags are used to choose the piece of music 
+  which is to be identified and labeled with metadata, and to specify how this 
+  information is to be output. In addition, a few of the flags provide access 
+  to jSongMiner's utility functions, which is to say that they allow the jSongMiner 
+  software to be used to perform basic functions distinct from its central function 
+  of identifying songs and extracting metadata associated with them. These utility 
+  flags may not be used in combination with any other flags, as they provide functionality 
+  that is neither directly related to jSongMiner's core functionality, nor to 
+  the functionality offered by other utility flags.</p>
+<p>jSongMiner's operation is also governed by its <a href="04_configuration_settings_file.html">configuration 
+  settings file</a>. However, command line arguments can in some cases override 
+  these configuration file settings, as described in the <a href="04_configuration_settings_file.html">configuration 
+  settings file section of the manual</a>.</p>
+<p> <strong>COMMAND LINE FLAGS FOR ACCESSING JSONGMINER'S CORE FUNCTIONALITY</strong></p>
+<p>The following is a list of the flags that may be used to access jSongMiner's 
+  core functionality of identifying songs and extracting associated metadata:</p>
+<ul>
+  <li><strong>-audio: </strong>The path of an audio file to identify and extract 
+    metadata for, if available.</li>
+  <li><strong>-title: </strong>The suspected title of the song to extract metadata 
+    for, if known.</li>
+  <li><strong>-artist: </strong>The suspected name of the artist associated with 
+    the song to extract metadata for, if known.</li>
+  <li><strong>-album: </strong>The suspected title of the album most associated 
+    with the song to extract metadata for, if known.</li>
+  <li><strong>-savedir:</strong> The directory to save extracted metadata in. 
+    This overrides any and all output directories specified in the configuration 
+    file, and applies to both text and ACE XML output. Only a directory should 
+    be specified, as file names will be auto-generated based on content. May not 
+    be used in conjunction with any of the -savefile, -saveacexmlfile or -savetxtfile 
+    flags.</li>
+  <li><strong>-savefile: </strong>The file path to save extracted metadata to. 
+    This overrides configuration settings relating to output directories, and 
+    sets the package_song_artist_album configuration setting to true so that song, 
+    artist and album metadata are combined into one file. If the value specified 
+    here has a .xml extension, then the output will be saved as ACE XML. If it 
+    has a .txt extension, then the output will be saved as text. May not be used 
+    in conjunction with any of the -savedir, -saveacexmlfile or -savetxtfile flags.</li>
+  <li><strong>-saveacexmlfile:</strong> The file path of the ACE XML file to save 
+    extracted metadata to. This overrides configuration settings relating to output 
+    directories, sets the save_output_as_ace_xml configuration setting to true, 
+    and sets the package_song_artist_album setting to true so that song, artist 
+    and album metadata are combined into one file. This flag may be used either 
+    alone or in conjunction with the -savetxtfile flag.</li>
+  <li><strong>-savetxtfile:</strong> The file path of the text file to save extracted 
+    metadata to. This overrides configuration settings relating to output directories, 
+    sets the save_output_as_txt configuration setting to true, and sets the package_song_artist_album 
+    setting to true so that song, artist and album metadata are combined into 
+    one file. This flag may be used either alone or in conjunction with the -saveacexmlfile 
+    flag.</li>
+  <li><strong>-eraselogs: </strong>Erases the logs of previously extracted artists 
+    and/or albums, if any. This does not alter the reextract_known_artist_metadata 
+    or reextract_known_album_metadata configuration settings, but it does erase 
+    any existing logs before the new processing begins. The value following this 
+    flag must be &quot;artist&quot;, &quot;album&quot; or &quot;all&quot;, and 
+    specifies which log(s) are erased.</li>
+</ul>
+<p> <strong>COMMAND LINE FLAGS FOR ACCESSING JSONGMINER'S UTILITY FUNCTIONS</strong></p>
+<ul>
+  <li><strong>-urldecode: </strong>URL decodes the text following this flag and 
+    prints the results to standard out. Uses UTF-8 decoding. This is a terminal 
+    utility function, so no other processing is performed other than this, and 
+    this flag cannot be used in combination with any other flags.</li>
+  <li><strong>-acexmltotxt: </strong>Converts the ACE XML 1.1 Classifications 
+    file whose path is specified after this flag into the type of text produced 
+    by jSongMiner, which is to say field names are printed to odd lines and field 
+    values are printed to the following even lines. This is output to standard 
+    out. URL decoding is not performed. This is a terminal utility function, so 
+    no other processing is performed other than this, and this flag cannot be 
+    used in combination with any other flags.</li>
+  <li><strong>-acexmltotxtud: </strong>Converts the ACE XML 1.1 Classifications 
+    file whose path is specified after this flag into the type of text produced 
+    by jSongMiner, which is to say field names are printed to odd lines and field 
+    values are printed to the following even lines. This is output to standard 
+    out. URL decoding is performed (UTF-8). This is a terminal utility function, 
+    so no other processing is performed other than this, and this flag cannot 
+    be used in combination with any other flags.</li>
+  <li><strong>-help: </strong>Will print to standard out a list of valid flags 
+    with explanations of what they are.</li>
+</ul>
+<p> <strong>USAGE CONSTRAINTS</strong></p>
+<p>There are certain limitations on which command line flags may be used in combination:</p>
+<ul>
+  <li> The -urldecode, -acexmltotxt and -acexmltotxtud terminal utility flags 
+    may not be used in combination with any other flags.</li>
+  <li> The command line arguments must contain one or both of the -audio or -title 
+    flags, unless terminal utility flags are being used.</li>
+  <li> If the -savedir flag is used in the command line arguments, then none of 
+    the -savefile, -saveacexmlfile or -savetxtfile flags flags may be used.</li>
+  <li> If the -savefileflag is used in the command line arguments, then none of 
+    the -savedir, -saveacexmlfile or -savetxtfile flags flags may be used.</li>
+  <li> The file path following the -savefile command line switch must have an 
+    extension of either &quot;.txt&quot; or &quot;.xml&quot;.</li>
+  <li> The value following the -eraselogs command line switch must have a value 
+    of &quot;artist&quot;, &quot;album&quot; or &quot;all&quot;.</li>
+</ul>
+<p> <strong>USAGE EXAMPLES</strong></p>
+<p>Examples are provided below showing sample ways in which jSongMiner can be 
+  run from the command line. Note that, as is standard practice, flag values containing 
+  spaces are enclosed in quotation marks. Note also that the &quot;-mx500M&quot; 
+  Java Virtual Machine option is also used in these examples to reserve 500 MB 
+  of memory for the virtual machine to operate. Although this is not strictly 
+  necessary for jSongMiner processing, it is a good idea in general to ensure 
+  that the VM does not run out of memory.</p>
+<p>There are three sets of examples (A, B and C) specified below. The first two 
+  sets involve using jSongMiner to identify and/or extract metadata for a song. 
+  In the first set, no output sink is specified, so the output is saved in the 
+  default save directories, as set by the songs_save_directory, artists_save_directory 
+  and/or albums_save_directory configuration settings. File names are auto-generated 
+  based on the results of metadata extraction. In the second set, output sink(s) 
+  are specified manually. jSongMiner utility functionality is demonstrated in 
+  the third set of examples.</p>
+<blockquote> 
+  <p><strong>Example A-1) </strong>Identify and extract metadata for the audio 
+    file unknown.mp3 found in the current directory:</p>
+  <blockquote> 
+    <p> java -mx500M -jar jSongMiner.jar -audio ./unknown.mp3</p>
+  </blockquote>
+  <p><strong>Example A-2)</strong> Extract metadata for the audio file unknown.mp3 
+    found in the current directory, with the assumption that it is the song &quot;Wandering 
+    Star&quot; by Portishead from the album &quot;Dummy&quot;. This approach should 
+    only be used if it can be assumed that this information comes from a reliable 
+    source, otherwise the approach shown in Example A-1 should be used:</p>
+  <blockquote> 
+    <p> java -mx500M -jar jSongMiner.jar -audio ./unknown.mp3 -title &quot;Wandering 
+      Star&quot; -artist Portishead -album Dummy</p>
+  </blockquote>
+  <p><strong>Example A-3)</strong> Extract metadata for the song &quot;Freedom&quot; 
+    by Charles Mingus from the album &quot;Mingus Mingus Mingus Mingus Mingus&quot;, 
+    even though access to an audio recording is unavailable:</p>
+  <blockquote> 
+    <p> java -mx500M -jar jSongMiner.jar -title Freedom -artist &quot;Charles 
+      Mingus&quot; -album &quot;Mingus Mingus Mingus Mingus Mingus&quot;</p>
+  </blockquote>
+  <p><strong>Example A-4)</strong> Extract metadata for the song &quot;Dr. Greenthumb&quot;, 
+    even though an audio recording is unavailable and one does not know the artist 
+    or album title. Note that this approach can be problematic, as there can be 
+    ambiguity between multiple versions of the song with the same title:</p>
+  <blockquote> 
+    <p> java -mx500M -jar jSongMiner.jar -title &quot;Dr. Greenthumb&quot;</p>
+  </blockquote>
+  <p> <strong>Example A-5)</strong> Extract metadata for the song &quot;Les Bourgeois&quot; 
+    by Jacques Brel. Because the &quot;-eraselogs artist&quot; option is used, 
+    logs of those artists for whom metadata has already been extracted will be 
+    erased before processing begins, thus forcing reextraction of artist metadata 
+    for this and other songs processed in the future that are associated with 
+    artists for whom metadata has already been extracted:</p>
+  <blockquote>
+    <p> java -mx500M -jar jSongMiner.jar -title &quot;Les Bourgeois&quot; -artist 
+      &quot;Jacques Brel&quot; -eraselogs artist</p>
+  </blockquote>
+</blockquote>
+<p>As noted above, it is possible to override the output settings specified in 
+  the configuration file so that the output is saved in a way that is specified 
+  at the command line. This is demonstrated in the examples below. The -audio 
+  flag, as demonstrated in Example A-1 above, is used in these examples, although 
+  in practice one could use any of the approaches demonstrated above to specify 
+  the song to be processed. </p>
+<blockquote> 
+  <p><strong>Example B-1)</strong> Identify and extract metadata for the audio 
+    file unknown.mp3, and save the song, artist and/or album metadata in the current 
+    directory using file names that are auto-generated based on the metadata extracted:</p>
+  <blockquote>
+    <p> java -mx500M -jar jSongMiner.jar -audio ./unknown.mp3 -savedir ./</p>
+  </blockquote>
+  <p><strong>Example B-2)</strong> Identify and extract metadata for the audio 
+    file unknown.mp3, and save the song, artist and/or album metadata in a single 
+    ACE XML file called unknown_out.xml in the current directory. Note that the 
+    output file would be in text format if a .txt extension were specified instead 
+    of a .xml extension:</p>
+  <blockquote> 
+    <p> java -mx500M -jar jSongMiner.jar -audio ./unknown.mp3 -savefile ./unknown_out.xml</p>
+  </blockquote>
+  <p><strong>Example B-3) </strong>Identify and extract metadata for the audio 
+    file unknown.mp3, and save the song, artist and/or album metadata first as 
+    a single ACE XML file called unknown_out.xml, and then as a single text file 
+    called &quot;unknown_out.txt&quot;, both in the current directory:</p>
+  <blockquote> 
+    <p> java -mx500M -jar jSongMiner.jar -audio ./unknown.mp3 -saveacexmlfile 
+      ./unknown_out.xml -savetxtfile ./unknown_out.txt</p>
+  </blockquote>
+</blockquote>
+<p>As noted above, jSongMiner may also be run using utility flags that provide 
+  types of functionality separate from the main jSongMiner song identification 
+  and metadata extraction functionality. Examples of such usage are provided below:</p>
+<blockquote> 
+  <p><strong>Example C-1)</strong> Decode the &quot;metal+%28Count%3A+63%29+%28Last.FM+Tag+URL%3A+http%3A%2F%2Fwww.last.fm%2Ftag%2Fmetal%29&quot; 
+    string of URL-encoded text and print the results to standard out. This is 
+    useful for manually interpreting URL-encoded text output by jSongMiner:</p>
+  <blockquote> 
+    <p> java -jar jSongMiner.jar -urldecode metal+%28Count%3A+63%29+%28Last.FM+Tag+URL%3A+http%3A%2F%2Fwww.last.fm%2Ftag%2Fmetal%29</p>
+  </blockquote>
+  <p><strong>Example C-2)</strong> Convert the unknown_out.xml ACE XML 1.1 Classifications 
+    file in the current directory into return-delimited text that is printed to 
+    standard out. URL-encoding is preserved:</p>
+  <blockquote> 
+    <p> java -jar jSongMiner.jar -acexmltotxt ./unknown_out.xml</p>
+  </blockquote>
+  <p><strong>Example C-3) </strong>Convert the unknown_out.xml ACE XML 1.1 Classifications 
+    file in the current directory into a URL-decoded return-delimited text that 
+    is printed to standard out:</p>
+  <blockquote>
+    <p> java -jar jSongMiner.jar -acexmltotxtud ./unknown_out.xml</p>
+  </blockquote>
+</blockquote>
+<p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>Hints and Suggestions</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Hints and Suggestions</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p> This section of the manual provides tips for improving the quality of feature 
+  extraction results. jWebMiner allows network searches to be performed using 
+  a wide variety of possible settings, and some of these settings will be better 
+  suited for particular types of tasks than others.</p>
+<p>Material will be added to this section as the current version continues to 
+  be used and tested and as particularly effective practices become evident. The 
+  tips available so far are as follows:</p>
+<ul>
+  <li><strong>Consistency of Results:</strong> The exact hit counts reported by web services for a given query will change with time, as the web changes. Reported hit counts can also change slightly from moment to moment, as they are often approximations and algorithms do not always emphasize consistency. So, slight differences between two consecutive identical queries should not be a cause for alarm, as this is the nature of the algorithms used by many web services, and it should not significantly impact final results.</li>
+  <li><strong>Performing Initial Test Runs:</strong> Feature extractions involving 
+    many search strings can be time consuming, depending on the time that the 
+    particular web services used take to respond to individual queries. It can 
+    therefore be useful to perform small test runs initially using a subset of 
+    the total search strings in order to verify that results are reasonable before 
+    performing a full feature extraction. If results are surprising, see the debugging 
+    and fine-tuning sections below. </li>
+  <li><strong>Debugging Surprising Results:</strong> If the numerical results 
+    displayed in the <a href="results_panel.html">Results Panel</a> are surprising, 
+    it can be useful to use the <a href="network_search_dialog.html">Network Search 
+    Dialog</a> to duplicate searches so that the specific hits that resulted in 
+    feature values can be examined in detail. Ways in which what is revealed can 
+    be addressed are described below under Fine-tuning Results. Enabling the generation 
+    all of the reports possible can also be helpful (which reports are generated 
+    can be set at the bottom right of the <a href="options_panel.html">Options 
+    Panel</a>).</li>
+  <li><strong>Fine-tuning Results:</strong> jWebMiner allows many settings which 
+    can be used to fine-tune results. Several of the key ways in which this can 
+    be done are described below: 
+    <ul>
+      <li><strong>Filter Strings:</strong> It can sometimes be useful to require 
+        that all hits must include or not include particular strings in order 
+        to be counted as hits. For example, it may be useful to require that all 
+        hits contain the word &quot;music&quot; in order to ensure relevance to 
+        a musical feature extraction. Alternatively, it may be beneficial to require 
+        that certain words be excluded. For example, it may be desirable to exclude 
+        the string &quot;construction&quot; in order to avoid non-relevant hits 
+        between &quot;The Doors&quot; and &quot;heavy metal&quot;. Filter strings 
+        may be set in the <a href="required_filter_words_panel.html">Required 
+        Filter Words Panel</a> and the <a href="excluded_filter_words_panel.html">Excluded 
+        Filter Words Panel</a>. The required filter strings may also be set to 
+        vary based on the particular search terms being used, as described in 
+        the <a href="required_filter_words_panel.html">Required Filter Words Panel</a>.</li>
+      <li><strong>Search String Synonyms:</strong> Sometimes it is useful to combine 
+        the results for multiple search strings that are effectively equivalent. 
+        For example, the class names &quot;R and B&quot; and &quot;RnB&quot; can 
+        be usefully combined. Synonyms may be defined in the <a href="search_words_panel.html">Search 
+        Words Panel</a>.</li>
+      <li><strong>Weighting Sites:</strong> It can sometimes be useful to pay 
+        special attention to particular sites as well as or instead of the whole 
+        network when searching. Site weightings and limitations can be set in 
+        the <a href="site_weightings_panel.html">Site Weightings Panel</a>.</li>
+      <li><strong>Feature Calculation Settings:</strong> The right side of the 
+        <a href="options_panel.html">Options Panel</a> allows users to set the 
+        ways in which raw hit counts are manipulated to generate feature scores. 
+        Although changing these does not allow fine-tuning as customized as the 
+        above three approaches, it does allow global changes that can be appropriate 
+        for particular types of feature extraction.</li>
+      <li><strong>Additional Settings:</strong> The left side of the <a href="options_panel.html">Options 
+        Panel</a> allows a variety of additional search parameters to be set. 
+        However, it is advised that users first attempt to customize filter strings, 
+        synonyms and site weightings, as the defaults set in the left side of 
+        the <a href="options_panel.html">Options Panel</a> are usually best left 
+        as they are.</li>
+    </ul>
+  </li>
+  <li><strong>Phrasing Queries:</strong> All queries sent to web services by jWebMiner 
+    are automatically phrased and custom-formatted as text-based queries by jWebMiner 
+    before they are sent. Since this is the ultimate form that they will take, 
+    users should exercise some basic caution when entering search strings. More 
+    specifically: 
+    <ul>
+      <li><strong>Escape Characters: </strong>Do not use special or escape characters 
+        (e.g. slashes) in search strings entered in the <a href="search_words_panel.html">Search 
+        Words Panel</a>.</li>
+      <li><strong>Long Queries: </strong>Do not make queries too complex or use 
+        too many words in them, as this may cause the queries to be truncated 
+        by web services with maximum query lengths (see below).</li>
+      <li><strong>Literal Searches: </strong>The default set under the <a href="options_panel.html">Options 
+        Panel</a> is that all search strings and filter strings are searched literally. 
+        This means, for example, that a site searched for the string &quot;The 
+        Allman Brothers Band&quot; must contain all of these words exactly and 
+        sequentially to be counted as a hit, and that a site containing &quot;The 
+        Allman Brothers is a great band&quot; will not be counted if the search 
+        is literal.. Although the literal search option can be disabled, literal 
+        searches typically results in less noisy results. If literal searches 
+        are used, however, excessively long strings should be avoided, as too 
+        long strings may cut down the number of appropriate sites which are counted 
+        as hits. </li>
+    </ul>
+  </li>
+  <li><strong>Limitations of Supported Web Services:</strong> The web services 
+    accessed by jWebMiner have some inherent limitations of their own. In particular, 
+    not all of the functionality provided by the left side of the <a href="options_panel.html">Options 
+    Panel</a> is available in all services. Specifically: 
+    <ul>
+      <li><strong>Yahoo!</strong> 
+        <ul>
+          <li> Suppressing similar hits affects the returned search results but 
+            not the returned hit count.</li>
+          <li>There is no functionality for searching for similar but non-matching 
+            strings.</li>
+          <li>Searches cannot be performed using a service located specifically 
+            in Turkey.</li>
+          <li>Only up to 5000 queries may be performed per day per IP address.</li>
+        </ul>
+      </li>
+      <li><strong>Google:</strong> 
+        <ul>
+          <li> There is no functionality for searching for similar but non-matching 
+            strings.</li>
+          <li>There is no functionality for performing searches using a service 
+            located in a specific country.</li>
+          <li>There is a maximum of 10 words per query.</li>
+          <li>Only up to 1000 queries may be performed per day. This quota refers 
+            to queries from all IP addresses combined.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

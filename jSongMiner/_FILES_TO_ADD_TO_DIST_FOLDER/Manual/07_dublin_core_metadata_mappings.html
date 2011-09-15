@@ -1,0 +1,207 @@
+<html>
+<head>
+	<title>Dublin Core Metadata Mappings</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Dublin Core Metadata 
+        Mappings </FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>EXPLANATION OF THIS SECTION</strong></p>
+<p>This section specifies all of the <a href="http://dublincore.org/" target="top">Dublin 
+  Core</a> fields that may be extracted and saved by jSongMiner, as well as the 
+  mappings between them and the general metadata field labels produced by jSongMiner. 
+  Details of these general field labels are provided in a <a href="06_tags_extracted.html">separate 
+  section of the manual</a>. All of these general jSongMiner fields are converted 
+  into Dublin-core formatted fields, and the Dublin Core-formatted fields do not 
+  contain any values not also available in the original general fields. The general 
+  jSongMiner fields are in fact first extracted by jSongMiner, and then converted 
+  into Dublin Core-formatted data using the mappings specified below. First qualified 
+  Dublin Core data is produced from these original fields, and then unqualified 
+  Dublin Core data is produced from the qualified data. The original fields may 
+  or may not then be discarded, based on user settings.</p>
+<p>This processing is done separately for song, artist and album data, although 
+  this data may in the end be combined into a single final file, depending on 
+  user settings. Note that if the user elects to package song, artist and album 
+  data together into a single output file, then unqualified Dublin Core fields 
+  will be generated only for the mappings in the song section below. If separate 
+  output files are generated, then each may have its own unqualified Dublin Core 
+  fields. Qualified Dublin Core is generated for all three types of resources 
+  either way.</p>
+<p>The mappings are specified below as follows: the first value in each pair is 
+  the qualified Dublin Core tag that is output by jSongMiner, and the second value 
+  is the general jSongMiner field from which it is derived. There is some intentional 
+  redundancy in these mappings (e.g. when generating a song output file, the general 
+  jSongMiner field &quot;Album Title&quot; is mapped to both &quot;dc.Source^albumtitle&quot; 
+  and to &quot;dc.Relation^albumtitle)&quot;. This is consistent with the general 
+  philosophy of Dublin Core.</p>
+<p>The qualified Dublin Core mappings below also specify how unqualified Dublin 
+  Core-formatted data is generated and output by jSongMiner. The qualified Dublin 
+  Core field names listed below are presented in the priority order used by jSongMiner 
+  when generating the unqualified Dublin Core fields from the qualified Dublin 
+  Core fields. For example, consider the case of the &quot;dc.Coverage&quot; unqualified 
+  Dublin Core field for songs. The two possible values for this field are, as 
+  noted below, &quot;dc.Coverage^releasecountry&quot; and &quot;dc.Coverage^releaseyear&quot;, 
+  in that order. The value of dc.Coverage will be set to that of &quot;dc.Coverage^releasecountry&quot; 
+  if it is available, but to &quot;dc.Coverage^releaseyear&quot; if it is not. 
+  If the value for a given qualified or unqualified Dublin Core field cannot be 
+  extracted, then jSongMiner either omits it (the suggested option) or includes 
+  it with an indication that it is unknown, depending on the user settings.</p>
+<p>Each unqualified Dublin Core field may only have a single value. As is typical 
+  with Dublin Core, this value may have varying meanings, depending on the data 
+  that happens to be available for a given resource. A given qualified field, 
+  however, may have multiple values. For example, the &quot;dc.Relation^similartrack&quot; 
+  field can have multiple values, as there will be more than just one track similar 
+  to any given track. Although each of these similar tracks will have the same 
+  &quot;dc.Relation^similartrack&quot; field label, the ordering in which the 
+  values are output by jSongMiner indicates importance if relevant, from most 
+  important to least important. The first similar track listed is therefore implicitly 
+  more similar to the track under consideration than the second similar track 
+  listed.</p>
+<p>Unlike the general jSongMiner metadata field labels, the Dublin Core-formatted 
+  metadata output by jSongMiner does not indicate the source of the metadata. 
+  So, while the general metadata label for a song's title might be &quot;Echo 
+  Nest API: Song Title&quot;, which indicates that the Echo Nest is the source 
+  of the metadata, the corresponding Dublin Core-formatted metadata field label 
+  output by jSongMiner would simply be &quot;dc.Title^songtitle&quot; (qualified) 
+  or &quot;dc.Title&quot; (unqualified). In practice, different sources might 
+  provide different values for a given field. For example, two sources might return 
+  a tempo of 120 BPM, but another might return a tempo of 60 BPM. jSongMiner eliminates 
+  identical duplicates, but keeps differing values. So, in the previous example, 
+  jSongMiner would discard the duplicate of 120 BPM, and would output two values 
+  for &quot;dc.Description^tempo&quot;, namely 60 BPM and 120 BPM. Of course, 
+  in the case of unqualified Dublin Core fields, only one value is permitted, 
+  so in cases of conflicting information from different sources jSongMiner only 
+  outputs the value considered to come from the more reliable source. </p>
+<p>The format in which field values are presented may vary, depending on how the 
+  information is furnished by the web services and other sources that provide 
+  them. Efforts have been made where possible to have jSongMiner standardize the 
+  ways in which values are presented and stored, but the dynamic nature of web 
+  services makes it impossible to guarantee formatting consistency in all cases.</p>
+<p> <strong>QUALIFIED DUBLIN CORE MAPPINGS FOR FIELDS EXTRACTED AND STORED IN 
+  SONG DATA FILES:</strong></p>
+<ul>
+  <li>dc.Title^songtitle &lt;-&gt; Song Title</li>
+  <li>dc.Creator^artistname &lt;-&gt; Artist Name</li>
+  <li>dc.Creator^musicbrainzartistid &lt;-&gt; Music Brainz Artist ID</li>
+  <li>dc.Creator^echonestartistid &lt;-&gt; Echo Nest Artist ID</li>
+  <li>dc.Creator^discogsartistsite &lt;-&gt; Discogs Artist Site</li>
+  <li>dc.Creator^artistofficialurl &lt;-&gt; Artist Official URL</li>
+  <li>dc.Creator^artistwikipediaurl &lt;-&gt; Artist Wikipedia URL</li>
+  <li>dc.Subject^songrelatedtag &lt;-&gt; Song-Related Tag</li>
+  <li>dc.Description^lastfmtrackwikitext &lt;-&gt; Last.FM Track Wiki Text</li>
+  <li>dc.Description^lastfmtrackwikisummary &lt;-&gt; Last.FM Track Wiki Summary</li>
+  <li>dc.Description^comment &lt;-&gt; Comment</li>
+  <li>dc.Description^duration &lt;-&gt; Duration (seconds)</li>
+  <li>dc.Description^tempo &lt;-&gt; Tempo (BPM)</li>
+  <li>dc.Description^timesignature &lt;-&gt; Time Signature</li>
+  <li>dc.Description^key &lt;-&gt; Key</li>
+  <li>dc.Description^mode &lt;-&gt; Mode</li>
+  <li>dc.Description^loudness &lt;-&gt; Loudness (-100 to 100 dB)</li>
+  <li>dc.Description^lastfmtrackplaycount &lt;-&gt; Last.FM Track Play Count</li>
+  <li>dc.Description^echonestsonghotness &lt;-&gt; Echo Nest Song Hottness (0 
+    to 1)</li>
+  <li>dc.Publisher^recordlabel &lt;-&gt; Record Label</li>
+  <li>dc.Contributor^composername &lt;-&gt; Composer Name</li>
+  <li>dc.Contributor^lyricistname &lt;-&gt; Lyricist Name</li>
+  <li>dc.Contributor^remixername &lt;-&gt; Remixer Name</li>
+  <li>dc.Date^releaseyear &lt;-&gt; Release Year</li>
+  <li>dc.Type^genre &lt;-&gt; Genre</li>
+  <li>dc.Type^grouping &lt;-&gt; Grouping</li>
+  <li>dc.Type^songrelatedtag &lt;-&gt; Song-Related Tag</li>
+  <li>dc.Type^mood &lt;-&gt; Mood</li>
+  <li>dc.Format^encodingformat &lt;-&gt; Encoding Format</li>
+  <li>dc.Format^encodingtype &lt;-&gt; Encoding Type</li>
+  <li>dc.Format^encoder &lt;-&gt; Encoder</li>
+  <li>dc.Format^bitrate &lt;-&gt; Bit Rate (kilobits per second)</li>
+  <li>dc.Format^samplerate &lt;-&gt; Sample Rate (Hz)</li>
+  <li>dc.Format^variablebitrate &lt;-&gt; Variable Bit Rate</li>
+  <li>dc.Format^numberofchannels &lt;-&gt; Number of Channels</li>
+  <li>dc.Format^filepath &lt;-&gt; Audio Source File</li>
+  <li>dc.Identifier^musicbrainzsongid &lt;-&gt; Music Brainz Song ID</li>
+  <li>dc.Identifier^echonestsongid &lt;-&gt; Echo Nest Song ID</li>
+  <li>dc.Identifier^lastfmtrackurl &lt;-&gt; Last.FM Track URL</li>
+  <li>dc.Identifier^musicipsongid &lt;-&gt; MusicIP Song ID</li>
+  <li>dc.Identifier^amazonsongid &lt;-&gt; Amazon Song ID</li>
+  <li>dc.Identifier^songbarcode &lt;-&gt; Song Barcode</li>
+  <li>dc.Identifier^filepath &lt;-&gt; Audio Source File</li>
+  <li>dc.Identifier^echonestfingerprintinghash &lt;-&gt; ENMF Fingerprint Hash 
+    Output by the Echo Nest Fingerprinting Codegen Binary</li>
+  <li>dc.Source^albumtitle &lt;-&gt; Album Title</li>
+  <li>dc.Source^musicbrainzalbumid &lt;-&gt; Music Brainz Album ID</li>
+  <li>dc.Source^albumdiscnumber &lt;-&gt; Album Disc Number</li>
+  <li>dc.Source^totalnumberofdiscs &lt;-&gt; Total Number of Discs</li>
+  <li>dc.Source^albumtracknumber &lt;-&gt; Album Track Number</li>
+  <li>dc.Source^totalnumberofalbumtracks &lt;-&gt; Total Number of Album Tracks</li>
+  <li>dc.Source^compilationalbum &lt;-&gt; Compilation Album</li>
+  <li>dc.Language^tracklanguage &lt;-&gt; Language</li>
+  <li>dc.Relation^similartrack &lt;-&gt; Similar Track</li>
+  <li>dc.Relation^albumtitle &lt;-&gt; Album Title</li>
+  <li>dc.Relation^lyrics &lt;-&gt; Lyrics</li>
+  <li>dc.Relation^lyricsurl &lt;-&gt; Lyrics URL</li>
+  <li>dc.Coverage^releasecountry &lt;-&gt; Release Country</li>
+  <li>dc.Coverage^releaseyear &lt;-&gt; Release Year}</li>
+</ul>
+<p> <strong>QUALIFIED DUBLIN CORE MAPPINGS FOR FIELDS EXTRACTED AND STORED IN 
+  ARTIST DATA FILES:</strong></p>
+<ul>
+  <li>dc.Title^artistname &lt;-&gt; Artist Name</li>
+  <li>dc.Subject^artistrelatedtag &lt;-&gt; Artist-Related Tag</li>
+  <li>dc.Subject^artistrelatedterm &lt;-&gt; Artist-Related Term</li>
+  <li>dc.Description^lastfmartistwikitext &lt;-&gt; Last.FM Artist Wiki Text</li>
+  <li>dc.Description^lastfmartistwikisummary &lt;-&gt; Last.FM Artist Wiki Summary</li>
+  <li>dc.Description^artistbiography &lt;-&gt; Artist Biography</li>
+  <li>dc.Description^artistrelatedurl &lt;-&gt; Artist-Related URL</li>
+  <li>dc.Description^artistreview &lt;-&gt; Artist Review</li>
+  <li>dc.Description^artistrelatednews &lt;-&gt; Artist-Related News</li>
+  <li>dc.Description^artistrelatedblog &lt;-&gt; Artist-Related Blog</li>
+  <li>dc.Description^lastfmartistplaycount &lt;-&gt; Last.FM Artist Play Count</li>
+  <li>dc.Description^echonestartistfamiliarity &lt;-&gt; Echo Nest Artist Familiarity 
+    (0 to 1)</li>
+  <li>dc.Description^echonestartisthotness &lt;-&gt; Echo Nest Artist Hotness 
+    (0 to 1)</li>
+  <li>dc.Type^artistrelatedtag &lt;-&gt; Artist-Related Tag</li>
+  <li>dc.Type^artistrelatedterm &lt;-&gt; Artist-Related Term</li>
+  <li>dc.Identifier^musicbrainzartistid &lt;-&gt; Music Brainz Artist ID</li>
+  <li>dc.Identifier^echonestartistid &lt;-&gt; Echo Nest Artist ID</li>
+  <li>dc.Identifier^lastfmartisturl &lt;-&gt; Last.FM Artist URL</li>
+  <li>dc.Identifier^7digitalartistid &lt;-&gt; 7digital Artist ID</li>
+  <li>dc.Identifier^playmeartistid &lt;-&gt; Play.me Artist ID</li>
+  <li>dc.Relation^toptracks &lt;-&gt; Top Tracks</li>
+  <li>dc.Relation^topalbums &lt;-&gt; Top Albums</li>
+  <li>dc.Relation^artistrelatedaudio &lt;-&gt; Artist-Related Audio</li>
+  <li>dc.Relation^artistrelatedvideo &lt;-&gt; Artist-Related Video</li>
+  <li>dc.Relation^artistrelatedimage &lt;-&gt; Artist-Related Image</li>
+  <li>dc.Relation^similarartist &lt;-&gt; Similar Artist</li>
+  <li>dc.Coverage^artistlocation &lt;-&gt; Artist Location</li>
+  <li>dc.Coverage^artistevent &lt;-&gt; Artist Event</li>
+  <li>dc.Coverage^artistrelatednews &lt;-&gt; Artist-Related News</li>
+  <li>dc.Coverage^artistrelatedblog &lt;-&gt; Artist-Related Blog}</li>
+</ul>
+<p><strong> QUALIFIED DUBLIN CORE MAPPINGS FOR FIELDS EXTRACTED AND STORED IN 
+  ALBUM DATA FILES:</strong></p>
+<ul>
+  <li> dc.Title^albumtitle &lt;-&gt; Album Title</li>
+  <li>dc.Creator^artistname &lt;-&gt; Artist Name</li>
+  <li>dc.Creator^musicbrainzartistid &lt;-&gt; Music Brainz Artist ID</li>
+  <li>dc.Subject^albumrelatedtag &lt;-&gt; Album-Related Tag</li>
+  <li>dc.Description^lastfmalbumwikitext &lt;-&gt; Last.FM Album Wiki Text</li>
+  <li>dc.Description^lastfmalbumwikisummary &lt;-&gt; Last.FM Album Wiki Summary</li>
+  <li>dc.Description^lastfmalbumplaycount &lt;-&gt; Last.FM Album Play Count</li>
+  <li>dc.Date^releasedate &lt;-&gt; Release Date</li>
+  <li>dc.Type^albumrelatedtag &lt;-&gt; Album-Related Tag</li>
+  <li>dc.Identifier^musicbrainzalbumid &lt;-&gt; Music Brainz Album ID</li>
+  <li>dc.Identifier^lastfmalbumurl &lt;-&gt; Last.FM Album URL</li>
+  <li>dc.Coverage^releasedate &lt;-&gt; Release Date</li>
+</ul>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

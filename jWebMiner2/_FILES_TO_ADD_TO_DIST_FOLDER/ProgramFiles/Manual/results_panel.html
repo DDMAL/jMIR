@@ -1,0 +1,152 @@
+<html>
+<head>
+	<title>Results Panel</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Results Panel</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p>The <em>Results Panel</em> is a GUI panel allowing users to view and/or save 
+  the results of jWebMiner feature extractions, including final feature values, 
+  hit counts at various intermediate processing stages and complete details of 
+  the settings used during feature extraction. This panel is is disabled until 
+  at least one feature extractions has been completed and is automatically brought 
+  to the foreground of the GUI when feature extraction is complete.</p>
+<p><strong>Types of Reports</strong></p>
+<p>The types of reports that will be displayed after a feature extraction is completed 
+  depend on the settings chosen by the user in the <em>INFORMATION TO REPORT</em> 
+  section of the <a href="options_panel.html">Options Panel</a>. Each of the reports 
+  chosen there will be generated and displayed in the <em>Results Panel</em> after 
+  feature extraction is complete. These reports are each presented in the form 
+  of tables whose rows and columns are labeled based on the search strings entered 
+  in the <a href="search_words_panel.html">Search Words Panel</a> (except for 
+  the <em>Search Settings Used</em> reports). Synonyms defined in the <a href="search_words_panel.html">Search 
+  Words Panel</a> will be grouped together in row and/or column labels.</p>
+<p> The types of reports are explained in the following list. Note that they will 
+  be generated in the order that they are listed below and that each report type 
+  may involve the generation of multiple separate report tables, based on the 
+  current search configuration.</p>
+<ul>
+  <LI><STRONG>Feature Scores Report:</STRONG> Final feature scores generated based 
+    on hit counts and processing selected in the <a href="options_panel.html">Options 
+    Panel</a>. This report is displayed in a table with the highest value in each 
+    row italicized and bolded. 
+  <LI><STRONG>Combined Processed Hit Counts Report:</STRONG> The combined (added) 
+    processed hit counts for all web services and sites after pre-processing is 
+    complete. This does take into account site weighting and/or source and web 
+    service normalization, if they have been selected by the user. It does not 
+    include the application of scoring functions or feature score normalization, 
+    however. 
+  <LI><STRONG>Combined Raw Hit Counts Report:</STRONG> The combined hit counts 
+    added together across all web services and sites after queries are all completed. 
+    This does not take into account site weighting, any normalizations or processing 
+    with scoring functions. 
+  <LI><STRONG>Individual Raw Hit Counts Report:</STRONG> The separated raw hit 
+    counts for each web service and each network source after queries are all 
+    completed but before hit counts have been combined or otherwise processed. 
+  <LI><STRONG>Search Queries Used Report:</STRONG> The queries that were actually 
+    sent to each of the web services. Note that these queries will not include 
+    information that was stored in the actual web service objects themselves, 
+    so the queries may appear incomplete in the case of some web services. This 
+    report is combined into the same table with the <em>Individual Raw Hit Counts 
+    Report</em> if it is selected to be generated, and is generated separately 
+    if it is not. 
+  <LI><STRONG>Search Settings Used Report:</STRONG> The details of all of the 
+    settings used to perform feature extraction. This is useful for maintaining 
+    a record of the settings used each time that features are extracted. 
+</ul>
+<p>The <em>Feature Score Report</em> is useful for manually examining final feature 
+  values. The <em>Search Settings Used Report</em> is useful for keeping a record 
+  of the parameterization used for feature extraction. The other reports can be 
+  useful for debugging and/or understanding why feature scores are as they are, 
+  as they can be used to view processing at various preliminary stages. </p>
+<p>All successful feature extractions will result in the final feature values 
+  being stored in memory so that they may be saved, even if no reports are selected 
+  to be generated in the <em>INFORMATION TO REPORT</em> section of the <a href="options_panel.html">Options 
+  Panel</a>. The date and time of the feature extraction will also always be displayed 
+  in the title area of the <em>Results Panel</em> after feature extraction has 
+  ended.</p>
+<p><strong> Feature and Page Count Values</strong></p>
+<p>The numerical values displayed in the <em>Feature Scores Report</em> and the 
+  various intermediate hit count reports indicate the relative strength of the 
+  cultural link between the search string in each entry's row and the search string 
+  in its corresponding column. The absolute magnitude of each numerical value 
+  is not necessarily significant, however. What is significant is the relative 
+  magnitude of values in each row (or each table as a whole, if the <em>By row 
+  rather than overall</em> option is not selected in the <a href="options_panel.html">Options 
+  Panel</a>).</p>
+<p>The nature of each report table depends on whether a feature extraction was 
+  a &quot;<em>co-occurrence analysis</em>&quot; or a &quot;<em>cross tabulation 
+  </em><em>analysis</em>&quot;, as selected in the <a href="search_words_panel.html">Search 
+  Words Panel</a>. Figure 1 shows an example of the final feature values for a 
+  cross tabulation extraction, as explained in the figure's caption. In the terminology 
+  of data mining, the label of each row is essentially an instance name and the 
+  label of each column is essentially a class name. The feature value in each 
+  entry of each row can be considered to represent an instance's measured membership 
+  score in each class relative to the other classes (this blurry distinction between 
+  features and classes is different from the traditional separation between the 
+  two terms).</p>
+<p><img src="Screenshot_Results_Cross_Tabulation.gif"></p>
+<p><strong><em>Figure 1:</em></strong> A screenshot of the <em>Results Panel</em>, 
+  showing the final feature values extracted in a cross tabulation analysis of 
+  the search strings shown in Figure 2 of the <a href="search_words_panel.html">Search 
+  Words Panel</a>. The bold italic values indicate the highest values in each 
+  row. The feature values in this table essentially represent the classification 
+  of the name of each artist into musical genres based on relatively how often 
+  they appear on web pages together. Note that the user could scroll down the 
+  view in order to view hit counts at various intermediate processing stages or 
+  the details of the settings used in the feature extraction. Note also that &quot;Charles 
+  Mingus&quot; and &quot;Charlie Mingus&quot; are grouped together in the table 
+  because they are defined as synonyms in Figure 2 of the <a href="search_words_panel.html">Search 
+  Words Panel</a>.</p>
+<p>An example of co-occurrence analysis can be seen in Figure 2. The values in 
+  the report tables generated during co-occurrence analysis, in contrast to those 
+  generated in cross tabulation analysis, measure relative pairwise similarity 
+  between each term in a set of terms. The difference between what is referred 
+  to here as co-occurrence analysis and cross tabulation analysis is described 
+  in more detail in the <a href="search_words_panel.html">Search Words Panel</a> 
+  section of this manual. With specific respect to reports, it is useful to add 
+  that the results tables for co-occurrence analyses will always be square matrices. 
+  Furthermore, the entries on the diagonal are not significant in the final results, 
+  since they represent the similarity between each search string and itself (this 
+  is significant during intermediate processing, however, and can be seen in some 
+  of the intermediate reports labeled &quot;C(a)&quot;). As a result, the entries 
+  on the diagonals of the output tables co-occurrence analyses are marked with 
+  a hyphen in reports and are stored as 0.0 when saved as feature values.</p>
+<p><img src="Screenshot_Results_Cooccurrence.gif"></p>
+<p><em><strong>Figure 2:</strong></em> A screenshot of the <em>Results Panel</em>, 
+  showing the final feature values extracted in a co-occurrence analysis of the 
+  search strings shown in Figure 1 of the <a href="search_words_panel.html">Search 
+  Words Panel</a>. The bold italic values indicate the highest values in each 
+  row. The feature values in this table essentially represent the similarity of 
+  the artists' names based on relatively how often they appear on web pages together. 
+  Note that the user could scroll down the view in order to view hit counts at 
+  various intermediate processing stages or the details of the settings used in 
+  the feature extraction. Note also that &quot;Charles Mingus&quot; and &quot;Charlie 
+  Mingus&quot; are grouped together in the table because they are defined as synonyms 
+  in Figure 1 of the <a href="search_words_panel.html">Search Words Panel</a>. 
+  The <em>SAVE FORMAT</em> combo box has been selected by the user in order to 
+  choose the format to save feature values in.</p>
+<p><strong>Saving Feature Values and/or Reports</strong></p>
+<p>The reports displayed in the <em>Results Panel</em> can be saved exactly as 
+  they appear in the GUI as HTML files to be easily read by humans in the future. 
+  Final feature values can also be exported to <a href="http://jmir.sourceforge.net/index_ACE_XML.html" target="top">ACE 
+  XML</a>, <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target=top>Weka 
+  ARFF</a> or newline delimited text files to facilitate post-processing by software 
+  such as <a href="http://jmir.sourceforge.net/index_ACE.html" target="top">ACE</a><a href="http://www.cs.waikato.ac.nz/ml/weka/" target="top"></a> 
+  or <a href="http://www.cs.waikato.ac.nz/ml/weka/" target="top">Weka</a>. </p>
+<p>Files can be saved by first choosing the desired file format from the <em>SAVE 
+  FORMAT</em> combo box at the top right of the <em>Results Panel</em> and then 
+  pressing the <em>Save </em> button at the top left.</p>
+  <p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+<head>
+	<title>Load Configuration Files Dialog Box</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Load Configuration Files Dialog Box</FONT></TH>
+
+    </TR></TBODY>
+</TABLE>
+
+<p><strong>Panel Overview</strong>
+<blockquote>
+The File Path Settings dialog box can be used to find, store, and edit ACE configuration file paths.
+These are the component files of an ACE project. This window can be accessed 
+by clicking <i>Load Configuration Files</i> in the <i>File</i> menu.
+</blockquote>
+<p><strong>Panel Contents</strong>
+<blockquote>
+ <p>The <i>Project file</i> field holds the path of the currently loaded
+ ace_project_file. The <i>Browse</i> button next to this field allows it to be 
+ updated.
+ 
+ <p>The <i>Use ARFF file rather than ACE XML files</i> check box specifies
+ whether or not Weka ARFF files are to be used rather than ACE 
+ feature_vector_files, taxonomy_files, feature_key_files and 
+ classifications_file. Selecting or deselecting this box deactivates and 
+ activates the appropriate GUI elements.
+ 
+ <p>The <i>Taxonomy file</i> field holds the path of the currently specified
+ ACE taxonomy_file. The <i>Browse</i> button next to this field allows it to 
+ be updated. This file holds the taxonomy to classify instances into.
+ 
+ <p>The <i>Feature definitions file</i> field holds the path of the currently 
+ specified ACE feature_key_file. The <i>Browse</i> button next to this field
+ allows it to be updated. This file holds details of the features which are
+ used for classification.
+ 
+ <p>The <i>Feature vector files</i> field holds the paths of the currently
+ specified ACE feature_vector_files. The <i>Add</i> button next to this field
+ allows files to be added to the list, and the <i>Remove</i> button deletes 
+ any currently selected files. This file holds extracted feature values for 
+ instances to be classified.
+ 
+ <p>The <i>Model classifications file</i> field holds the path of the 
+ currently specified ACE classifications_file. The <i>Browse</i> button next
+ to this field allows it to be updated. This file holds model classifications
+ for instances. This can be used to train or test classifiers.
+ 
+ <p>The <i>GUI preferences file</i> field holds the path of the currently 
+ specified ACE gui_preferences_file. The <i>Browse</i> button next to this 
+ field allows it to be updated. This file holds user preferences for 
+ configuring the ACE interface.
+ 
+ <p>The <i>Classifier settings file</i> field holds the path of the currently 
+ specified ACE classifier_settings_file. The <i>Browse</i> button next to this
+ field allows it to be updated. This file holds preferences for performing 
+ classifications and classifier optimization searches.
+ 
+ <p>The <i>Weka ARFF file</i> field holds the path of the currently specified
+ Weka ARFF file. The <i>Browse</i> button next to this field allows it to be 
+ updated. This file is an alternative to the native ACE file formats. It can
+ hold feature values of instances, model classifications and an implied flat 
+ taxonomy.
+ 
+ <p>The <i>Start New Project</i> button  Brings up a dialog box that allows
+ the user to choose the name of a new ACE project file and where to save it.
+ The user is asked if s/he would like to copy the files referred to by the 
+ existing GUI fields to the new project directory. If so, they are copied to a
+ new subdirectory with the same name as the project file.
+ 
+ <p>The <i>Save This Project</i> button saves the paths displayed in the GUI 
+ fields to the path specified in the <i>Project file</i> field. If this field
+ is empty, then the user is presented with a <i>Start New Project</i> dialog
+ box.
+ 
+ <p>The <i>Save As Startup Defaults</i> button stores the paths currently 
+ entered in the dialog box to disk so that they will be the defaults loaded
+ when the ACE GUI is next run.
+ 
+ <p>The <i>Cancel</i> button cancels all changes made in this dialog box,
+ restores previously stored entries to the fields and hides this dialog box.
+ 
+ <p>The <i>Clear Paths</i> button clears all GUI fields in this dialog box.
+ 
+ <p>The <i>OK</i> button stores all changes made in this dialog box  and hides
+ this dialog box.
+</blockquote>
+<p><strong>Screen Shot</strong></p>
+<blockquote>
+<p><img src="images/ConfigFilesBox.png" width="443" height="560"></p>
+</blockquote>
+
+<p><strong>Questions and Comments</strong></p>
+<blockquote> 
+  <p><a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a></p>
+</blockquote>
+<TABLE width="100%" height=5 border=0 bgColor=#0033C4>
+  <TBODY>
+    <TR>
+      <TH></TH>
+    </TR>
+  </TBODY>
+
+</TABLE>
+<p><a href="http://sourceforge.net/projects/jmir/files/" target="top">DOWNLOAD 
+  FROM SOURCEFORGE</a></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

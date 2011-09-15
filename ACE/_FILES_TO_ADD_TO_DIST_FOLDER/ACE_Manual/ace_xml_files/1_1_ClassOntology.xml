@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE taxonomy_file [
+   <!ELEMENT taxonomy_file (comments, parent_class+)>
+   <!ELEMENT comments (#PCDATA)>
+   <!ELEMENT parent_class (class_name, sub_class*)>
+   <!ELEMENT class_name (#PCDATA)>
+   <!ELEMENT sub_class (class_name, sub_class*)>
+]>
+
+<taxonomy_file>
+
+   <comments>This is an example of an XML file that stores a hierarchical
+   taxonomy of class labels. The parent_class element is used to define class
+   labels at the highest level of the taxonomical tree. The optional sub_class
+   element, which can be used recursively, is used to specify hierarchically
+   subordinate classes of parent classes or of other sub-classes. If one wishes
+   to use a flat taxonomy, then the sub-class element can simply not be used at
+   all. The class_name element specifies the name of each class
+   label.</comments>
+
+   <parent_class>
+      <class_name>Sound</class_name>
+
+         <sub_class>
+            <class_name>Speech</class_name>
+         </sub_class>
+         
+         <sub_class>
+            <class_name>Applause</class_name>
+         </sub_class>
+         
+         <sub_class>
+            <class_name>Music</class_name>
+         </sub_class>
+
+   </parent_class>
+
+   <parent_class>
+      <class_name>Silence</class_name>
+   </parent_class>
+
+</taxonomy_file>

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!DOCTYPE classifications_file [
+   <!ELEMENT classifications_file (comments, data_set+)>
+   <!ELEMENT comments (#PCDATA)>
+   <!ELEMENT data_set (data_set_id, misc_info*, role?, classification)>
+   <!ELEMENT data_set_id (#PCDATA)>
+   <!ELEMENT misc_info (#PCDATA)>
+   <!ATTLIST misc_info info_type CDATA "">
+   <!ELEMENT role (#PCDATA)>
+   <!ELEMENT classification (section*, class*)>
+   <!ELEMENT section (start, stop, class+)>
+   <!ELEMENT class (#PCDATA)>
+   <!ELEMENT start (#PCDATA)>
+   <!ELEMENT stop (#PCDATA)>
+]>
+
+<classifications_file>
+
+   <comments>This is an example of an XML file that stores class labels for
+   instances and/or their sub-sections. The data_set element is used to
+   delineate the start of each new overall instance, such as a musical
+   recording. The data_set_id element is used to specify a unique identifier
+   for each instance, such as a file path or a URI. The optional misc_info
+   element can be used to provide as much metadata as desired to accompany each
+   instance, and allows the specification of an info_type attribute to identify
+   the type of each piece of metadata. The optional role element can be used to
+   specify whether a file is to be used for training or testing in a particular
+   evaluation run. The classification element is used to indicate the section of
+   each data_set clause devoted to specifying actual class labels. The section
+   element is used to delineate the sub-sections of instances, and the start and
+   stop elements specify the potentially overlapping portions of the instance
+   that each sub-section corresponds to. The class element is used to specify
+   class labels for either instances as a whole or individual sub-sections of
+   instances. More than one class label may be specified per instance or per
+   sub-section.</comments>
+
+   <data_set>
+      <data_set_id>C:\Recordings\Handel_4.wav</data_set_id>
+      <misc_info info_type="Composer">Handel</misc_info>
+      <role>training</role>
+      <classification>
+         <section>
+            <start>0</start>
+            <stop>89</stop>
+            <class>Silence</class>
+         </section>
+         <section>
+            <start>90</start>
+            <stop>194</stop>
+            <class>Music</class>
+         </section>
+         <section>
+            <start>195</start>
+            <stop>299</stop>
+            <class>Applause</class>
+         </section>
+      </classification>
+   </data_set>
+
+   <data_set>
+      <data_set_id>C:\Recordings\Handel_5.wav</data_set_id>
+      <role>training</role>
+      <classification>
+         <section>
+            <start>0</start>
+            <stop>88</stop>
+            <class>Applause</class>
+         </section>
+         <section>
+            <start>89</start>
+               <stop>110</stop>
+               <class>Speech</class>
+         </section>
+         <section>
+            <start>111</start>
+            <stop>157</stop>
+            <class>Silence</class>
+         </section>
+         <section>
+            <start>158</start>
+            <stop>280</stop>
+            <class>Music</class>
+         </section>
+         <section>
+            <start>281</start>
+            <stop>322</stop>
+            <class>Applause</class>
+         </section>
+      </classification>
+   </data_set>
+
+   <data_set>
+      <data_set_id>C:\Recordings\UnknownFile.wav</data_set_id>
+      <misc_info info_type="Note">Not manually classified yet</misc_info>
+      <classification></classification>
+   </data_set>
+
+</classifications_file>

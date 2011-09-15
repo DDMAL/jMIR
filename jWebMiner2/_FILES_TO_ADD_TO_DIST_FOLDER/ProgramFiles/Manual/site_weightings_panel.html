@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.6000.16481" name=GENERATOR>
+<STYLE type=text/css></STYLE>
+</HEAD>
+<BODY text=#000000 vLink=#0033c4 aLink=#0033c4 link=#0033c4 bgColor=#e4e4e4><A 
+name=Top></A>
+<TABLE 
+ 
+cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033c4 border=0 
+>
+  <TBODY>
+  <TR 
+   
+  border="0" >
+    <TH align=left><FONT face=Arial color=#ffffff size=+3>Site Weightings 
+      Panel</FONT></TH></TR></TBODY></TABLE>
+	  
+<P>The <EM>Site Weightings Panel </EM>is a GUI panel allowing users to enter specific 
+  sites to search&nbsp;individually and separately from the whole available network 
+  (or as well as the whole available network, if desired). Relative weights can 
+  also be&nbsp;assigned to each site (and/or the whole network)&nbsp;to give&nbsp;certain 
+  sources more weight in final feature calculations than others.</P>
+<P>Specifying specific sites with this panel is useful when there are certain 
+  sites that are known to be particularly good resources for the type of&nbsp;feature 
+  extraction to be performed. It can&nbsp;then be&nbsp;useful to emphasize them 
+  within or instead of the network as a whole, which might generate hits not relevant 
+  to the subject for which features are being extracted . For example, in the 
+  case of music queries, sites such as <A href="http://www.allmusic.com" target=top>All 
+  Music</A>, <A 
+href="http://www.pitchforkmedia.com/" target=top>Pitchfork,</A> <A 
+href="http://www.freedb.org/" target=top>freeDB</A>, <A 
+href="http://www.billboard.com" target=top>Billboard</A>, <A 
+href="http://artofthemix.org" target=top>Art of the Mix</A>, <A 
+href="http://www.azlyrics.com/" target=top>A-Z Lyrics</A>, etc. can be good sources. 
+  It can also be useful to emphasize general resource sites such as <A 
+href="http://wikipedia.org/" target=top>Wikipedia</A>&nbsp;or <A 
+href="http://en.citizendium.org/wiki/Main_Page" target=top>Citizendium</A>, as 
+  they can sometimes be less noisy than the network as a whole. Specifying relative 
+  site weightings&nbsp;can be useful when some sources are more&nbsp;trusted than 
+  others.</P>
+<P><STRONG>Specifying Source&nbsp;Sites</STRONG></P>
+<P> If the text area of the&nbsp;<EM>Site Weightings Panel </EM>is left blank 
+  then it is assumed that the entire network is to be searched. If one or more 
+  sites are specified then they will each be searched separately for each query 
+  and the hit counts for each of them will be combined when feature values are 
+  calculated. Each line of the text area corresponds to a different source.</P>
+<P> If the text area contains at least one specified site, then the whole network 
+  will not be searched automatically. If it is desirable to search both the whole 
+  network as well as one or more specific sites, then the "&lt;WHOLE_NETWORK&gt;" 
+  tag must be placed on one line. An example of this can be seen in Figure 1, 
+  where both the whole network and <A 
+href="http://www.allmusic.com/" target=top>www.allmusic.com</A> specifically will 
+  each be searched separately and results combined during final feature calculation.</P>
+<P>It should be noted that it may be unwise to specify too many source sites. 
+  The reason for this is different for the reason for not specifying too many 
+  filter terms (see the <A href="required_filter_words_panel.html">Required Filter 
+  Words Panel</A>&nbsp;and <A href="excluded_filter_words_panel.html">Excluded 
+  Filter Terms Panel</A>&nbsp;sections of the manual), however. Entering a large 
+  number of source sites will not degrade performance, but it will linearly increase 
+  the number of queries that need to be performed, which increases feature extraction 
+  processing time and carries the risk of exceeding the daily quotas of individual 
+  web services, which further extends processing time.</P>
+<P><IMG src="Screenshot_Site_Weightings.gif"></P>
+<P><EM><STRONG>Figure 1:</STRONG></EM> A screenshot of the <EM>Site Weightings 
+  Panel </EM>with both the whole network and specifically the <A 
+href="http://www.allmusic.com" target=top>www.allmusic.com</A> web site selected 
+  to be searched separately. Since no weights are specified the hit counts from 
+  both sources will&nbsp;be assigned equal weights during feature calculation.</P>
+<P><STRONG>Specifying Relative Weightings</STRONG></P>
+<P>If weightings are not specified&nbsp;(as is the case in Figure 1) then all 
+  sources are given an equal weighting when final feature values are calculated 
+  (although they can optionally be normalized based on&nbsp;overall hit counts 
+  if the&nbsp;<EM>Normalize hits across web sites</EM> option&nbsp;is selected 
+  in the <A href="options_panel.html">Options Panel</A>, which operates independently 
+  of weights assigned to web sites in the <EM>Site Weightings Panel</EM>).</P>
+<P> If it&nbsp;is desirable to specify relative weightings, then this can be&nbsp;done 
+  using the " &lt;WEIGHT&gt; " tag&nbsp;following a source address (including 
+  the possibility of the "&lt;WHOLE_NETWORK_TAG&gt;") and a&nbsp;decimal or integer 
+  number. An example of this can be seen in Figure 2, where the whole available 
+  network is assigned a weight four times that of <A 
+href="http://www.allmusic.com/" target=top>www.allmusic.com</A>.</P>
+<P> The absolute&nbsp;values&nbsp;of the weights&nbsp;entered have no influence 
+  on final feature values, and only the magnitude&nbsp;of the weights relative 
+  to one another&nbsp;has an influence on these final values. If weights are entered 
+  for some sources but not for others then a weight of 1.0 is assigned by default 
+  to sources that have do&nbsp;not have weights explicitly assigned, as if " &lt;WEIGHT&gt; 
+  1.0" had been entered following the source.</P>
+<P><IMG src="Screenshot_Site_Weightings_With_Unequal_Weights.gif"></P>
+<P><EM><STRONG>Figure 2:</STRONG></EM> A screenshot of the <EM>Site Weightings 
+  Panel </EM>with both the whole network and specifically the <A 
+href="http://www.allmusic.com/" target=top>www.allmusic.com</A> web site selected 
+  to be searched separately. The results from the whole network are assigned 4 
+  times the weighting of the results from only the <A 
+href="http://www.allmusic.com/" target=top>www.allmusic.com</A>&nbsp;site during 
+  final feature calculation.</P>
+<P><STRONG>The Text Area</STRONG></P>
+<P>The text area dominating this panel allows users to enter the sites and corresponding 
+  weights that they wish to use. These may be entered by directly typing in or 
+  editing the text area or by copying and pasting existing text into it.&nbsp;Text 
+  may also be added using the <EM>Load</EM> button, which parses strings from 
+  an existing text file and appends them to the text area.</P>
+<P>Note that each&nbsp;line in&nbsp;the text area corresponds to a separate source.</P>
+<P>Note that when a feature extraction is executed with the <EM>EXTRACT FEATURES</EM> 
+  button that the contents of the text field&nbsp;are pre-processed before being 
+  used in queries such that blank lines are removed, duplicate lines are removed 
+  and the contents are sorted alphabetically by line.</P>
+<P><STRONG>Buttons Above the Text Area</STRONG></P>
+<P>The <EM>Load</EM> button allows users to parse the contents of a text file 
+  and append them to the existing content of the text area (existing contents 
+  are <EM>not</EM> replaced). Each line in the text file is treated as a separate 
+  source.</P>
+<P>The <EM>Save</EM> button will bring up a file chooser allowing users to enter 
+  a file path. The contents of the text area will be saved as a text file to the 
+  chosen location.</P>
+<P> The <EM>Clear</EM> button erases all of the contents of the text area.</P>
+<P> The <EM>Organize</EM> buttons causes the contents of the text area to be sorted 
+  alphabetically by line, with empty lines and duplicate lines removed.&nbsp;&nbsp;</P>
+<P></P>
+<TABLE 
+ 
+height=5 width="100%" bgColor=#0033c4 border=0 >
+  <TBODY>
+  <TR 
+   
+  border="0" >
+    <TH></TH></TR></TBODY></TABLE>
+<P><TT><A href="#Top">-top of page-</A></TT></P></BODY></HTML>

@@ -1,0 +1,251 @@
+<html>
+<head>
+	<title>ACE XML</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>ACE XML</FONT></TH>
+
+    </TR></TBODY>
+</TABLE>
+
+<p><strong><font color="#FF0000">Update</font></strong></p>
+<blockquote> 
+  <p><font color="#FF0000"><em>This page describes ACE XML Version 1.1. This version 
+    is currently supported by all of the jMIR software components.</em></font></p>
+  <p><font color="#FF0000"><em>Work is currently underway to replace ACE XML 1.1 
+    with the redesigned and significantly more expressive ACE XML 2.0. The ACE 
+    XML 2.0 specification is now complete, but the associated software is still 
+    under development. The 1.1 version of ACE XML described on this page will 
+    be deprecated once ACE XML 2.0 compatibility is incorporated into the jMIR 
+    components, although the jMIR components will remain backwards compatible 
+    with ACE XML 1.1.</em></font></p>
+  <p><font color="#FF0000"><em>Details on ACE XML 2.0 are available on the <a href="http://www.music.mcgill.ca/~cmckay/NEMA/ACE_XML_Dev_Page.html">ACE 
+    XML 2.0 Development Page</a>.</em></font></p>
+
+</blockquote>
+<p><strong>Overview</strong></p>
+<blockquote> 
+  <p>ACE XML is a set of file formats developed to enable communication between 
+    the various jMIR software components. These file formats have been designed 
+    to be very flexible and expressive, and it is hoped that they will eventually 
+    be adopted beyond the limited scope of jMIR as a multi-purpose standardized 
+    format by the music information retrieval (MIR) research community.</p>
+  <p>Aside from ACE XML, there is currently no unified standardized general-purpose 
+    format for storing specialized MIR-related information such as class ontologies, 
+    feature values and ground truth labels. This has resulted in the emergence 
+    of the <a href="http://www.cs.waikato.ac.nz/~ml/weka/arff.html" target="top">Weka 
+    ARFF</a> format as a de facto standard. Although ARFF and Weka in general 
+    are powerful tools, they have not been designed with the specific needs of 
+    music in mind, and thus have a number of important limitations when applied 
+    to MIR research.</p>
+</blockquote>
+<p><strong>Summary of Advantages of ACE XML over Weka ARFF and Other General Formats 
+  with Regard to MIR Research</strong></p>
+<blockquote> 
+  <p>As can be expected from any truly multi-purpose framework, Weka ARFF has 
+    a number of limitations with respected to the particularities of music and 
+    MIR. Although these problems are in no way limited only to Weka, which is 
+    in general an exceptionally good system, they can perhaps best be illustrated 
+    via an analysis of the Weka ARFF file format which is used to communicate 
+    feature values and class labels to Weka. The following points demonstrate 
+    the limitations of the Weka ARFF format that are met by ACE XML:</p>
+
+  <ul>
+    <li> There is no good way to assign more than one class to a given instance 
+      in an ARFF file, something that one might often wish to do in MIR tasks 
+      such as genre classification. There are awkward workarounds, such as breaking 
+      one multi-class problem into many binary classification problems so that 
+      there is a separate ARFF file for every class, but this is obviously a non-optimal 
+      approach. ACE XML provides the ability to assign multiple classes to individual 
+      instances.</li>
+    <li>ARFF files do not allow any labeling or structuring of instances. Each 
+      instance is stored only as a collection of feature values and a class identifier, 
+      with no identifying metadata or sub-segmentations. This is problematic when 
+      dealing with music where, for example, it is often appropriate to extract 
+      features over a number of possibly overlapping related windows. Furthermore, 
+      some features may be extracted for each window, some only for some windows 
+      and some only for a recording as a whole. ARFF files provide no way of associating 
+      the features of a window with the recording that it comes from, nor do they 
+      provide any means of identifying recordings, storing additional metadata 
+      relating to them or of storing time stamps associated with each window. 
+      ACE XML, in contrast, allows all of these things.</li>
+    <li>ARFF files do not permit any logical grouping of features. Each feature 
+      is treated as an independent quantity with no structural relation to any 
+      other features. This makes it difficult to fully capitalize on the advantages 
+      offered by multi-dimensional features. ACE XML allows logical grouping of 
+      features. </li>
+    <li> There is no way of imposing a structure on class labels in ARFF files. 
+      One often encounters hierarchical or more sophisticated ontological structures 
+      in music (e.g., structural analysis or genre classification), and it can 
+      be very profitable to take advantage of this using appropriately structured 
+      classifier ensembles or weighted misclassification penalties during training. 
+      ACE XML allows the specification of hierarchical class ontologies.</li>
+  </ul>
+
+</blockquote>
+<p><strong>Details of ACE XML</strong></p>
+<blockquote> 
+  <p> An important priority when developing a feature file format is to enforce 
+    a clear separation between the feature extraction and classification tasks, 
+    as particular researchers may have reasons for using particular feature extractors 
+    or particular classification systems. A successful file format should therefore 
+    make it possible to use any feature extractor to communicate any features 
+    of any type to any classification system. This portability makes it possible 
+    to use features generated with different extractors with the same classification 
+    system, or a given set of extracted features with multiple classification 
+    systems.</p>
+  <p> The reusability of files is another important consideration. For example, 
+    it could be useful to use the same set of extracted features for a variety 
+    of tasks, such as genre classification as well as artist identification. Similarly, 
+    it could be convenient to reuse the same model classifications with different 
+    sets of features. For example, one could classify a given corpus of audio 
+    recordings and then later perform the same task on symbolic recordings of 
+    the same corpus using the same model classifications. Unfortunately, most 
+    current feature file formats merge feature values and model classifications, 
+    making this kind of reusability difficult.</p>
+  <p> The use of two separate types files was therefore adopted in ACE XML for 
+    what is traditionally contained in one file, namely one file for storing feature 
+    values and another for storing model classifications. Unique keys such as 
+    file names can be used to merge the two files. The model classification file 
+    can be omitted when using unsupervised learning or classifying unknown patterns.</p>
+  <p>ACE XML also includes an additional optional file format for specifying taxonomical 
+    class structures. This enables one to specify the relationships between classes, 
+    information that can be very useful for tasks such as hierarchical classification. 
+    This file can be omitted if only flat classification is to be used. There 
+    are plans to expand ACE XML to include more general ontologies.</p>
+
+  <p> The final optional file format included in the ACE XML specification stores 
+    metadata about features, such as basic descriptions or details about the cardinality 
+    of multi-dimensional features. Although not strictly necessary, such a file 
+    helps solidify the potential for full independence between feature extractors 
+    and classifiers. A researcher with a classifier could be e-mailed a feature 
+    values file and a feature definitions file by other researchers, for example, 
+    and would need no additional information about the feature extractor used 
+    or the features it extracted.</p>
+  <table border="2">
+    <tr> 
+      <td><font face="Courier New, Courier, mono">&lt;!ELEMENT feature_vector_file 
+        (comments, data_set+)&gt;<br>
+        &lt;!ELEMENT comments (#PCDATA)&gt;<br>
+        &lt;!ELEMENT data_set (data_set_id, section*, feature*)&gt;<br>
+        &lt;!ELEMENT data_set_id (#PCDATA)&gt;<br>
+
+        &lt;!ELEMENT section (feature+)&gt;<br>
+        &lt;!ATTLIST section start CDATA &quot;&quot; stop CDATA &quot;&quot;&gt;<br>
+        &lt;!ELEMENT feature (name, v+)&gt;<br>
+        &lt;!ELEMENT name (#PCDATA)&gt;<br>
+        &lt;!ELEMENT v (#PCDATA)&gt;</font></td>
+
+    </tr>
+  </table>
+  <p><strong>Figure 1:</strong> XML DTD of the ACE XML file format for storing 
+    feature values.</p>
+  <p>The explicit <a href="http://www.xmlfiles.com/dtd/" target="top">XML Document 
+    Type Definitions</a> (DTD&#8217;s) of the four proposed ACE XML formats are 
+    shown in Figures 1 to 4. It can be seen from Figure 1 that features may be 
+    stored for overall instances, called data sets, which may or may not have 
+    sub-sections. This can correspond to a recording and its windows, for example. 
+    Each sub-section has its own features, and each data set may have overall 
+    features as well. Each sub-section may have start and stop stamps in order 
+    to indicate what portion of the data set it corresponds to. This makes it 
+    possible to have windows of arbitrary and varying sizes that can overlap. 
+    Each feature has a name identifying it, which makes it possible to omit features 
+    from some data sets or sub-sections if appropriate. Each feature may also 
+    have one or more values (denoted by the &lt;v&gt; element) in order to permit 
+    multi-dimensional features.</p>
+
+  <table border="2">
+    <tr> 
+      <td><font face="Courier New, Courier, mono">&lt;!ELEMENT classifications_file(comments,data_set+)&gt;<br>
+        &lt;!ELEMENT comments (#PCDATA)&gt;<br>
+        &lt;!ELEMENT data_set (data_set_id, misc_info*, role?, classification)&gt;<br>
+        &lt;!ELEMENT data_set_id (#PCDATA)&gt;<br>
+        &lt;!ELEMENT misc_info (#PCDATA)&gt;<br>
+
+        &lt;!ATTLIST misc_info info_type CDATA &quot;&quot;&gt;<br>
+        &lt;!ELEMENT role (#PCDATA)&gt;<br>
+        &lt;!ELEMENT classification (section*, class*)&gt;<br>
+        &lt;!ELEMENT section (start, stop, class+)&gt;<br>
+        &lt;!ELEMENT class (#PCDATA)&gt;<br>
+        &lt;!ELEMENT start (#PCDATA)&gt;<br>
+
+        &lt;!ELEMENT stop (#PCDATA)&gt;</font></td>
+    </tr>
+  </table>
+  <p><strong>Figure 2:</strong> XML DTD of the proposed ACE XML file format for 
+    storing class labels.</p>
+  <p>Figure 2 shows the DTD for storing class labels, be they model labels or 
+    classification results. Each data set may have optional metadata associated 
+    with it. Each data set can be broken into potentially overlapping sub-sections 
+    if desired, and each sub-section can be assigned one or more classes. Each 
+    data set may be assigned one or more overall classes as well. Each sub-section 
+    is given start and stop stamps to show the region of influence of particular 
+    classes.</p>
+  <table border="2">
+
+    <tr> 
+      <td><font face="Courier New, Courier, mono">&lt;!ELEMENT taxonomy_file (comments, 
+        parent_class+)&gt;<br>
+        &lt;!ELEMENT comments (#PCDATA)&gt;<br>
+        &lt;!ELEMENT parent_class (class_name, sub_class*)&gt;<br>
+        &lt;!ELEMENT class_name (#PCDATA)&gt;<br>
+        &lt;!ELEMENT sub_class (class_name, sub_class*)&gt;</font></td>
+    </tr>
+
+  </table>
+  <p><strong>Figure 3:</strong> XML DTD of the optional ACE XML file format for 
+    storing class taxonomies. </p>
+  <p>The DTD for the optional taxonomy format is shown in Figure 3. This format 
+    allows the representation of hierarchically structured taxonomies of arbitrary 
+    depth.</p>
+  <table border="2">
+    <tr> 
+      <td><font face="Courier New, Courier, mono">&lt;!ELEMENT feature_key_file 
+        (comments, feature+)&gt;<br>
+        &lt;!ELEMENT comments (#PCDATA)&gt;<br>
+
+        &lt;!ELEMENT feature (name, description?, is_sequential, parallel_dimensions)&gt;<br>
+        &lt;!ELEMENT name (#PCDATA)&gt;<br>
+        &lt;!ELEMENT description (#PCDATA)&gt;<br>
+        &lt;!ELEMENT is_sequential (#PCDATA)&gt;<br>
+        &lt;!ELEMENT parallel_dimensions (#PCDATA)&gt;</font></td>
+    </tr>
+
+  </table>
+  <p><strong>Figure 4:</strong> XML DTD of the optional ACE XML file format for 
+    storing feature definitions.</p>
+  <p> The final optional file format, for storing feature definitions, is shown 
+    in Figure 4. This format enables one to store the name of each possible feature, 
+    a description of it, whether or not it can be applied to sub-sections or to 
+    overall data sets only and how many dimensions it has.</p>
+</blockquote>
+<p><strong>Sample ACE XML Files</strong></p>
+<ul>
+  <li><a href="ace_xml_files/FeatureVectors.xml">Sample Feature Vectors File</a></li>
+
+  <li><a href="ace_xml_files/Classifications.xml">Sample Classifications File</a></li>
+  <li><a href="ace_xml_files/Taxonomy.xml">Sample Taxonomy File</a></li>
+  <li><a href="ace_xml_files/FeatureKey.xml">Sample Feature Key File</a></li>
+</ul>
+<p><strong>Related Publications</strong></p>
+<blockquote> 
+  <p>McKay, C., R. Fiebrink, D. McEnnis, B. Li, and I. Fujinaga. 2005. <a href="publications/ISMIR_2005_ACE.pdf">ACE: 
+    A framework for optimizing music classification</a>. <em>Proceedings of the 
+    International Conference on Music Information Retrieval</em>. 42&#8211;9.</p>
+
+</blockquote>
+<p><strong>Questions and Comments</strong></p>
+<blockquote> 
+  <p><a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a></p>
+</blockquote>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

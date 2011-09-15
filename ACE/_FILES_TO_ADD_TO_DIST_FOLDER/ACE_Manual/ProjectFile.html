@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+<head>
+	<title>ACE Project File</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>ACE Project File</FONT></TH>
+
+    </TR></TBODY>
+</TABLE>
+
+<p><strong>Overview</strong></p>
+<blockquote> 
+	<p>The ACE XML project file is one of the <a href=ACE_XML.html>ACE XML</a> file formats. 
+	Its main purpose is to provide the user with an easy, single step way of loading a 
+	previously saved ACE project. Without this project file, the user would have to 
+	individually load each the taxonomy file, feature vectors file, feature definitions 
+	file, and classifications file. The ACE XML project file format is designed to contain
+	references to all component ACE XML files of an ACE project. Thus the user can simply 
+	load an ACE project file, and ACE can load each of the individual component files internally
+	without the user ever having to explicitly specify them. For a detailed explanation of 
+	how to load an ACE project from an ACE project file, see the 
+	<a href = "ACEManual.html">ACE command line manual</a>. This project file is also used in the 
+	context of an <a href = "Zip.html">ACE Zip File</a>. In this case, the project file
+	contains reference to the ACE XML files compressed in the zipfile. Note that with an ACE project 
+	file, only reference to the component ACE XML files are stored, not the actual files 
+	themselves, therefore the files themselves must be stored in a location that ACE can 
+	access.</p>
+	
+	<p><strong><font color="#FF0000">NOTE: </font></strong><font color="#FF0000">This 
+    page describes the ACE XML 1.1 version of the project file. This version will 
+    eventually be deprecated in favor of the ACE XML 2.0 version of the project 
+    file. Details are available on the <a href="ACE_XML_Dev_Page.html">ACE XML 
+    2.0 Development Page</a>.</font></p>
+
+	</blockquote>
+	
+<p><strong>Details of ACE XML Project File</strong></p>
+<blockquote> 
+  <p>The specifications of the ACE XML project file reflect those of an ACE project. Only
+	one taxonomy path can be specified in the file, just as an ACE project may only have 
+	one taxonomy. However, multiple paths may be specified for each the feature 
+	definitions, feature vectors, and model classifications. There exist plans to expand 
+	ACE to be able to accept multiple feature definitions files, feature vectors files, 
+	and model classifications files, however, at this point, only one of each may be 
+	loaded.<br>
+	<br><table border="2">
+	<tr> 
+    	<td><font face="Courier New, Courier, mono">&lt;!ELEMENT ace_project_file 
+			(comments, taxonomy_path, feature_definitions_path, feature_vectors_path, 
+			model_classifications_path, gui_preferences_path, classifier_settings_path, 
+			trained_classifiers_path, weka_arff_path)><br>
+   			&lt;!ELEMENT comments (#PCDATA)&gt;<br>
+   			&lt;!ELEMENT taxonomy_path (#PCDATA)&gt;<br>
+   			&lt;!ELEMENT feature_definitions_path (path*)&gt;<br>
+   			&lt;!ELEMENT feature_vectors_path (path*)&gt;<br>
+   			&lt;!ELEMENT model_classifications_path (path*)&gt;<br>
+   			&lt;!ELEMENT gui_preferences_path (#PCDATA)&gt;<br>
+   			&lt;!ELEMENT classifier_settings_path (#PCDATA)&gt;<br>
+   			&lt;!ELEMENT trained_classifiers_path (#PCDATA)&gt;<br>
+   			&lt;!ELEMENT weka_arff_path (#PCDATA)&gt;<br>
+   			&lt;!ELEMENT path (#PCDATA)&gt;<br><br>
+&lt;ace_project_file&gt;<br>
+   &nbsp&nbsp&nbsp&lt;comments&gt;this is a comment&lt;/comments&gt;<br>
+   &nbsp&nbsp&nbsp&lt;taxonomy_path&gt;TestFiles/Taxonomy.xml&lt;/taxonomy_path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;feature_definitions_path&gt;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;path&gt;TestFiles/FeatureKey.xml&lt;/path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;/feature_definitions_path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;feature_vectors_path&gt;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;path&gt;TestFiles/FeatureVectors.xml&lt;/path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;/feature_vectors_path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;model_classifications_path&gt;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;path&gt;TestFiles/Classifications.xml&lt;/path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;/model_classifications_path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;gui_preferences_path&gt;&lt;/gui_preferences_path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;classifier_settings_path&gt;&lt;/classifier_settings_path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;trained_classifiers_path&gt;&lt;/trained_classifiers_path&gt;<br>
+   &nbsp&nbsp&nbsp&lt;weka_arff_path&gt;&lt;/weka_arff_path&gt;<br>
+&lt;/ace_project_file&gt;<br></font></td>
+</table>
+<p><strong>Figure 1:</strong> Example of the ACE XML project file format.</p>
+<p>
+</blockquote>
+<p><strong>Related Publications</strong></p>
+<blockquote> 
+  <p>McKay, C., R. Fiebrink, D. McEnnis, B. Li, and I. Fujinaga. 2005. <a href="publications/ISMIR_2005_ACE.pdf">ACE: 
+    A framework for optimizing music classification</a>. <em>Proceedings of the 
+    International Conference on Music Information Retrieval</em>. 42&#8211;9.</p>
+
+</blockquote>
+
+<p><strong>Questions and Comments</strong></p>
+<blockquote> 
+  <p><a href="mailto:cory.mckay@mail.mcgill.ca">cory.mckay@mail.mcgill.ca</a></p>
+</blockquote>
+<TABLE width="100%" height=5 border=0 bgColor=#0033C4>
+  <TBODY>
+    <TR>
+      <TH></TH>
+    </TR>
+  </TBODY>
+
+</TABLE>
+<p><a href="http://sourceforge.net/projects/jmir/files/" target="top">DOWNLOAD 
+  FROM SOURCEFORGE</a></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>

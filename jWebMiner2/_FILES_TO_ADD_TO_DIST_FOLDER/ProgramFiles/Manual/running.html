@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Running the Software</title>
+</head>
+
+<body text="#000000" bgcolor="#e4e4e4" link="#0033C4" vlink="#0033C4" alink="#0033C4">
+
+<a name="Top"></a>
+
+<TABLE cellSpacing=0 cellPadding=4 width="100%" bgColor=#0033C4 border=0>
+  <TBODY><TR>
+      <TH align=left><FONT face=Arial color=#ffffff size=+3>Using the Software</FONT></TH>
+    </TR></TBODY>
+</TABLE>
+<p><strong>Running the Software</strong></p>
+<p>A file named &quot;jWebMiner.jar&quot; is produced upon <a href="installation.html">installation</a>. 
+  The simplest way to start jWebMiner is to simply double click on this file.</p>
+<p>The software may also be accessed via the command line (e.g. the DOS prompt). 
+  To access DOS under Windows, for example, go to the Start Menu, select Run and 
+  type &quot;cmd&quot;. Then use the &quot;cd&quot; command to move to the directory 
+  that contains the jWebMiner.jar file. In that directory, type:</p>
+<blockquote>
+  <p> java -jar jWebMiner.jar</p>
+</blockquote>
+<p>It should be noted that the Java Runtime Environment does not always allocate 
+  sufficient memory for jWebMiner to process large music collections. Running 
+  jWebMiner using either of the above two methods could therefore result in an 
+  out of memory error (although this is relatively rare).</p>
+<p>It is therefore sometimes preferable to manually allocate a greater amount 
+  of memory to jWebMiner before running it. 250 MB should be more than enough 
+  for most situations. This can be done by entering the following at the command 
+  prompt:</p>
+<blockquote> 
+  <p> java -ms16M -mx250M -jar jWebMiner.jar</p>
+</blockquote>
+<p>Note that your computer must be connected to the internet for jWebMiner to 
+  work. It may also be necessary to modify your firewall to allow it access.</p>
+<p><strong>Using the Software's Interface</strong></p>
+<p>The jWebMiner interface is divided into several panels that may be accessed 
+  via tabs below the <a href="menus.html">menu bar</a>. Each of these panels is 
+  described in a separate section in this manual, as described below. The <a href="menus.html">menu 
+  bar</a> itself allows access to help functionality as well as to the <a href="network_search_dialog.html">Network 
+  Search Dialog Box</a>, which allows users to perform side by side searches using 
+  multiple web services and see the details of the returned hits. The <em>EXTRACT 
+  FEATURES</em> button appears below all of the panels, and it initiates feature 
+  extraction using the setting in each of the panels.</p>
+<p>The <a href="search_words_panel.html">Search Words Panel</a> allows the user 
+  to choose the the text phrases (strings) that feature extraction is to be based 
+  on, to define synonyms amongst these strings and to decide whether the extraction 
+  is to involve co-occurrence or cross-tabulation analysis. The <a href="required_filter_words_panel.html">Required 
+  Filter Words Panel</a> allows users to specify strings that must be present 
+  on a page in order for it to be counted as a hit and the <a href="excluded_filter_words_panel.html">Excluded 
+  Filter Words Panel</a> allows them to specify words that may not be present 
+  if it is to be counted as a hit. The <a href="site_weightings_panel.html">Site 
+  Weightings Panel</a> allows users to specify specific sites that will be searched 
+  (including the possibility of the entire available network) and to set variable 
+  weighting schemes that will give particular sites greater influence than others 
+  on the final feature values. The <a href="options_panel.html">Options Panel</a> 
+  allows users to select amongst a variety of preferences. Finally, the <a href="results_panel.html">Results 
+  Panel</a> shows the results of feature extractions, which may include a wide 
+  variety of information, depending on the settings in the <a href="options_panel.html">Options 
+  Panel</a>. The <a href="results_panel.html">Results Panel</a> may also be used 
+  to save the results in a variety of file formats.</p>
+<p>A <a href="tutorial.html">tutorial</a> is available to give a brief applied 
+  introduction to running the software.</p>
+<p><strong>Error Messages and Other Problems</strong></p>
+<p>jWebMiner generates informative error messages when any problems occur. The 
+  reported problems can most often be resolved by following the instructions in 
+  the error message. If a problem is encountered that cannot be resolved in this 
+  manner, then the <a href="known_issues.html">Problems and Solutions</a> section 
+  of the manual should be consulted.</p>
+<p>Note that each query will be submitted to a given web services up to 3 times 
+  if it is unsuccessful before it is reported to the user, as sometimes the service 
+  is simply busy at the moment that a particular query is submitted. If a query 
+  fails three times consecutively then the user is presented with the option of 
+  either trying up to another 3 times or cancelling the feature extraction.</p>
+<p>The results returned by web services are sensitive to the particularities of 
+  the search settings and query strings used. The <a href="hints.html">Hints and 
+  Suggestions</a> section of the manual can be consulted for tips on improving 
+  results.</p>
+<p></p>
+<TABLE height=5 width="100%" bgColor=#0033C4 border=0><TBODY><TR><TH></TH></TR></TBODY></TABLE>
+<p><tt><a href="#Top">-top of page-</a></tt></p>
+
+</body>
+</html>
